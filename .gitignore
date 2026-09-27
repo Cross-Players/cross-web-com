@@ -1,0 +1,6 @@
+# This repo (github.com/Cross-Players/cross-web-com) only tracks cross_outsourcing/.
+# Everything else in this folder — other projects, github-recovery-codes.txt,
+# videos, etc. — is ignored so a stray `git add .` can never publish it.
+/*
+!/.gitignore
+!/cross_outsourcing/
