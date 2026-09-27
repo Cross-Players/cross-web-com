@@ -91,7 +91,7 @@ OG_TEXT = {
         "rate_unit": "USD / dev / month",
     },
 }
-DOMAIN = "crossplayers.com"  # printed on the image: re-run this script if the domain changes
+DOMAIN = "crosstechedu.com"  # printed on the image: re-run this script if the domain changes
 
 
 def og_image(t: dict[str, str]) -> None:

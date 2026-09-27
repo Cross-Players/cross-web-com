@@ -2,7 +2,7 @@
 
 Every value here can be overridden per deployment without touching code:
 
-    SITE_URL=https://crossplayers.com CONTENT_DIR=/srv/content flask run
+    SITE_URL=https://www.crosstechedu.com CONTENT_DIR=/srv/content flask run
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ class Config:
         or (
             "https://" + os.environ["VERCEL_PROJECT_PRODUCTION_URL"]
             if os.environ.get("VERCEL_PROJECT_PRODUCTION_URL")
-            else "https://crossplayers.com"
+            else "https://www.crosstechedu.com"
         )
     ).rstrip("/")
 

@@ -35,13 +35,13 @@ settings and redeploy.
 Cloudflare Pages, Netlify, Vercel, GitHub Pages or S3 + CloudFront:
 
 ```bash
-SITE_URL=https://crossplayers.com .venv/bin/python freeze.py   # → build/
+SITE_URL=https://www.crosstechedu.com .venv/bin/python freeze.py   # → build/
 ```
 
 **Option B: Python server.** Use this once you need forms, previews or a CMS webhook:
 
 ```bash
-SITE_URL=https://crossplayers.com gunicorn -w 2 -b 0.0.0.0:8000 wsgi:app
+SITE_URL=https://www.crosstechedu.com gunicorn -w 2 -b 0.0.0.0:8000 wsgi:app
 ```
 
 Always set `SITE_URL` to the real domain. Canonical URLs, hreflang, the sitemap,
@@ -131,7 +131,6 @@ appears in the sitemap. A new block type only needs
 
 | What | Where |
 |---|---|
-| Real domain | `SITE_URL` env var (defaults to `https://crossplayers.com`) |
 | Detailed pricing page: the design links to `CrossPricing.dc.html`, which was not exported; the button currently goes to `#contact` | add `content/vi/pages/bang-gia.json` + EN, then point `pricing.cta.href` at it |
 | Add or remove a client logo (name, logo file, website URL; `fill: true` for square logos) | `content/site.json` → `client_logos`, files in `app/static/img/clients/` |
 | Social profiles (LinkedIn, Facebook, GitHub...) | `content/site.json` → `same_as` |
