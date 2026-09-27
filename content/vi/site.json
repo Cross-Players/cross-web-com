@@ -30,12 +30,15 @@
       {
         "title": "Công ty",
         "links": [
-          {"label": "Case studies", "href": "#work"},
-          {"label": "Quy trình", "href": "#process"},
-          {"label": "Bảng giá", "href": "#pricing"}
+          {"label": "Sản phẩm đã tham gia", "href": "#work"},
+          {"label": "Khách hàng của chúng tôi", "href": "#clients"},
+          {"label": "Liên hệ báo giá", "href": "#contact"}
         ]
       }
     ],
+    "follow_title": "Theo dõi Cross Tech Edu",
+    "share_title": "Chia sẻ trang này",
+    "share_on": "Chia sẻ lên {network}",
     "languages_title": "Ngôn ngữ",
     "languages_text": "Tiếng Việt · English · 日本語 · 한국어",
     "copyright": "Cross Tech Edu. Bảo lưu mọi quyền."

@@ -1,7 +1,9 @@
-{# Infinite horizontal logo carousel (pure CSS).
+{# Infinite horizontal logo carousel (pure CSS animation).
    Each track repeats the logo set until it is wider than any screen (2560px),
    and the track is rendered twice so translateX(-100%) loops without a gap.
-   Only the very first set is exposed to assistive tech and the tab order. #}
+   Only the first set is real links (so crawlers see each client once — no
+   duplicate anchors/external links). The visual copies are hidden from
+   assistive tech and made clickable by the tiny script below. #}
 {% set d = block.data %}
 {% set logos = d.get('items') or site.client_logos %}
 {% set cell_w = 260 %}
@@ -15,13 +17,20 @@
       {% set real = track == 0 and set == 0 %}
       {% for c in logos %}
       <li{% if not real and track == 0 %} aria-hidden="true"{% endif %}>
-        <a class="logo-card{% if c.fill %} logo-card--fill{% endif %}" href="{{ c.url }}" target="_blank" rel="noopener"{% if real %} aria-label="{{ d.link_label|replace('{name}', c.name) }}"{% else %} tabindex="-1"{% endif %}>
-          <img src="{{ asset(c.logo) }}" alt="{{ c.name if real else '' }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" decoding="async">
+        {% if real %}
+        <a class="logo-card{% if c.fill %} logo-card--fill{% endif %}" href="{{ c.url }}" target="_blank" rel="noopener" title="{{ d.link_label|replace('{name}', c.name) }}">
+          <img src="{{ asset(c.logo) }}" alt="{{ c.name }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" decoding="async">
         </a>
+        {% else %}
+        <span class="logo-card{% if c.fill %} logo-card--fill{% endif %}" data-href="{{ c.url }}">
+          <img src="{{ asset(c.logo) }}" alt="{{ c.name }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" decoding="async">
+        </span>
+        {% endif %}
       </li>
       {% endfor %}
       {% endfor %}
     </ul>
     {% endfor %}
   </div>
+  <script>document.currentScript.previousElementSibling.addEventListener("click",function(e){var t=e.target.closest("[data-href]");t&&window.open(t.dataset.href,"_blank","noopener")});</script>
 </section>

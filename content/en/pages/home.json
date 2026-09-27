@@ -13,7 +13,7 @@
       "data": {
         "kicker": "Software outsourcing company · Hanoi, Vietnam",
         "title": "Your engineering team, based in Vietnam.",
-        "lead": "Cross Tech Edu delivers outsourced web, mobile, backend and cloud work for clients in Japan, Korea and Europe. Delivery in two-week sprints, contracts with no minimum term.",
+        "lead": "Cross Tech Edu is your engineering team based in Vietnam, delivering outsourced web, mobile, backend and cloud work for clients in Japan, Korea and Europe. Delivery in two-week sprints, contracts with no minimum term.",
         "sub": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam — web, mobile, backend và cloud, bàn giao theo sprint 2 tuần.",
         "sub_lang": "vi",
         "ctas": [
@@ -104,7 +104,9 @@
           "flip_to_app_store": "Flip card · App Store",
           "open_in": "Open on {store}",
           "new_tab": "(opens in a new tab)",
-          "flip_label": "Flip the {name} card to Google Play"
+          "flip_label": "Flip the {name} card to Google Play",
+          "icon_alt": "{name} app icon",
+          "cover_alt": "{name} app screenshots"
         },
         "items": [
           {

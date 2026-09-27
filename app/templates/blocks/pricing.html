@@ -6,7 +6,7 @@
   <ul class="grid-3 grid-3--tight">
     {% for t in g['items'] %}
     <li class="tier tier--{{ g.kind }}{% if t.featured %} tier--featured{% endif %}">
-      <h4 class="tier__label{% if not t.featured %} text-muted{% endif %}">{{ t.label }}</h4>
+      <p class="tier__label{% if not t.featured %} text-muted{% endif %}">{{ t.label }}</p>
       <p class="tier__price"><span class="tier__amount">{{ t.price }}{% if t.plus %}<sup class="tier__plus">+</sup>{% endif %}{% if t.magnitude %} {{ t.magnitude }}{% endif %}</span>{% if t.currency_label %}<span class="tier__currency">{{ t.currency_label }}</span>{% endif %}</p>
       <p class="tier__note text-muted">{{ t.note }}</p>
     </li>

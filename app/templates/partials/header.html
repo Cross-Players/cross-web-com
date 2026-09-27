@@ -1,7 +1,7 @@
 {% set on_home = page is defined and page.slug == '' %}
 <header class="site-header">
   <a class="brand" href="{{ home_url(locale) }}" aria-label="{{ site.ui.home_label }}">
-    <img src="{{ asset(site.brand.logo) }}" alt="" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}">
+    <img src="{{ asset(site.brand.logo) }}" alt="{{ site.brand.name }}" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}">
     <span>{{ site.brand.wordmark }}<span class="brand__dot">.</span></span>
   </a>
   <nav class="site-nav" aria-label="{{ site.ui.menu_label }}">

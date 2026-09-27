@@ -2,7 +2,7 @@
   "slug": "",
   "translation_key": "home",
   "meta": {
-    "title": "Outsourcing phần mềm Việt Nam, dev từ 6 triệu đ | Cross Tech Edu",
+    "title": "Outsourcing mobile & web apps, thuê dev từ 6 triệu VNĐ",
     "description": "Cross Tech Edu nhận outsourcing web, mobile, backend, cloud và AI tại Hà Nội. Thuê dev từ 6 triệu đ/tháng, bảo hành 12 tháng. Báo giá trong 48 giờ.",
     "updated": "2026-09-27"
   },
@@ -12,7 +12,7 @@
       "data": {
         "kicker": "Công ty phần mềm · Hà Nội, Việt Nam",
         "title": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam.",
-        "lead": "Cross Tech Edu nhận outsourcing web, mobile, backend và cloud cho khách hàng Nhật, Hàn và châu Âu. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
+        "lead": "Cross Tech Edu là đội ngũ kỹ thuật đặt tại Việt Nam, nhận outsourcing web, mobile, backend và cloud cho khách hàng Nhật, Hàn và châu Âu. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
         "sub": "Your engineering team, based in Vietnam — web, mobile, backend and cloud delivery on two-week sprints.",
         "sub_lang": "en",
         "ctas": [
@@ -103,7 +103,9 @@
           "flip_to_app_store": "Lật thẻ · App Store",
           "open_in": "Mở trên {store}",
           "new_tab": "(mở tab mới)",
-          "flip_label": "Lật thẻ {name} sang mặt Google Play"
+          "flip_label": "Lật thẻ {name} sang mặt Google Play",
+          "icon_alt": "Biểu tượng ứng dụng {name}",
+          "cover_alt": "Ảnh màn hình ứng dụng {name}"
         },
         "items": [
           {

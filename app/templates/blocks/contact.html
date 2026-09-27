@@ -22,9 +22,9 @@
       <div class="contact__label">{{ d.zalo_label }}</div>
       <div class="contact__zalo-row">
         {% if site.contact.zalo_qr %}
-        <a class="contact__qr" href="{{ site.contact.zalo_url }}" target="_blank" rel="noopener">
+        <span class="contact__qr">
           <img src="{{ asset(site.contact.zalo_qr) }}" alt="{{ d.zalo_qr_alt }}" width="320" height="320" loading="lazy" decoding="async">
-        </a>
+        </span>
         {% endif %}
         <div>
           <a class="contact__value" href="{{ site.contact.zalo_url }}" target="_blank" rel="noopener">{{ d.zalo_cta }} <span aria-hidden="true">↗</span></a>

@@ -30,12 +30,15 @@
       {
         "title": "Company",
         "links": [
-          {"label": "Case studies", "href": "#work"},
-          {"label": "Process", "href": "#process"},
-          {"label": "Pricing", "href": "#pricing"}
+          {"label": "Products we built", "href": "#work"},
+          {"label": "Our clients", "href": "#clients"},
+          {"label": "Request a quote", "href": "#contact"}
         ]
       }
     ],
+    "follow_title": "Follow Cross Tech Edu",
+    "share_title": "Share this page",
+    "share_on": "Share on {network}",
     "languages_title": "Languages",
     "languages_text": "Tiếng Việt · English · 日本語 · 한국어",
     "copyright": "Cross Tech Edu. All rights reserved."

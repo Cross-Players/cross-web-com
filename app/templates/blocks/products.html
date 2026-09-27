@@ -16,11 +16,11 @@
         <div class="product__face product__face--{{ 'front' if loop.first else 'back' }}">
           <a class="product__link" href="{{ s.url }}" target="_blank" rel="noopener">
             {% if p.cover %}
-            <span class="product__cover"><img src="{{ asset(p.cover) }}" alt="" width="960" height="480" loading="lazy" decoding="async"></span>
+            <span class="product__cover"><img src="{{ asset(p.cover) }}" alt="{{ d.ui.cover_alt|replace('{name}', p.name) }}" width="960" height="480" loading="lazy" decoding="async"></span>
             {% endif %}
             <span class="product__content">
               <span class="product__head">
-                {% if p.icon %}<img class="product__icon" src="{{ asset(p.icon) }}" alt="" width="128" height="128" loading="lazy" decoding="async">{% endif %}
+                {% if p.icon %}<img class="product__icon" src="{{ asset(p.icon) }}" alt="{{ d.ui.icon_alt|replace('{name}', p.name) }}" width="128" height="128" loading="lazy" decoding="async">{% endif %}
                 <span>
                   <span class="product__store">
                     {% if s.store == 'app_store' %}
@@ -30,7 +30,7 @@
                     {% endif %}
                     {{ store }}
                   </span>
-                  <h3>{{ p.name }}</h3>
+                  {% if loop.first %}<h3 class="product__title">{{ p.name }}</h3>{% else %}<p class="product__title">{{ p.name }}</p>{% endif %}
                 </span>
               </span>
               <span class="product__app"{% if s.lang %} lang="{{ s.lang }}"{% endif %}>{{ s.app_name }}</span>

@@ -109,13 +109,11 @@ def test_client_logos_link_out(client, path):
     assert html.index('id="work"') < html.index('id="clients"') < html.index('id="process"')
     urls = ("https://twendeesoft.com/", "https://jvb-corp.com/vi/", "https://ited.edu.vn/",
             "https://vfastsoft.com/", "https://itviec.com/companies/bfast-system")
-    copies = section.count('href="https://twendeesoft.com/"')
     for url in urls:
-        # the set is repeated to fill wide screens; every copy but the first is hidden
-        assert section.count(f'href="{url}" target="_blank" rel="noopener"') == copies >= 2
-        assert section.count(f'href="{url}" target="_blank" rel="noopener" aria-label=') == 1
-    assert section.count("<img") == copies * len(urls)
-    assert section.count('tabindex="-1"') == (copies - 1) * len(urls)
+        # exactly one real link per client; the carousel copies are not links
+        assert section.count(f'<a class="logo-card') >= 1
+        assert section.count(f'href="{url}" target="_blank" rel="noopener"') == 1
+        assert section.count(f'data-href="{url}"') >= 1
     assert section.count('class="marquee__track" aria-hidden="true"') == 1
 
 
@@ -144,7 +142,7 @@ def test_contact_details(client, path):
     contact = contact[: contact.index("</section>")]
     assert 'href="mailto:crosstechedu@gmail.com"' in contact
     assert 'href="tel:+84338305895"' in contact
-    assert contact.count('href="https://zalo.me/3402955950888745400" target="_blank" rel="noopener"') == 2
+    assert contact.count('href="https://zalo.me/3402955950888745400" target="_blank" rel="noopener"') == 1
     assert "zalo-qr.png" in contact
 
 
@@ -171,3 +169,46 @@ def test_prices_are_localized(client):
     assert all(s["priceCurrency"] == "VND" for s in specs(vi))
     assert all(s["priceCurrency"] == "USD" for s in specs(en))
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
+
+
+@pytest.mark.parametrize("path", ["/", "/en/"])
+def test_on_page_seo_audit(client, path):
+    """Mirrors the checks of the external SEO audit."""
+    import collections
+    import html as H
+
+    page = client.get(path).get_data(as_text=True)
+    text = lambda t: re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", "", t))).strip()
+
+    # canonical + self-referencing hreflang
+    canonical = re.search(r'rel="canonical" href="([^"]+)"', page).group(1)
+    assert canonical == BASE + path
+    assert f'hreflang="{"vi" if path == "/" else "en"}" href="{canonical}"' in page
+
+    # every image has a non-empty alt
+    imgs = re.findall(r"<img[^>]*>", page)
+    assert imgs and not [i for i in imgs if not re.search(r'alt="[^"]+"', i)]
+
+    # headings: no duplicates, sensible count
+    heads = [text(t) for _, t in re.findall(r"<h([1-6])[^>]*>(.*?)</h\1>", page, re.S)]
+    assert not [h for h, n in collections.Counter(heads).items() if n > 1], heads
+    assert len(heads) <= 30
+
+    # H1 words appear in the body copy
+    h1 = text(re.search(r"<h1[^>]*>(.*?)</h1>", page, re.S).group(1))
+    body = text(page.split("</h1>", 1)[1])
+    words = [w for w in re.findall(r"\w{4,}", h1.lower())]
+    assert sum(w in body.lower() for w in words) >= len(words) - 1, words
+
+    # links: unique anchor texts, no empty anchors, limited external links
+    links = re.findall(r'<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>', page, re.S)
+    anchors = [text(t) or re.search(r'alt="([^"]*)"', t).group(1) for _, t in links]
+    assert all(anchors)
+    assert not [a for a, n in collections.Counter(anchors).items() if n > 1]
+    external = [h for h, _ in links if h.startswith("http")]
+    assert len(external) <= 20, len(external)
+
+    # social profiles + share buttons
+    for url in ("facebook.com/profile.php?id=61578180279419", "x.com/CrossTechEdu", "linkedin.com/company/cross-tech-edu"):
+        assert url in page
+    assert page.count('class="share-btn"') == 3

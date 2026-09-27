@@ -22,7 +22,17 @@
   "price_range": "$",
   "area_served": ["VN", "JP", "KR", "EU"],
   "languages": ["vi", "en", "ja", "ko"],
-  "same_as": ["https://zalo.me/3402955950888745400"],
+  "social": [
+    {"name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61578180279419"},
+    {"name": "X (Twitter)", "url": "https://x.com/CrossTechEdu"},
+    {"name": "LinkedIn", "url": "https://www.linkedin.com/company/cross-tech-edu/"}
+  ],
+  "same_as": [
+    "https://www.facebook.com/profile.php?id=61578180279419",
+    "https://x.com/CrossTechEdu",
+    "https://www.linkedin.com/company/cross-tech-edu/",
+    "https://zalo.me/3402955950888745400"
+  ],
   "og_image": "img/og-image.png",
   "client_logos": [
     {"name": "Twendee Soft", "logo": "img/clients/twendee.svg", "width": 220, "height": 57, "url": "https://twendeesoft.com/", "fill": false},

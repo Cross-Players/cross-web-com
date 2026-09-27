@@ -2,14 +2,14 @@
 <footer class="site-footer">
   <div>
     <div class="site-footer__brand">
-      <img src="{{ asset(site.brand.logo) }}" alt="" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}" loading="lazy">
+      <img src="{{ asset(site.brand.logo) }}" alt="{{ site.brand.name }}" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}" loading="lazy">
       <span>{{ site.brand.wordmark }}<span class="brand__dot">.</span></span>
     </div>
     <p class="text-muted">{{ site.footer.tagline }}</p>
   </div>
   {% for col in site.footer.columns %}
   <nav class="footer-col" aria-label="{{ col.title }}">
-    <h2 class="footer-col__title">{{ col.title }}</h2>
+    <p class="footer-col__title">{{ col.title }}</p>
     <ul>
       {% for link in col.links %}
       <li><a href="{{ section_link(link.href, locale, on_home) }}">{{ link.label }}</a></li>
@@ -17,9 +17,33 @@
     </ul>
   </nav>
   {% endfor %}
+  {% if site.social %}
+  <nav class="footer-col" aria-label="{{ site.footer.follow_title }}">
+    <p class="footer-col__title">{{ site.footer.follow_title }}</p>
+    <ul>
+      {% for s in site.social %}
+      <li><a href="{{ s.url }}" target="_blank" rel="noopener me">{{ s.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
   <div class="footer-col">
-    <h2 class="footer-col__title">{{ site.footer.languages_title }}</h2>
+    <p class="footer-col__title">{{ site.footer.languages_title }}</p>
     <span class="text-muted">{{ site.footer.languages_text }}</span>
   </div>
+  {% if canonical is defined %}
+  {% set share_url = canonical|urlencode %}
+  {% set share_text = (page.meta.og_title or page.meta.title)|urlencode %}
+  <div class="site-footer__share">
+    <span class="footer-col__title">{{ site.footer.share_title }}</span>
+    {% for net, url in [
+      ('Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' ~ share_url),
+      ('X', 'https://x.com/intent/post?url=' ~ share_url ~ '&text=' ~ share_text),
+      ('LinkedIn', 'https://www.linkedin.com/sharing/share-offsite/?url=' ~ share_url)
+    ] %}
+    <a class="share-btn" href="{{ url }}" target="_blank" rel="noopener nofollow">{{ site.footer.share_on|replace('{network}', net) }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
   <p class="site-footer__legal text-muted">© {{ site.footer.year or "2026" }} {{ site.footer.copyright }}</p>
 </footer>
