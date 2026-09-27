@@ -22,6 +22,15 @@ python3 -m venv .venv
 
 ## Deploy
 
+**Vercel (current setup).** The Vercel project `crosstechedus-projects/cross-web-com`
+is linked to this GitHub repo: every push to `main` runs `vercel.json`
+(Python install → `freeze.py` → serve `build/` as static files, with
+long-cache headers for `/static/`). Without a `SITE_URL` env var the
+site uses the Vercel production domain for canonical/sitemap URLs; once a
+custom domain is added, set `SITE_URL=https://<domain>` in the Vercel project
+settings and redeploy.
+
+
 **Option A: static export (recommended, fastest).** Push the `build/` folder to
 Cloudflare Pages, Netlify, Vercel, GitHub Pages or S3 + CloudFront:
 

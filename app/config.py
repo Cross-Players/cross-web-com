@@ -16,7 +16,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 class Config:
     # Absolute public origin, used for canonical URLs, hreflang, sitemap and
     # JSON-LD. Must NOT end with a slash.
-    SITE_URL = os.environ.get("SITE_URL", "https://crossplayers.com").rstrip("/")
+    # On Vercel, falls back to the project's production domain
+    # (VERCEL_PROJECT_PRODUCTION_URL, e.g. "cross-web-com.vercel.app") until a
+    # custom domain is configured through SITE_URL.
+    SITE_URL = (
+        os.environ.get("SITE_URL")
+        or (
+            "https://" + os.environ["VERCEL_PROJECT_PRODUCTION_URL"]
+            if os.environ.get("VERCEL_PROJECT_PRODUCTION_URL")
+            else "https://crossplayers.com"
+        )
+    ).rstrip("/")
 
     # Where the JSON content lives. Swap CONTENT_BACKEND to plug in a CMS.
     CONTENT_BACKEND = os.environ.get("CONTENT_BACKEND", "json")
