@@ -7,14 +7,14 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "cross-web-com.vercel.app"
         }
       ],
-      "destination": "https://www.crosstechedu.com/:path*",
+      "destination": "https://www.crosstechedu.com/$1",
       "permanent": true
     }
   ],
