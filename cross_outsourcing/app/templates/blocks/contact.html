@@ -1,0 +1,37 @@
+{% set d = block.data %}
+<section id="{{ d.id }}" class="contact" aria-labelledby="{{ d.id }}-title">
+  <div class="contact__pitch">
+    <h2 id="{{ d.id }}-title">{{ d.title }}</h2>
+    <p>{{ d.body }}</p>
+  </div>
+  <address class="contact__details">
+    <div>
+      <div class="contact__label">{{ d.email_label }}</div>
+      <a class="contact__value" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </div>
+    <div>
+      <div class="contact__label">{{ d.phone_label }}</div>
+      <a class="contact__value" href="tel:{{ site.contact.phone_e164 }}">{{ site.contact.phone_display }}</a>
+    </div>
+    <div>
+      <div class="contact__label">{{ d.office_label }}</div>
+      <div class="contact__office">{{ d.office_text }}</div>
+    </div>
+    {% if site.contact.zalo_url %}
+    <div class="contact__zalo">
+      <div class="contact__label">{{ d.zalo_label }}</div>
+      <div class="contact__zalo-row">
+        {% if site.contact.zalo_qr %}
+        <a class="contact__qr" href="{{ site.contact.zalo_url }}" target="_blank" rel="noopener">
+          <img src="{{ asset(site.contact.zalo_qr) }}" alt="{{ d.zalo_qr_alt }}" width="320" height="320" loading="lazy" decoding="async">
+        </a>
+        {% endif %}
+        <div>
+          <a class="contact__value" href="{{ site.contact.zalo_url }}" target="_blank" rel="noopener">{{ d.zalo_cta }} <span aria-hidden="true">↗</span></a>
+          <p class="contact__hint">{{ d.zalo_hint }}</p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </address>
+</section>

@@ -1,0 +1,26 @@
+{% set d = block.data %}
+<section id="top" class="hero" aria-labelledby="hero-title">
+  <div class="hero__main">
+    <p class="eyebrow">{{ d.kicker }}</p>
+    <h1 id="hero-title">{{ d.title }}</h1>
+    <p class="hero__lead">{{ d.lead }}</p>
+    {% if d.sub %}<p class="hero__sub text-muted"{% if d.sub_lang %} lang="{{ d.sub_lang }}"{% endif %}>{{ d.sub }}</p>{% endif %}
+    <div class="btn-row">
+      {% for cta in d.ctas %}
+      <a class="btn btn-{{ cta.style }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="hero__aside">
+    <div class="rate">
+      <p class="eyebrow eyebrow--muted">{{ d.rate.label }}</p>
+      <p class="rate__figure"><span class="rate__amount">{{ d.rate.amount }}</span><span class="rate__unit">{{ d.rate.unit }}</span></p>
+      <p class="rate__note">{{ d.rate.note }}</p>
+    </div>
+    <dl class="stats">
+      {% for s in d.stats %}
+      <div class="stat"><dt>{{ s.value|nl2br }}</dt><dd class="text-muted">{{ s.label }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>

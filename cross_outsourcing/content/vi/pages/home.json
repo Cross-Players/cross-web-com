@@ -1,0 +1,254 @@
+{
+  "slug": "",
+  "translation_key": "home",
+  "meta": {
+    "title": "Outsourcing phần mềm Việt Nam, dev từ 6 triệu đ | Cross Tech Edu",
+    "description": "Cross Tech Edu nhận outsourcing web, mobile, backend, cloud và AI tại Hà Nội. Thuê dev từ 6 triệu đ/tháng, bảo hành 12 tháng. Báo giá trong 48 giờ.",
+    "updated": "2026-09-27"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Công ty phần mềm · Hà Nội, Việt Nam",
+        "title": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam.",
+        "lead": "Cross Tech Edu nhận outsourcing web, mobile, backend và cloud cho khách hàng Nhật, Hàn và châu Âu. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
+        "sub": "Your engineering team, based in Vietnam — web, mobile, backend and cloud delivery on two-week sprints.",
+        "sub_lang": "en",
+        "ctas": [
+          {"label": "Xem bảng giá", "href": "#pricing", "style": "primary"},
+          {"label": "Đặt lịch tư vấn 30 phút", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Giá thuê dev",
+          "amount": "6 triệu",
+          "unit": "đ / dev / tháng",
+          "note": "Mức khởi điểm thấp nhất thị trường Việt Nam. Full-time 160 giờ, PM và QA đi kèm miễn phí từ 3 dev."
+        },
+        "stats": [
+          {"value": "2 tuần", "label": "MVP đầu tiên lên tay bạn"},
+          {"value": "12 tháng", "label": "Bảo hành code sau bàn giao"},
+          {"value": "Flutter, React", "label": "Đội ngũ chuyên sâu, 1 codebase 2+ nền tảng"},
+          {"value": "Không\nràng buộc", "label": "Huỷ hợp đồng báo trước 15 ngày"}
+        ]
+      }
+    },
+    {
+      "type": "clients",
+      "data": {"label": "Đang đồng hành"}
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Dịch vụ / Services",
+        "title": "Chín mảng chúng tôi nhận, không hơn.",
+        "intro": "Mỗi mảng có một đội cố định và một quy trình review riêng. Bạn thuê theo người hoặc theo trọn gói dự án — cách nào cũng dùng cùng một đội.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. Trang giới thiệu tới hệ thống nội bộ nhiều vai trò."},
+          {"title": "Mobile app", "body": "Flutter và React Native. Một codebase cho iOS và Android, publish store hộ bạn."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST và GraphQL, tài liệu API bàn giao kèm."},
+          {"title": "UI/UX design", "body": "Figma, design system, prototype bấm được trước khi viết dòng code đầu tiên."},
+          {"title": "QA / Testing", "body": "Test thủ công và tự động, chặn merge khi chưa đạt. Báo cáo mỗi sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring và tối ưu chi phí hạ tầng."},
+          {"title": "AI / Data", "body": "Tích hợp LLM, RAG trên dữ liệu nội bộ, data pipeline và dashboard báo cáo."},
+          {"title": "Dedicated team", "body": "Thuê nhân sự theo tháng, bạn quản lý trực tiếp, làm theo giờ của bạn."},
+          {"title": "Bảo trì & hỗ trợ", "body": "SLA phản hồi 4 giờ, hotfix trong ngày, trực 24/7 cho hệ thống đang chạy."}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Bảng giá / Pricing",
+        "title": "Giá tối ưu nhất cho SMEs, công khai trên trang này.",
+        "intro": "Không có bậc giá ẩn, không phí khởi tạo, không phí quản lý. Báo giá chi tiết gửi trong 48 giờ kể từ khi nhận mô tả yêu cầu.",
+        "groups": [
+          {
+            "title": "Thuê dev theo tháng — VNĐ / dev / tháng",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 năm", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thực thi task đã bóc tách sẵn, làm việc dưới review của middle trở lên.", "schema": {"min_price": 6000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 năm · phổ biến nhất", "price": "16", "plus": true, "magnitude": "triệu", "currency_label": "đ", "featured": true, "note": "Chủ động nhận module, tự bóc tách, review code cho junior trong team.", "schema": {"min_price": 16000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Senior · 5+ năm", "price": "36", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thiết kế kiến trúc, dẫn dắt đội, làm việc trực tiếp với CTO phía bạn.", "schema": {"min_price": 36000000, "currency": "VND", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Gói trọn dự án — VNĐ",
+            "kind": "package",
+            "items": [
+              {"label": "Website giới thiệu", "price": "999.000", "currency_label": "đ", "note": "5 trang, responsive, tên miền và hosting năm đầu. Bàn giao trong 5 ngày.", "schema": {"price": 999000, "currency": "VND"}},
+              {"label": "Web app", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Đăng nhập, phân quyền, dashboard, API và tài liệu. Thường 3–6 tuần.", "schema": {"min_price": 6000000, "currency": "VND"}},
+              {"label": "Mobile app", "price": "30", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "iOS và Android bằng Flutter, backend kèm theo, publish lên hai store. 6–10 tuần.", "schema": {"min_price": 30000000, "currency": "VND"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Xem bảng giá chi tiết",
+          "href": "#contact",
+          "note": "Bao gồm những gì, không bao gồm những gì, và điều kiện thanh toán."
+        }
+      }
+    },
+    {
+      "type": "products",
+      "data": {
+        "id": "work",
+        "kicker": "Case studies",
+        "title": "Sản phẩm chúng tôi đã tham gia",
+        "intro": "Mỗi thẻ có hai mặt: App Store và Google Play. Bấm vào thẻ để mở ứng dụng trên cửa hàng, bấm “Lật thẻ” để đổi sang nền tảng còn lại.",
+        "ui": {
+          "flip_to_google_play": "Lật thẻ · Google Play",
+          "flip_to_app_store": "Lật thẻ · App Store",
+          "open_in": "Mở trên {store}",
+          "new_tab": "(mở tab mới)",
+          "flip_label": "Lật thẻ {name} sang mặt Google Play"
+        },
+        "items": [
+          {
+            "name": "VinWonders",
+              "icon": "img/products/vinwonders-icon.webp",
+              "cover": "img/products/vinwonders-cover.webp",
+            "publisher": "Vingroup",
+            "body": "Ứng dụng chính thức của VinWonders: đặt vé, lên lịch trình, bản đồ số, lịch biểu diễn và ưu đãi.",
+            "tags": [
+              "Việt Nam",
+              "Du lịch · Giải trí"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "VinWonders: Vé & Trải nghiệm",
+                "lang": "vi",
+                "url": "https://apps.apple.com/vn/app/vinwonders-v%C3%A9-tr%E1%BA%A3i-nghi%E1%BB%87m/id1590471592?l=vi"
+              },
+              {
+                "store": "google_play",
+                "app_name": "VinWonders: Theme Parks",
+                "lang": "en",
+                "url": "https://play.google.com/store/apps/details?id=com.vinwonders.app"
+              }
+            ]
+          },
+          {
+            "name": "GMO賃貸DX — Chủ nhà",
+              "icon": "img/products/gmo-owner-icon.webp",
+              "cover": "img/products/gmo-owner-cover.webp",
+            "publisher": "GMO ReTech",
+            "body": "App cho chủ nhà cho thuê tại Nhật: chat với công ty quản lý, báo cáo thu chi hằng tháng, duyệt báo giá sửa chữa, lưu trữ tài liệu.",
+            "tags": [
+              "Nhật Bản",
+              "Bất động sản"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "GMO賃貸DX オーナーアプリ",
+                "lang": "ja",
+                "url": "https://apps.apple.com/jp/app/gmo%E8%B3%83%E8%B2%B8dx-%E3%82%AA%E3%83%BC%E3%83%8A%E3%83%BC%E3%82%A2%E3%83%97%E3%83%AA/id1531075216"
+              },
+              {
+                "store": "google_play",
+                "app_name": "GMO賃貸DX オーナーアプリ",
+                "lang": "ja",
+                "url": "https://play.google.com/store/apps/details?id=com.chintaidx.kanri.owner"
+              }
+            ]
+          },
+          {
+            "name": "GMO賃貸DX — Cư dân",
+              "icon": "img/products/gmo-resident-icon.webp",
+              "cover": "img/products/gmo-resident-cover.webp",
+            "publisher": "GMO ReTech",
+            "body": "App cho người thuê nhà tại Nhật: nhắn tin với công ty quản lý, nhận thông báo, báo sự cố và sửa chữa.",
+            "tags": [
+              "Nhật Bản",
+              "Bất động sản"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "GMO賃貸DX 入居者アプリ",
+                "lang": "ja",
+                "url": "https://apps.apple.com/jp/app/gmo%E8%B3%83%E8%B2%B8dx-%E5%85%A5%E5%B1%85%E8%80%85%E3%82%A2%E3%83%97%E3%83%AA/id1548615608"
+              },
+              {
+                "store": "google_play",
+                "app_name": "GMO賃貸DX 入居者アプリ",
+                "lang": "ja",
+                "url": "https://play.google.com/store/apps/details?id=com.chintaidx.kanri.resident"
+              }
+            ]
+          },
+          {
+            "name": "EZ Rx",
+              "icon": "img/products/ezrx-icon.webp",
+              "cover": "img/products/ezrx-cover.webp",
+            "publisher": "Zuellig Pharma · ZP Marketplace",
+            "body": "Nền tảng thương mại điện tử B2B ngành y tế: tìm, đặt hàng, đổi trả và thanh toán sản phẩm dược.",
+            "tags": [
+              "Châu Á",
+              "Y tế · B2B"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "EZ Rx",
+                "lang": null,
+                "url": "https://apps.apple.com/vn/app/ez-rx/id6450109562?l=vi"
+              },
+              {
+                "store": "google_play",
+                "app_name": "EZ Rx",
+                "lang": null,
+                "url": "https://play.google.com/store/apps/details?id=com.zuelligpharma.ezrxplus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Khách hàng / Clients",
+        "title": "Khách hàng của chúng tôi.",
+        "intro": "Những doanh nghiệp đang làm việc cùng đội ngũ Cross Tech Edu. Bấm vào logo để xem trang web của khách hàng.",
+        "link_label": "Mở trang web của {name} (tab mới)"
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Quy trình / Process",
+        "title": "Từ email đầu tiên đến bản chạy thật: năm bước.",
+        "steps": [
+          {"title": "Tư vấn & báo giá", "body": "Bạn gửi mô tả yêu cầu, chúng tôi hỏi lại đúng những gì cần để chốt phạm vi.", "duration": "48 giờ"},
+          {"title": "Chốt scope & hợp đồng", "body": "Danh sách tính năng, mốc bàn giao và điều kiện thanh toán viết ra trước khi bắt đầu.", "duration": "3 ngày"},
+          {"title": "Sprint hai tuần", "body": "Mỗi sprint kết thúc bằng một bản chạy được trên môi trường staging của bạn.", "duration": "2 tuần / lần"},
+          {"title": "QA & bàn giao", "body": "Test hồi quy, tài liệu API, source code và quyền truy cập hạ tầng chuyển về bạn.", "duration": "1 tuần"},
+          {"title": "Bảo hành & vận hành", "body": "Sửa lỗi miễn phí trong 12 tháng, gói vận hành tính riêng nếu bạn cần trực 24/7.", "duration": "12 tháng"}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Gửi yêu cầu, nhận báo giá trong 48 giờ.",
+        "body": "Kèm mô tả sản phẩm, mốc thời gian mong muốn và ngân sách dự kiến — chúng tôi trả lời bằng phạm vi công việc và giá cụ thể, không phải một email chào hàng.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}

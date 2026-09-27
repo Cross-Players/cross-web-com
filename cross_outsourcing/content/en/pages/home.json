@@ -1,0 +1,255 @@
+{
+  "slug": "",
+  "translation_key": "home",
+  "meta": {
+    "title": "Software Outsourcing Vietnam, Devs from $300 | Cross Tech Edu",
+    "description": "Cross Tech Edu is a Hanoi-based software outsourcing company: web, mobile, backend, cloud and AI. Developers from 300 USD/month, 12-month warranty.",
+    "updated": "2026-09-27",
+    "og_image": "img/og-image-en.png"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Software outsourcing company · Hanoi, Vietnam",
+        "title": "Your engineering team, based in Vietnam.",
+        "lead": "Cross Tech Edu delivers outsourced web, mobile, backend and cloud work for clients in Japan, Korea and Europe. Delivery in two-week sprints, contracts with no minimum term.",
+        "sub": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam — web, mobile, backend và cloud, bàn giao theo sprint 2 tuần.",
+        "sub_lang": "vi",
+        "ctas": [
+          {"label": "See pricing", "href": "#pricing", "style": "primary"},
+          {"label": "Book a 30-minute call", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Developer rate",
+          "amount": "300",
+          "unit": "USD / dev / month",
+          "note": "The lowest starting rate in the Vietnamese market. Full-time 160 hours, with PM and QA included free from 3 developers."
+        },
+        "stats": [
+          {"value": "2 weeks", "label": "Until your first MVP is in your hands"},
+          {"value": "12 months", "label": "Code warranty after handover"},
+          {"value": "Flutter, React", "label": "Specialist team, one codebase for 2+ platforms"},
+          {"value": "No\nlock-in", "label": "Cancel with 15 days' notice"}
+        ]
+      }
+    },
+    {
+      "type": "clients",
+      "data": {"label": "Working with"}
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Services / Dịch vụ",
+        "title": "Nine things we do, and nothing more.",
+        "intro": "Each area has a fixed team and its own review process. Hire by the person or by the whole project — either way you work with the same team.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. From company websites to internal systems with many roles."},
+          {"title": "Mobile app", "body": "Flutter and React Native. One codebase for iOS and Android, and we publish to the stores for you."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST and GraphQL, with API documentation delivered."},
+          {"title": "UI/UX design", "body": "Figma, design systems, clickable prototypes before the first line of code."},
+          {"title": "QA / Testing", "body": "Manual and automated tests that block merges until they pass. A report every sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring and infrastructure cost optimisation."},
+          {"title": "AI / Data", "body": "LLM integration, RAG over your internal data, data pipelines and reporting dashboards."},
+          {"title": "Dedicated team", "body": "Monthly staffing that you manage directly, working in your time zone."},
+          {"title": "Maintenance & support", "body": "4-hour response SLA, same-day hotfixes, 24/7 on-call for production systems."}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Pricing / Bảng giá",
+        "title": "The most optimized prices for SMEs, published on this page.",
+        "intro": "No hidden tiers, no setup fee, no management fee. A detailed quote within 48 hours of receiving your requirements.",
+        "groups": [
+          {
+            "title": "Monthly developers — USD / dev / month",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 years", "price": "300", "plus": true, "currency_label": "USD", "note": "Executes pre-scoped tasks, working under review from a middle developer or above.", "schema": {"min_price": 300, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 years · most popular", "price": "600", "plus": true, "currency_label": "USD", "featured": true, "note": "Owns modules end-to-end, breaks down work and reviews code for juniors on the team.", "schema": {"min_price": 600, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Senior · 5+ years", "price": "1200", "plus": true, "currency_label": "USD", "note": "Designs architecture, leads the team and works directly with your CTO.", "schema": {"min_price": 1200, "currency": "USD", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Fixed-price projects — USD",
+            "kind": "package",
+            "items": [
+              {"label": "Company website", "price": "39", "currency_label": "USD", "note": "5 pages, responsive, domain and first-year hosting. Delivered in 5 days.", "schema": {"price": 39, "currency": "USD"}},
+              {"label": "Web app", "price": "230", "plus": true, "currency_label": "USD", "note": "Login, roles, dashboard, API and documentation. Usually 3–6 weeks.", "schema": {"min_price": 230, "currency": "USD"}},
+              {"label": "Mobile app", "price": "1,150", "plus": true, "currency_label": "USD", "note": "iOS and Android native, cross-platform with Flutter, React backend, published to both stores. 6–10 weeks.", "schema": {"min_price": 1150, "currency": "USD"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Get detailed pricing",
+          "href": "#contact",
+          "note": "What is included, what is not, and payment terms."
+        }
+      }
+    },
+    {
+      "type": "products",
+      "data": {
+        "id": "work",
+        "kicker": "Case studies",
+        "title": "Products we have worked on",
+        "intro": "Each card has two sides: App Store and Google Play. Click a card to open the app in its store, or “Flip card” to switch platform.",
+        "ui": {
+          "flip_to_google_play": "Flip card · Google Play",
+          "flip_to_app_store": "Flip card · App Store",
+          "open_in": "Open on {store}",
+          "new_tab": "(opens in a new tab)",
+          "flip_label": "Flip the {name} card to Google Play"
+        },
+        "items": [
+          {
+            "name": "VinWonders",
+              "icon": "img/products/vinwonders-icon.webp",
+              "cover": "img/products/vinwonders-cover.webp",
+            "publisher": "Vingroup",
+            "body": "The official VinWonders app: tickets, itineraries, digital maps, show times and offers.",
+            "tags": [
+              "Vietnam",
+              "Travel · Leisure"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "VinWonders: Vé & Trải nghiệm",
+                "lang": "vi",
+                "url": "https://apps.apple.com/vn/app/vinwonders-v%C3%A9-tr%E1%BA%A3i-nghi%E1%BB%87m/id1590471592?l=vi"
+              },
+              {
+                "store": "google_play",
+                "app_name": "VinWonders: Theme Parks",
+                "lang": "en",
+                "url": "https://play.google.com/store/apps/details?id=com.vinwonders.app"
+              }
+            ]
+          },
+          {
+            "name": "GMO Rental DX — Owners",
+              "icon": "img/products/gmo-owner-icon.webp",
+              "cover": "img/products/gmo-owner-cover.webp",
+            "publisher": "GMO ReTech",
+            "body": "An app for rental property owners in Japan: chat with the management company, monthly income reports, repair-quote approvals and document storage.",
+            "tags": [
+              "Japan",
+              "Real estate"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "GMO賃貸DX オーナーアプリ",
+                "lang": "ja",
+                "url": "https://apps.apple.com/jp/app/gmo%E8%B3%83%E8%B2%B8dx-%E3%82%AA%E3%83%BC%E3%83%8A%E3%83%BC%E3%82%A2%E3%83%97%E3%83%AA/id1531075216"
+              },
+              {
+                "store": "google_play",
+                "app_name": "GMO賃貸DX オーナーアプリ",
+                "lang": "ja",
+                "url": "https://play.google.com/store/apps/details?id=com.chintaidx.kanri.owner"
+              }
+            ]
+          },
+          {
+            "name": "GMO Rental DX — Residents",
+              "icon": "img/products/gmo-resident-icon.webp",
+              "cover": "img/products/gmo-resident-cover.webp",
+            "publisher": "GMO ReTech",
+            "body": "An app for tenants in Japan: message the management company, get notices, report issues and repairs.",
+            "tags": [
+              "Japan",
+              "Real estate"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "GMO賃貸DX 入居者アプリ",
+                "lang": "ja",
+                "url": "https://apps.apple.com/jp/app/gmo%E8%B3%83%E8%B2%B8dx-%E5%85%A5%E5%B1%85%E8%80%85%E3%82%A2%E3%83%97%E3%83%AA/id1548615608"
+              },
+              {
+                "store": "google_play",
+                "app_name": "GMO賃貸DX 入居者アプリ",
+                "lang": "ja",
+                "url": "https://play.google.com/store/apps/details?id=com.chintaidx.kanri.resident"
+              }
+            ]
+          },
+          {
+            "name": "EZ Rx",
+              "icon": "img/products/ezrx-icon.webp",
+              "cover": "img/products/ezrx-cover.webp",
+            "publisher": "Zuellig Pharma · ZP Marketplace",
+            "body": "B2B healthcare e-commerce: search, order, return and pay for pharmaceutical products.",
+            "tags": [
+              "Asia",
+              "Healthcare · B2B"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "EZ Rx",
+                "lang": null,
+                "url": "https://apps.apple.com/vn/app/ez-rx/id6450109562?l=vi"
+              },
+              {
+                "store": "google_play",
+                "app_name": "EZ Rx",
+                "lang": null,
+                "url": "https://play.google.com/store/apps/details?id=com.zuelligpharma.ezrxplus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Clients / Khách hàng",
+        "title": "Our clients.",
+        "intro": "Companies working with the Cross Tech Edu team today. Click a logo to visit the client's website.",
+        "link_label": "Visit the {name} website (opens in a new tab)"
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Process / Quy trình",
+        "title": "From the first email to production: five steps.",
+        "steps": [
+          {"title": "Consultation & quote", "body": "You send your requirements; we ask exactly what we need to lock the scope.", "duration": "48 hours"},
+          {"title": "Scope & contract", "body": "Features, delivery milestones and payment terms are written down before we start.", "duration": "3 days"},
+          {"title": "Two-week sprints", "body": "Every sprint ends with a working build on your staging environment.", "duration": "Every 2 weeks"},
+          {"title": "QA & handover", "body": "Regression tests, API docs, source code and infrastructure access handed over to you.", "duration": "1 week"},
+          {"title": "Warranty & operations", "body": "Free bug fixes for 12 months; 24/7 operations is a separate plan if you need it.", "duration": "12 months"}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Send your brief, get a quote in 48 hours.",
+        "body": "Include a product description, your target timeline and expected budget — we reply with a concrete scope and price, not a sales email.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "zalo_label": "Company Zalo",
+        "zalo_cta": "Message us on Zalo",
+        "zalo_hint": "Scan the QR code with the Zalo app, or tap to open the chat.",
+        "zalo_qr_alt": "Cross Tech Edu Zalo QR code",
+        "office_label": "Office",
+        "office_text": "Hanoi, Vietnam · working in JST / KST / CET hours"
+      }
+    }
+  ]
+}

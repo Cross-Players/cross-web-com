@@ -1,0 +1,7 @@
+{% set d = block.data %}
+<section class="clients" aria-label="{{ d.label }}">
+  <p class="eyebrow eyebrow--muted">{{ d.label }}</p>
+  <ul>
+    {% for c in d.get('items') or site.clients %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,22 @@
+{% set d = block.data %}
+<section id="{{ d.id }}" class="section" aria-labelledby="{{ d.id }}-title">
+  {% include "blocks/_section_head.html" %}
+  {% for g in d.groups %}
+  <div class="subhead"><h3>{{ g.title }}</h3></div>
+  <ul class="grid-3 grid-3--tight">
+    {% for t in g['items'] %}
+    <li class="tier tier--{{ g.kind }}{% if t.featured %} tier--featured{% endif %}">
+      <h4 class="tier__label{% if not t.featured %} text-muted{% endif %}">{{ t.label }}</h4>
+      <p class="tier__price"><span class="tier__amount">{{ t.price }}{% if t.plus %}<sup class="tier__plus">+</sup>{% endif %}{% if t.magnitude %} {{ t.magnitude }}{% endif %}</span>{% if t.currency_label %}<span class="tier__currency">{{ t.currency_label }}</span>{% endif %}</p>
+      <p class="tier__note text-muted">{{ t.note }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  {% if d.cta %}
+  <div class="pricing-cta">
+    <a class="btn btn-primary" href="{{ d.cta.href }}">{{ d.cta.label }}</a>
+    <span class="text-muted">{{ d.cta.note }}</span>
+  </div>
+  {% endif %}
+</section>

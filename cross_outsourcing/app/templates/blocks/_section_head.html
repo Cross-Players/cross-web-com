@@ -1,0 +1,14 @@
+{% if d.intro %}
+<div class="section-head">
+  <div class="section-head__title">
+    <p class="eyebrow">{{ d.kicker }}</p>
+    <h2 id="{{ d.id }}-title">{{ d.title }}</h2>
+  </div>
+  <div class="section-head__intro"><p class="text-muted">{{ d.intro }}</p></div>
+</div>
+{% else %}
+<div class="section-head section-head--single">
+  <p class="eyebrow">{{ d.kicker }}</p>
+  <h2 id="{{ d.id }}-title">{{ d.title }}</h2>
+</div>
+{% endif %}

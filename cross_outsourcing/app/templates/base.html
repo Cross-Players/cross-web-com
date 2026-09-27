@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.brand.name }}{% endblock %}</title>
+{% block meta %}{% endblock %}
+<meta name="theme-color" content="#f3f2f2">
+<link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
+{# Only the subsets the page's language actually needs are preloaded. #}
+{% if locale == 'vi' %}
+<link rel="preload" href="{{ url_for('static', filename='fonts/archivo-vietnamese.woff2') }}" as="font" type="font/woff2" crossorigin>
+{% endif %}
+<link rel="preload" href="{{ url_for('static', filename='fonts/archivo-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+<style>{{ critical_css() }}</style>
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip-link" href="#main">{{ site.ui.skip_to_content }}</a>
+<div class="page">
+{% include "partials/header.html" %}
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+{% include "partials/footer.html" %}
+</div>
+</body>
+</html>

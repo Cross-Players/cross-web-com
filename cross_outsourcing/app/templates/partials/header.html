@@ -1,0 +1,28 @@
+{% set on_home = page is defined and page.slug == '' %}
+<header class="site-header">
+  <a class="brand" href="{{ home_url(locale) }}" aria-label="{{ site.ui.home_label }}">
+    <img src="{{ asset(site.brand.logo) }}" alt="" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}">
+    <span>{{ site.brand.wordmark }}<span class="brand__dot">.</span></span>
+  </a>
+  <nav class="site-nav" aria-label="{{ site.ui.menu_label }}">
+    <ul>
+      {% for item in site.nav %}
+      <li><a href="{{ section_link(item.href, locale, on_home) }}">{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="header-actions">
+    <nav class="lang-switch" aria-label="{{ site.ui.language_label }}">
+      {% set langs = alternates if alternates is defined else {'vi': home_url('vi'), 'en': home_url('en')} %}
+      {% for loc, path in langs.items() %}
+      {% if not loop.first %}<span class="lang-switch__sep"> / </span>{% endif %}
+      {% if loc == locale %}
+      <span aria-current="page" lang="{{ loc }}">{{ loc|upper }}</span>
+      {% else %}
+      <a href="{{ path }}" hreflang="{{ loc }}" lang="{{ loc }}">{{ loc|upper }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+    <a class="btn btn-primary" href="{{ section_link(site.header_cta.href, locale, on_home) }}">{{ site.header_cta.label }}</a>
+  </div>
+</header>

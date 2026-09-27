@@ -1,0 +1,35 @@
+{
+  "brand": {
+    "name": "Cross Tech Edu",
+    "legal_name": "Cross Tech Edu",
+    "wordmark": "CROSS TECH EDU",
+    "logo": "img/logo-x.webp",
+    "logo_png": "img/logo-x-512.png",
+    "logo_width": 128,
+    "logo_height": 128
+  },
+  "contact": {
+    "email": "crosstechedu@gmail.com",
+    "phone_display": "+84 338 305 895",
+    "phone_e164": "+84338305895",
+    "zalo_url": "https://zalo.me/3402955950888745400",
+    "zalo_qr": "img/zalo-qr.png"
+  },
+  "address": {
+    "locality": "Hà Nội",
+    "country": "VN"
+  },
+  "price_range": "$",
+  "area_served": ["VN", "JP", "KR", "EU"],
+  "languages": ["vi", "en", "ja", "ko"],
+  "same_as": ["https://zalo.me/3402955950888745400"],
+  "og_image": "img/og-image.png",
+  "client_logos": [
+    {"name": "Twendee Soft", "logo": "img/clients/twendee.svg", "width": 220, "height": 57, "url": "https://twendeesoft.com/", "fill": false},
+    {"name": "JVB Corp", "logo": "img/clients/jvb.svg", "width": 127, "height": 37, "url": "https://jvb-corp.com/vi/", "fill": false},
+    {"name": "ITED", "logo": "img/clients/ited.webp", "width": 192, "height": 192, "url": "https://ited.edu.vn/", "fill": true},
+    {"name": "VFast Soft", "logo": "img/clients/vfast.webp", "width": 304, "height": 128, "url": "https://vfastsoft.com/", "fill": false},
+    {"name": "Bfast VN", "logo": "img/clients/bfast.webp", "width": 300, "height": 63, "url": "https://itviec.com/companies/bfast-system", "fill": false}
+  ],
+  "clients": ["VFast", "ITED", "Lái Xe Vạn Xuân", "Cross Players"]
+}

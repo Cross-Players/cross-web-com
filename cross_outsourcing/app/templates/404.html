@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ site.ui.not_found_title }} | {{ site.brand.name }}{% endblock %}
+{% block meta %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section class="not-found">
+  <p class="eyebrow">404</p>
+  <h1>{{ site.ui.not_found_title }}</h1>
+  <p class="text-muted">{{ site.ui.not_found_body }}</p>
+  <a class="btn btn-primary" href="{{ home_url(locale) }}">{{ site.ui.not_found_cta }}</a>
+</section>
+{% endblock %}

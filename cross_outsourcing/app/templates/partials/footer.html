@@ -1,0 +1,25 @@
+{% set on_home = page is defined and page.slug == '' %}
+<footer class="site-footer">
+  <div>
+    <div class="site-footer__brand">
+      <img src="{{ asset(site.brand.logo) }}" alt="" width="{{ site.brand.logo_width }}" height="{{ site.brand.logo_height }}" loading="lazy">
+      <span>{{ site.brand.wordmark }}<span class="brand__dot">.</span></span>
+    </div>
+    <p class="text-muted">{{ site.footer.tagline }}</p>
+  </div>
+  {% for col in site.footer.columns %}
+  <nav class="footer-col" aria-label="{{ col.title }}">
+    <h2 class="footer-col__title">{{ col.title }}</h2>
+    <ul>
+      {% for link in col.links %}
+      <li><a href="{{ section_link(link.href, locale, on_home) }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endfor %}
+  <div class="footer-col">
+    <h2 class="footer-col__title">{{ site.footer.languages_title }}</h2>
+    <span class="text-muted">{{ site.footer.languages_text }}</span>
+  </div>
+  <p class="site-footer__legal text-muted">© {{ site.footer.year or "2026" }} {{ site.footer.copyright }}</p>
+</footer>

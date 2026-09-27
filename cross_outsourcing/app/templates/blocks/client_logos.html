@@ -1,0 +1,27 @@
+{# Infinite horizontal logo carousel (pure CSS).
+   Each track repeats the logo set until it is wider than any screen (2560px),
+   and the track is rendered twice so translateX(-100%) loops without a gap.
+   Only the very first set is exposed to assistive tech and the tab order. #}
+{% set d = block.data %}
+{% set logos = d.get('items') or site.client_logos %}
+{% set cell_w = 260 %}
+{% set repeat = [1, ((2560 / (logos|length * cell_w)) | round(0, 'ceil') | int)] | max %}
+<section id="{{ d.id }}" class="section" aria-labelledby="{{ d.id }}-title">
+  {% include "blocks/_section_head.html" %}
+  <div class="marquee" style="--marquee-count: {{ logos|length * repeat }}">
+    {% for track in range(2) %}
+    <ul class="marquee__track"{% if track %} aria-hidden="true"{% endif %}>
+      {% for set in range(repeat) %}
+      {% set real = track == 0 and set == 0 %}
+      {% for c in logos %}
+      <li{% if not real and track == 0 %} aria-hidden="true"{% endif %}>
+        <a class="logo-card{% if c.fill %} logo-card--fill{% endif %}" href="{{ c.url }}" target="_blank" rel="noopener"{% if real %} aria-label="{{ d.link_label|replace('{name}', c.name) }}"{% else %} tabindex="-1"{% endif %}>
+          <img src="{{ asset(c.logo) }}" alt="{{ c.name if real else '' }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" decoding="async">
+        </a>
+      </li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</section>

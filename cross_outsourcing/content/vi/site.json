@@ -1,0 +1,43 @@
+{
+  "organization_description": "Công ty phần mềm tại Việt Nam: web, mobile, backend, cloud, AI và thuê đội ngũ dev theo tháng từ 6 triệu đ/dev.",
+  "ui": {
+    "skip_to_content": "Bỏ qua, đến nội dung chính",
+    "menu_label": "Điều hướng chính",
+    "language_label": "Ngôn ngữ",
+    "home_label": "Cross Tech Edu — trang chủ",
+    "not_found_title": "Không tìm thấy trang",
+    "not_found_body": "Trang bạn tìm không tồn tại hoặc đã được chuyển đi.",
+    "not_found_cta": "Về trang chủ"
+  },
+  "nav": [
+    {"label": "Dịch vụ", "href": "#services"},
+    {"label": "Bảng giá", "href": "#pricing"},
+    {"label": "Case studies", "href": "#work"},
+    {"label": "Quy trình", "href": "#process"}
+  ],
+  "header_cta": {"label": "Nhận báo giá", "href": "#contact"},
+  "footer": {
+    "tagline": "Công ty phần mềm. Web, mobile, backend, cloud.",
+    "columns": [
+      {
+        "title": "Dịch vụ",
+        "links": [
+          {"label": "Web & mobile", "href": "#services"},
+          {"label": "Dedicated team", "href": "#services"},
+          {"label": "Bảo trì & hỗ trợ", "href": "#services"}
+        ]
+      },
+      {
+        "title": "Công ty",
+        "links": [
+          {"label": "Case studies", "href": "#work"},
+          {"label": "Quy trình", "href": "#process"},
+          {"label": "Bảng giá", "href": "#pricing"}
+        ]
+      }
+    ],
+    "languages_title": "Ngôn ngữ",
+    "languages_text": "Tiếng Việt · English · 日本語 · 한국어",
+    "copyright": "Cross Tech Edu. Bảo lưu mọi quyền."
+  }
+}

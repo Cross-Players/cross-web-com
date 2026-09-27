@@ -1,0 +1,14 @@
+{% set d = block.data %}
+<section id="{{ d.id }}" class="section" aria-labelledby="{{ d.id }}-title">
+  {% include "blocks/_section_head.html" %}
+  <ol class="steps">
+    {% for s in d.steps %}
+    <li class="step">
+      <div class="step__num" aria-hidden="true">{{ '%02d'|format(loop.index) }}</div>
+      <h3>{{ s.title }}</h3>
+      <p class="text-muted">{{ s.body }}</p>
+      <div class="step__dur">{{ s.duration }}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

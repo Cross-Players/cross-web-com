@@ -1,0 +1,43 @@
+{
+  "organization_description": "Software outsourcing company in Hanoi, Vietnam: web, mobile, backend, cloud, AI and dedicated developers from 300 USD per developer per month.",
+  "ui": {
+    "skip_to_content": "Skip to main content",
+    "menu_label": "Main navigation",
+    "language_label": "Language",
+    "home_label": "Cross Tech Edu — home",
+    "not_found_title": "Page not found",
+    "not_found_body": "The page you are looking for does not exist or has moved.",
+    "not_found_cta": "Back to home"
+  },
+  "nav": [
+    {"label": "Services", "href": "#services"},
+    {"label": "Pricing", "href": "#pricing"},
+    {"label": "Case studies", "href": "#work"},
+    {"label": "Process", "href": "#process"}
+  ],
+  "header_cta": {"label": "Get a quote", "href": "#contact"},
+  "footer": {
+    "tagline": "Software outsourcing company. Web, mobile, backend, cloud.",
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          {"label": "Web & mobile", "href": "#services"},
+          {"label": "Dedicated team", "href": "#services"},
+          {"label": "Maintenance & support", "href": "#services"}
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {"label": "Case studies", "href": "#work"},
+          {"label": "Process", "href": "#process"},
+          {"label": "Pricing", "href": "#pricing"}
+        ]
+      }
+    ],
+    "languages_title": "Languages",
+    "languages_text": "Tiếng Việt · English · 日本語 · 한국어",
+    "copyright": "Cross Tech Edu. All rights reserved."
+  }
+}

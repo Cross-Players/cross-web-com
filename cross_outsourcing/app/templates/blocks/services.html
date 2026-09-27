@@ -1,0 +1,13 @@
+{% set d = block.data %}
+<section id="{{ d.id }}" class="section" aria-labelledby="{{ d.id }}-title">
+  {% include "blocks/_section_head.html" %}
+  <ul class="grid-3">
+    {% for s in d['items'] %}
+    <li class="svc">
+      <div class="svc__num" aria-hidden="true">{{ '%02d'|format(loop.index) }}</div>
+      <h3>{{ s.title }}</h3>
+      <p class="text-muted">{{ s.body }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
