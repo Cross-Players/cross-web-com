@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}{{ meta.title }}{% endblock %}
+
+{% block meta %}
+{% include "partials/meta.html" %}
+<meta property="article:published_time" content="{{ article.published }}">
+<meta property="article:modified_time" content="{{ article.updated }}">
+{% endblock %}
+
+{% block content %}
+<article class="article" lang="{{ article.locale }}">
+  <header class="article__head">
+    <nav class="article__crumbs eyebrow" aria-label="{{ site.blog.breadcrumb_label }}">
+      <a href="{{ blog_home }}">{{ site.blog.back }}</a>
+    </nav>
+    <h1>{{ article.title }}</h1>
+    <p class="article__lead">{{ article.description }}</p>
+    <p class="article__meta text-muted">
+      {% if article.author %}{{ article.author }} · {% endif %}
+      <time datetime="{{ article.published }}">{{ article.published|date_label(locale) }}</time>
+      {% if article.updated != article.published %}
+      · {{ site.blog.updated }} <time datetime="{{ article.updated }}">{{ article.updated|date_label(locale) }}</time>
+      {% endif %}
+      · {{ site.blog.minutes|replace('{n}', article.reading_minutes|string) }}
+    </p>
+  </header>
+
+  {% if article.cover %}
+  <figure class="article__cover">
+    <img src="{{ asset(article.cover) }}" alt="{{ article.cover_alt or article.title }}">
+  </figure>
+  {% endif %}
+
+  <div class="prose">
+    {{ article.body|markdown }}
+  </div>
+
+  <aside class="article__cta" aria-label="{{ site.blog.cta_title }}">
+    <p class="article__cta-title">{{ site.blog.cta_title }}</p>
+    <p class="text-muted">{{ site.blog.cta_body }}</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="{{ home_url(locale) }}#contact">{{ site.blog.cta_label }}</a>
+      <a class="btn btn-secondary" href="{{ blog_home }}">{{ site.blog.more }}</a>
+    </div>
+  </aside>
+</article>
+{% endblock %}

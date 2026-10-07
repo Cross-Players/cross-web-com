@@ -7,7 +7,7 @@ from typing import Any
 
 from markupsafe import Markup
 
-from .content import ContentRepository, Page
+from .content import Article, ContentRepository, Page
 
 OG_LOCALES = {"vi": "vi_VN", "en": "en_US"}
 
@@ -18,6 +18,26 @@ def page_path(locale: str, slug: str, default_locale: str) -> str:
     if slug:
         parts.append(slug.strip("/"))
     return "/" + "".join(f"{p}/" for p in parts)
+
+
+def blog_path(locale: str, default_locale: str, slug: str = "") -> str:
+    """'/blog/', '/blog/<slug>/', '/en/blog/', '/en/blog/<slug>/'."""
+    return page_path(locale, "blog/" + slug if slug else "blog", default_locale)
+
+
+def article_alternates(
+    repo: ContentRepository, article: Article, locales: tuple[str, ...], default_locale: str
+) -> dict[str, str]:
+    """{locale: path} for every locale with an article sharing the translation_key."""
+    out: dict[str, str] = {}
+    for loc in locales:
+        match = next(
+            (a for a in repo.list_articles(loc) if a.translation_key == article.translation_key),
+            None,
+        )
+        if match is not None:
+            out[loc] = blog_path(loc, default_locale, match.slug)
+    return out
 
 
 def alternates(
@@ -66,20 +86,18 @@ def _offers(page: Page, site_url: str, page_url: str) -> list[dict[str, Any]]:
     return offers
 
 
-def jsonld(site: dict[str, Any], page: Page, site_url: str, page_url: str, locale: str) -> Markup:
-    org_id = site_url + "/#organization"
+def _organization(site: dict[str, Any], site_url: str, description: str) -> dict[str, Any]:
     contact = site["contact"]
     address = site["address"]
-
     organization = {
         "@type": "ProfessionalService",
-        "@id": org_id,
+        "@id": site_url + "/#organization",
         "name": site["brand"]["name"],
         "legalName": site["brand"].get("legal_name", site["brand"]["name"]),
         "url": site_url + "/",
         "logo": site_url + "/static/" + site["brand"].get("logo_png", site["brand"]["logo"]),
         "image": site_url + "/static/img/og-image.png",
-        "description": site.get("organization_description", page.meta.get("description", "")),
+        "description": site.get("organization_description", description),
         "email": contact["email"],
         "telephone": contact["phone_e164"],
         "priceRange": site.get("price_range", "$"),
@@ -100,17 +118,33 @@ def jsonld(site: dict[str, Any], page: Page, site_url: str, page_url: str, local
     }
     if site.get("same_as"):
         organization["sameAs"] = site["same_as"]
+    return organization
+
+
+def _website(site: dict[str, Any], site_url: str) -> dict[str, Any]:
+    return {
+        "@type": "WebSite",
+        "@id": site_url + "/#website",
+        "url": site_url + "/",
+        "name": site["brand"]["name"],
+        "publisher": {"@id": site_url + "/#organization"},
+        "inLanguage": list(OG_LOCALES.keys()),
+    }
+
+
+def _dump(payload: dict[str, Any]) -> Markup:
+    text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    # Prevent "</script>" injection from content.
+    return Markup(text.replace("</", "<\\/"))
+
+
+def jsonld(site: dict[str, Any], page: Page, site_url: str, page_url: str, locale: str) -> Markup:
+    org_id = site_url + "/#organization"
+    organization = _organization(site, site_url, page.meta.get("description", ""))
 
     graph: list[dict[str, Any]] = [
         organization,
-        {
-            "@type": "WebSite",
-            "@id": site_url + "/#website",
-            "url": site_url + "/",
-            "name": site["brand"]["name"],
-            "publisher": {"@id": org_id},
-            "inLanguage": list(OG_LOCALES.keys()),
-        },
+        _website(site, site_url),
         {
             "@type": "WebPage",
             "@id": page_url + "#webpage",
@@ -147,7 +181,74 @@ def jsonld(site: dict[str, Any], page: Page, site_url: str, page_url: str, local
         if offers:
             organization["makesOffer"] = offers
 
-    payload = {"@context": "https://schema.org", "@graph": graph}
-    text = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    # Prevent "</script>" injection from content.
-    return Markup(text.replace("</", "<\\/"))
+    return _dump({"@context": "https://schema.org", "@graph": graph})
+
+
+def blog_jsonld(
+    site: dict[str, Any],
+    site_url: str,
+    blog_url: str,
+    locale: str,
+    title: str,
+    description: str,
+    articles: list[tuple[Article, str]],
+) -> Markup:
+    """Blog index: the organization plus a schema.org Blog listing every post.
+    ``articles`` is a list of (article, absolute url)."""
+    org_id = site_url + "/#organization"
+    blog = {
+        "@type": "Blog",
+        "@id": blog_url + "#blog",
+        "url": blog_url,
+        "name": title,
+        "description": description,
+        "inLanguage": locale,
+        "publisher": {"@id": org_id},
+        "isPartOf": {"@id": site_url + "/#website"},
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": a.title,
+                "url": url,
+                "datePublished": a.published,
+                "dateModified": a.updated,
+            }
+            for a, url in articles
+        ],
+    }
+    graph = [_organization(site, site_url, description), _website(site, site_url), blog]
+    return _dump({"@context": "https://schema.org", "@graph": graph})
+
+
+def article_jsonld(
+    site: dict[str, Any],
+    article: Article,
+    site_url: str,
+    page_url: str,
+    blog_url: str,
+    image_url: str,
+) -> Markup:
+    org_id = site_url + "/#organization"
+    author: dict[str, Any] = (
+        {"@type": "Person", "name": article.author}
+        if article.author and article.author != site["brand"]["name"]
+        else {"@id": org_id}
+    )
+    posting = {
+        "@type": "BlogPosting",
+        "@id": page_url + "#article",
+        "mainEntityOfPage": page_url,
+        "url": page_url,
+        "headline": article.title,
+        "description": article.description,
+        "image": image_url,
+        "datePublished": article.published,
+        "dateModified": article.updated,
+        "inLanguage": article.locale,
+        "author": author,
+        "publisher": {"@id": org_id},
+        "isPartOf": {"@id": blog_url + "#blog"},
+        "wordCount": len(article.body.split()),
+    }
+    graph = [_organization(site, site_url, article.description), _website(site, site_url), posting]
+    return _dump({"@context": "https://schema.org", "@graph": graph})

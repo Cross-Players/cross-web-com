@@ -33,7 +33,7 @@
   </div>
   {% if canonical is defined %}
   {% set share_url = canonical|urlencode %}
-  {% set share_text = (page.meta.og_title or page.meta.title)|urlencode %}
+  {% set share_text = (meta.og_title or meta.title)|urlencode %}
   <div class="site-footer__share">
     <span class="footer-col__title">{{ site.footer.share_title }}</span>
     {% for net, url in [

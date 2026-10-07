@@ -1,10 +1,33 @@
 import json
 import re
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 import pytest
 
+from app.seo_audit import audit
+
 BASE = "https://example.test"
+
+VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
+VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
+EN_TOOLS = "/en/blog/free-ai-tools-for-small-business/"
+EN_GUIDE = "/en/blog/chatgpt-guide-for-small-business-owners/"
+
+
+def _article_paths() -> tuple[str, ...]:
+    """Every article in content/, so new posts (e.g. from the writing agent)
+    automatically go through the SEO, rendering and link checks."""
+    content = Path(__file__).resolve().parent.parent / "content"
+    paths = []
+    for f in sorted(content.glob("*/articles/*.json")):
+        locale = f.parent.parent.name
+        paths.append(("" if locale == "vi" else f"/{locale}") + f"/blog/{f.stem}/")
+    return tuple(paths)
+
+
+ARTICLE_PATHS = _article_paths()
+BLOG_PATHS = ("/blog/", "/en/blog/", *ARTICLE_PATHS)
 
 
 def _jsonld(html: str) -> dict:
@@ -64,7 +87,10 @@ def test_sitemap(client):
     root = ET.fromstring(r.data)
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     locs = [e.text for e in root.findall("s:url/s:loc", ns)]
-    assert locs == [f"{BASE}/", f"{BASE}/en/"]
+    assert locs[0] == f"{BASE}/" and f"{BASE}/en/" in locs
+    for path in BLOG_PATHS:
+        assert BASE + path in locs, path
+    assert len(locs) == 2 + len(BLOG_PATHS)
 
 
 def test_robots(client):
@@ -171,42 +197,11 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/"])
+@pytest.mark.parametrize("path", ["/", "/en/", *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
-    """Mirrors the checks of the external SEO audit."""
-    import collections
-    import html as H
-
+    """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)
-    text = lambda t: re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", "", t))).strip()
-
-    # canonical + self-referencing hreflang
-    canonical = re.search(r'rel="canonical" href="([^"]+)"', page).group(1)
-    assert canonical == BASE + path
-    assert f'hreflang="{"vi" if path == "/" else "en"}" href="{canonical}"' in page
-
-    # every image has a non-empty alt
-    imgs = re.findall(r"<img[^>]*>", page)
-    assert imgs and not [i for i in imgs if not re.search(r'alt="[^"]+"', i)]
-
-    # headings: no duplicates, sensible count
-    heads = [text(t) for _, t in re.findall(r"<h([1-6])[^>]*>(.*?)</h\1>", page, re.S)]
-    assert not [h for h, n in collections.Counter(heads).items() if n > 1], heads
-    assert len(heads) <= 30
-
-    # H1 words appear in the body copy
-    h1 = text(re.search(r"<h1[^>]*>(.*?)</h1>", page, re.S).group(1))
-    body = text(page.split("</h1>", 1)[1])
-    words = [w for w in re.findall(r"\w{4,}", h1.lower())]
-    assert sum(w in body.lower() for w in words) >= len(words) - 1, words
-
-    # links: unique anchor texts, no empty anchors, limited external links
-    links = re.findall(r'<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>', page, re.S)
-    anchors = [text(t) or re.search(r'alt="([^"]*)"', t).group(1) for _, t in links]
-    assert all(anchors)
-    assert not [a for a, n in collections.Counter(anchors).items() if n > 1]
-    external = [h for h, _ in links if h.startswith("http")]
-    assert len(external) <= 20, len(external)
+    assert audit(page, BASE + path, "en" if path.startswith("/en/") else "vi") == []
 
     # social profiles + share buttons
     for url in ("facebook.com/profile.php?id=61578180279419", "x.com/CrossTechEdu", "linkedin.com/company/cross-tech-edu"):

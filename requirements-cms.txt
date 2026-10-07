@@ -1,0 +1,4 @@
+# Blog CMS (cms/). Runs on your machine only: Vercel installs requirements.txt.
+-r requirements.txt
+Django>=5.2,<6
+Pillow>=10       # cover image uploads

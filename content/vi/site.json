@@ -13,8 +13,26 @@
     {"label": "Dịch vụ", "href": "#services"},
     {"label": "Bảng giá", "href": "#pricing"},
     {"label": "Case studies", "href": "#work"},
-    {"label": "Quy trình", "href": "#process"}
+    {"label": "Quy trình", "href": "#process"},
+    {"label": "Blog", "href": "/blog/"}
   ],
+  "blog": {
+    "meta_title": "Blog: AI và công nghệ cho doanh nghiệp nhỏ | Cross Tech Edu",
+    "meta_description": "Hướng dẫn dễ hiểu về AI, phần mềm và chuyển đổi số cho chủ doanh nghiệp vừa và nhỏ, không cần biết kỹ thuật.",
+    "kicker": "Blog",
+    "title": "AI và công nghệ cho doanh nghiệp nhỏ",
+    "intro": "Hướng dẫn ngắn, dễ hiểu, làm theo được ngay. Viết cho chủ doanh nghiệp bận rộn, không cần biết kỹ thuật.",
+    "list_label": "Danh sách bài viết",
+    "breadcrumb_label": "Đường dẫn",
+    "minutes": "{n} phút đọc",
+    "updated": "cập nhật",
+    "empty": "Chưa có bài viết nào. Hãy quay lại sau nhé.",
+    "cta_title": "Cần một công cụ riêng cho doanh nghiệp của bạn?",
+    "cta_body": "Cross Tech Edu làm web, app và tích hợp AI cho doanh nghiệp vừa và nhỏ. Tư vấn 30 phút miễn phí.",
+    "cta_label": "Đặt lịch tư vấn",
+    "back": "Tất cả bài viết",
+    "more": "Đọc bài viết khác"
+  },
   "header_cta": {"label": "Nhận báo giá", "href": "#contact"},
   "footer": {
     "tagline": "Công ty phần mềm. Web, mobile, backend, cloud.",

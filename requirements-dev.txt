@@ -1,4 +1,4 @@
--r requirements.txt
+-r requirements-agent.txt
 pytest>=8
 Pillow>=10       # scripts/build_assets.py
 fonttools>=4.50  # scripts/build_assets.py

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ meta.title }}{% endblock %}
+
+{% block meta %}
+{% include "partials/meta.html" %}
+{% endblock %}
+
+{% block content %}
+<section class="blog-hero" aria-labelledby="blog-title">
+  <p class="eyebrow">{{ site.blog.kicker }}</p>
+  <h1 id="blog-title">{{ site.blog.title }}</h1>
+  <p class="blog-hero__intro text-muted">{{ site.blog.intro }}</p>
+</section>
+
+<section class="blog-list" aria-label="{{ site.blog.list_label }}">
+  {% if articles %}
+  <ol class="post-list">
+    {% for article, href in articles %}
+    <li class="post-card{% if article.cover %} post-card--cover{% endif %}">
+      {% if article.cover %}
+      {# Not a link: a second link to the same article would repeat the title as link text. #}
+      <div class="post-card__cover">
+        <img src="{{ asset(article.cover) }}" alt="{{ article.cover_alt or article.title }}" loading="lazy" width="480" height="270">
+      </div>
+      {% endif %}
+      <div class="post-card__body">
+        <p class="eyebrow eyebrow--muted">
+          <time datetime="{{ article.published }}">{{ article.published|date_label(locale) }}</time>
+          · {{ site.blog.minutes|replace('{n}', article.reading_minutes|string) }}
+        </p>
+        <h2 class="post-card__title"><a href="{{ href }}">{{ article.title }}</a></h2>
+        <p class="text-muted">{{ article.description }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="blog-empty text-muted">{{ site.blog.empty }}</p>
+  {% endif %}
+</section>
+{% endblock %}

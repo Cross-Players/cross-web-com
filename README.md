@@ -8,6 +8,7 @@ already modelled as CMS blocks.
 ```
 /        → Tiếng Việt (default)
 /en/     → English
+/blog/, /blog/<slug>/, /en/blog/, /en/blog/<slug>/  → blog
 /sitemap.xml, /robots.txt, /404.html
 ```
 
@@ -19,6 +20,94 @@ python3 -m venv .venv
 .venv/bin/flask --app wsgi --debug run          # http://127.0.0.1:5000
 .venv/bin/pytest -q                              # tests
 ```
+
+## Blog CMS (Django admin)
+
+Articles are written in a Django admin (`cms/`) that runs **on your machine**.
+The live site stays a static export on Vercel, so there is no server or
+database to host or pay for.
+
+```bash
+.venv/bin/pip install -r requirements-cms.txt        # once
+cd cms
+../.venv/bin/python manage.py migrate                # once: creates cms/db.sqlite3
+../.venv/bin/python manage.py createsuperuser        # once: your admin login
+../.venv/bin/python manage.py import_articles        # once per clone: loads existing articles
+../.venv/bin/python manage.py runserver 8001         # http://127.0.0.1:8001/admin/
+```
+
+**Posting an article:**
+
+1. In the admin, open **Articles → Add**. Write the title, a 70–160 character
+   description and the body in Markdown. The *Preview* section renders the body
+   after you save. A cover image is optional.
+2. Set **Status = Published** and save. The article is written to
+   `content/<vi|en>/articles/<slug>.json` (and its cover to
+   `app/static/img/articles/`). Drafts get no file. Unpublishing or deleting an
+   article removes its file.
+3. To check it locally, run the site (`flask --app wsgi --debug run`) and use
+   **View on site** in the admin.
+4. Publish: `git add content/*/articles/ app/static/img/articles/ && git commit -m "New article" && git push`.
+   Vercel rebuilds and the article is live at `/blog/<slug>/`, in the sitemap,
+   with `BlogPosting` JSON-LD.
+
+**Two languages:** write the English version as a separate article with
+language *English* and the **same translation key** as the Vietnamese one. The
+language switch and hreflang tags then link the two versions.
+
+The JSON files in git are the source of truth. `cms/db.sqlite3` is only a local
+working copy (gitignored). `import_articles` rebuilds it, and
+`export_articles` rewrites every file from it. Hand-editing the JSON files
+works too. Run `import_articles` afterwards so the admin sees the edits.
+
+CMS tests: `cd cms && ../.venv/bin/python manage.py test blog`.
+
+## Article-writing agent
+
+`agent/` uses Claude (`claude-opus-5-5`) to research a topic on the web and
+write a Vietnamese and an English article. It then opens a **Pull Request**
+for you to review. Nothing goes live until you merge it.
+
+```bash
+.venv/bin/pip install -r requirements-agent.txt      # once
+export ANTHROPIC_API_KEY=sk-ant-...                  # or: ant auth login
+.venv/bin/python -m agent "Hướng dẫn tạo Zalo OA cho cửa hàng"
+.venv/bin/python -m agent "Chatbot trả lời khách trên Facebook" --notes "Chỉ công cụ miễn phí"
+.venv/bin/python -m agent "..." --local              # only write into content/ for a local preview
+```
+
+What happens on each run:
+
+1. **Preflight.** It checks that `origin/main` already has the blog, before
+   spending anything on the API.
+2. **Research and writing.** Claude uses web search and web fetch to check
+   prices, free plans and availability in Vietnam. It writes both versions
+   following the style and SEO rules in `agent/prompts.py`. It is given the
+   existing articles, so it doesn't repeat them and can link to them.
+3. **Checks** (`agent/checks.py`). Both versions are rendered by the real Flask
+   app and run through the same SEO audit as the test suite
+   (`app/seo_audit.py`): title and description length, a single H1, unique
+   headings and link texts, and internal links that resolve. Slugs and keys
+   must also be new, and each version needs a minimum length. Any problems
+   go back to Claude to fix, up to 4 attempts.
+4. **Saved run.** The accepted article is saved to `.agent-runs/` (gitignored),
+   so a paid run is never lost.
+   `python -m agent --from-run .agent-runs/<file>.json` publishes it again
+   without calling the API.
+5. **Pull Request** (`agent/publish.py`). It creates a branch
+   `article/<slug>` from the latest `origin/main` in a temporary git worktree,
+   so your working copy and uncommitted changes are never touched. It writes
+   only the two article files, runs the full test suite, and pushes. With the
+   GitHub CLI (`gh`) installed, the PR is opened for you. Otherwise the agent
+   prints the link to open it and saves the PR description, which includes
+   the sources and the facts to double-check.
+6. **Review and merge.** GitHub Actions runs the tests and Vercel builds a
+   preview. Read the article there, fix anything in the PR, then merge. Vercel
+   publishes it to www.crosstechedu.com.
+
+**Cost:** every run is billed to your Anthropic account (tokens plus web
+searches) and prints its usage with an estimated price. To edit an agent article in the
+Django admin, run `manage.py import_articles` after merging.
 
 ## Deploy
 
@@ -55,10 +144,10 @@ app/
   config.py        env-driven settings (SITE_URL, CONTENT_BACKEND, CONTENT_DIR)
   content.py       ContentRepository protocol + JsonFileRepository  ← CMS seam
   seo.py           URLs per locale, hreflang alternates, schema.org JSON-LD
-  views.py         generic page route, sitemap, robots, 404
+  views.py         generic page route, blog routes, sitemap, robots, 404
   templates/
-    base.html, page.html, 404.html, sitemap.xml
-    partials/      header, footer
+    base.html, page.html, blog_index.html, article.html, 404.html, sitemap.xml
+    partials/      header, footer, meta (SEO <head> tags shared by every page)
     blocks/        one template per block type (hero, services, pricing, ...)
   static/
     css/tokens.css design-system tokens (colours, type, spacing): retune the look here
@@ -69,6 +158,11 @@ content/
   vi/site.json, en/site.json nav, footer, UI strings per language
   vi/pages/home.json         page = meta + ordered list of blocks
   en/pages/home.json
+  vi/articles/*.json         blog articles (Markdown body), written by the CMS
+  en/articles/*.json
+cms/                         Django admin for writing articles (runs locally)
+agent/                       Claude agent that researches, writes and opens a PR for an article
+.github/workflows/tests.yml  pytest, CMS tests and the static build on every PR
 scripts/build_assets.py      regenerates og-image*.png and apple-touch-icon.png
 scripts/fetch_store_assets.py crawls App Store listings → product icons + cover banners
 freeze.py                    static export

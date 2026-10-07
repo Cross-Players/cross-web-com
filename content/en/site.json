@@ -13,8 +13,26 @@
     {"label": "Services", "href": "#services"},
     {"label": "Pricing", "href": "#pricing"},
     {"label": "Case studies", "href": "#work"},
-    {"label": "Process", "href": "#process"}
+    {"label": "Process", "href": "#process"},
+    {"label": "Blog", "href": "/en/blog/"}
   ],
+  "blog": {
+    "meta_title": "Blog: AI and technology for small business | Cross Tech Edu",
+    "meta_description": "Plain-language guides to AI, software and digital tools for small and medium business owners. No technical background needed.",
+    "kicker": "Blog",
+    "title": "AI and technology for small business",
+    "intro": "Short, plain-language guides to AI and technology you can act on today. Written for busy small business owners, no technical background needed.",
+    "list_label": "All articles",
+    "breadcrumb_label": "Breadcrumb",
+    "minutes": "{n} min read",
+    "updated": "updated",
+    "empty": "No articles yet. Please check back soon.",
+    "cta_title": "Need a tool built for your business?",
+    "cta_body": "Cross Tech Edu builds websites, apps and AI integrations for small and medium businesses. Free 30-minute consultation.",
+    "cta_label": "Book a call",
+    "back": "All articles",
+    "more": "Read more articles"
+  },
   "header_cta": {"label": "Get a quote", "href": "#contact"},
   "footer": {
     "tagline": "Software outsourcing company. Web, mobile, backend, cloud.",

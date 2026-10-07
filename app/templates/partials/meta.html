@@ -1,0 +1,39 @@
+{# <head> SEO tags shared by pages, the blog index and articles.
+   Expects: meta (title, description, og_title?, og_image?, noindex?), canonical,
+   alternates, site_url, default_locale, og_locale, og_locale_alternates, jsonld. #}
+{% set og_image_url = meta.og_image_url or site_url ~ url_for('static', filename=meta.og_image or site.og_image) %}
+<meta name="description" content="{{ meta.description }}">
+{% if meta.noindex %}
+<meta name="robots" content="noindex, follow">
+{% else %}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{% endif %}
+<link rel="canonical" href="{{ canonical }}">
+{% for loc, path in alternates.items() %}
+<link rel="alternate" hreflang="{{ loc }}" href="{{ site_url }}{{ path }}">
+{% endfor %}
+{% if default_locale in alternates %}
+<link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternates[default_locale] }}">
+{% endif %}
+
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:site_name" content="{{ site.brand.name }}">
+<meta property="og:title" content="{{ meta.og_title or meta.title }}">
+<meta property="og:description" content="{{ meta.description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ og_image_url }}">
+{% if not meta.og_image_url %}
+{# The share images in static/img/ are 1200×630; article covers can be any size. #}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{% endif %}
+<meta property="og:image:alt" content="{{ meta.og_title or meta.title }}">
+<meta property="og:locale" content="{{ og_locale }}">
+{% for alt in og_locale_alternates %}
+<meta property="og:locale:alternate" content="{{ alt }}">
+{% endfor %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta.og_title or meta.title }}">
+<meta name="twitter:description" content="{{ meta.description }}">
+<meta name="twitter:image" content="{{ og_image_url }}">
+<script type="application/ld+json">{{ jsonld }}</script>

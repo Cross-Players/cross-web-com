@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import hashlib
 import re
+from datetime import date
 from functools import lru_cache
 from pathlib import Path
 
+import markdown as md
 from flask import Flask, url_for
 from flask.helpers import get_debug_flag
 from flask_compress import Compress
@@ -96,6 +98,20 @@ def _register_template_helpers(app: Flask) -> None:
         if href.startswith("#") and not on_home:
             return home_url(locale) + href
         return href
+
+    @app.template_filter("markdown")
+    def markdown_filter(text: str) -> Markup:
+        """Article bodies are Markdown written by the site owner in the CMS
+        (trusted input), so raw HTML inside them is allowed."""
+        return Markup(md.markdown(text, extensions=["extra", "sane_lists"], output_format="html"))
+
+    @app.template_filter("date_label")
+    def date_label(iso: str, locale: str) -> str:
+        """'2026-10-06' → '06/10/2026' (vi) or '6 October 2026' (en)."""
+        d = date.fromisoformat(iso)
+        if locale == "vi":
+            return d.strftime("%d/%m/%Y")
+        return f"{d.day} {d.strftime('%B %Y')}"
 
     @app.template_filter("nl2br")
     def nl2br(value: str) -> Markup:

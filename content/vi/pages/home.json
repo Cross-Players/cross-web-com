@@ -13,8 +13,8 @@
         "kicker": "Công ty phần mềm · Hà Nội, Việt Nam",
         "title": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam.",
         "lead": "Cross Tech Edu là đội ngũ kỹ thuật đặt tại Việt Nam, nhận outsourcing web, mobile, backend và cloud cho khách hàng Nhật, Hàn và châu Âu. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
-        "sub": "Your engineering team, based in Vietnam — web, mobile, backend and cloud delivery on two-week sprints.",
-        "sub_lang": "en",
+        "sub": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam — web, mobile, backend và cloud, bàn giao theo sprint 2 tuần.",
+        "sub_lang": "vi",
         "ctas": [
           {"label": "Xem bảng giá", "href": "#pricing", "style": "primary"},
           {"label": "Đặt lịch tư vấn 30 phút", "href": "#contact", "style": "secondary"}
@@ -32,10 +32,6 @@
           {"value": "Không\nràng buộc", "label": "Huỷ hợp đồng báo trước 15 ngày"}
         ]
       }
-    },
-    {
-      "type": "clients",
-      "data": {"label": "Đang đồng hành"}
     },
     {
       "type": "services",
