@@ -1,3 +1,0 @@
-# Article-writing agent (agent/). Runs on your machine: Vercel installs requirements.txt.
--r requirements.txt
-anthropic>=1.11,<2
