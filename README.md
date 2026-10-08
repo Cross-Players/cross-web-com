@@ -64,50 +64,23 @@ CMS tests: `cd cms && ../.venv/bin/python manage.py test blog`.
 
 ## Article-writing agent
 
-`agent/` uses Claude (`claude-opus-5-5`) to research a topic on the web and
-write a Vietnamese and an English article. It then opens a **Pull Request**
-for you to review. Nothing goes live until you merge it.
+Articles can also be written by the Claude agent in the separate
+`writer_agent` project (`../writer_agent`). Every day it researches a topic,
+writes the Vietnamese and English versions and opens a Pull Request here. Its
+README explains setup and the daily schedule.
+
+The agent and this site meet in one place: `scripts/check_article.py`. Before
+opening a PR, the agent writes the article files into `content/`, runs
 
 ```bash
-.venv/bin/pip install -r requirements-agent.txt      # once
-export ANTHROPIC_API_KEY=sk-ant-...                  # or: ant auth login
-.venv/bin/python -m agent "Hướng dẫn tạo Zalo OA cho cửa hàng"
-.venv/bin/python -m agent "Chatbot trả lời khách trên Facebook" --notes "Chỉ công cụ miễn phí"
-.venv/bin/python -m agent "..." --local              # only write into content/ for a local preview
+.venv/bin/python scripts/check_article.py content/vi/articles/<slug>.json content/en/articles/<slug>.json
 ```
 
-What happens on each run:
-
-1. **Preflight.** It checks that `origin/main` already has the blog, before
-   spending anything on the API.
-2. **Research and writing.** Claude uses web search and web fetch to check
-   prices, free plans and availability in Vietnam. It writes both versions
-   following the style and SEO rules in `agent/prompts.py`. It is given the
-   existing articles, so it doesn't repeat them and can link to them.
-3. **Checks** (`agent/checks.py`). Both versions are rendered by the real Flask
-   app and run through the same SEO audit as the test suite
-   (`app/seo_audit.py`): title and description length, a single H1, unique
-   headings and link texts, and internal links that resolve. Slugs and keys
-   must also be new, and each version needs a minimum length. Any problems
-   go back to Claude to fix, up to 4 attempts.
-4. **Saved run.** The accepted article is saved to `.agent-runs/` (gitignored),
-   so a paid run is never lost.
-   `python -m agent --from-run .agent-runs/<file>.json` publishes it again
-   without calling the API.
-5. **Pull Request** (`agent/publish.py`). It creates a branch
-   `article/<slug>` from the latest `origin/main` in a temporary git worktree,
-   so your working copy and uncommitted changes are never touched. It writes
-   only the two article files, runs the full test suite, and pushes. With the
-   GitHub CLI (`gh`) installed, the PR is opened for you. Otherwise the agent
-   prints the link to open it and saves the PR description, which includes
-   the sources and the facts to double-check.
-6. **Review and merge.** GitHub Actions runs the tests and Vercel builds a
-   preview. Read the article there, fix anything in the PR, then merge. Vercel
-   publishes it to www.crosstechedu.com.
-
-**Cost:** every run is billed to your Anthropic account (tokens plus web
-searches) and prints its usage with an estimated price. To edit an agent article in the
-Django admin, run `manage.py import_articles` after merging.
+and fixes everything listed in the `{"problems": [...]}` it prints. The
+script renders the pages with the real Flask app and applies the same SEO
+audit as the test suite (`app/seo_audit.py`). Merging the PR publishes the
+article. To edit an agent article in the Django admin, run
+`manage.py import_articles` after merging.
 
 ## Deploy
 
@@ -161,7 +134,7 @@ content/
   vi/articles/*.json         blog articles (Markdown body), written by the CMS
   en/articles/*.json
 cms/                         Django admin for writing articles (runs locally)
-agent/                       Claude agent that researches, writes and opens a PR for an article
+scripts/check_article.py     checks new articles; called by ../writer_agent before it opens a PR
 .github/workflows/tests.yml  pytest, CMS tests and the static build on every PR
 scripts/build_assets.py      regenerates og-image*.png and apple-touch-icon.png
 scripts/fetch_store_assets.py crawls App Store listings → product icons + cover banners
