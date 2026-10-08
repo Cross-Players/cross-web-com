@@ -8,6 +8,7 @@ import pytest
 from app.seo_audit import audit
 
 BASE = "https://example.test"
+PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
 VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
@@ -90,7 +91,8 @@ def test_sitemap(client):
     assert locs[0] == f"{BASE}/" and f"{BASE}/en/" in locs
     for path in BLOG_PATHS:
         assert BASE + path in locs, path
-    assert len(locs) == 2 + len(BLOG_PATHS)
+    assert BASE + PRIVACY_PATH in locs
+    assert len(locs) == 2 + len(BLOG_PATHS) + 1
 
 
 def test_robots(client):
