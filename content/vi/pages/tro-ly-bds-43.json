@@ -1,0 +1,115 @@
+{
+  "slug": "san-pham/tro-ly-bds-43",
+  "translation_key": "tro-ly-bds-43",
+  "meta": {
+    "title": "Trợ lý AI bất động sản Đà Nẵng | Cross Tech Edu",
+    "description": "Trợ lý BĐS là chatbot AI dùng RAG để trả lời nhanh, chính xác về các dự án bất động sản tại Đà Nẵng. Chat trên web app hoặc qua Messenger.",
+    "updated": "2026-10-09"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Sản phẩm mới · Trợ lý BĐS",
+        "title": "Trợ lý AI bất động sản Đà Nẵng, trả lời ngay khi bạn hỏi.",
+        "lead": "Trợ lý BĐS là chatbot AI do Cross Tech Edu phát triển, đã nạp sẵn thông tin một số dự án bất động sản tại Đà Nẵng. Nhờ RAG, trợ lý tra tài liệu dự án trước rồi mới trả lời, nên câu trả lời nhanh, chính xác và thông minh hơn một chatbot thông thường.",
+        "ctas": [
+          {"label": "Chat trên web app", "href": "https://www.danangluxuryhomes.vn/chatbot/project/camellia", "style": "primary", "external": true},
+          {"label": "Nhắn tin qua Messenger", "href": "https://www.facebook.com/profile.php?id=61594769476959", "style": "secondary", "external": true}
+        ],
+        "rate": {
+          "label": "Kênh trò chuyện",
+          "amount": "2 kênh",
+          "unit": "Web app · Messenger",
+          "note": "Không cần cài thêm ứng dụng: mở trình duyệt hoặc Messenger là hỏi được ngay."
+        },
+        "stats": [
+          {"value": "RAG", "label": "Câu trả lời bám theo tài liệu dự án"},
+          {"value": "Đà Nẵng", "label": "Tập trung vào dự án bất động sản tại Đà Nẵng"},
+          {"value": "Tiếng Việt", "label": "Hỏi như đang nhắn tin với người tư vấn"},
+          {"value": "Nhớ\nngữ cảnh", "label": "Hiểu câu hỏi nối tiếp trong cùng cuộc trò chuyện"}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "kenh-chat",
+        "kicker": "Bắt đầu / Start chatting",
+        "title": "Hai cách trò chuyện với Trợ lý BĐS.",
+        "intro": "Chọn kênh bạn quen dùng. Cả hai kênh dùng chung một trợ lý và cùng một kho dữ liệu dự án.",
+        "items": [
+          {
+            "kicker": "Web app",
+            "title": "Chat ngay trên trình duyệt",
+            "body": "Mở trang chat trên máy tính hoặc điện thoại và gõ câu hỏi. Đường link dưới đây mở sẵn trang chat của dự án Camellia.",
+            "host": "danangluxuryhomes.vn/chatbot/project/camellia",
+            "url": "https://www.danangluxuryhomes.vn/chatbot/project/camellia",
+            "cta": "Mở web app Trợ lý BĐS"
+          },
+          {
+            "kicker": "Messenger",
+            "title": "Nhắn tin cho Fanpage",
+            "body": "Nhắn tin cho Fanpage Trợ lý BĐS như nhắn cho một người bạn. Chọn dự án từ menu, rồi hỏi tiếp bằng tin nhắn văn bản.",
+            "host": "facebook.com/profile.php?id=61594769476959",
+            "url": "https://www.facebook.com/profile.php?id=61594769476959",
+            "cta": "Mở Fanpage Trợ lý BĐS"
+          }
+        ],
+        "note": {
+          "text": "Trợ lý BĐS không lấy tên hay ảnh đại diện Facebook của bạn, và xoá tin nhắn 7 ngày sau khi xử lý xong.",
+          "label": "Đọc chính sách quyền riêng tư",
+          "href": "/san-pham/tro-ly-bds-43/privacy-policy/"
+        }
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "tinh-nang",
+        "kicker": "Tính năng / Features",
+        "title": "Một trợ lý hiểu dự án, không chỉ trả lời theo kịch bản.",
+        "intro": "Chatbot theo kịch bản chỉ trả lời được những câu đã soạn sẵn. Trợ lý BĐS đọc tài liệu dự án và trả lời đúng câu bạn hỏi.",
+        "items": [
+          {"title": "Nạp sẵn dữ liệu dự án", "body": "Thông tin của một số dự án bất động sản tại Đà Nẵng đã có sẵn trong hệ thống. Bạn không cần tự tìm brochure hay lục lại tin nhắn cũ."},
+          {"title": "Trả lời dựa trên tài liệu", "body": "Với RAG, trợ lý tìm đoạn tài liệu liên quan nhất rồi mới soạn câu trả lời. Câu trả lời bám sát dữ liệu dự án thay vì đoán."},
+          {"title": "Nhanh, kể cả ngoài giờ", "body": "Không phải chờ tư vấn viên rảnh tay. Câu trả lời thường đến sau vài giây, kể cả buổi tối hay cuối tuần."},
+          {"title": "Hiểu câu hỏi nối tiếp", "body": "Hỏi tiếp “còn tiện ích thì sao?”, trợ lý vẫn biết bạn đang nói về dự án nào nhờ giữ mạch hội thoại."},
+          {"title": "Chọn dự án bằng một chạm", "body": "Trên Messenger, bấm nút chọn dự án trong menu thay vì gõ tên, rồi đặt câu hỏi cho đúng dự án đó."},
+          {"title": "Tôn trọng quyền riêng tư", "body": "Chỉ lưu nội dung tin nhắn cần để trả lời. Bạn có thể yêu cầu xoá dữ liệu bất kỳ lúc nào qua email."}
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "cach-hoat-dong",
+        "kicker": "Cách hoạt động / How it works",
+        "title": "Từ câu hỏi đến câu trả lời: bốn bước RAG.",
+        "intro": "RAG (Retrieval-Augmented Generation) cho mô hình AI đọc đúng tài liệu trước khi trả lời. Đây là lý do Trợ lý BĐS nói về dự án chính xác hơn một chatbot AI thông thường.",
+        "steps": [
+          {"title": "Bạn đặt câu hỏi", "body": "Gõ câu hỏi bằng tiếng Việt tự nhiên trên web app hoặc Messenger, ví dụ về vị trí hay tiện ích của dự án.", "duration": "Hỏi"},
+          {"title": "Tìm đúng tài liệu", "body": "Hệ thống tìm trong kho tài liệu dự án những đoạn liên quan nhất đến câu hỏi của bạn.", "duration": "Truy xuất"},
+          {"title": "Soạn câu trả lời", "body": "Mô hình AI viết câu trả lời từ các đoạn tài liệu vừa tìm được, kết hợp ngữ cảnh cuộc trò chuyện.", "duration": "Sinh"},
+          {"title": "Gửi lại cho bạn", "body": "Câu trả lời hiện ngay trong khung chat. Bạn hỏi tiếp, trợ lý lặp lại quy trình với ngữ cảnh mới.", "duration": "Trả lời"}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Muốn có trợ lý AI như vậy cho doanh nghiệp của bạn?",
+        "body": "Cross Tech Edu xây chatbot RAG trên dữ liệu của chính bạn: tài liệu dự án, bảng giá, câu hỏi thường gặp. Gửi yêu cầu, chúng tôi trả lời bằng phạm vi công việc và báo giá trong 48 giờ.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import pytest
 from app.seo_audit import audit
 
 BASE = "https://example.test"
+PRODUCT_PATH = "/san-pham/tro-ly-bds-43/"
 PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
@@ -63,7 +64,7 @@ def test_home_pages(client, path, lang, h1):
 
 
 def test_titles_and_descriptions_are_seo_sized(client):
-    for path in ("/", "/en/"):
+    for path in ("/", "/en/", PRODUCT_PATH):
         html = client.get(path).get_data(as_text=True)
         title = re.search(r"<title>(.*?)</title>", html).group(1)
         desc = re.search(r'<meta name="description" content="(.*?)">', html).group(1)
@@ -91,8 +92,25 @@ def test_sitemap(client):
     assert locs[0] == f"{BASE}/" and f"{BASE}/en/" in locs
     for path in BLOG_PATHS:
         assert BASE + path in locs, path
+    assert BASE + PRODUCT_PATH in locs
     assert BASE + PRIVACY_PATH in locs
-    assert len(locs) == 2 + len(BLOG_PATHS) + 1
+    assert len(locs) == 2 + len(BLOG_PATHS) + 2
+
+
+def test_product_landing_page(client):
+    r = client.get(PRODUCT_PATH)
+    assert r.status_code == 200
+    html = r.get_data(as_text=True)
+    assert html.count("<h1") == 1 and "Trợ lý AI bất động sản Đà Nẵng" in html
+    web = "https://www.danangluxuryhomes.vn/chatbot/project/camellia"
+    fanpage = "https://www.facebook.com/profile.php?id=61594769476959"
+    for url in (web, fanpage):
+        # hero CTA + channel card, both opening in a new tab
+        assert html.count(f'href="{url}" target="_blank" rel="noopener"') == 2, url
+    assert f'href="{PRIVACY_PATH}"' in html
+    # product features are not company services: no OfferCatalog in JSON-LD
+    org = next(n for n in _jsonld(html)["@graph"] if n["@type"] == "ProfessionalService")
+    assert "hasOfferCatalog" not in org
 
 
 def test_robots(client):
@@ -199,7 +217,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)

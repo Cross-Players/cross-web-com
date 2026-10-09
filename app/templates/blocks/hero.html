@@ -7,7 +7,7 @@
     {% if d.sub %}<p class="hero__sub text-muted"{% if d.sub_lang %} lang="{{ d.sub_lang }}"{% endif %}>{{ d.sub }}</p>{% endif %}
     <div class="btn-row">
       {% for cta in d.ctas %}
-      <a class="btn btn-{{ cta.style }}" href="{{ cta.href }}">{{ cta.label }}</a>
+      <a class="btn btn-{{ cta.style }}" href="{{ cta.href }}"{% if cta.external %} target="_blank" rel="noopener"{% endif %}>{{ cta.label }}</a>
       {% endfor %}
     </div>
   </div>
