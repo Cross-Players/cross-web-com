@@ -1,0 +1,7 @@
+{% set d = block.data %}
+<section class="section legal" aria-labelledby="legal-title">
+  <h1 id="legal-title">{{ d.title }}</h1>
+  <div class="prose">
+    {{ d.body|markdown }}
+  </div>
+</section>

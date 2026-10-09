@@ -1,0 +1,18 @@
+{
+  "slug": "san-pham/tro-ly-bds-43/privacy-policy",
+  "translation_key": "privacy-policy-tro-ly-bds-43",
+  "meta": {
+    "title": "Chính sách quyền riêng tư Trợ lý Bất Động Sản | Cross Tech Edu",
+    "description": "Chính sách quyền riêng tư của Trợ lý Bất Động Sản trên Messenger do CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS vận hành: dữ liệu thu thập, thời gian lưu và cách yêu cầu xoá.",
+    "updated": "2026-10-08"
+  },
+  "blocks": [
+    {
+      "type": "legal",
+      "data": {
+        "title": "Chính sách quyền riêng tư Trợ lý Bất Động Sản",
+        "body": "*Cập nhật lần cuối: ngày 08 tháng 10 năm 2026*\n\nChính sách này giải thích cách CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS (sau đây gọi là Cross) thu thập, sử dụng và bảo vệ dữ liệu cá nhân khi bạn trò chuyện với Trợ lý Bất Động Sản, chatbot do Cross vận hành trên Messenger.\n\n## 1. Dữ liệu Cross thu thập\n\n- **Mã người dùng Messenger (PSID):** mã số Meta cấp cho tài khoản của bạn khi bạn nhắn tin cho Trang (Trang Facebook). Mã này chỉ có ý nghĩa trong Trang đó.\n- **Nội dung tin nhắn văn bản** bạn gửi cho Trợ lý Bất Động Sản, và **lựa chọn bạn bấm** trong menu của Trợ lý Bất Động Sản (các nút chọn dự án).\n- Cross không lấy tên hiển thị, ảnh đại diện hay hồ sơ Facebook của bạn.\n\n## 2. Mục đích sử dụng\n\nCross chỉ dùng dữ liệu cho ba mục đích:\n\n- Trả lời câu hỏi của bạn về dự án bất động sản.\n- Giữ mạch hội thoại, để Trợ lý Bất Động Sản hiểu câu hỏi tiếp theo của bạn trong đúng ngữ cảnh.\n- Tránh xử lý trùng lặp cùng một tin nhắn.\n\n## 3. Lưu trữ và thời gian lưu\n\n- Tin nhắn và PSID được lưu trong cơ sở dữ liệu PostgreSQL của Cross. Ngoài PSID, hệ thống lưu thêm một mã băm (hash) của PSID để tra cứu nội bộ.\n- Sau khi tin nhắn được xử lý xong, hoặc việc xử lý thất bại hẳn, Cross xoá bản ghi đó sau **7 ngày**.\n- Tin nhắn chưa xử lý xong được giữ cho đến khi xử lý xong, sau đó áp dụng thời gian lưu 7 ngày nêu trên.\n\n## 4. Chia sẻ dữ liệu\n\nCross không bán dữ liệu của bạn.\n\nĐể tạo câu trả lời, nội dung câu hỏi của bạn được gửi tới nhà cung cấp mô hình trí tuệ nhân tạo (AI). Dữ liệu chỉ được chuyển cho đơn vị cung cấp hạ tầng khi cần thiết để vận hành hệ thống.\n\n## 5. Quyền của bạn và yêu cầu xoá dữ liệu {#xoa-du-lieu}\n\nBạn có quyền yêu cầu xoá dữ liệu Messenger của mình. Cách thực hiện:\n\n1. Gửi email tới **crosstechedu@gmail.com**.\n2. Ghi tiêu đề email là **Xoá dữ liệu Messenger**.\n3. Trong nội dung email, ghi **PSID** của bạn (xem mục 1) hoặc **tên Trang** bạn đã nhắn tin.\n4. Cross sẽ xoá dữ liệu liên quan và phản hồi bạn qua email.\n\n## 6. Liên hệ\n\n- **CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS**\n- Email: crosstechedu@gmail.com\n- Điện thoại: +84 338 305 895"
+      }
+    }
+  ]
+}

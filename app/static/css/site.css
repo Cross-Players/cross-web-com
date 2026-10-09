@@ -293,6 +293,10 @@ span.logo-card { cursor: pointer; }
 .article__cta-title { font-family: var(--font-heading); font-weight: 800; font-size: 22px; margin: 0 0 8px; }
 .article__cta .text-muted { margin: 0 0 20px; }
 
+/* ─── legal pages: same column and gutter as articles ─── */
+.legal { padding: max(40px, 5vw) var(--gutter) max(48px, 6vw); }
+.legal h1 { font-size: clamp(32px, 4.4vw, 54px); max-width: 44rem; margin: 0 auto 32px; }
+
 /* ─── 404 ─── */
 .not-found { padding: max(60px, 8vw) var(--gutter); border-bottom: var(--rule); }
 .not-found h1 { font-size: clamp(38px, 5.4vw, 72px); margin: 0 0 20px; }
