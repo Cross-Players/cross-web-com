@@ -108,9 +108,24 @@ def test_product_landing_page(client):
         # hero CTA + channel card, both opening in a new tab
         assert html.count(f'href="{url}" target="_blank" rel="noopener"') == 2, url
     assert f'href="{PRIVACY_PATH}"' in html
+    graph = {n["@type"]: n for n in _jsonld(html)["@graph"]}
     # product features are not company services: no OfferCatalog in JSON-LD
-    org = next(n for n in _jsonld(html)["@graph"] if n["@type"] == "ProfessionalService")
-    assert "hasOfferCatalog" not in org
+    assert "hasOfferCatalog" not in graph["ProfessionalService"]
+    app = graph["WebApplication"]
+    assert app["url"] == web and app["sameAs"] == [fanpage]
+    assert graph["WebPage"]["about"] == {"@id": app["@id"]}
+    crumbs = [(i["name"], i["item"]) for i in graph["BreadcrumbList"]["itemListElement"]]
+    assert crumbs == [("Cross Tech Edu", f"{BASE}/"), ("Trợ lý AI bất động sản Đà Nẵng", BASE + PRODUCT_PATH)]
+
+
+def test_product_page_is_linked(client):
+    """Not an orphan: the VI footer links to it, and the privacy policy links back."""
+    for path in ("/", "/blog/", PRIVACY_PATH):
+        assert f'href="{PRODUCT_PATH}"' in client.get(path).get_data(as_text=True), path
+    # /san-pham/ has no page, so the privacy breadcrumb skips it
+    graph = _jsonld(client.get(PRIVACY_PATH).get_data(as_text=True))["@graph"]
+    crumbs = next(n for n in graph if n["@type"] == "BreadcrumbList")["itemListElement"]
+    assert [i["item"] for i in crumbs] == [f"{BASE}/", BASE + PRODUCT_PATH, BASE + PRIVACY_PATH]
 
 
 def test_robots(client):
@@ -217,7 +232,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)

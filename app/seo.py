@@ -138,24 +138,85 @@ def _dump(payload: dict[str, Any]) -> Markup:
     return Markup(text.replace("</", "<\\/"))
 
 
-def jsonld(site: dict[str, Any], page: Page, site_url: str, page_url: str, locale: str) -> Markup:
+def breadcrumbs(
+    repo: ContentRepository, page: Page, site: dict[str, Any], default_locale: str
+) -> list[tuple[str, str]]:
+    """[(name, path)] from the home page down to ``page``, one crumb per slug
+    prefix that is a real page ("san-pham/" has no page, so it is skipped).
+    Empty for the home page."""
+    if not page.slug:
+        return []
+    by_slug = {p.slug: p for p in repo.list_pages(page.locale)}
+    crumbs = [(site["brand"]["name"], page_path(page.locale, "", default_locale))]
+    parts = page.slug.strip("/").split("/")
+    for i in range(1, len(parts) + 1):
+        match = by_slug.get("/".join(parts[:i]))
+        if match is not None:
+            name = match.meta.get("breadcrumb") or match.meta.get("title", "")
+            crumbs.append((name, page_path(page.locale, match.slug, default_locale)))
+    return crumbs
+
+
+def _web_application(app: dict[str, Any], app_id: str, org_id: str, locale: str) -> dict[str, Any]:
+    """schema.org WebApplication for a product page (``meta.app`` in its JSON)."""
+    node: dict[str, Any] = {
+        "@type": "WebApplication",
+        "@id": app_id,
+        "name": app["name"],
+        "description": app["description"],
+        "url": app["url"],
+        "applicationCategory": app.get("category", "BusinessApplication"),
+        "operatingSystem": app.get("operating_system", "Web"),
+        "inLanguage": locale,
+        "creator": {"@id": org_id},
+    }
+    if app.get("alternate_name"):
+        node["alternateName"] = app["alternate_name"]
+    if app.get("area_served"):
+        node["areaServed"] = {"@type": "City", "name": app["area_served"]}
+    if app.get("same_as"):
+        node["sameAs"] = app["same_as"]
+    return node
+
+
+def jsonld(
+    site: dict[str, Any],
+    page: Page,
+    site_url: str,
+    page_url: str,
+    locale: str,
+    crumbs: list[tuple[str, str]] | None = None,
+) -> Markup:
     org_id = site_url + "/#organization"
     organization = _organization(site, site_url, page.meta.get("description", ""))
+    app = page.meta.get("app")
+    app_id = page_url + "#app"
 
-    graph: list[dict[str, Any]] = [
-        organization,
-        _website(site, site_url),
-        {
-            "@type": "WebPage",
-            "@id": page_url + "#webpage",
-            "url": page_url,
-            "name": page.meta.get("title", ""),
-            "description": page.meta.get("description", ""),
-            "inLanguage": locale,
-            "isPartOf": {"@id": site_url + "/#website"},
-            "about": {"@id": org_id},
-        },
-    ]
+    webpage: dict[str, Any] = {
+        "@type": "WebPage",
+        "@id": page_url + "#webpage",
+        "url": page_url,
+        "name": page.meta.get("title", ""),
+        "description": page.meta.get("description", ""),
+        "inLanguage": locale,
+        "isPartOf": {"@id": site_url + "/#website"},
+        "about": {"@id": app_id if app else org_id},
+    }
+    graph: list[dict[str, Any]] = [organization, _website(site, site_url), webpage]
+    if app:
+        graph.append(_web_application(app, app_id, org_id, locale))
+    if crumbs:
+        webpage["breadcrumb"] = {"@id": page_url + "#breadcrumb"}
+        graph.append(
+            {
+                "@type": "BreadcrumbList",
+                "@id": page_url + "#breadcrumb",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i, "name": name, "item": site_url + path}
+                    for i, (name, path) in enumerate(crumbs, 1)
+                ],
+            }
+        )
 
     services = page.block("services")
     offers = _offers(page, site_url, page_url)

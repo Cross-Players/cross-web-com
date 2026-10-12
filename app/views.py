@@ -39,7 +39,10 @@ def _render_page(locale: str, slug: str) -> str:
         default_locale=cfg["DEFAULT_LOCALE"],
         og_locale=seo.OG_LOCALES[locale],
         og_locale_alternates=[seo.OG_LOCALES[loc] for loc in alts if loc != locale],
-        jsonld=seo.jsonld(site, page, site_url, site_url + path, locale),
+        jsonld=seo.jsonld(
+            site, page, site_url, site_url + path, locale,
+            seo.breadcrumbs(repo, page, site, cfg["DEFAULT_LOCALE"]),
+        ),
     )
 
 

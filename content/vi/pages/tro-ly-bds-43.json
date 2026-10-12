@@ -2,9 +2,20 @@
   "slug": "san-pham/tro-ly-bds-43",
   "translation_key": "tro-ly-bds-43",
   "meta": {
-    "title": "Trợ lý AI bất động sản Đà Nẵng | Cross Tech Edu",
-    "description": "Trợ lý BĐS là chatbot AI dùng RAG để trả lời nhanh, chính xác về các dự án bất động sản tại Đà Nẵng. Chat trên web app hoặc qua Messenger.",
-    "updated": "2026-10-09"
+    "title": "Trợ lý AI bất động sản Đà Nẵng: chatbot dự án | Cross Tech Edu",
+    "description": "Trợ lý BĐS là chatbot AI dùng RAG để trả lời nhanh, chính xác về các dự án bất động sản tại Đà Nẵng. Hỏi ngay trên web app hoặc nhắn tin qua Messenger.",
+    "breadcrumb": "Trợ lý AI bất động sản Đà Nẵng",
+    "updated": "2026-10-12",
+    "app": {
+      "name": "Trợ lý BĐS",
+      "alternate_name": "Trợ lý AI bất động sản Đà Nẵng",
+      "description": "Chatbot AI dùng RAG để trả lời câu hỏi về các dự án bất động sản tại Đà Nẵng, trên web app và Messenger.",
+      "url": "https://www.danangluxuryhomes.vn/chatbot/project/camellia",
+      "category": "BusinessApplication",
+      "operating_system": "Web",
+      "area_served": "Đà Nẵng",
+      "same_as": ["https://www.facebook.com/profile.php?id=61594769476959"]
+    }
   },
   "blocks": [
     {

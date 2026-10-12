@@ -49,6 +49,7 @@
         "title": "Công ty",
         "links": [
           {"label": "Sản phẩm đã tham gia", "href": "#work"},
+          {"label": "Trợ lý AI bất động sản", "href": "/san-pham/tro-ly-bds-43/"},
           {"label": "Khách hàng của chúng tôi", "href": "#clients"},
           {"label": "Liên hệ báo giá", "href": "#contact"}
         ]
