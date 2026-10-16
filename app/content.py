@@ -125,7 +125,9 @@ class JsonFileRepository:
         )
 
     def list_pages(self, locale: str) -> list[Page]:
-        return [self._to_page(locale, self._load(p)) for p in self._page_files(locale)]
+        # Ordered by slug, so the home page ("") comes first whatever its file name.
+        pages = [self._to_page(locale, self._load(p)) for p in self._page_files(locale)]
+        return sorted(pages, key=lambda p: p.slug)
 
     def get_page(self, locale: str, slug: str) -> Page | None:
         slug = slug.strip("/")
