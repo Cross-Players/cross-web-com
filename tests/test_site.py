@@ -140,6 +140,15 @@ def test_gplx_policy_page(client):
     assert "crosstechedu@gmail.com" in html
 
 
+@pytest.mark.parametrize("path", ["/", "/en/", "/blog/", PRODUCT_PATH])
+def test_links_to_company_site(client, path):
+    """Backlink to the sister site www.crosstechedu.site (it links back to the blog)."""
+    html = client.get(path).get_data(as_text=True)
+    assert html.count('href="https://www.crosstechedu.site/about"') == 1
+    org = next(n for n in _jsonld(html)["@graph"] if n["@type"] in ("ProfessionalService",))
+    assert "https://www.crosstechedu.site/" in org["sameAs"]
+
+
 def test_robots(client):
     body = client.get("/robots.txt").get_data(as_text=True)
     assert f"Sitemap: {BASE}/sitemap.xml" in body
@@ -253,4 +262,4 @@ def test_on_page_seo_audit(client, path):
     # social profiles + share buttons
     for url in ("facebook.com/profile.php?id=61578180279419", "x.com/CrossTechEdu", "linkedin.com/company/cross-tech-edu"):
         assert url in page
-    assert page.count('class="share-btn"') == 3
+    assert page.count('class="share-btn"') == (0 if path in ("/", "/en/") else 3)

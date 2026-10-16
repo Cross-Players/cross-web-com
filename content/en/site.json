@@ -50,6 +50,7 @@
         "links": [
           {"label": "Products we built", "href": "#work"},
           {"label": "Our clients", "href": "#clients"},
+          {"label": "About Cross Tech Edu", "href": "https://www.crosstechedu.site/about"},
           {"label": "Request a quote", "href": "#contact"}
         ]
       }

@@ -31,7 +31,9 @@
     <p class="footer-col__title">{{ site.footer.languages_title }}</p>
     <span class="text-muted">{{ site.footer.languages_text }}</span>
   </div>
-  {% if canonical is defined %}
+  {# No share buttons on the home page: people share articles and products, and
+     the home page is already at the SEO audit's limit of 20 external links. #}
+  {% if canonical is defined and not on_home %}
   {% set share_url = canonical|urlencode %}
   {% set share_text = (meta.og_title or meta.title)|urlencode %}
   <div class="site-footer__share">
