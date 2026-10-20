@@ -341,3 +341,10 @@ span.logo-card { cursor: pointer; }
   .product__card { transition: none; }
   .product__cover img { transition: none; }
 }
+
+/* Wide diagrams: keep labels legible on phones instead of shrinking a 960px drawing into ~350px. */
+.prose .diagram { margin-inline: 0; }
+@media (max-width: 640px) {
+  .prose .diagram { overflow-x: auto; }
+  .prose .diagram img { min-width: 640px; max-width: none; width: 640px; }
+}
