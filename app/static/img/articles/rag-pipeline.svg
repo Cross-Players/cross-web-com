@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="ragpipe-title ragpipe-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ragpipe-title">Hai pha của RAG: xây chỉ mục tài liệu và trả lời câu hỏi</title>
+  <desc id="ragpipe-desc">Sơ đồ hai làn: OFFLINE, XÂY CHỈ MỤC gồm Tài liệu, Chunking, Embedding, Vector DB; ONLINE, TRẢ LỜI gồm Câu hỏi, Embedding, Tìm top-k, Prompt, LLM, Câu trả lời có nguồn. Mũi tên nét đứt nối Tìm top-k với Vector DB để đánh dấu bước so khớp.</desc>
+  <defs>
+    <marker id="ragpipe-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+    <marker id="ragpipe-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="60" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">OFFLINE · XÂY CHỈ MỤC</text>
+
+  <g>
+    <rect x="25" y="90" width="150" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="100" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tài liệu</text>
+  </g>
+
+  <g>
+    <rect x="255" y="90" width="160" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="335" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Chunking</text>
+  </g>
+
+  <g>
+    <rect x="495" y="90" width="170" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="580" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="745" y="90" width="190" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="840" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Vector DB</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#ragpipe-arrow)">
+    <line x1="179" y1="145" x2="249" y2="145"/>
+    <line x1="419" y1="145" x2="489" y2="145"/>
+    <line x1="669" y1="145" x2="739" y2="145"/>
+  </g>
+
+  <text x="25" y="320" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">ONLINE · TRẢ LỜI</text>
+
+  <g>
+    <rect x="25" y="350" width="105" height="120" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="77" y="417" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Câu hỏi</text>
+  </g>
+
+  <g>
+    <rect x="163" y="350" width="120" height="120" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="223" y="417" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="316" y="350" width="120" height="120" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="376" y="417" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Tìm top-k</text>
+  </g>
+
+  <g>
+    <rect x="469" y="350" width="185" height="120" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="561" y="405" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Prompt</text>
+    <text x="561" y="431" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">(câu hỏi + ngữ cảnh)</text>
+  </g>
+
+  <g>
+    <rect x="687" y="350" width="80" height="120" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="727" y="417" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g>
+    <rect x="800" y="350" width="135" height="120" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="867" y="404" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">Câu trả lời</text>
+    <text x="867" y="430" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">có nguồn</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#ragpipe-arrow)">
+    <line x1="134" y1="410" x2="157" y2="410"/>
+    <line x1="287" y1="410" x2="310" y2="410"/>
+    <line x1="440" y1="410" x2="463" y2="410"/>
+    <line x1="658" y1="410" x2="681" y2="410"/>
+    <line x1="771" y1="410" x2="794" y2="410"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <line x1="376" y1="346" x2="376" y2="270"/>
+    <line x1="376" y1="270" x2="840" y2="270"/>
+    <line x1="840" y1="270" x2="840" y2="200" marker-end="url(#ragpipe-arrow-accent)"/>
+  </g>
+  <text x="608" y="258" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">so khớp</text>
+</svg>

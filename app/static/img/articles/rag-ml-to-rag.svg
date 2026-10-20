@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="ragml-title ragml-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ragml-title">Từ dữ liệu và học máy đến LLM, rồi bổ sung RAG</title>
+  <desc id="ragml-desc">Sơ đồ bốn bước nằm ngang: Data học từ dữ liệu để tạo ML model; ML model tạo ra LLM với kiến thức đóng băng sau huấn luyện; RAG là bước bổ sung để tra tài liệu trước khi trả lời.</desc>
+  <defs>
+    <marker id="ragml-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <g>
+    <rect x="40" y="85" width="180" height="100" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="130" y="142" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Data</text>
+  </g>
+
+  <g>
+    <rect x="280" y="85" width="180" height="100" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="370" y="142" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">ML model</text>
+  </g>
+
+  <g>
+    <rect x="520" y="85" width="180" height="100" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="610" y="142" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g>
+    <rect x="760" y="85" width="180" height="100" rx="4" fill="#fff2ef" stroke="#ec3013" stroke-width="2"/>
+    <text x="850" y="142" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">RAG</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#ragml-arrow)">
+    <line x1="224" y1="135" x2="272" y2="135"/>
+    <line x1="464" y1="135" x2="512" y2="135"/>
+    <line x1="704" y1="135" x2="752" y2="135"/>
+  </g>
+
+  <g font-size="15" font-weight="400" fill="#605d5d" text-anchor="middle">
+    <text x="250" y="220">học từ dữ liệu</text>
+    <text x="490" y="220">kiến thức đóng băng</text>
+    <text x="850" y="212">tra tài liệu</text>
+    <text x="850" y="233">trước khi trả lời</text>
+  </g>
+</svg>
