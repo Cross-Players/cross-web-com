@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="hydepipe-title hydepipe-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="hydepipe-title">Luồng HyDE: viết tài liệu giả định rồi truy vấn vector DB</title>
+  <desc id="hydepipe-desc">Sơ đồ hai làn. Làn HYDE · TRUY VẤN: Câu hỏi, LLM viết tài liệu giả định, Embedding, Tìm top-k, Tài liệu thật; nét đứt nối Tìm top-k với Vector DB để đánh dấu bước so khớp. Làn TRẢ LỜI: Prompt nhận câu hỏi gốc và tài liệu thật, LLM, Câu trả lời có nguồn.</desc>
+  <defs>
+    <marker id="hydepipe-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+    <marker id="hydepipe-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HYDE · TRUY VẤN</text>
+
+  <g>
+    <rect x="25" y="70" width="110" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="80" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Câu hỏi</text>
+  </g>
+
+  <g>
+    <rect x="169" y="70" width="230" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="284" y="120" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">LLM viết tài liệu</text>
+    <text x="284" y="146" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">giả định</text>
+  </g>
+
+  <g>
+    <rect x="433" y="70" width="130" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="498" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="597" y="70" width="120" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="657" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tìm top-k</text>
+  </g>
+
+  <g>
+    <rect x="751" y="70" width="145" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="823" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tài liệu thật</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydepipe-arrow)">
+    <line x1="135" y1="125" x2="165" y2="125"/>
+    <line x1="399" y1="125" x2="429" y2="125"/>
+    <line x1="563" y1="125" x2="593" y2="125"/>
+    <line x1="717" y1="125" x2="747" y2="125"/>
+  </g>
+
+  <g>
+    <rect x="582" y="225" width="150" height="90" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="657" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Vector DB</text>
+  </g>
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <line x1="657" y1="180" x2="657" y2="220" marker-end="url(#hydepipe-arrow-accent)"/>
+  </g>
+  <text x="666" y="208" font-size="15" font-weight="400" fill="#ec3013">so khớp</text>
+
+  <text x="25" y="372" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">TRẢ LỜI</text>
+
+  <g>
+    <rect x="325" y="390" width="225" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="437" y="438" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Prompt</text>
+    <text x="437" y="464" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">(câu hỏi + tài liệu thật)</text>
+  </g>
+
+  <g>
+    <rect x="595" y="390" width="90" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="640" y="452" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g>
+    <rect x="725" y="390" width="195" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="822" y="438" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Câu trả lời</text>
+    <text x="822" y="462" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">có nguồn</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydepipe-arrow)">
+    <line x1="550" y1="445" x2="591" y2="445"/>
+    <line x1="685" y1="445" x2="721" y2="445"/>
+    <path d="M823 180 L823 330 L500 330 L500 384" marker-end="url(#hydepipe-arrow)"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <path d="M80 180 L80 345 L380 345 L380 384" marker-end="url(#hydepipe-arrow-accent)"/>
+  </g>
+  <text x="230" y="331" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">câu hỏi gốc vẫn giữ</text>
+</svg>

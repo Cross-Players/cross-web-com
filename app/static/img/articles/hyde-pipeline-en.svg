@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="hydepipeen-title hydepipeen-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="hydepipeen-title">HyDE flow: write a hypothetical document, then query the vector DB</title>
+  <desc id="hydepipeen-desc">Two lanes. HYDE · RETRIEVAL: Question, LLM writes a hypothetical document, Embedding, Top-k search, Real documents; a dashed line links Top-k search to Vector DB to mark the match step. ANSWER lane: Prompt receives the original question and the real documents, then LLM, then a sourced answer.</desc>
+  <defs>
+    <marker id="hydepipeen-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+    <marker id="hydepipeen-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HYDE · RETRIEVAL</text>
+
+  <g>
+    <rect x="25" y="70" width="110" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="80" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Question</text>
+  </g>
+
+  <g>
+    <rect x="163" y="70" width="240" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="283" y="120" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">LLM writes a</text>
+    <text x="283" y="146" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">hypothetical document</text>
+  </g>
+
+  <g>
+    <rect x="431" y="70" width="130" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="496" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="589" y="70" width="140" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="659" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Top-k search</text>
+  </g>
+
+  <g>
+    <rect x="757" y="70" width="175" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="844" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Real documents</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydepipeen-arrow)">
+    <line x1="135" y1="125" x2="159" y2="125"/>
+    <line x1="403" y1="125" x2="427" y2="125"/>
+    <line x1="561" y1="125" x2="585" y2="125"/>
+    <line x1="729" y1="125" x2="753" y2="125"/>
+  </g>
+
+  <g>
+    <rect x="584" y="225" width="150" height="90" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="659" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Vector DB</text>
+  </g>
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <line x1="659" y1="180" x2="659" y2="220" marker-end="url(#hydepipeen-arrow-accent)"/>
+  </g>
+  <text x="668" y="208" font-size="15" font-weight="400" fill="#ec3013">match</text>
+
+  <text x="25" y="372" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">ANSWER</text>
+
+  <g>
+    <rect x="320" y="390" width="240" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="440" y="438" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Prompt</text>
+    <text x="440" y="464" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">(question + real documents)</text>
+  </g>
+
+  <g>
+    <rect x="600" y="390" width="90" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="645" y="452" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g>
+    <rect x="725" y="390" width="195" height="110" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="822" y="452" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Sourced answer</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydepipeen-arrow)">
+    <line x1="560" y1="445" x2="596" y2="445"/>
+    <line x1="690" y1="445" x2="721" y2="445"/>
+    <path d="M844 180 L844 330 L500 330 L500 384" marker-end="url(#hydepipeen-arrow)"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <path d="M80 180 L80 345 L375 345 L375 384" marker-end="url(#hydepipeen-arrow-accent)"/>
+  </g>
+  <text x="230" y="331" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">original question kept</text>
+</svg>

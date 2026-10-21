@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="hydevsen-title hydevsen-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="hydevsen-title">Standard RAG compared with HyDE</title>
+  <desc id="hydevsen-desc">Two lanes. STANDARD RAG: Short question, Question embedding, Top-k search, Real documents. HYDE: Short question, LLM writes a hypothetical document, Hypothetical document that is long and in document style, Embedding, Top-k search, Real documents. Note: HyDE moves the query into document space.</desc>
+  <defs>
+    <marker id="hydevsen-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="30" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">STANDARD RAG</text>
+
+  <g>
+    <rect x="95" y="50" width="165" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="178" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Short question</text>
+  </g>
+
+  <g>
+    <rect x="290" y="50" width="205" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="393" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Question embedding</text>
+  </g>
+
+  <g>
+    <rect x="525" y="50" width="135" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="593" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Top-k search</text>
+  </g>
+
+  <g>
+    <rect x="690" y="50" width="175" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="778" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Real documents</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydevsen-arrow)">
+    <line x1="260" y1="97" x2="286" y2="97"/>
+    <line x1="495" y1="97" x2="521" y2="97"/>
+    <line x1="660" y1="97" x2="686" y2="97"/>
+  </g>
+
+  <text x="25" y="195" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HYDE</text>
+
+  <g>
+    <rect x="25" y="215" width="90" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="70" y="274" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Short</text>
+    <text x="70" y="300" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">question</text>
+  </g>
+
+  <g>
+    <rect x="139" y="215" width="235" height="130" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="257" y="252" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">LLM writes a</text>
+    <text x="257" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">hypothetical document</text>
+  </g>
+
+  <g>
+    <rect x="398" y="215" width="140" height="130" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="468" y="252" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Hypothetical</text>
+    <text x="468" y="276" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">document</text>
+    <text x="468" y="302" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">(long, in document</text>
+    <text x="468" y="322" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">style)</text>
+  </g>
+
+  <g>
+    <rect x="562" y="215" width="120" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="622" y="287" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="706" y="215" width="85" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="749" y="274" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Top-k</text>
+    <text x="749" y="300" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">search</text>
+  </g>
+
+  <g>
+    <rect x="815" y="215" width="120" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="875" y="274" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Real</text>
+    <text x="875" y="300" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">documents</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydevsen-arrow)">
+    <line x1="115" y1="280" x2="135" y2="280"/>
+    <line x1="374" y1="280" x2="394" y2="280"/>
+    <line x1="538" y1="280" x2="558" y2="280"/>
+    <line x1="682" y1="280" x2="702" y2="280"/>
+    <line x1="791" y1="280" x2="811" y2="280"/>
+  </g>
+
+  <text x="480" y="392" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">Short question ↔ long documents: HyDE moves the query into document space</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="hydevs-title hydevs-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="hydevs-title">So sánh RAG thường và HyDE</title>
+  <desc id="hydevs-desc">Hai làn. RAG THƯỜNG: Câu hỏi ngắn, Embedding câu hỏi, Tìm top-k, Tài liệu thật. HYDE: Câu hỏi ngắn, LLM viết đoạn văn giả định, Đoạn văn giả định dài đúng văn phong tài liệu, Embedding, Tìm top-k, Tài liệu thật. Ghi chú: HyDE đưa truy vấn ngắn vào không gian của tài liệu dài.</desc>
+  <defs>
+    <marker id="hydevs-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="30" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">RAG THƯỜNG</text>
+
+  <g>
+    <rect x="148" y="50" width="134" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="215" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Câu hỏi ngắn</text>
+  </g>
+
+  <g>
+    <rect x="312" y="50" width="195" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="410" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding câu hỏi</text>
+  </g>
+
+  <g>
+    <rect x="537" y="50" width="110" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="592" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tìm top-k</text>
+  </g>
+
+  <g>
+    <rect x="677" y="50" width="135" height="95" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="744" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tài liệu thật</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydevs-arrow)">
+    <line x1="282" y1="97" x2="308" y2="97"/>
+    <line x1="507" y1="97" x2="533" y2="97"/>
+    <line x1="647" y1="97" x2="673" y2="97"/>
+  </g>
+
+  <text x="25" y="195" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HYDE</text>
+
+  <g>
+    <rect x="25" y="215" width="134" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="92" y="287" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Câu hỏi ngắn</text>
+  </g>
+
+  <g>
+    <rect x="183" y="215" width="176" height="130" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="271" y="274" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">LLM viết</text>
+    <text x="271" y="300" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">đoạn văn giả định</text>
+  </g>
+
+  <g>
+    <rect x="383" y="215" width="130" height="130" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="448" y="252" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Đoạn văn</text>
+    <text x="448" y="276" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">giả định</text>
+    <text x="448" y="302" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">(dài, đúng văn</text>
+    <text x="448" y="322" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">phong tài liệu)</text>
+  </g>
+
+  <g>
+    <rect x="537" y="215" width="118" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="596" y="287" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Embedding</text>
+  </g>
+
+  <g>
+    <rect x="679" y="215" width="105" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="731" y="287" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tìm top-k</text>
+  </g>
+
+  <g>
+    <rect x="808" y="215" width="127" height="130" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="871" y="287" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tài liệu thật</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hydevs-arrow)">
+    <line x1="159" y1="280" x2="179" y2="280"/>
+    <line x1="359" y1="280" x2="379" y2="280"/>
+    <line x1="513" y1="280" x2="533" y2="280"/>
+    <line x1="655" y1="280" x2="675" y2="280"/>
+    <line x1="784" y1="280" x2="804" y2="280"/>
+  </g>
+
+  <text x="480" y="392" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">Câu hỏi ngắn ↔ tài liệu dài: HyDE đưa truy vấn vào không gian của tài liệu</text>
+</svg>
