@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="hyben-title hyben-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="hyben-title">Hybrid retrieval: BM25 and dense merged with RRF, reranked, then top-k passages go to the LLM</title>
+  <desc id="hyben-desc">Diagram of the hybrid pipeline. The query splits into two branches: BM25 scores by keyword and dense finds the nearest vectors. The two lists are merged with RRF using 1/(k+rank), then reranked, reduced to top-k passages and handed to the LLM to write a sourced answer.</desc>
+  <defs>
+    <marker id="hyben-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="26" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HYBRID RETRIEVAL</text>
+
+  <g>
+    <rect x="25" y="90" width="190" height="90" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="120" y="125" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Query</text>
+    <text x="120" y="153" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">INV-2026-118</text>
+  </g>
+
+  <g>
+    <rect x="285" y="30" width="200" height="70" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="385" y="58" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">BM25</text>
+    <text x="385" y="84" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">keyword branch</text>
+  </g>
+
+  <g>
+    <rect x="285" y="170" width="200" height="70" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="385" y="198" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Dense + ANN</text>
+    <text x="385" y="224" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">semantic branch</text>
+  </g>
+
+  <g>
+    <rect x="545" y="95" width="200" height="90" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="645" y="120" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">RRF fusion</text>
+    <text x="645" y="147" text-anchor="middle" font-size="16" font-weight="400" fill="#ec3013">1 / (k + rank)</text>
+    <text x="645" y="172" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">merge both lists</text>
+  </g>
+
+  <g>
+    <rect x="790" y="95" width="145" height="90" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="862" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Rerank</text>
+    <text x="862" y="158" text-anchor="middle" font-size="14" font-weight="400" fill="#605d5d">(cross-encoder)</text>
+  </g>
+
+  <g>
+    <rect x="790" y="340" width="145" height="80" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="862" y="374" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Top-k</text>
+    <text x="862" y="400" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">3–5 passages</text>
+  </g>
+
+  <g>
+    <rect x="545" y="340" width="200" height="80" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="645" y="374" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">LLM</text>
+    <text x="645" y="400" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">write the answer</text>
+  </g>
+
+  <g>
+    <rect x="285" y="340" width="200" height="80" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="385" y="374" text-anchor="middle" font-size="20" font-weight="700" fill="#ec3013">Answer</text>
+    <text x="385" y="400" text-anchor="middle" font-size="15" font-weight="400" fill="#ec3013">with citations</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#hyben-arrow)">
+    <path d="M120 90 L120 65 L281 65"/>
+    <path d="M120 180 L120 205 L281 205"/>
+    <path d="M485 65 L515 65 L515 115 L541 115"/>
+    <path d="M485 205 L515 205 L515 165 L541 165"/>
+    <line x1="749" y1="140" x2="786" y2="140"/>
+    <line x1="862" y1="185" x2="862" y2="336"/>
+    <line x1="786" y1="380" x2="749" y2="380"/>
+    <line x1="541" y1="380" x2="489" y2="380"/>
+  </g>
+
+  <text x="385" y="285" text-anchor="middle" font-size="14" font-weight="400" fill="#ec3013">one query, two ways to score</text>
+
+  <text x="25" y="466" font-size="15" font-weight="400" fill="#201e1d">RRF merges the two lists without tuning weights; rerank is the step that reorders them.</text>
+  <text x="25" y="492" font-size="15" font-weight="400" fill="#605d5d">Only the final passages enter the LLM prompt, so exact codes and paraphrased questions both survive.</text>
+</svg>

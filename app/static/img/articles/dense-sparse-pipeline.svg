@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="dsp-title dsp-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="dsp-title">Hai làn truy xuất: sparse theo từ khóa và dense theo vector</title>
+  <desc id="dsp-desc">Sơ đồ hai làn dùng cùng một câu hỏi HĐ-2026-118. Làn SPARSE: văn bản được tokenize rồi lưu vào chỉ mục đảo, câu hỏi đi qua BM25 ra điểm số. Làn DENSE: văn bản đi qua encoder rồi lưu vào vector DB, câu hỏi đi qua encoder và tìm gần đúng ANN ra điểm số.</desc>
+  <defs>
+    <marker id="dsp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+    <marker id="dsp-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <text x="25" y="28" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">SPARSE · TỪ KHÓA</text>
+
+  <g>
+    <rect x="25" y="44" width="140" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="95" y="93" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Văn bản</text>
+  </g>
+  <g>
+    <rect x="195" y="44" width="170" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="280" y="82" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Tokenize</text>
+    <text x="280" y="108" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">tách thành từ khóa</text>
+  </g>
+  <g>
+    <rect x="395" y="44" width="215" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="502" y="82" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Chỉ mục đảo</text>
+    <text x="502" y="108" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">từ → tài liệu</text>
+  </g>
+  <g>
+    <rect x="640" y="44" width="295" height="84" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="655" y="68" font-size="16" font-weight="700" fill="#201e1d">HĐ-2026-118</text>
+    <text x="655" y="92" font-size="15" font-weight="400" fill="#605d5d">→ tài liệu #42</text>
+    <text x="655" y="114" font-size="15" font-weight="400" fill="#605d5d">HĐ-2026-119 → #43</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#dsp-arrow)">
+    <line x1="165" y1="86" x2="191" y2="86"/>
+    <line x1="365" y1="86" x2="391" y2="86"/>
+    <line x1="610" y1="86" x2="636" y2="86"/>
+  </g>
+
+  <g>
+    <rect x="25" y="160" width="210" height="84" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="130" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">Câu hỏi</text>
+    <text x="130" y="218" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">HĐ-2026-118</text>
+  </g>
+  <g>
+    <rect x="270" y="160" width="180" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="360" y="196" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">BM25</text>
+    <text x="360" y="222" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">chấm điểm theo từ</text>
+  </g>
+  <g>
+    <rect x="490" y="160" width="160" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="570" y="210" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Điểm số</text>
+  </g>
+  <g>
+    <rect x="685" y="160" width="250" height="84" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="700" y="196" font-size="15" font-weight="700" fill="#201e1d">Khớp chính xác:</text>
+    <text x="700" y="220" font-size="15" font-weight="400" fill="#605d5d">mã hàng, tên điều khoản</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#dsp-arrow)">
+    <line x1="235" y1="202" x2="266" y2="202"/>
+    <line x1="450" y1="202" x2="486" y2="202"/>
+    <line x1="650" y1="202" x2="681" y2="202"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#dsp-arrow-accent)">
+    <line x1="502" y1="128" x2="502" y2="156"/>
+  </g>
+  <text x="512" y="150" font-size="14" font-weight="400" fill="#ec3013">truy vấn vào chỉ mục</text>
+
+  <text x="25" y="292" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">DENSE · VECTOR</text>
+
+  <g>
+    <rect x="25" y="308" width="140" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="95" y="357" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Văn bản</text>
+  </g>
+  <g>
+    <rect x="195" y="308" width="170" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="280" y="346" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Encoder</text>
+    <text x="280" y="372" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">bi-encoder</text>
+  </g>
+  <g>
+    <rect x="395" y="308" width="215" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="502" y="357" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Vector DB</text>
+  </g>
+  <g>
+    <rect x="640" y="308" width="295" height="84" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="655" y="332" font-size="15" font-weight="700" fill="#201e1d">vector 384 chiều</text>
+    <circle cx="672" cy="360" r="4" fill="#605d5d"/>
+    <circle cx="700" cy="352" r="4" fill="#605d5d"/>
+    <circle cx="726" cy="366" r="4" fill="#605d5d"/>
+    <circle cx="754" cy="356" r="4" fill="#605d5d"/>
+    <circle cx="782" cy="368" r="4" fill="#ec3013"/>
+    <circle cx="810" cy="358" r="4" fill="#605d5d"/>
+    <circle cx="838" cy="366" r="4" fill="#605d5d"/>
+    <circle cx="866" cy="354" r="4" fill="#605d5d"/>
+    <circle cx="894" cy="364" r="4" fill="#605d5d"/>
+    <circle cx="916" cy="352" r="4" fill="#605d5d"/>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#dsp-arrow)">
+    <line x1="165" y1="350" x2="191" y2="350"/>
+    <line x1="365" y1="350" x2="391" y2="350"/>
+    <line x1="610" y1="350" x2="636" y2="350"/>
+  </g>
+
+  <g>
+    <rect x="25" y="424" width="210" height="84" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="130" y="454" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">Câu hỏi</text>
+    <text x="130" y="482" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">HĐ-2026-118</text>
+  </g>
+  <g>
+    <rect x="270" y="424" width="180" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="360" y="474" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">Encoder</text>
+  </g>
+  <g>
+    <rect x="490" y="424" width="160" height="84" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="570" y="458" text-anchor="middle" font-size="20" font-weight="700" fill="#201e1d">ANN</text>
+    <text x="570" y="484" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">HNSW · IVF</text>
+  </g>
+  <g>
+    <rect x="685" y="424" width="250" height="84" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="700" y="460" font-size="15" font-weight="700" fill="#201e1d">Khớp theo nghĩa:</text>
+    <text x="700" y="484" font-size="15" font-weight="400" fill="#605d5d">gần vector nhất</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#dsp-arrow)">
+    <line x1="235" y1="466" x2="266" y2="466"/>
+    <line x1="450" y1="466" x2="486" y2="466"/>
+    <line x1="650" y1="466" x2="681" y2="466"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#dsp-arrow-accent)">
+    <line x1="502" y1="392" x2="502" y2="420"/>
+  </g>
+  <text x="512" y="414" font-size="14" font-weight="400" fill="#ec3013">tìm gần đúng</text>
+
+  <text x="25" y="538" font-size="15" font-weight="400" fill="#ec3013">Cùng một câu hỏi (HĐ-2026-118) chạy qua cả hai làn: một làn so từ, một làn so vector.</text>
+</svg>
