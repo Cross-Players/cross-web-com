@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="rpl-title rpl-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="rpl-title">Pipeline hai giai đoạn: truy xuất lai lấy top 100 rồi cross-encoder xếp lại còn top 5</title>
+  <desc id="rpl-desc">Câu hỏi đi vào truy xuất lai gồm BM25 và dense, hợp nhất bằng RRF, lấy top 100 ứng viên. Cross-encoder chấm lại từng cặp và giữ top 5 đoạn cho LLM. Giai đoạn một nhanh và rộng, giai đoạn hai chậm và chính xác.</desc>
+  <defs>
+    <marker id="rpl-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="25" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">HAI GIAI ĐOẠN · TRUY XUẤT RỒI RERANK</text>
+
+  <g>
+    <rect x="25" y="140" width="110" height="80" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="80" y="186" text-anchor="middle" font-size="17" font-weight="700" fill="#ec3013">Câu hỏi</text>
+  </g>
+
+  <g>
+    <rect x="160" y="125" width="195" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="257" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Truy xuất lai</text>
+    <text x="257" y="186" text-anchor="middle" font-size="15" fill="#605d5d">BM25 + dense</text>
+    <text x="257" y="212" text-anchor="middle" font-size="15" fill="#605d5d">hợp nhất RRF</text>
+  </g>
+
+  <g>
+    <rect x="380" y="140" width="125" height="80" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="442" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">top 100</text>
+    <text x="442" y="200" text-anchor="middle" font-size="15" fill="#605d5d">ứng viên</text>
+  </g>
+
+  <g>
+    <rect x="530" y="125" width="185" height="110" rx="4" fill="#fff2ef" stroke="#ec3013" stroke-width="2"/>
+    <text x="622" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Cross-encoder</text>
+    <text x="622" y="186" text-anchor="middle" font-size="15" fill="#605d5d">chấm từng cặp</text>
+    <text x="622" y="212" text-anchor="middle" font-size="15" fill="#605d5d">xếp lại theo điểm</text>
+  </g>
+
+  <g>
+    <rect x="740" y="140" width="95" height="80" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="787" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">top 5</text>
+    <text x="787" y="200" text-anchor="middle" font-size="15" fill="#605d5d">đoạn</text>
+  </g>
+
+  <g>
+    <rect x="860" y="140" width="75" height="80" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="897" y="186" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#rpl-arrow)">
+    <line x1="135" y1="180" x2="156" y2="180"/>
+    <line x1="355" y1="180" x2="376" y2="180"/>
+    <line x1="505" y1="180" x2="526" y2="180"/>
+    <line x1="715" y1="180" x2="736" y2="180"/>
+    <line x1="835" y1="180" x2="856" y2="180"/>
+  </g>
+
+  <text x="332" y="285" text-anchor="middle" font-size="16" fill="#605d5d">nhanh, rộng</text>
+  <text x="332" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#201e1d">Giai đoạn 1 · truy xuất thô</text>
+  <text x="332" y="345" text-anchor="middle" font-size="15" fill="#605d5d">10–40 ms</text>
+
+  <text x="622" y="285" text-anchor="middle" font-size="16" font-weight="700" fill="#ec3013">chậm, chính xác</text>
+  <text x="622" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#201e1d">Giai đoạn 2 · rerank</text>
+  <text x="622" y="345" text-anchor="middle" font-size="15" fill="#605d5d">60–250 ms</text>
+
+  <text x="25" y="410" font-size="15" fill="#605d5d">Ngân sách độ trễ: nhúng 10–30 ms · BM25 5–15 ms · ANN 10–40 ms · rerank 60–250 ms · LLM 1–3 giây.</text>
+  <text x="25" y="450" font-size="15" fill="#ec3013">Rerank 100 cặp thì rẻ; rerank một triệu cặp mỗi câu hỏi thì không.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="rpl-en-title rpl-en-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="rpl-en-title">Two-stage pipeline: hybrid retrieval returns 100 candidates, the cross-encoder reorders them to 5</title>
+  <desc id="rpl-en-desc">The question enters hybrid retrieval over BM25 and dense search, fused with RRF, keeping the top 100 candidates. A cross-encoder rescores every pair and keeps the top 5 passages for the LLM. Stage one is fast and broad, stage two is slow and precise.</desc>
+  <defs>
+    <marker id="rpl-en-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="25" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">TWO STAGES · RETRIEVE, THEN RERANK</text>
+
+  <g>
+    <rect x="25" y="140" width="110" height="80" rx="4" fill="#fff2ef" stroke="#ffc4b8" stroke-width="2"/>
+    <text x="80" y="186" text-anchor="middle" font-size="17" font-weight="700" fill="#ec3013">Query</text>
+  </g>
+
+  <g>
+    <rect x="160" y="125" width="195" height="110" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="257" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Hybrid retrieval</text>
+    <text x="257" y="186" text-anchor="middle" font-size="15" fill="#605d5d">BM25 + dense</text>
+    <text x="257" y="212" text-anchor="middle" font-size="15" fill="#605d5d">fuse with RRF</text>
+  </g>
+
+  <g>
+    <rect x="380" y="140" width="125" height="80" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="442" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">top 100</text>
+    <text x="442" y="200" text-anchor="middle" font-size="15" fill="#605d5d">candidates</text>
+  </g>
+
+  <g>
+    <rect x="530" y="125" width="185" height="110" rx="4" fill="#fff2ef" stroke="#ec3013" stroke-width="2"/>
+    <text x="622" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Cross-encoder</text>
+    <text x="622" y="186" text-anchor="middle" font-size="15" fill="#605d5d">scores each pair</text>
+    <text x="622" y="212" text-anchor="middle" font-size="15" fill="#605d5d">reorders by score</text>
+  </g>
+
+  <g>
+    <rect x="740" y="140" width="95" height="80" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="787" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">top 5</text>
+    <text x="787" y="200" text-anchor="middle" font-size="15" fill="#605d5d">passages</text>
+  </g>
+
+  <g>
+    <rect x="860" y="140" width="75" height="80" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="897" y="186" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">LLM</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#rpl-en-arrow)">
+    <line x1="135" y1="180" x2="156" y2="180"/>
+    <line x1="355" y1="180" x2="376" y2="180"/>
+    <line x1="505" y1="180" x2="526" y2="180"/>
+    <line x1="715" y1="180" x2="736" y2="180"/>
+    <line x1="835" y1="180" x2="856" y2="180"/>
+  </g>
+
+  <text x="332" y="285" text-anchor="middle" font-size="16" fill="#605d5d">fast, broad</text>
+  <text x="332" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#201e1d">Stage 1 · retrieve</text>
+  <text x="332" y="345" text-anchor="middle" font-size="15" fill="#605d5d">10–40 ms</text>
+
+  <text x="622" y="285" text-anchor="middle" font-size="16" font-weight="700" fill="#ec3013">slow, precise</text>
+  <text x="622" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#201e1d">Stage 2 · rerank</text>
+  <text x="622" y="345" text-anchor="middle" font-size="15" fill="#605d5d">60–250 ms</text>
+
+  <text x="25" y="410" font-size="15" fill="#605d5d">Latency budget: embed 10–30 ms · BM25 5–15 ms · ANN 10–40 ms · rerank 60–250 ms · LLM 1–3 s.</text>
+  <text x="25" y="450" font-size="15" fill="#ec3013">Reranking 100 pairs is cheap; reranking a million per question is not.</text>
+</svg>

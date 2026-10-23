@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="bce-en-title bce-en-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="bce-en-title">A bi-encoder compares two vectors, a cross-encoder reads the pair in one pass</title>
+  <desc id="bce-en-desc">On the left, a bi-encoder encodes the query and the document in two independent forward passes into two vectors, then takes the cosine. On the right, a cross-encoder joins query and document into one sequence, runs it through a transformer once, and outputs a relevance score.</desc>
+  <defs>
+    <marker id="bce-en-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="25" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">BI-ENCODER · SEPARATE ENCODING</text>
+  <text x="500" y="40" font-size="15" font-weight="700" letter-spacing="1.5" fill="#605d5d">CROSS-ENCODER · ONE JOINT PASS</text>
+
+  <line x1="470" y1="58" x2="470" y2="430" stroke="#d7d3d3" stroke-width="2"/>
+
+  <g>
+    <rect x="25" y="70" width="130" height="60" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="90" y="106" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Query</text>
+  </g>
+  <g>
+    <rect x="190" y="70" width="120" height="60" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="250" y="106" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Encoder</text>
+  </g>
+  <g>
+    <rect x="345" y="70" width="80" height="60" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="385" y="106" text-anchor="middle" font-size="17" font-weight="700" fill="#201e1d">v(q)</text>
+  </g>
+
+  <g>
+    <rect x="25" y="250" width="130" height="60" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="90" y="286" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Document</text>
+  </g>
+  <g>
+    <rect x="190" y="250" width="120" height="60" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="250" y="286" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Encoder</text>
+  </g>
+  <g>
+    <rect x="345" y="250" width="80" height="60" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="385" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#201e1d">v(d)</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#bce-en-arrow)">
+    <line x1="155" y1="100" x2="186" y2="100"/>
+    <line x1="310" y1="100" x2="341" y2="100"/>
+    <line x1="155" y1="280" x2="186" y2="280"/>
+    <line x1="310" y1="280" x2="341" y2="280"/>
+    <line x1="385" y1="134" x2="385" y2="158"/>
+    <line x1="385" y1="246" x2="385" y2="222"/>
+  </g>
+
+  <circle cx="385" cy="190" r="30" fill="#fff2ef" stroke="#ec3013" stroke-width="2"/>
+  <text x="385" y="197" text-anchor="middle" font-size="17" font-weight="700" fill="#ec3013">cos</text>
+
+  <text x="385" y="345" text-anchor="middle" font-size="15" fill="#605d5d">score = cosine(v(q), v(d))</text>
+
+  <text x="25" y="392" font-size="15" fill="#605d5d">Document vectors are precomputed at index time.</text>
+  <text x="25" y="418" font-size="15" fill="#605d5d">Per query: embed the question, then ANN lookup.</text>
+
+  <g>
+    <rect x="490" y="70" width="150" height="150" rx="4" fill="#eae9e9" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="506" y="102" font-size="16" font-weight="700" fill="#201e1d">[CLS] Query</text>
+    <text x="506" y="132" font-size="16" font-weight="700" fill="#201e1d">[SEP] Document</text>
+    <text x="506" y="162" font-size="16" font-weight="700" fill="#201e1d">[SEP]</text>
+    <line x1="506" y1="176" x2="624" y2="176" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="506" y="200" font-size="15" fill="#605d5d">one sequence</text>
+  </g>
+
+  <g>
+    <rect x="670" y="100" width="140" height="90" rx="4" fill="#fff2ef" stroke="#ec3013" stroke-width="2"/>
+    <text x="740" y="136" text-anchor="middle" font-size="18" font-weight="700" fill="#201e1d">Transformer</text>
+    <text x="740" y="162" text-anchor="middle" font-size="15" fill="#605d5d">one forward pass</text>
+  </g>
+
+  <g>
+    <rect x="840" y="105" width="90" height="80" rx="4" fill="#f3f2f2" stroke="#d7d3d3" stroke-width="2"/>
+    <text x="885" y="137" text-anchor="middle" font-size="16" font-weight="700" fill="#201e1d">Score</text>
+    <text x="885" y="164" text-anchor="middle" font-size="16" fill="#605d5d">0.87</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#bce-en-arrow)">
+    <line x1="640" y1="145" x2="666" y2="145"/>
+    <line x1="810" y1="145" x2="836" y2="145"/>
+  </g>
+
+  <text x="490" y="268" font-size="15" fill="#605d5d">Attention sees both sides at once.</text>
+  <text x="490" y="294" font-size="15" fill="#605d5d">No separate vectors to compare.</text>
+
+  <text x="490" y="392" font-size="15" fill="#605d5d">Not cacheable: the score depends on the pair.</text>
+  <text x="490" y="418" font-size="15" fill="#605d5d">100 pairs ≈ 60–250 ms on a GPU.</text>
+
+  <text x="25" y="475" font-size="15" fill="#ec3013">Same pair: one side compares vectors, the other reads both at once.</text>
+</svg>
