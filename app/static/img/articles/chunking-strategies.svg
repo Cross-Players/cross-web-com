@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ttl">Ba cách cắt tài liệu cho RAG: cố định, theo cấu trúc, theo ngữ nghĩa</title>
+  <desc id="dsc">Một tài liệu được cắt theo ba cách. Cách cắt cố định làm đứt một câu ở ranh giới; cách theo cấu trúc giữ tiêu đề và hết đoạn; cách theo ngữ nghĩa cắt tại chỗ chủ đề đổi.</desc>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <!-- row 1: fixed size -->
+  <text x="40" y="126" font-size="15" font-weight="700" fill="#201e1d">Cắt cố định</text>
+  <text x="40" y="148" font-size="12" fill="#605d5d">cắt giữa câu</text>
+
+  <rect x="240" y="95" width="100" height="70" fill="#eae9e9"/>
+  <rect x="352" y="95" width="100" height="70" fill="#eae9e9"/>
+  <rect x="464" y="95" width="100" height="70" fill="#eae9e9"/>
+  <rect x="576" y="95" width="100" height="70" fill="#eae9e9"/>
+  <rect x="688" y="95" width="100" height="70" fill="#eae9e9"/>
+  <rect x="800" y="95" width="100" height="70" fill="#eae9e9"/>
+
+  <g stroke="#605d5d" stroke-width="2">
+    <line x1="252" y1="118" x2="328" y2="118"/>
+    <line x1="252" y1="134" x2="316" y2="134"/>
+    <line x1="252" y1="150" x2="330" y2="150"/>
+
+    <line x1="364" y1="118" x2="440" y2="118"/>
+    <line x1="364" y1="134" x2="428" y2="134"/>
+    <line x1="364" y1="150" x2="449" y2="150"/>
+
+    <line x1="467" y1="150" x2="530" y2="150"/>
+    <line x1="464" y1="118" x2="520" y2="118"/>
+    <line x1="464" y1="134" x2="540" y2="134"/>
+    
+
+    <line x1="588" y1="118" x2="664" y2="118"/>
+    <line x1="588" y1="134" x2="652" y2="134"/>
+    <line x1="588" y1="150" x2="664" y2="150"/>
+
+    <line x1="700" y1="118" x2="776" y2="118"/>
+    <line x1="700" y1="134" x2="764" y2="134"/>
+    <line x1="700" y1="150" x2="776" y2="150"/>
+
+    <line x1="812" y1="118" x2="888" y2="118"/>
+    <line x1="812" y1="134" x2="876" y2="134"/>
+    <line x1="812" y1="150" x2="888" y2="150"/>
+  </g>
+
+  <g stroke="#ec3013" stroke-width="3">
+    <line x1="450" y1="142" x2="466" y2="158"/>
+    <line x1="450" y1="158" x2="466" y2="142"/>
+  </g>
+
+  <!-- row 2: structure aware -->
+  <text x="40" y="288" font-size="15" font-weight="700" fill="#201e1d">Theo cấu trúc</text>
+  <text x="40" y="310" font-size="12" fill="#605d5d">giữ tiêu đề, hết đoạn</text>
+
+  <rect x="240" y="250" width="210" height="70" fill="#eae9e9"/>
+  <rect x="456" y="250" width="260" height="70" fill="#eae9e9"/>
+  <rect x="722" y="250" width="178" height="70" fill="#eae9e9"/>
+
+  <g>
+    <rect x="256" y="264" width="64" height="6" fill="#ec3013"/>
+    <line x1="256" y1="286" x2="436" y2="286" stroke="#605d5d" stroke-width="2"/>
+    <line x1="256" y1="302" x2="404" y2="302" stroke="#605d5d" stroke-width="2"/>
+
+    <rect x="472" y="264" width="78" height="6" fill="#ec3013"/>
+    <line x1="472" y1="286" x2="700" y2="286" stroke="#605d5d" stroke-width="2"/>
+    <line x1="472" y1="302" x2="660" y2="302" stroke="#605d5d" stroke-width="2"/>
+
+    <rect x="738" y="264" width="58" height="6" fill="#ec3013"/>
+    <line x1="738" y1="286" x2="884" y2="286" stroke="#605d5d" stroke-width="2"/>
+    <line x1="738" y1="302" x2="856" y2="302" stroke="#605d5d" stroke-width="2"/>
+  </g>
+
+  <!-- row 3: semantic -->
+  <text x="40" y="438" font-size="15" font-weight="700" fill="#201e1d">Theo ngữ nghĩa</text>
+  <text x="40" y="460" font-size="12" fill="#605d5d">cắt khi đổi chủ đề</text>
+
+  <rect x="240" y="400" width="190" height="70" fill="#eae9e9"/>
+  <rect x="436" y="400" width="240" height="70" fill="#eae9e9"/>
+  <rect x="682" y="400" width="218" height="70" fill="#eae9e9"/>
+
+  <g stroke="#605d5d" stroke-width="2">
+    <line x1="256" y1="424" x2="414" y2="424"/>
+    <line x1="256" y1="440" x2="392" y2="440"/>
+    <line x1="256" y1="456" x2="414" y2="456"/>
+
+    <line x1="452" y1="424" x2="660" y2="424"/>
+    <line x1="452" y1="440" x2="636" y2="440"/>
+    <line x1="452" y1="456" x2="660" y2="456"/>
+
+    <line x1="698" y1="424" x2="884" y2="424"/>
+    <line x1="698" y1="440" x2="860" y2="440"/>
+    <line x1="698" y1="456" x2="884" y2="456"/>
+  </g>
+
+  <g fill="#ec3013">
+    <rect x="430" y="386" width="6" height="14"/>
+    <rect x="676" y="386" width="6" height="14"/>
+  </g>
+</svg>

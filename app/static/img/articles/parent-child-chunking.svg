@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ttl">Parent-child: index chunk con, trả chunk cha cho LLM</title>
+  <desc id="dsc">Một mục lớn được chia thành ba chunk con và đưa vào index. Truy vấn khớp chunk con thứ hai, hệ thống trả mục cha cho LLM viết câu trả lời.</desc>
+  <defs>
+    <marker id="ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+    <marker id="acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="140" y="58" font-size="15" font-weight="700" fill="#201e1d">Mục cha</text>
+  <rect x="140" y="70" width="520" height="110" fill="#eae9e9"/>
+  <rect x="160" y="92" width="80" height="6" fill="#201e1d"/>
+  <g stroke="#605d5d" stroke-width="2">
+    <line x1="160" y1="116" x2="620" y2="116"/>
+    <line x1="160" y1="132" x2="584" y2="132"/>
+    <line x1="160" y1="148" x2="620" y2="148"/>
+  </g>
+
+  <text x="40" y="278" font-size="15" font-weight="700" fill="#201e1d">Chunk con</text>
+  <text x="40" y="296" font-size="12" fill="#605d5d">đưa vào index</text>
+
+  <rect x="150" y="240" width="150" height="90" fill="#eae9e9"/>
+  <rect x="330" y="240" width="150" height="90" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <rect x="510" y="240" width="150" height="90" fill="#eae9e9"/>
+
+  <g stroke="#605d5d" stroke-width="2">
+    <line x1="164" y1="268" x2="286" y2="268"/>
+    <line x1="164" y1="286" x2="272" y2="286"/>
+    <line x1="164" y1="304" x2="286" y2="304"/>
+
+    <line x1="344" y1="268" x2="466" y2="268"/>
+    <line x1="344" y1="286" x2="452" y2="286"/>
+    <line x1="344" y1="304" x2="466" y2="304"/>
+
+    <line x1="524" y1="268" x2="646" y2="268"/>
+    <line x1="524" y1="286" x2="632" y2="286"/>
+    <line x1="524" y1="304" x2="646" y2="304"/>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" marker-end="url(#ink)">
+    <line x1="225" y1="180" x2="225" y2="234"/>
+    <line x1="405" y1="180" x2="405" y2="234"/>
+    <line x1="585" y1="180" x2="585" y2="234"/>
+  </g>
+
+  <text x="730" y="58" font-size="15" font-weight="700" fill="#201e1d">LLM</text>
+  <rect x="730" y="70" width="170" height="110" fill="#eae9e9"/>
+  <text x="815" y="132" font-size="12" fill="#605d5d" text-anchor="middle">viết câu trả lời</text>
+
+  <line x1="662" y1="125" x2="726" y2="125" stroke="#201e1d" stroke-width="2" marker-end="url(#ink)"/>
+
+  <polyline points="480,332 480,355 690,355 690,160 664,160" fill="none" stroke="#ec3013" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#acc)"/>
+  <text x="540" y="378" font-size="12" fill="#605d5d">trả mục cha</text>
+
+  <rect x="310" y="390" width="190" height="70" fill="#eae9e9"/>
+  <text x="405" y="432" font-size="15" font-weight="700" fill="#201e1d" text-anchor="middle">Truy vấn</text>
+  <line x1="405" y1="390" x2="405" y2="336" stroke="#201e1d" stroke-width="2" marker-end="url(#ink)"/>
+</svg>
