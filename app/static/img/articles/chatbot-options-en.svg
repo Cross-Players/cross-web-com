@@ -2,18 +2,21 @@
   <title id="ttl">Three chatbot options for answering from documents</title>
   <desc id="dsc">Ready-made tool, scripted bot and custom RAG.</desc>
   <rect width="960" height="520" fill="#f3f2f2"/>
-  <rect x="20" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="40" y="230" font-size="15" font-weight="700" fill="#201e1d">Ready-made tool</text>
-  <text x="40" y="252" font-size="12" font-weight="700" fill="#201e1d">edit content</text>
-  <text x="40" y="274" font-size="12" fill="#605d5d">Stop here when you have few questions and few documents.</text>
-  <rect x="340" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="360" y="230" font-size="15" font-weight="700" fill="#201e1d">Scripted bot</text>
-  <text x="360" y="252" font-size="12" font-weight="700" fill="#201e1d">fixed flows, menus</text>
-  <text x="360" y="274" font-size="12" fill="#605d5d">Stop here when questions repeat but the flow is fixed.</text>
-  <rect x="660" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="680" y="230" font-size="15" font-weight="700" fill="#201e1d">Custom RAG</text>
-  <text x="680" y="252" font-size="12" font-weight="700" fill="#201e1d">retrieval and citations</text>
-  <text x="680" y="274" font-size="12" fill="#605d5d">Move here when answers live in documents and must be cited.</text>
+  <rect x="20" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="40" y="215" font-size="15" font-weight="700" fill="#201e1d">Ready-made tool</text>
+  <text x="40" y="238" font-size="12" font-weight="700" fill="#201e1d">edit content</text>
+  <text x="40" y="268" font-size="12" fill="#605d5d">Stop here when you have few</text>
+  <text x="40" y="286" font-size="12" fill="#605d5d">questions and few documents.</text>
+  <rect x="340" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="360" y="215" font-size="15" font-weight="700" fill="#201e1d">Scripted bot</text>
+  <text x="360" y="238" font-size="12" font-weight="700" fill="#201e1d">fixed flows, menus</text>
+  <text x="360" y="268" font-size="12" fill="#605d5d">Stop here when questions repeat</text>
+  <text x="360" y="286" font-size="12" fill="#605d5d">but the flow is fixed.</text>
+  <rect x="660" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="680" y="215" font-size="15" font-weight="700" fill="#201e1d">Custom RAG</text>
+  <text x="680" y="238" font-size="12" font-weight="700" fill="#201e1d">retrieval and citations</text>
+  <text x="680" y="268" font-size="12" fill="#605d5d">Move here when answers live in</text>
+  <text x="680" y="286" font-size="12" fill="#605d5d">documents and must be cited.</text>
   <line x1="300" y1="260" x2="340" y2="260" stroke="#ec3013" stroke-width="3"/>
   <line x1="620" y1="260" x2="660" y2="260" stroke="#ec3013" stroke-width="3"/>
 </svg>

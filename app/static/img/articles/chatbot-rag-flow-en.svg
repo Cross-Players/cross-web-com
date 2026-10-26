@@ -2,34 +2,34 @@
   <title id="ttl">AI chatbot answers from documents: pipeline</title>
   <desc id="dsc">Question in, retrieval, generation, answer and citation.</desc>
   <rect width="960" height="520" fill="#f3f2f2"/>
-  <text x="40" y="50" font-size="15" font-weight="700" fill="#605d5d">One-time setup</text>
-  <rect x="180" y="30" width="140" height="40" fill="#eae9e9"/>
-  <text x="195" y="55" font-size="13" font-weight="700" fill="#201e1d">Digitise</text>
-  <line x1="320" y1="50" x2="340" y2="50" stroke="#605d5d" stroke-width="2"/>
-  <rect x="340" y="30" width="140" height="40" fill="#eae9e9"/>
-  <text x="355" y="55" font-size="13" font-weight="700" fill="#201e1d">Split</text>
-  <line x1="480" y1="50" x2="500" y2="50" stroke="#605d5d" stroke-width="2"/>
-  <rect x="500" y="30" width="140" height="40" fill="#eae9e9"/>
-  <text x="515" y="55" font-size="13" font-weight="700" fill="#201e1d">Index</text>
-  <text x="40" y="135" font-size="15" font-weight="700" fill="#201e1d">Every question</text>
-  <rect x="40" y="150" width="120" height="50" fill="#eae9e9"/>
-  <text x="50" y="180" font-size="13" font-weight="700" fill="#201e1d">Question</text>
-  <line x1="160" y1="175" x2="200" y2="175" stroke="#ec3013" stroke-width="3"/>
-  <rect x="200" y="150" width="180" height="50" fill="#eae9e9"/>
-  <text x="215" y="180" font-size="13" font-weight="700" fill="#201e1d">Search the index</text>
-  <line x1="380" y1="175" x2="400" y2="175" stroke="#ec3013" stroke-width="3"/>
-  <rect x="400" y="150" width="180" height="50" fill="#eae9e9"/>
-  <text x="415" y="180" font-size="13" font-weight="700" fill="#201e1d">LLM + context</text>
-  <line x1="580" y1="175" x2="600" y2="175" stroke="#ec3013" stroke-width="3"/>
-  <rect x="600" y="150" width="320" height="50" fill="#eae9e9"/>
-  <text x="615" y="180" font-size="13" font-weight="700" fill="#201e1d">Answer + citation</text>
-  <text x="40" y="255" font-size="15" font-weight="700" fill="#605d5d">Plain chatbot</text>
-  <rect x="40" y="265" width="120" height="50" fill="#eae9e9"/>
-  <text x="50" y="295" font-size="13" font-weight="700" fill="#201e1d">Question</text>
-  <line x1="160" y1="290" x2="185" y2="290" stroke="#605d5d" stroke-width="2" stroke-dasharray="8 6"/>
-  <rect x="185" y="265" width="120" height="50" fill="#eae9e9"/>
-  <text x="200" y="295" font-size="13" font-weight="700" fill="#201e1d">Model</text>
-  <line x1="305" y1="290" x2="340" y2="290" stroke="#605d5d" stroke-width="2" stroke-dasharray="8 6"/>
-  <rect x="340" y="265" width="580" height="50" fill="#eae9e9"/>
-  <text x="355" y="295" font-size="13" font-weight="700" fill="#201e1d">Answer, no source</text>
+  <text x="40" y="80" font-size="15" font-weight="700" fill="#605d5d">One-time setup</text>
+  <rect x="180" y="60" width="220" height="40" fill="#eae9e9"/>
+  <text x="195" y="85" font-size="13" font-weight="700" fill="#201e1d">Digitise</text>
+  <line x1="400" y1="80" x2="420" y2="80" stroke="#605d5d" stroke-width="2"/>
+  <rect x="420" y="60" width="220" height="40" fill="#eae9e9"/>
+  <text x="435" y="85" font-size="13" font-weight="700" fill="#201e1d">Split</text>
+  <line x1="640" y1="80" x2="660" y2="80" stroke="#605d5d" stroke-width="2"/>
+  <rect x="660" y="60" width="220" height="40" fill="#eae9e9"/>
+  <text x="675" y="85" font-size="13" font-weight="700" fill="#201e1d">Index</text>
+  <text x="40" y="230" font-size="15" font-weight="700" fill="#201e1d">Every question</text>
+  <rect x="40" y="245" width="120" height="50" fill="#eae9e9"/>
+  <text x="50" y="275" font-size="13" font-weight="700" fill="#201e1d">Question</text>
+  <line x1="160" y1="270" x2="200" y2="270" stroke="#ec3013" stroke-width="3"/>
+  <rect x="200" y="245" width="180" height="50" fill="#eae9e9"/>
+  <text x="215" y="275" font-size="13" font-weight="700" fill="#201e1d">Search the index</text>
+  <line x1="380" y1="270" x2="400" y2="270" stroke="#ec3013" stroke-width="3"/>
+  <rect x="400" y="245" width="180" height="50" fill="#eae9e9"/>
+  <text x="415" y="275" font-size="13" font-weight="700" fill="#201e1d">LLM + context</text>
+  <line x1="580" y1="270" x2="600" y2="270" stroke="#ec3013" stroke-width="3"/>
+  <rect x="600" y="245" width="320" height="50" fill="#eae9e9"/>
+  <text x="615" y="275" font-size="13" font-weight="700" fill="#201e1d">Answer + citation</text>
+  <text x="40" y="380" font-size="15" font-weight="700" fill="#605d5d">Plain chatbot</text>
+  <rect x="40" y="395" width="120" height="50" fill="#eae9e9"/>
+  <text x="50" y="425" font-size="13" font-weight="700" fill="#201e1d">Question</text>
+  <line x1="160" y1="420" x2="185" y2="420" stroke="#605d5d" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="185" y="395" width="120" height="50" fill="#eae9e9"/>
+  <text x="200" y="425" font-size="13" font-weight="700" fill="#201e1d">Model</text>
+  <line x1="305" y1="420" x2="340" y2="420" stroke="#605d5d" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="340" y="395" width="580" height="50" fill="#eae9e9"/>
+  <text x="355" y="425" font-size="13" font-weight="700" fill="#201e1d">Answer, no source</text>
 </svg>

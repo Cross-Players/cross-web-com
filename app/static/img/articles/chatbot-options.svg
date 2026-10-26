@@ -2,18 +2,21 @@
   <title id="ttl">Ba lựa chọn chatbot trả lời theo tài liệu</title>
   <desc id="dsc">Công cụ có sẵn, bot kịch bản và RAG tự xây.</desc>
   <rect width="960" height="520" fill="#f3f2f2"/>
-  <rect x="20" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="40" y="230" font-size="15" font-weight="700" fill="#201e1d">Công cụ có sẵn</text>
-  <text x="40" y="252" font-size="12" font-weight="700" fill="#201e1d">chỉnh sửa nội dung</text>
-  <text x="40" y="274" font-size="12" fill="#605d5d">Dừng ở đây khi câu hỏi còn ít, tài liệu còn ít.</text>
-  <rect x="340" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="360" y="230" font-size="15" font-weight="700" fill="#201e1d">Bot kịch bản</text>
-  <text x="360" y="252" font-size="12" font-weight="700" fill="#201e1d">luồng cố định, menu</text>
-  <text x="360" y="274" font-size="12" fill="#605d5d">Dừng ở đây khi câu hỏi lặp lại nhưng luồng cố định.</text>
-  <rect x="660" y="205" width="280" height="110" fill="#eae9e9"/>
-  <text x="680" y="230" font-size="15" font-weight="700" fill="#201e1d">RAG tự xây</text>
-  <text x="680" y="252" font-size="12" font-weight="700" fill="#201e1d">truy xuất và trích nguồn</text>
-  <text x="680" y="274" font-size="12" fill="#605d5d">Lên đây khi câu trả lời nằm trong tài liệu và cần trích nguồn.</text>
+  <rect x="20" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="40" y="215" font-size="15" font-weight="700" fill="#201e1d">Công cụ có sẵn</text>
+  <text x="40" y="238" font-size="12" font-weight="700" fill="#201e1d">chỉnh sửa nội dung</text>
+  <text x="40" y="268" font-size="12" fill="#605d5d">Dừng ở đây khi câu hỏi còn ít,</text>
+  <text x="40" y="286" font-size="12" fill="#605d5d">tài liệu còn ít.</text>
+  <rect x="340" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="360" y="215" font-size="15" font-weight="700" fill="#201e1d">Bot kịch bản</text>
+  <text x="360" y="238" font-size="12" font-weight="700" fill="#201e1d">luồng cố định, menu</text>
+  <text x="360" y="268" font-size="12" fill="#605d5d">Dừng ở đây khi câu hỏi lặp lại</text>
+  <text x="360" y="286" font-size="12" fill="#605d5d">nhưng luồng cố định.</text>
+  <rect x="660" y="185" width="280" height="150" fill="#eae9e9"/>
+  <text x="680" y="215" font-size="15" font-weight="700" fill="#201e1d">RAG tự xây</text>
+  <text x="680" y="238" font-size="12" font-weight="700" fill="#201e1d">truy xuất và trích nguồn</text>
+  <text x="680" y="268" font-size="12" fill="#605d5d">Lên đây khi câu trả lời nằm trong</text>
+  <text x="680" y="286" font-size="12" fill="#605d5d">tài liệu và cần trích nguồn.</text>
   <line x1="300" y1="260" x2="340" y2="260" stroke="#ec3013" stroke-width="3"/>
   <line x1="620" y1="260" x2="660" y2="260" stroke="#ec3013" stroke-width="3"/>
 </svg>
