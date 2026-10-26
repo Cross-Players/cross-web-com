@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
   <title id="ttl">Three chatbot options for answering from documents</title>
-  <desc id="dsc">Ready-made tool, scripted bot and custom RAG are the three options for an AI chatbot that answers from documents.</desc>
+  <desc id="dsc">Ready-made tool, scripted bot and custom RAG.</desc>
   <rect width="960" height="520" fill="#f3f2f2"/>
-
-  <text x="40" y="90" font-size="15" font-weight="700" fill="#201e1d">Ready-made tool</text>
-  <rect x="240" y="110" width="240" height="70" fill="#eae9e9"/>
-  <text x="255" y="145" font-size="12" fill="#201e1d">Edit content</text>
-
-  <text x="40" y="262" font-size="15" font-weight="700" fill="#201e1d">Scripted bot</text>
-  <rect x="240" y="282" width="240" height="70" fill="#eae9e9"/>
-  <text x="255" y="317" font-size="12" fill="#201e1d">Fixed flow, menu</text>
-
-  <text x="40" y="424" font-size="15" font-weight="700" fill="#201e1d">Custom RAG</text>
-  <rect x="240" y="444" width="240" height="70" fill="#eae9e9"/>
-  <text x="255" y="479" font-size="12" fill="#201e1d">Retrieve and cite yourself</text>
+  <rect x="20" y="205" width="280" height="110" fill="#eae9e9"/>
+  <text x="40" y="230" font-size="15" font-weight="700" fill="#201e1d">Ready-made tool</text>
+  <text x="40" y="252" font-size="12" font-weight="700" fill="#201e1d">edit content</text>
+  <text x="40" y="274" font-size="12" fill="#605d5d">Stop here when you have few questions and few documents.</text>
+  <rect x="340" y="205" width="280" height="110" fill="#eae9e9"/>
+  <text x="360" y="230" font-size="15" font-weight="700" fill="#201e1d">Scripted bot</text>
+  <text x="360" y="252" font-size="12" font-weight="700" fill="#201e1d">fixed flows, menus</text>
+  <text x="360" y="274" font-size="12" fill="#605d5d">Stop here when questions repeat but the flow is fixed.</text>
+  <rect x="660" y="205" width="280" height="110" fill="#eae9e9"/>
+  <text x="680" y="230" font-size="15" font-weight="700" fill="#201e1d">Custom RAG</text>
+  <text x="680" y="252" font-size="12" font-weight="700" fill="#201e1d">retrieval and citations</text>
+  <text x="680" y="274" font-size="12" fill="#605d5d">Move here when answers live in documents and must be cited.</text>
+  <line x1="300" y1="260" x2="340" y2="260" stroke="#ec3013" stroke-width="3"/>
+  <line x1="620" y1="260" x2="660" y2="260" stroke="#ec3013" stroke-width="3"/>
 </svg>
