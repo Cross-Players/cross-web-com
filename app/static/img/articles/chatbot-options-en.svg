@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ttl">Three chatbot options for answering from documents</title>
+  <desc id="dsc">Ready-made tool, scripted bot and custom RAG are the three options for an AI chatbot that answers from documents.</desc>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="40" y="90" font-size="15" font-weight="700" fill="#201e1d">Ready-made tool</text>
+  <rect x="240" y="110" width="240" height="70" fill="#eae9e9"/>
+  <text x="255" y="145" font-size="12" fill="#201e1d">Edit content</text>
+
+  <text x="40" y="262" font-size="15" font-weight="700" fill="#201e1d">Scripted bot</text>
+  <rect x="240" y="282" width="240" height="70" fill="#eae9e9"/>
+  <text x="255" y="317" font-size="12" fill="#201e1d">Fixed flow, menu</text>
+
+  <text x="40" y="424" font-size="15" font-weight="700" fill="#201e1d">Custom RAG</text>
+  <rect x="240" y="444" width="240" height="70" fill="#eae9e9"/>
+  <text x="255" y="479" font-size="12" fill="#201e1d">Retrieve and cite yourself</text>
+</svg>
