@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ttl">Guardrail layer around an AI agent</title>
+  <desc id="dsc">A user sets a goal for the agent. The agent reaches CRM, email and files through a guardrail layer: permissions, step and budget limits, data boundary, audit log and human approval.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#605d5d"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+  <rect x="236" y="40" width="680" height="448" fill="none" stroke="#ec3013" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="256" y="70" font-size="15" font-weight="700" fill="#201e1d">Guardrail layer</text>
+  <rect x="44" y="198" width="160" height="80" fill="#eae9e9"/>
+  <text x="60" y="229" font-size="13" font-weight="700" fill="#201e1d">User</text>
+  <text x="60" y="249" font-size="13" fill="#605d5d">Sets a goal</text>
+  <line x1="204" y1="238" x2="272" y2="238" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="272" y="178" width="200" height="120" fill="#eae9e9"/>
+  <text x="288" y="216" font-size="13" font-weight="700" fill="#201e1d">AI agent</text>
+  <text x="288" y="242" font-size="13" fill="#605d5d">Plans and calls tools,</text>
+  <text x="288" y="262" font-size="13" fill="#605d5d">observes results</text>
+  <line x1="472" y1="238" x2="556" y2="134" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="472" y1="238" x2="556" y2="238" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="472" y1="238" x2="556" y2="342" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="556" y="96" width="340" height="76" fill="#eae9e9"/>
+  <text x="572" y="126" font-size="13" font-weight="700" fill="#201e1d">CRM</text>
+  <text x="572" y="148" font-size="13" fill="#605d5d">Read contacts, add notes</text>
+  <rect x="556" y="200" width="340" height="76" fill="#eae9e9"/>
+  <text x="572" y="230" font-size="13" font-weight="700" fill="#201e1d">Email</text>
+  <text x="572" y="252" font-size="13" fill="#605d5d">Read inbox, create drafts</text>
+  <rect x="556" y="304" width="340" height="76" fill="#eae9e9"/>
+  <text x="572" y="334" font-size="13" font-weight="700" fill="#201e1d">Files and folders</text>
+  <text x="572" y="356" font-size="13" fill="#605d5d">Read-only, as granted</text>
+  <rect x="256" y="408" width="120" height="60" fill="#eae9e9"/>
+  <text x="268" y="434" font-size="13" font-weight="700" fill="#201e1d">Permissions</text>
+  <text x="268" y="454" font-size="13" fill="#605d5d">least access</text>
+  <rect x="386" y="408" width="120" height="60" fill="#eae9e9"/>
+  <text x="398" y="434" font-size="13" font-weight="700" fill="#201e1d">Step and</text>
+  <text x="398" y="454" font-size="13" fill="#605d5d">budget limits</text>
+  <rect x="516" y="408" width="120" height="60" fill="#eae9e9"/>
+  <text x="528" y="434" font-size="13" font-weight="700" fill="#201e1d">Data</text>
+  <text x="528" y="454" font-size="13" fill="#605d5d">boundary</text>
+  <rect x="646" y="408" width="120" height="60" fill="#eae9e9"/>
+  <text x="658" y="434" font-size="13" font-weight="700" fill="#201e1d">Audit log</text>
+  <text x="658" y="454" font-size="13" fill="#605d5d">every call</text>
+  <rect x="776" y="408" width="120" height="60" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="788" y="434" font-size="13" font-weight="700" fill="#201e1d">Human</text>
+  <text x="788" y="454" font-size="13" fill="#605d5d">approval</text>
+</svg>

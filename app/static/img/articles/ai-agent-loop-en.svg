@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="ttl dsc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ttl">AI agent loop</title>
+  <desc id="dsc">Goal, plan, approval gate, tool call, observe, then answer, stop or retry.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#605d5d"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+  <rect x="44" y="60" width="176" height="76" fill="#eae9e9"/>
+  <text x="60" y="91" font-size="13" font-weight="700" fill="#201e1d">Goal</text>
+  <text x="60" y="111" font-size="13" fill="#605d5d">Result to reach</text>
+  <rect x="276" y="60" width="176" height="76" fill="#eae9e9"/>
+  <text x="292" y="91" font-size="13" font-weight="700" fill="#201e1d">Plan</text>
+  <text x="292" y="111" font-size="13" fill="#605d5d">Choose the next step</text>
+  <rect x="508" y="60" width="176" height="76" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="524" y="84" font-size="13" font-weight="700" fill="#201e1d">Approval gate</text>
+  <text x="524" y="102" font-size="13" fill="#605d5d">Risky action</text>
+  <text x="524" y="120" font-size="13" fill="#605d5d">needs a person</text>
+  <rect x="740" y="60" width="176" height="76" fill="#eae9e9"/>
+  <text x="756" y="91" font-size="13" font-weight="700" fill="#201e1d">Tool call</text>
+  <text x="756" y="111" font-size="13" fill="#605d5d">Read CRM, create draft</text>
+  <line x1="220" y1="98" x2="276" y2="98" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="452" y1="98" x2="508" y2="98" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="684" y1="98" x2="740" y2="98" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="828" y1="136" x2="828" y2="228" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="740" y="228" width="176" height="76" fill="#eae9e9"/>
+  <text x="756" y="259" font-size="13" font-weight="700" fill="#201e1d">Observe</text>
+  <text x="756" y="279" font-size="13" fill="#605d5d">Read the result</text>
+  <rect x="508" y="228" width="176" height="76" fill="#eae9e9"/>
+  <text x="524" y="259" font-size="13" font-weight="700" fill="#201e1d">Decide</text>
+  <text x="524" y="279" font-size="13" fill="#605d5d">Answer, stop or retry</text>
+  <line x1="740" y1="266" x2="684" y2="266" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M508 266H364V136" fill="none" stroke="#605d5d" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+  <text x="436" y="258" font-size="13" fill="#605d5d" text-anchor="middle">retry</text>
+  <line x1="530" y1="304" x2="364" y2="396" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="596" y1="304" x2="596" y2="396" stroke="#605d5d" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="606" y="352" font-size="13" fill="#605d5d">enough evidence</text>
+  <rect x="276" y="396" width="176" height="76" fill="#eae9e9"/>
+  <text x="292" y="427" font-size="13" font-weight="700" fill="#201e1d">Stop</text>
+  <text x="292" y="447" font-size="13" fill="#605d5d">Write audit log</text>
+  <rect x="508" y="396" width="176" height="76" fill="#eae9e9"/>
+  <text x="524" y="427" font-size="13" font-weight="700" fill="#201e1d">Answer</text>
+  <text x="524" y="447" font-size="13" fill="#605d5d">With sources used</text>
+  <rect x="740" y="396" width="176" height="76" fill="#eae9e9"/>
+  <text x="756" y="420" font-size="13" font-weight="700" fill="#201e1d">Stop rule</text>
+  <text x="756" y="438" font-size="13" fill="#605d5d">Enough evidence, or</text>
+  <text x="756" y="456" font-size="13" fill="#605d5d">budget or steps used</text>
+</svg>
