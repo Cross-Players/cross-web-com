@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="zalo-chatbot-flow-title zalo-chatbot-flow-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="zalo-chatbot-flow-title">Luồng tin nhắn chatbot Zalo OA</title>
+  <desc id="zalo-chatbot-flow-desc">Khách nhắn qua Zalo OA, chatbot đọc ý định và tra dữ liệu, rồi trả lời, hỏi lại hoặc chuyển cho nhân viên.</desc>
+  <defs>
+    <marker id="zf-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+    <marker id="zf-arrow-accent" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#f3f2f2"/>
+  <g fill="none" stroke="#605d5d" stroke-width="1.5">
+    <path d="M280,102 H360" marker-end="url(#zf-arrow)"/>
+    <path d="M440,152 V208" marker-end="url(#zf-arrow)"/>
+    <path d="M800,152 V180 H520 V208" marker-end="url(#zf-arrow)"/>
+    <path d="M360,258 H280" marker-end="url(#zf-arrow)"/>
+    <path d="M600,258 H680" marker-end="url(#zf-arrow)"/>
+    <path d="M800,308 V364" marker-end="url(#zf-arrow)"/>
+    <path d="M280,414 H360" marker-end="url(#zf-arrow)"/>
+  </g>
+  <path d="M480,308 V364" fill="none" stroke="#ec3013" stroke-width="2" marker-end="url(#zf-arrow-accent)"/>
+  <g fill="#eae9e9" stroke="#605d5d" stroke-width="1">
+    <rect x="40" y="52" width="240" height="100" rx="8"/>
+    <rect x="360" y="52" width="240" height="100" rx="8"/>
+    <rect x="680" y="52" width="240" height="100" rx="8"/>
+    <rect x="40" y="208" width="240" height="100" rx="8"/>
+    <rect x="360" y="208" width="240" height="100" rx="8" stroke="#ec3013" stroke-width="2"/>
+    <rect x="680" y="208" width="240" height="100" rx="8"/>
+    <rect x="40" y="364" width="240" height="100" rx="8"/>
+    <rect x="360" y="364" width="240" height="100" rx="8"/>
+    <rect x="680" y="364" width="240" height="100" rx="8"/>
+  </g>
+  <g font-size="15" font-weight="600" fill="#201e1d">
+    <text x="60" y="86">Khách hàng</text>
+    <text x="380" y="86">Zalo OA</text>
+    <text x="700" y="86">Nguồn dữ liệu</text>
+    <text x="60" y="242">Hỏi lại trước</text>
+    <text x="380" y="242">Chatbot</text>
+    <text x="700" y="242">Trả lời ngay</text>
+    <text x="60" y="398">Điều kiện chuyển người</text>
+    <text x="380" y="398">Nhân viên</text>
+    <text x="700" y="398">Nhật ký hội thoại</text>
+  </g>
+  <g font-size="13" fill="#605d5d">
+    <text x="60" y="110">nhắn Zalo lúc 21:00</text>
+    <text x="380" y="110">tài khoản doanh nghiệp</text>
+    <text x="700" y="110">FAQ, bảng giá,</text>
+    <text x="700" y="128">trạng thái đơn hàng</text>
+    <text x="60" y="266">khi chi tiết còn thiếu</text>
+    <text x="380" y="266">đọc ý định, tra dữ liệu</text>
+    <text x="700" y="266">khi dữ liệu đã rõ ràng</text>
+    <text x="60" y="422">khiếu nại, hoàn tiền,</text>
+    <text x="60" y="440">việc ngoài phạm vi bot</text>
+    <text x="380" y="422">nhận việc cần người xử lý</text>
+    <text x="700" y="422">câu hỏi, đáp, lý do chuyển</text>
+    <text x="492" y="340">chuyển người</text>
+    <text x="812" y="340">ghi lại</text>
+  </g>
+</svg>
