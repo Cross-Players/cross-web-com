@@ -8,50 +8,51 @@
   </defs>
   <rect width="960" height="520" fill="#f3f2f2"/>
   <g fill="none" stroke="#605d5d" stroke-width="1.5">
-    <path d="M280,236 H360" marker-end="url(#zo-arrow)"/>
-    <path d="M600,236 H680" marker-end="url(#zo-arrow)"/>
+    <path d="M280,238 H360" marker-end="url(#zo-arrow)"/>
+    <path d="M600,238 H680" marker-end="url(#zo-arrow)"/>
   </g>
   <g fill="#eae9e9" stroke="#605d5d" stroke-width="1">
-    <rect x="40" y="56" width="240" height="360" rx="8"/>
-    <rect x="360" y="56" width="240" height="360" rx="8"/>
-    <rect x="680" y="56" width="240" height="360" rx="8"/>
+    <rect x="40" y="74" width="240" height="328" rx="8"/>
+    <rect x="360" y="74" width="240" height="328" rx="8"/>
+    <rect x="680" y="74" width="240" height="328" rx="8"/>
   </g>
   <g fill="#f3f2f2" stroke="#605d5d" stroke-width="1">
-    <rect x="56" y="252" width="208" height="136" rx="6"/>
-    <rect x="376" y="252" width="208" height="136" rx="6"/>
-    <rect x="696" y="252" width="208" height="136" rx="6"/>
+    <rect x="56" y="270" width="208" height="104" rx="6"/>
+    <rect x="376" y="270" width="208" height="104" rx="6"/>
+    <rect x="696" y="270" width="208" height="104" rx="6"/>
   </g>
   <g font-size="13" fill="#605d5d">
-    <text x="60" y="92" font-weight="600">MỨC 1</text>
-    <text x="380" y="92" font-weight="600">MỨC 2</text>
-    <text x="700" y="92" font-weight="600">MỨC 3</text>
-    <text x="60" y="162">Bot chạy theo menu và</text>
-    <text x="60" y="182">từ khoá đã viết sẵn.</text>
-    <text x="60" y="202">Không tự suy đoán ý.</text>
-    <text x="380" y="162">AI đọc câu hỏi tự do</text>
-    <text x="380" y="182">và chọn đúng kịch bản.</text>
-    <text x="380" y="202">Câu trả lời vẫn do bạn viết.</text>
-    <text x="700" y="162">Bot trả lời từ tài liệu</text>
-    <text x="700" y="182">nội bộ đã kiểm duyệt,</text>
-    <text x="700" y="202">và luôn kèm nguồn trích.</text>
-    <text x="72" y="276" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
-    <text x="72" y="298">Đa số câu hỏi lặp lại</text>
-    <text x="72" y="318">và nội dung ít thay đổi.</text>
-    <text x="392" y="276" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
-    <text x="392" y="298">Khách hỏi nhiều cách khác</text>
-    <text x="392" y="318">nhưng cùng một ý, và</text>
-    <text x="392" y="338">không cần dữ liệu mới.</text>
-    <text x="712" y="276" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
-    <text x="712" y="298">Tài liệu đã sạch và được</text>
-    <text x="712" y="318">cập nhật đều. Phần còn lại</text>
-    <text x="712" y="338">thì chuyển cho người.</text>
-    <text x="320" y="226" text-anchor="middle">+ AI</text>
-    <text x="640" y="226" text-anchor="middle">+ RAG</text>
-    <text x="480" y="460" text-anchor="middle">Chỉ nâng cấp khi mức trước không đủ. Mỗi mức thêm một phần việc phải bảo trì.</text>
+    <text x="60" y="110" font-weight="600">MỨC 1</text>
+    <text x="380" y="110" font-weight="600">MỨC 2</text>
+    <text x="700" y="110" font-weight="600">MỨC 3</text>
+    <text x="60" y="180">Bot chạy theo menu và</text>
+    <text x="60" y="200">từ khoá đã viết sẵn.</text>
+    <text x="60" y="220">Không tự suy đoán ý.</text>
+    <text x="380" y="180">AI đọc câu hỏi tự do</text>
+    <text x="380" y="200">và chọn đúng kịch bản.</text>
+    <text x="380" y="220">Câu trả lời vẫn do bạn viết.</text>
+    <text x="700" y="180">Bot trả lời từ tài liệu</text>
+    <text x="700" y="200">nội bộ đã kiểm duyệt,</text>
+    <text x="700" y="220">và luôn kèm nguồn trích.</text>
+    <text x="72" y="294" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
+    <text x="72" y="316">Phần lớn câu hỏi lặp lại</text>
+    <text x="72" y="336">và nội dung ít thay đổi,</text>
+    <text x="72" y="356">nên kịch bản cố định là đủ.</text>
+    <text x="392" y="294" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
+    <text x="392" y="316">Khách hỏi nhiều cách khác</text>
+    <text x="392" y="336">nhưng cùng một ý, và</text>
+    <text x="392" y="356">không cần dữ liệu mới.</text>
+    <text x="712" y="294" font-weight="600" fill="#201e1d">Dừng ở đây khi:</text>
+    <text x="712" y="316">Tài liệu đã sạch và được</text>
+    <text x="712" y="336">cập nhật đều. Phần còn lại</text>
+    <text x="712" y="356">thì chuyển cho người.</text>
+    <text x="320" y="228" text-anchor="middle">+ AI</text>
+    <text x="640" y="228" text-anchor="middle">+ RAG</text>
+    <text x="480" y="446" text-anchor="middle">Chỉ nâng cấp khi mức trước không đủ. Mỗi mức thêm một phần việc phải bảo trì.</text>
   </g>
   <g font-size="20" font-weight="600" fill="#201e1d">
-    <text x="60" y="130">Kịch bản cố định</text>
-    <text x="380" y="130">Kịch bản + AI</text>
-    <text x="700" y="130">Kịch bản + RAG</text>
+    <text x="60" y="148">Kịch bản cố định</text>
+    <text x="380" y="148">Kịch bản + AI</text>
+    <text x="700" y="148">Kịch bản + RAG</text>
   </g>
 </svg>

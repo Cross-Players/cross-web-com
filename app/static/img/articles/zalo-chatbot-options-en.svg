@@ -8,50 +8,51 @@
   </defs>
   <rect width="960" height="520" fill="#f3f2f2"/>
   <g fill="none" stroke="#605d5d" stroke-width="1.5">
-    <path d="M280,236 H360" marker-end="url(#zo-arrow-en)"/>
-    <path d="M600,236 H680" marker-end="url(#zo-arrow-en)"/>
+    <path d="M280,238 H360" marker-end="url(#zo-arrow-en)"/>
+    <path d="M600,238 H680" marker-end="url(#zo-arrow-en)"/>
   </g>
   <g fill="#eae9e9" stroke="#605d5d" stroke-width="1">
-    <rect x="40" y="56" width="240" height="360" rx="8"/>
-    <rect x="360" y="56" width="240" height="360" rx="8"/>
-    <rect x="680" y="56" width="240" height="360" rx="8"/>
+    <rect x="40" y="74" width="240" height="328" rx="8"/>
+    <rect x="360" y="74" width="240" height="328" rx="8"/>
+    <rect x="680" y="74" width="240" height="328" rx="8"/>
   </g>
   <g fill="#f3f2f2" stroke="#605d5d" stroke-width="1">
-    <rect x="56" y="252" width="208" height="136" rx="6"/>
-    <rect x="376" y="252" width="208" height="136" rx="6"/>
-    <rect x="696" y="252" width="208" height="136" rx="6"/>
+    <rect x="56" y="270" width="208" height="104" rx="6"/>
+    <rect x="376" y="270" width="208" height="104" rx="6"/>
+    <rect x="696" y="270" width="208" height="104" rx="6"/>
   </g>
   <g font-size="13" fill="#605d5d">
-    <text x="60" y="92" font-weight="600">LEVEL 1</text>
-    <text x="380" y="92" font-weight="600">LEVEL 2</text>
-    <text x="700" y="92" font-weight="600">LEVEL 3</text>
-    <text x="60" y="162">The bot follows a fixed menu</text>
-    <text x="60" y="182">and keywords you wrote.</text>
-    <text x="60" y="202">It never guesses an answer.</text>
-    <text x="380" y="162">AI reads free-form questions</text>
-    <text x="380" y="182">and picks the right script.</text>
-    <text x="380" y="202">You still write the reply.</text>
-    <text x="700" y="162">The bot answers from vetted</text>
-    <text x="700" y="182">company documents and cites</text>
-    <text x="700" y="202">its source in each reply.</text>
-    <text x="72" y="276" font-weight="600" fill="#201e1d">Stop here when:</text>
-    <text x="72" y="298">Most questions repeat, and</text>
-    <text x="72" y="318">the answers change rarely.</text>
-    <text x="392" y="276" font-weight="600" fill="#201e1d">Stop here when:</text>
-    <text x="392" y="298">Customers ask one thing</text>
-    <text x="392" y="318">in many ways, and answers</text>
-    <text x="392" y="338">need no fresh data.</text>
-    <text x="712" y="276" font-weight="600" fill="#201e1d">Stop here when:</text>
-    <text x="712" y="298">Documents are clean and</text>
-    <text x="712" y="318">kept up to date. Anything</text>
-    <text x="712" y="338">else goes to a person.</text>
-    <text x="320" y="226" text-anchor="middle">+ AI</text>
-    <text x="640" y="226" text-anchor="middle">+ RAG</text>
-    <text x="480" y="460" text-anchor="middle">Move up a level only when the one before falls short. Each level adds upkeep.</text>
+    <text x="60" y="110" font-weight="600">LEVEL 1</text>
+    <text x="380" y="110" font-weight="600">LEVEL 2</text>
+    <text x="700" y="110" font-weight="600">LEVEL 3</text>
+    <text x="60" y="180">The bot follows a fixed menu</text>
+    <text x="60" y="200">and keywords you wrote.</text>
+    <text x="60" y="220">It never guesses an answer.</text>
+    <text x="380" y="180">AI reads free-form questions</text>
+    <text x="380" y="200">and picks the right script.</text>
+    <text x="380" y="220">You still write the reply.</text>
+    <text x="700" y="180">The bot answers from vetted</text>
+    <text x="700" y="200">company documents and cites</text>
+    <text x="700" y="220">its source in each reply.</text>
+    <text x="72" y="294" font-weight="600" fill="#201e1d">Stop here when:</text>
+    <text x="72" y="316">Most questions repeat,</text>
+    <text x="72" y="336">and answers change rarely,</text>
+    <text x="72" y="356">so scripts are enough.</text>
+    <text x="392" y="294" font-weight="600" fill="#201e1d">Stop here when:</text>
+    <text x="392" y="316">Customers ask one thing</text>
+    <text x="392" y="336">in many ways, and answers</text>
+    <text x="392" y="356">need no fresh data.</text>
+    <text x="712" y="294" font-weight="600" fill="#201e1d">Stop here when:</text>
+    <text x="712" y="316">Documents are clean and</text>
+    <text x="712" y="336">kept up to date. Anything</text>
+    <text x="712" y="356">else goes to a person.</text>
+    <text x="320" y="228" text-anchor="middle">+ AI</text>
+    <text x="640" y="228" text-anchor="middle">+ RAG</text>
+    <text x="480" y="446" text-anchor="middle">Move up a level only when the one before falls short. Each level adds upkeep.</text>
   </g>
   <g font-size="20" font-weight="600" fill="#201e1d">
-    <text x="60" y="130">Fixed scripts</text>
-    <text x="380" y="130">Scripts + AI</text>
-    <text x="700" y="130">Scripts + RAG</text>
+    <text x="60" y="148">Fixed scripts</text>
+    <text x="380" y="148">Scripts + AI</text>
+    <text x="700" y="148">Scripts + RAG</text>
   </g>
 </svg>

@@ -17,7 +17,8 @@
     <path d="M360,258 H280" marker-end="url(#zf-arrow)"/>
     <path d="M600,258 H680" marker-end="url(#zf-arrow)"/>
     <path d="M800,308 V364" marker-end="url(#zf-arrow)"/>
-    <path d="M280,414 H360" marker-end="url(#zf-arrow)"/>
+    <path d="M160,208 V152" marker-end="url(#zf-arrow)"/>
+    <path d="M160,364 V336 H400 V308" marker-end="url(#zf-arrow)"/>
   </g>
   <path d="M480,308 V364" fill="none" stroke="#ec3013" stroke-width="2" marker-end="url(#zf-arrow-accent)"/>
   <g fill="#eae9e9" stroke="#605d5d" stroke-width="1">
@@ -40,7 +41,7 @@
     <text x="700" y="242">Trả lời ngay</text>
     <text x="60" y="398">Điều kiện chuyển người</text>
     <text x="380" y="398">Nhân viên</text>
-    <text x="700" y="398">Nhật ký hội thoại</text>
+    <text x="700" y="398">Gửi trả lời</text>
   </g>
   <g font-size="13" fill="#605d5d">
     <text x="60" y="110">nhắn Zalo lúc 21:00</text>
@@ -53,8 +54,9 @@
     <text x="60" y="422">khiếu nại, hoàn tiền,</text>
     <text x="60" y="440">việc ngoài phạm vi bot</text>
     <text x="380" y="422">nhận việc cần người xử lý</text>
-    <text x="700" y="422">câu hỏi, đáp, lý do chuyển</text>
+    <text x="700" y="422">qua Zalo OA về khách</text>
+    <text x="172" y="184">hỏi khách</text>
     <text x="492" y="340">chuyển người</text>
-    <text x="812" y="340">ghi lại</text>
+    <text x="812" y="340">gửi</text>
   </g>
 </svg>
