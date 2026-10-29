@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="rag-en-title rag-en-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="rag-en-title">Two ways to answer a policy question</title>
+  <desc id="rag-en-desc">Comparison of two ways to answer a policy question: model memory only versus checking your own documents first and answering with a cited source.</desc>
+  <defs>
+    <marker id="rag-en-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Two ways to answer a policy question</text>
+  <line x1="480" y1="70" x2="480" y2="440" stroke="#605d5d" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- Left panel -->
+  <text x="247.5" y="76" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Model memory only</text>
+
+  <rect x="55" y="96" width="385" height="58" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="247.5" y="120" text-anchor="middle" font-size="15" fill="#201e1d">Q: Can sale items</text>
+  <text x="247.5" y="140" text-anchor="middle" font-size="15" fill="#201e1d">be returned?</text>
+
+  <line x1="247.5" y1="156" x2="247.5" y2="180" stroke="#605d5d" stroke-width="2" marker-end="url(#rag-en-arrow)"/>
+
+  <rect x="55" y="184" width="385" height="70" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="247.5" y="214" text-anchor="middle" font-size="15" fill="#201e1d">AI answers without</text>
+  <text x="247.5" y="234" text-anchor="middle" font-size="15" fill="#201e1d">opening any document</text>
+
+  <line x1="247.5" y1="256" x2="247.5" y2="280" stroke="#605d5d" stroke-width="2" marker-end="url(#rag-en-arrow)"/>
+
+  <rect x="55" y="284" width="385" height="70" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <text x="247.5" y="314" text-anchor="middle" font-size="15" fill="#201e1d">Confident answer,</text>
+  <text x="247.5" y="334" text-anchor="middle" font-size="15" fill="#201e1d">may be wrong</text>
+
+  <!-- Right panel -->
+  <text x="720" y="76" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Check your documents first</text>
+
+  <rect x="530" y="96" width="380" height="58" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="720" y="120" text-anchor="middle" font-size="15" fill="#201e1d">Q: Can sale items</text>
+  <text x="720" y="140" text-anchor="middle" font-size="15" fill="#201e1d">be returned?</text>
+
+  <line x1="720" y1="156" x2="720" y2="180" stroke="#605d5d" stroke-width="2" marker-end="url(#rag-en-arrow)"/>
+
+  <rect x="530" y="184" width="380" height="52" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="720" y="216" text-anchor="middle" font-size="15" fill="#201e1d">Find the matching policy clause</text>
+
+  <line x1="720" y1="238" x2="720" y2="262" stroke="#605d5d" stroke-width="2" marker-end="url(#rag-en-arrow)"/>
+
+  <rect x="530" y="266" width="380" height="76" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="720" y="299" text-anchor="middle" font-size="15" fill="#201e1d">Answer with a source:</text>
+  <text x="720" y="319" text-anchor="middle" font-size="15" fill="#201e1d">Section 3, sales policy</text>
+
+  <line x1="720" y1="344" x2="720" y2="368" stroke="#605d5d" stroke-width="2" marker-end="url(#rag-en-arrow)"/>
+
+  <rect x="530" y="372" width="380" height="52" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="720" y="404" text-anchor="middle" font-size="15" fill="#201e1d">A person checks the source when needed</text>
+
+  <text x="480" y="474" text-anchor="middle" font-size="13" fill="#605d5d">A cited source lets the reader check the answer.</text>
+</svg>

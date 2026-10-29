@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="check-vi-title check-vi-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="check-vi-title">Kiểm tra trước khi gửi câu trả lời của AI</title>
+  <desc id="check-vi-desc">Lưu đồ kiểm tra câu trả lời của AI: xem có nguồn trong tài liệu không, câu trả lời có đụng tới giá, chính sách, số liệu hay cam kết không, rồi quyết định cho người duyệt hoặc gửi kèm nguồn.</desc>
+  <defs>
+    <marker id="check-vi-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+    <marker id="check-vi-arrow-accent" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="480" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Kiểm tra trước khi gửi câu trả lời của AI</text>
+
+  <g transform="translate(0,20)">
+  <rect x="50" y="230" width="200" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="150" y="266" text-anchor="middle" font-size="15" fill="#201e1d">Câu trả lời của AI</text>
+
+  <line x1="250" y1="260" x2="306" y2="260" stroke="#605d5d" stroke-width="2" marker-end="url(#check-vi-arrow)"/>
+
+  <rect x="310" y="230" width="240" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="430" y="253" text-anchor="middle" font-size="15" fill="#201e1d">Có nguồn trong</text>
+  <text x="430" y="273" text-anchor="middle" font-size="15" fill="#201e1d">tài liệu không?</text>
+
+  <!-- Không: accent branch -->
+  <line x1="430" y1="230" x2="430" y2="174" stroke="#ec3013" stroke-width="2" marker-end="url(#check-vi-arrow-accent)"/>
+  <text x="442" y="207" font-size="13" fill="#ec3013">Không</text>
+
+  <rect x="310" y="110" width="240" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="430" y="133" text-anchor="middle" font-size="15" fill="#201e1d">Hỏi lại hoặc</text>
+  <text x="430" y="153" text-anchor="middle" font-size="15" fill="#201e1d">chuyển người</text>
+
+  <!-- Có: next check -->
+  <line x1="550" y1="260" x2="616" y2="260" stroke="#605d5d" stroke-width="2" marker-end="url(#check-vi-arrow)"/>
+  <text x="583" y="251" text-anchor="middle" font-size="13" fill="#605d5d">Có</text>
+
+  <rect x="620" y="230" width="290" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="765" y="253" text-anchor="middle" font-size="15" fill="#201e1d">Là giá, chính sách,</text>
+  <text x="765" y="273" text-anchor="middle" font-size="15" fill="#201e1d">số liệu hay cam kết?</text>
+
+  <!-- Có: accent branch to approval -->
+  <line x1="765" y1="230" x2="765" y2="174" stroke="#ec3013" stroke-width="2" marker-end="url(#check-vi-arrow-accent)"/>
+  <text x="777" y="207" font-size="13" fill="#ec3013">Có</text>
+
+  <rect x="620" y="110" width="290" height="60" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <text x="765" y="146" text-anchor="middle" font-size="15" fill="#201e1d">Người duyệt trước khi gửi</text>
+
+  <!-- Không: send with source -->
+  <line x1="765" y1="290" x2="765" y2="356" stroke="#605d5d" stroke-width="2" marker-end="url(#check-vi-arrow)"/>
+  <text x="777" y="330" font-size="13" fill="#605d5d">Không</text>
+
+  <rect x="620" y="360" width="290" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="765" y="396" text-anchor="middle" font-size="15" fill="#201e1d">Gửi kèm nguồn</text>
+  </g>
+</svg>
