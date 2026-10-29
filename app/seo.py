@@ -158,9 +158,10 @@ def breadcrumbs(
 
 
 def _web_application(app: dict[str, Any], app_id: str, org_id: str, locale: str) -> dict[str, Any]:
-    """schema.org WebApplication for a product page (``meta.app`` in its JSON)."""
+    """schema.org WebApplication (or ``app.type``, e.g. MobileApplication) for a
+    product page (``meta.app`` in its JSON)."""
     node: dict[str, Any] = {
-        "@type": "WebApplication",
+        "@type": app.get("type", "WebApplication"),
         "@id": app_id,
         "name": app["name"],
         "description": app["description"],
@@ -176,6 +177,10 @@ def _web_application(app: dict[str, Any], app_id: str, org_id: str, locale: str)
         node["areaServed"] = {"@type": "City", "name": app["area_served"]}
     if app.get("same_as"):
         node["sameAs"] = app["same_as"]
+    if app.get("download_url"):
+        node["downloadUrl"] = app["download_url"]
+    if "price" in app:
+        node["offers"] = {"@type": "Offer", "price": app["price"], "priceCurrency": app.get("currency", "VND")}
     return node
 
 
