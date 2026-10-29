@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="check-en-title check-en-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="check-en-title">Check an AI answer before it goes out</title>
+  <desc id="check-en-desc">Flow for checking an AI answer: confirm a source exists in your documents, check whether it touches a price, policy, number or promise, then either get a person to approve it or send it with the source.</desc>
+  <defs>
+    <marker id="check-en-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+    <marker id="check-en-arrow-accent" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+
+  <text x="480" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Check an AI answer before it goes out</text>
+
+  <rect x="50" y="230" width="200" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="150" y="266" text-anchor="middle" font-size="15" fill="#201e1d">AI answer</text>
+
+  <line x1="250" y1="260" x2="306" y2="260" stroke="#605d5d" stroke-width="2" marker-end="url(#check-en-arrow)"/>
+
+  <rect x="310" y="230" width="240" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="430" y="253" text-anchor="middle" font-size="15" fill="#201e1d">Is there a source in</text>
+  <text x="430" y="273" text-anchor="middle" font-size="15" fill="#201e1d">your documents?</text>
+
+  <!-- No: accent branch -->
+  <line x1="430" y1="230" x2="430" y2="174" stroke="#ec3013" stroke-width="2" marker-end="url(#check-en-arrow-accent)"/>
+  <text x="442" y="207" font-size="13" fill="#ec3013">No</text>
+
+  <rect x="310" y="110" width="240" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="430" y="133" text-anchor="middle" font-size="15" fill="#201e1d">Ask again or</text>
+  <text x="430" y="153" text-anchor="middle" font-size="15" fill="#201e1d">hand to a person</text>
+
+  <!-- Yes: next check -->
+  <line x1="550" y1="260" x2="616" y2="260" stroke="#605d5d" stroke-width="2" marker-end="url(#check-en-arrow)"/>
+  <text x="583" y="251" text-anchor="middle" font-size="13" fill="#605d5d">Yes</text>
+
+  <rect x="620" y="230" width="290" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="765" y="253" text-anchor="middle" font-size="15" fill="#201e1d">Is it a price, policy,</text>
+  <text x="765" y="273" text-anchor="middle" font-size="15" fill="#201e1d">number or promise?</text>
+
+  <!-- Yes: accent branch to approval -->
+  <line x1="765" y1="230" x2="765" y2="174" stroke="#ec3013" stroke-width="2" marker-end="url(#check-en-arrow-accent)"/>
+  <text x="777" y="207" font-size="13" fill="#ec3013">Yes</text>
+
+  <rect x="620" y="110" width="290" height="60" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <text x="765" y="146" text-anchor="middle" font-size="15" fill="#201e1d">A person approves before sending</text>
+
+  <!-- No: send with source -->
+  <line x1="765" y1="290" x2="765" y2="356" stroke="#605d5d" stroke-width="2" marker-end="url(#check-en-arrow)"/>
+  <text x="777" y="330" font-size="13" fill="#605d5d">No</text>
+
+  <rect x="620" y="360" width="290" height="60" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="765" y="396" text-anchor="middle" font-size="15" fill="#201e1d">Send with the source</text>
+</svg>
