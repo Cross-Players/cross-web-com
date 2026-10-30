@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="decay-vi-1-title decay-vi-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="decay-vi-1-title">Bốn mốc của một chuỗi hỏng sau khi chatbot đã chạy</title>
+  <desc id="decay-vi-1-desc">Trình tự theo tuần và tháng: tuần đầu mọi người còn đọc câu trả lời, tháng thứ hai câu hỏi lạ tích lại mà không câu nào được sửa, tháng thứ ba người hiểu tài liệu gốc nghỉ việc và nhà cung cấp ngừng một phiên bản model, cuối cùng là lúc không ai còn bằng chứng để biết bot đang sai.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="46" font-size="22" font-weight="bold" fill="#201e1d">Bốn mốc của một chuỗi hỏng</text>
+  <text x="40" y="76" font-size="18" fill="#605d5d">Đây là thứ tự quan sát được, không phải tuổi thọ đo được của chatbot.</text>
+
+  <line x1="70" y1="120" x2="900" y2="120" stroke="#605d5d" stroke-width="2"/>
+
+  <circle cx="120" cy="120" r="9" fill="#ec3013"/>
+  <circle cx="370" cy="120" r="9" fill="#ec3013"/>
+  <circle cx="620" cy="120" r="9" fill="#ec3013"/>
+  <circle cx="870" cy="120" r="9" fill="#605d5d"/>
+
+  <g font-size="19" fill="#201e1d">
+    <text x="120" y="104" text-anchor="middle" font-weight="bold">Tuần 1</text>
+    <text x="370" y="104" text-anchor="middle" font-weight="bold">Tháng 2</text>
+    <text x="620" y="104" text-anchor="middle" font-weight="bold">Tháng 3</text>
+    <text x="870" y="104" text-anchor="middle" font-weight="bold">Sau đó</text>
+  </g>
+
+  <g>
+    <rect x="40" y="150" width="180" height="112" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+    <text x="56" y="180" font-size="18" fill="#201e1d">Mọi người còn</text>
+    <text x="56" y="204" font-size="18" fill="#201e1d">đọc từng câu</text>
+    <text x="56" y="228" font-size="18" fill="#201e1d">trả lời</text>
+
+    <rect x="290" y="150" width="180" height="112" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+    <text x="306" y="180" font-size="18" fill="#201e1d">Câu hỏi lạ tích</text>
+    <text x="306" y="204" font-size="18" fill="#201e1d">lại, không câu</text>
+    <text x="306" y="228" font-size="18" fill="#201e1d">nào được sửa</text>
+
+    <rect x="540" y="150" width="180" height="112" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+    <text x="556" y="180" font-size="18" fill="#201e1d">Người hiểu tài</text>
+    <text x="556" y="204" font-size="18" fill="#201e1d">liệu gốc nghỉ;</text>
+    <text x="556" y="228" font-size="18" fill="#201e1d">model bị ngừng</text>
+
+    <rect x="790" y="150" width="130" height="112" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+    <text x="806" y="180" font-size="18" fill="#201e1d">Không ai còn</text>
+    <text x="806" y="204" font-size="18" fill="#201e1d">bằng chứng</text>
+    <text x="806" y="228" font-size="18" fill="#201e1d">để biết</text>
+  </g>
+
+  <text x="40" y="308" font-size="19" font-weight="bold" fill="#605d5d">Việc lẽ ra phải xảy ra ở mỗi mốc</text>
+
+  <g>
+    <rect x="40" y="326" width="180" height="96" rx="10" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="56" y="356" font-size="18" fill="#201e1d">Chốt tờ giấy</text>
+    <text x="56" y="380" font-size="18" fill="#201e1d">phạm vi hai cột</text>
+    <text x="56" y="404" font-size="18" fill="#201e1d">trước khi mở</text>
+
+    <rect x="290" y="326" width="180" height="96" rx="10" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="306" y="356" font-size="18" fill="#201e1d">Mỗi câu lạ được</text>
+    <text x="306" y="380" font-size="18" fill="#201e1d">ghi vào nhật ký</text>
+    <text x="306" y="404" font-size="18" fill="#201e1d">trong tuần</text>
+
+    <rect x="540" y="326" width="180" height="96" rx="10" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="556" y="356" font-size="18" fill="#201e1d">Tên người phụ</text>
+    <text x="556" y="380" font-size="18" fill="#201e1d">trách nằm trong</text>
+    <text x="556" y="404" font-size="18" fill="#201e1d">lịch, có ngày</text>
+
+    <rect x="790" y="326" width="130" height="96" rx="10" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="806" y="356" font-size="18" fill="#201e1d">Đọc lại bộ</text>
+    <text x="806" y="380" font-size="18" fill="#201e1d">câu hỏi đóng</text>
+    <text x="806" y="404" font-size="18" fill="#201e1d">băng</text>
+  </g>
+
+  <text x="40" y="454" font-size="18" fill="#605d5d">Không mốc nào ở trên là một lần hỏng: mỗi lần chỉ mất một chút, và cái mất không có mốc thời gian để so.</text>
+</svg>

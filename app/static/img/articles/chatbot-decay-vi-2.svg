@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="decay-vi-2-title decay-vi-2-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="decay-vi-2-title">Một bản ghi nhật ký và ba nhánh quyết định</title>
+  <desc id="decay-vi-2-desc">Bên trái là một bản ghi với sáu trường: mã tin nhắn, nhãn ý định, câu trả lời, tài liệu trích kèm ngày cập nhật, quyết định và người đọc. Bên phải là ba điều kiện dẫn tới ba kết quả: trả lời, hỏi lại, chuyển người.</desc>
+  <defs>
+    <marker id="decay-vi-2-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+    <marker id="decay-vi-2-arrow-accent" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ec3013"/>
+    </marker>
+  </defs>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="44" font-size="22" font-weight="bold" fill="#201e1d">Một bản ghi, sáu trường</text>
+  <text x="40" y="72" font-size="18" fill="#605d5d">Không ai đọc thì chỉ là bản ghi.</text>
+
+  <rect x="40" y="92" width="430" height="300" rx="12" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+
+  <g font-size="18" fill="#201e1d">
+    <text x="60" y="130" font-weight="bold">Mã tin nhắn</text>
+    <text x="250" y="130">#48213</text>
+    <line x1="60" y1="144" x2="450" y2="144" stroke="#c9c7c7" stroke-width="1"/>
+    <text x="60" y="174" font-weight="bold">Nhãn ý định</text>
+    <text x="250" y="174">giá và khuyến mãi</text>
+    <line x1="60" y1="188" x2="450" y2="188" stroke="#c9c7c7" stroke-width="1"/>
+    <text x="60" y="218" font-weight="bold">Câu trả lời</text>
+    <text x="250" y="218">nguyên văn</text>
+    <line x1="60" y1="232" x2="450" y2="232" stroke="#c9c7c7" stroke-width="1"/>
+    <text x="60" y="262" font-weight="bold">Tài liệu trích</text>
+    <text x="250" y="262">bảng giá, 12/07</text>
+    <line x1="60" y1="276" x2="450" y2="276" stroke="#c9c7c7" stroke-width="1"/>
+    <text x="60" y="306" font-weight="bold">Quyết định</text>
+    <text x="250" y="306">trả lời</text>
+    <line x1="60" y1="320" x2="450" y2="320" stroke="#c9c7c7" stroke-width="1"/>
+    <text x="60" y="350" font-weight="bold">Người đọc</text>
+    <text x="250" y="350">tên người phụ trách</text>
+  </g>
+
+  <text x="520" y="44" font-size="22" font-weight="bold" fill="#201e1d">Ba nhánh quyết định</text>
+  <text x="520" y="72" font-size="18" fill="#605d5d">Mỗi câu hỏi đi qua đúng một nhánh.</text>
+
+  <rect x="520" y="100" width="240" height="56" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="640" y="122" text-anchor="middle" font-size="18" fill="#201e1d">Trong cột trái,</text>
+  <text x="640" y="144" text-anchor="middle" font-size="18" fill="#201e1d">có tài liệu?</text>
+  <line x1="764" y1="128" x2="788" y2="128" stroke="#605d5d" stroke-width="2" marker-end="url(#decay-vi-2-arrow)"/>
+  <rect x="792" y="100" width="128" height="56" rx="10" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="856" y="134" text-anchor="middle" font-size="18" fill="#201e1d">Trả lời</text>
+
+  <rect x="520" y="176" width="240" height="56" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="640" y="198" text-anchor="middle" font-size="18" fill="#201e1d">Trong cột trái,</text>
+  <text x="640" y="220" text-anchor="middle" font-size="18" fill="#201e1d">tài liệu thiếu</text>
+  <line x1="764" y1="204" x2="788" y2="204" stroke="#605d5d" stroke-width="2" marker-end="url(#decay-vi-2-arrow)"/>
+  <rect x="792" y="176" width="128" height="56" rx="10" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="856" y="210" text-anchor="middle" font-size="18" fill="#201e1d">Hỏi lại</text>
+
+  <rect x="520" y="252" width="240" height="56" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="640" y="286" text-anchor="middle" font-size="18" fill="#201e1d">Ngoài cột trái</text>
+  <line x1="764" y1="280" x2="788" y2="280" stroke="#ec3013" stroke-width="2" marker-end="url(#decay-vi-2-arrow-accent)"/>
+  <rect x="792" y="252" width="128" height="56" rx="10" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+  <text x="856" y="286" text-anchor="middle" font-size="18" fill="#201e1d">Chuyển người</text>
+
+  <text x="40" y="430" font-size="18" fill="#605d5d">Mọi nhánh đều ghi lại một bản ghi như bên trái, để tuần sau đọc lại được.</text>
+</svg>

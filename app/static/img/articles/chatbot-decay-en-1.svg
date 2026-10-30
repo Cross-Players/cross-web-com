@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="cd-en-1-title cd-en-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="cd-en-1-title">Where a refusal has to be added</title>
+  <desc id="cd-en-1-desc">The retrieval pipeline always returns chunks and the model always writes; a separate gate checks the allow list and the cited document, then answers, re-asks or hands off.</desc>
+  <defs>
+    <marker id="cd-en-1-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" markerUnits="strokeWidth" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#605d5d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="520" fill="#f3f2f2"/>
+  <text x="480" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#201e1d">Where a refusal has to be added</text>
+
+  <text x="40" y="86" font-size="18" font-weight="bold" fill="#605d5d">RETRIEVAL, AS BUILT</text>
+  <text x="500" y="86" font-size="18" font-weight="bold" fill="#605d5d">THE GATE THE BUSINESS ADDS</text>
+
+  <rect x="40" y="102" width="420" height="56" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="250" y="137" text-anchor="middle" font-size="18" fill="#201e1d">Customer question</text>
+
+  <line x1="250" y1="158" x2="250" y2="186" stroke="#605d5d" stroke-width="2" marker-end="url(#cd-en-1-arrow)"/>
+
+  <rect x="40" y="190" width="420" height="80" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="250" y="222" text-anchor="middle" font-size="18" fill="#201e1d">Top-k chunks returned</text>
+  <text x="250" y="248" text-anchor="middle" font-size="18" fill="#605d5d">k fixed at install, no empty default</text>
+
+  <line x1="250" y1="270" x2="250" y2="298" stroke="#605d5d" stroke-width="2" marker-end="url(#cd-en-1-arrow)"/>
+
+  <rect x="40" y="302" width="420" height="80" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="250" y="334" text-anchor="middle" font-size="18" fill="#201e1d">Model writes an answer</text>
+  <text x="250" y="360" text-anchor="middle" font-size="18" fill="#605d5d">fluent even when the clause is missing</text>
+
+  <line x1="250" y1="382" x2="250" y2="410" stroke="#605d5d" stroke-width="2" marker-end="url(#cd-en-1-arrow)"/>
+  <text x="250" y="438" text-anchor="middle" font-size="18" fill="#201e1d">Answer leaves the system</text>
+  <text x="250" y="464" text-anchor="middle" font-size="18" fill="#605d5d">right or wrong, it is already sent</text>
+
+  <rect x="500" y="102" width="420" height="80" rx="8" fill="#201e1d" stroke="#ec3013" stroke-width="3"/>
+  <text x="710" y="134" text-anchor="middle" font-size="18" fill="#f3f2f2">Allow list, cited document,</text>
+  <text x="710" y="160" text-anchor="middle" font-size="18" fill="#f3f2f2">version date</text>
+
+  <line x1="710" y1="182" x2="710" y2="210" stroke="#605d5d" stroke-width="2" marker-end="url(#cd-en-1-arrow)"/>
+
+  <rect x="500" y="214" width="128" height="48" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="564" y="244" text-anchor="middle" font-size="18" fill="#201e1d">Answer</text>
+  <rect x="646" y="214" width="128" height="48" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="710" y="244" text-anchor="middle" font-size="18" fill="#201e1d">Re-ask</text>
+  <rect x="792" y="214" width="128" height="48" rx="8" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+  <text x="856" y="244" text-anchor="middle" font-size="18" fill="#201e1d">Hand off</text>
+
+  <text x="710" y="296" text-anchor="middle" font-size="18" fill="#201e1d">One of three, never silence</text>
+
+  <rect x="500" y="318" width="420" height="92" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="2"/>
+  <text x="710" y="352" text-anchor="middle" font-size="18" fill="#201e1d">Without the gate, every question</text>
+  <text x="710" y="378" text-anchor="middle" font-size="18" fill="#201e1d">leaves with an answer,</text>
+  <text x="710" y="404" text-anchor="middle" font-size="18" fill="#605d5d">including the ones no document covers</text>
+
+  <text x="480" y="496" text-anchor="middle" font-size="18" fill="#605d5d">Retrieval decides what the model reads. The gate decides what the customer gets.</text>
+</svg>
