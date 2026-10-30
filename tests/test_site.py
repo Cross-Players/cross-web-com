@@ -10,7 +10,9 @@ from app.seo_audit import audit
 BASE = "https://example.test"
 PRODUCT_PATH = "/san-pham/tro-ly-bds-43/"
 PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
+GPLX_PATH = "/gplx/"
 GPLX_POLICY_PATH = "/gplx/policy/"
+GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
 VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
@@ -65,7 +67,7 @@ def test_home_pages(client, path, lang, h1):
 
 
 def test_titles_and_descriptions_are_seo_sized(client):
-    for path in ("/", "/en/", PRODUCT_PATH):
+    for path in ("/", "/en/", PRODUCT_PATH, GPLX_PATH):
         html = client.get(path).get_data(as_text=True)
         title = re.search(r"<title>(.*?)</title>", html).group(1)
         desc = re.search(r'<meta name="description" content="(.*?)">', html).group(1)
@@ -95,8 +97,9 @@ def test_sitemap(client):
         assert BASE + path in locs, path
     assert BASE + PRODUCT_PATH in locs
     assert BASE + PRIVACY_PATH in locs
+    assert BASE + GPLX_PATH in locs
     assert BASE + GPLX_POLICY_PATH in locs
-    assert len(locs) == 2 + len(BLOG_PATHS) + 3
+    assert len(locs) == 2 + len(BLOG_PATHS) + 4
 
 
 def test_product_landing_page(client):
@@ -140,7 +143,28 @@ def test_gplx_policy_page(client):
     assert "crosstechedu@gmail.com" in html
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", "/blog/", PRODUCT_PATH])
+def test_gplx_landing_page(client):
+    html = client.get(GPLX_PATH).get_data(as_text=True)
+    assert html.count("<h1") == 1 and "Ôn thi GPLX" in html
+    # hero CTA + download card, both opening in a new tab
+    assert html.count(f'href="{GPLX_STORE}" target="_blank" rel="noopener"') == 2
+    assert f'href="{GPLX_POLICY_PATH}"' in html
+    assert html.count('class="shot"') == 6
+    assert "img/products/gplx/og.jpg" in html
+    graph = {n["@type"]: n for n in _jsonld(html)["@graph"]}
+    app = graph["MobileApplication"]
+    assert app["operatingSystem"] == "iOS" and app["downloadUrl"] == GPLX_STORE
+    assert app["offers"] == {"@type": "Offer", "price": 0, "priceCurrency": "VND"}
+    assert graph["WebPage"]["about"] == {"@id": app["@id"]}
+    # the policy page now sits under the landing page
+    policy = _jsonld(client.get(GPLX_POLICY_PATH).get_data(as_text=True))["@graph"]
+    crumbs = next(n for n in policy if n["@type"] == "BreadcrumbList")["itemListElement"]
+    assert [i["item"] for i in crumbs] == [f"{BASE}/", BASE + GPLX_PATH, BASE + GPLX_POLICY_PATH]
+    for path in ("/", "/blog/", GPLX_POLICY_PATH):
+        assert f'href="{GPLX_PATH}"' in client.get(path).get_data(as_text=True), path
+
+
+@pytest.mark.parametrize("path", ["/", "/en/", "/blog/", PRODUCT_PATH, GPLX_PATH])
 def test_links_to_company_site(client, path):
     """Backlink to the sister site www.crosstechedu.site (it links back to the blog)."""
     html = client.get(path).get_data(as_text=True)
@@ -253,7 +277,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_POLICY_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)

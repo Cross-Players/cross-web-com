@@ -1,0 +1,18 @@
+{# App screenshots: a horizontal scroll-snap row (no JS). The row is focusable
+   so keyboard users can scroll it with the arrow keys. #}
+{% set d = block.data %}
+<section id="{{ d.id }}" class="section" aria-labelledby="{{ d.id }}-title">
+  {% include "blocks/_section_head.html" %}
+  <div class="shots" tabindex="0" role="region" aria-label="{{ d.list_label }}">
+    <ul class="shots__track">
+      {% for s in d['items'] %}
+      <li class="shot">
+        <figure>
+          <img src="{{ asset(s.image) }}" alt="{{ s.alt }}" width="{{ d.width }}" height="{{ d.height }}" loading="lazy" decoding="async">
+          <figcaption><strong>{{ s.title }}</strong> <span class="text-muted">{{ s.body }}</span></figcaption>
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

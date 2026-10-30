@@ -1,0 +1,142 @@
+{
+  "slug": "gplx",
+  "translation_key": "gplx",
+  "meta": {
+    "title": "Ôn thi GPLX miễn phí: 600 câu, 15 hạng bằng | Cross Tech Edu",
+    "description": "Ứng dụng ôn thi lý thuyết GPLX trên iPhone và iPad: 600 câu hỏi, 15 hạng bằng từ A1 đến DE, thi thử bấm giờ, biển báo, mẹo ghi nhớ. Miễn phí, không quảng cáo.",
+    "breadcrumb": "Ứng dụng ôn thi GPLX",
+    "updated": "2026-10-29",
+    "og_image": "img/products/gplx/og.jpg",
+    "app": {
+      "type": "MobileApplication",
+      "name": "Ôn thi GPLX Vạn Xuân",
+      "alternate_name": "Driver License E-learning",
+      "description": "Ứng dụng ôn thi lý thuyết giấy phép lái xe: 600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, biển báo giao thông và mẹo ghi nhớ.",
+      "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
+      "download_url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
+      "category": "EducationalApplication",
+      "operating_system": "iOS",
+      "price": 0,
+      "currency": "VND"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Ứng dụng · Ôn thi GPLX Vạn Xuân",
+        "title": "Ôn thi GPLX trên iPhone: 600 câu, 15 hạng bằng, miễn phí.",
+        "lead": "Học lý thuyết giấy phép lái xe mỗi ngày trên iPhone hoặc iPad. Ôn câu hỏi theo chương, thi thử có bấm giờ như thi thật, tra biển báo và học mẹo ghi nhớ, tất cả trong một ứng dụng.",
+        "sub": "Không quảng cáo, không cần tạo tài khoản. Tiến độ học lưu ngay trên máy của bạn.",
+        "ctas": [
+          {"label": "Tải miễn phí trên App Store", "href": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396", "style": "primary", "external": true},
+          {"label": "Xem ảnh màn hình", "href": "#anh-man-hinh", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Giá",
+          "amount": "0 đ",
+          "unit": "Miễn phí trọn đời",
+          "note": "Mở khoá mọi tính năng ngay khi cài: không gói trả phí, không quảng cáo chen ngang lúc đang ôn."
+        },
+        "stats": [
+          {"value": "600 câu", "label": "Bộ câu hỏi sát hạch lý thuyết"},
+          {"value": "15 hạng", "label": "Từ A1, A, B đến C, D và các hạng E"},
+          {"value": "Bấm giờ", "label": "Thi thử như thi thật, chấm điểm ngay"},
+          {"value": "Không\nquảng cáo", "label": "Không tài khoản, không theo dõi"}
+        ]
+      }
+    },
+    {
+      "type": "screenshots",
+      "data": {
+        "id": "anh-man-hinh",
+        "kicker": "Ảnh màn hình / Screenshots",
+        "title": "Mọi thứ cần để ôn thi lý thuyết, gói gọn trong một ứng dụng.",
+        "intro": "Chọn hạng bằng một lần, rồi chuyển qua lại giữa ôn tập, thi thử, biển báo và mẹo ghi nhớ từ màn hình chính.",
+        "list_label": "Ảnh màn hình ứng dụng Ôn thi GPLX, vuốt ngang để xem thêm",
+        "width": 600,
+        "height": 1304,
+        "items": [
+          {"image": "img/products/gplx/01_home.webp", "alt": "Màn hình chính ứng dụng Ôn thi GPLX: chọn hạng bằng, thi thử ngẫu nhiên và các mục luyện tập", "title": "Màn hình chính", "body": "Đổi hạng bằng, bắt đầu thi thử ngẫu nhiên hoặc chọn mục luyện tập."},
+          {"image": "img/products/gplx/02_test_sets.webp", "alt": "Danh sách đề thi thử theo hạng bằng trong ứng dụng Ôn thi GPLX", "title": "Thi theo bộ đề", "body": "Làm từng đề, lưu kết quả và biết ngay mình Đạt hay Trượt."},
+          {"image": "img/products/gplx/03_quiz.webp", "alt": "Màn hình làm bài thi thử có đồng hồ đếm ngược và câu hỏi sa hình", "title": "Làm bài như thi thật", "body": "Đồng hồ đếm ngược, câu hỏi sa hình, chấm điểm tức thì."},
+          {"image": "img/products/gplx/04_chapters.webp", "alt": "Danh sách chương ôn tập và mục câu hỏi điểm liệt trong ứng dụng Ôn thi GPLX", "title": "Ôn theo từng chương", "body": "Học lần lượt từng chương, tìm câu hỏi và ôn riêng câu điểm liệt."},
+          {"image": "img/products/gplx/05_signs.webp", "alt": "Năm nhóm biển báo giao thông: cấm, nguy hiểm, hiệu lệnh, chỉ dẫn và phụ", "title": "Tra cứu biển báo", "body": "Biển cấm, nguy hiểm, hiệu lệnh, chỉ dẫn và biển phụ."},
+          {"image": "img/products/gplx/06_tips.webp", "alt": "Mẹo ghi nhớ các quy tắc hay gặp trong đề thi lý thuyết GPLX", "title": "Mẹo ghi nhớ", "body": "Tổng hợp quy tắc hay gặp trong đề thi để học nhanh, nhớ lâu."}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "tinh-nang",
+        "kicker": "Tính năng / Features",
+        "title": "Ôn đúng trọng tâm, thi thử đến khi tự tin.",
+        "intro": "Câu hỏi và biển báo được biên soạn theo bộ câu hỏi sát hạch lý thuyết do cơ quan có thẩm quyền ban hành. Ứng dụng là công cụ ôn tập, không phải ứng dụng của cơ quan nhà nước.",
+        "items": [
+          {"title": "Đủ 15 hạng bằng", "body": "A1, A, B1, B, C1, C, D1, D2, D cùng các hạng BE, C1E, CE, D1E, D2E, DE. Đổi hạng bất kỳ lúc nào, đề và câu hỏi đổi theo."},
+          {"title": "Thi thử ngẫu nhiên", "body": "Bốc một đề bất kỳ và bấm giờ như phòng thi thật, để quen áp lực thời gian trước ngày sát hạch."},
+          {"title": "Ôn tập theo chương", "body": "Khái niệm và quy tắc giao thông, văn hoá người lái xe, kỹ thuật lái, cấu tạo xe, sa hình: học lần lượt, không bỏ sót."},
+          {"title": "Câu điểm liệt riêng", "body": "Câu điểm liệt sai là trượt dù đủ điểm. Ứng dụng gom chúng thành một danh sách để bạn ôn kỹ trước khi thi."},
+          {"title": "Biển báo theo nhóm", "body": "Năm nhóm biển báo: cấm, nguy hiểm, hiệu lệnh, chỉ dẫn và biển phụ. Tra nhanh khi gặp câu hỏi về biển báo."},
+          {"title": "Riêng tư, không quảng cáo", "body": "Không cần đăng ký hay đăng nhập. Kết quả thi thử và câu hay làm sai chỉ lưu trên máy của bạn."}
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "cach-on-thi",
+        "kicker": "Lộ trình / Study plan",
+        "title": "Bốn bước ôn thi lý thuyết với ứng dụng.",
+        "intro": "Lộ trình gợi ý cho người mới bắt đầu: học đều mỗi ngày một ít, thi thử nhiều lần, và để dành vài ngày cuối cho câu điểm liệt.",
+        "steps": [
+          {"title": "Chọn hạng bằng", "body": "Chọn đúng hạng bạn đăng ký thi. Ứng dụng chỉ hiện câu hỏi và đề thi của hạng đó.", "duration": "Chọn"},
+          {"title": "Học theo chương và mẹo", "body": "Đi qua từng chương, đọc mẹo ghi nhớ và tra biển báo khi gặp câu chưa chắc.", "duration": "Học"},
+          {"title": "Thi thử có bấm giờ", "body": "Làm từng đề trong thời gian giới hạn. Kết quả được lưu lại, và bạn biết ngay mình Đạt hay Trượt.", "duration": "Thi thử"},
+          {"title": "Ôn lại câu điểm liệt", "body": "Trước ngày thi, ôn lại toàn bộ câu điểm liệt và những câu bạn hay làm sai.", "duration": "Ôn lại"}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "tai-ung-dung",
+        "kicker": "Tải về / Download",
+        "title": "Cài ứng dụng ôn thi GPLX trên iPhone và iPad.",
+        "intro": "Trên App Store, ứng dụng có tên tiếng Anh là Driver License E-learning. Cần iOS 12 trở lên.",
+        "items": [
+          {
+            "kicker": "App Store",
+            "title": "Miễn phí cho iPhone và iPad",
+            "body": "Bấm nút dưới đây trên iPhone hoặc iPad để mở thẳng trang ứng dụng, rồi chọn Nhận để cài. Trên máy tính, bạn có thể tìm “Driver License E-learning” trong App Store.",
+            "host": "apps.apple.com/vn/app/driver-license-e-learning",
+            "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
+            "cta": "Mở trang ứng dụng trên App Store"
+          }
+        ],
+        "note": {
+          "text": "Ứng dụng không thu thập dữ liệu cá nhân, không yêu cầu tài khoản và không chứa công cụ theo dõi.",
+          "label": "Đọc chính sách quyền riêng tư",
+          "href": "/gplx/policy/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Trung tâm đào tạo lái xe cần ứng dụng riêng?",
+        "body": "Cross Tech Edu làm ứng dụng ôn thi mang thương hiệu của trung tâm: logo, màu sắc, bộ đề và mẹo riêng, phát hành trên App Store và Google Play. Gửi yêu cầu, chúng tôi trả lời bằng phạm vi công việc và báo giá trong 48 giờ.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}
