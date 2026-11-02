@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="mlrag1-title mlrag1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="mlrag1-title">The first three rungs: machine learning, embeddings, retrieval</title>
+  <desc id="mlrag1-desc">Three columns from left to right. Machine learning learns from data you already have and decides which label fits a new input, but breaks on anything outside its training data. Embeddings turn sentences into vectors and decide which sentences mean the same thing, but miss sarcasm, jargon and opposites. Retrieval fetches the nearest passages and decides what the model reads, but the nearest passage is not always the answer.</desc>
+  <defs>
+    <marker id="mlrag1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#605d5d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="480" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#201e1d">The first three rungs</text>
+
+  <!-- Column 1 -->
+  <text x="195" y="80" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Machine learning</text>
+  <text x="195" y="104" text-anchor="middle" font-size="18" fill="#605d5d">the model learns from data</text>
+  <text x="195" y="124" text-anchor="middle" font-size="18" fill="#605d5d">you already have</text>
+  <rect x="60" y="142" width="270" height="92" rx="8" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="76" y="166" font-size="18" font-weight="bold" fill="#ec3013">What it decides</text>
+  <text x="76" y="192" font-size="18" fill="#201e1d">which label fits</text>
+  <text x="76" y="214" font-size="18" fill="#201e1d">a new input</text>
+  <rect x="60" y="244" width="270" height="92" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="76" y="268" font-size="18" font-weight="bold" fill="#201e1d">Where it breaks</text>
+  <text x="76" y="294" font-size="18" fill="#201e1d">anything not in the</text>
+  <text x="76" y="316" font-size="18" fill="#201e1d">training data</text>
+
+  <!-- Column 2 -->
+  <text x="480" y="80" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Embeddings</text>
+  <text x="480" y="104" text-anchor="middle" font-size="18" fill="#605d5d">sentences become vectors</text>
+  <text x="480" y="124" text-anchor="middle" font-size="18" fill="#605d5d">of meaning</text>
+  <rect x="345" y="142" width="270" height="92" rx="8" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="361" y="166" font-size="18" font-weight="bold" fill="#ec3013">What it decides</text>
+  <text x="361" y="192" font-size="18" fill="#201e1d">which sentences mean</text>
+  <text x="361" y="214" font-size="18" fill="#201e1d">the same thing</text>
+  <rect x="345" y="244" width="270" height="92" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="361" y="268" font-size="18" font-weight="bold" fill="#201e1d">Where it breaks</text>
+  <text x="361" y="294" font-size="18" fill="#201e1d">sarcasm, jargon and</text>
+  <text x="361" y="316" font-size="18" fill="#201e1d">opposites</text>
+
+  <!-- Column 3 -->
+  <text x="765" y="80" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Retrieval</text>
+  <text x="765" y="104" text-anchor="middle" font-size="18" fill="#605d5d">fetch the nearest</text>
+  <text x="765" y="124" text-anchor="middle" font-size="18" fill="#605d5d">passages</text>
+  <rect x="630" y="142" width="270" height="92" rx="8" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="646" y="166" font-size="18" font-weight="bold" fill="#ec3013">What it decides</text>
+  <text x="646" y="192" font-size="18" fill="#201e1d">which passages the</text>
+  <text x="646" y="214" font-size="18" fill="#201e1d">model reads</text>
+  <rect x="630" y="244" width="270" height="92" rx="8" fill="#f3f2f2" stroke="#605d5d" stroke-width="1.5"/>
+  <text x="646" y="268" font-size="18" font-weight="bold" fill="#201e1d">Where it breaks</text>
+  <text x="646" y="294" font-size="18" fill="#201e1d">the nearest passage</text>
+  <text x="646" y="316" font-size="18" fill="#201e1d">is not the answer</text>
+
+  <!-- Connector arrows between the columns -->
+  <g stroke="#605d5d" stroke-width="2" fill="none" marker-end="url(#mlrag1-arrow)">
+    <line x1="332" y1="188" x2="343" y2="188"/>
+    <line x1="617" y1="188" x2="628" y2="188"/>
+  </g>
+
+  <line x1="60" y1="356" x2="900" y2="356" stroke="#605d5d" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="480" y="392" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">Each rung fixes the failure</text>
+  <text x="480" y="418" text-anchor="middle" font-size="20" font-weight="bold" fill="#201e1d">of the one before it.</text>
+</svg>

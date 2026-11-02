@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="mtr1-title mtr1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="mtr1-title">Ba nấc đầu của thang: học máy, embedding, retrieval</title>
+  <desc id="mtr1-desc">Ba cột từ trái sang phải: học máy học quy luật từ dữ liệu đã có; embedding biến câu thành vector; retrieval lấy đoạn gần nhất. Dưới mỗi cột ghi quyết định cần chốt và chỗ hay hỏng.</desc>
+  <defs>
+    <marker id="mtr1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#201e1d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#201e1d">Ba nấc đầu của thang</text>
+
+  <g>
+    <rect x="60" y="100" width="240" height="170" rx="6" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+    <circle cx="88" cy="126" r="13" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="88" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">1</text>
+    <text x="180" y="132" text-anchor="middle" font-size="21" font-weight="700" fill="#201e1d">Học máy</text>
+    <text x="180" y="178" text-anchor="middle" font-size="17" fill="#605d5d">mô hình học từ</text>
+    <text x="180" y="202" text-anchor="middle" font-size="17" fill="#605d5d">dữ liệu đã có</text>
+  </g>
+
+  <g>
+    <rect x="360" y="100" width="240" height="170" rx="6" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+    <circle cx="388" cy="126" r="13" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="388" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">2</text>
+    <text x="480" y="132" text-anchor="middle" font-size="21" font-weight="700" fill="#201e1d">Embedding</text>
+    <text x="480" y="178" text-anchor="middle" font-size="17" fill="#605d5d">câu thành vector</text>
+    <text x="480" y="202" text-anchor="middle" font-size="17" fill="#605d5d">để so được với nhau</text>
+  </g>
+
+  <g>
+    <rect x="660" y="100" width="240" height="170" rx="6" fill="#eae9e9" stroke="#605d5d" stroke-width="1.5"/>
+    <circle cx="688" cy="126" r="13" fill="#f3f2f2" stroke="#ec3013" stroke-width="2"/>
+    <text x="688" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#ec3013">3</text>
+    <text x="780" y="132" text-anchor="middle" font-size="21" font-weight="700" fill="#201e1d">Retrieval</text>
+    <text x="780" y="178" text-anchor="middle" font-size="17" fill="#605d5d">lấy đoạn gần nhất</text>
+    <text x="780" y="202" text-anchor="middle" font-size="17" fill="#605d5d">với câu hỏi</text>
+  </g>
+
+  <g stroke="#201e1d" stroke-width="2" fill="none" marker-end="url(#mtr1-arrow)">
+    <line x1="304" y1="185" x2="352" y2="185"/>
+    <line x1="604" y1="185" x2="652" y2="185"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="180" y="318" font-size="17" font-weight="700" fill="#605d5d">Quyết định: chọn bài toán</text>
+    <text x="180" y="346" font-size="17" fill="#ec3013">Hỏng ở: kiến thức đóng băng</text>
+
+    <text x="480" y="318" font-size="17" font-weight="700" fill="#605d5d">Quyết định: chọn model</text>
+    <text x="480" y="346" font-size="17" fill="#ec3013">Hỏng ở: phải index lại</text>
+
+    <text x="780" y="318" font-size="17" font-weight="700" fill="#605d5d">Quyết định: chọn top-k</text>
+    <text x="780" y="346" font-size="17" fill="#ec3013">Hỏng ở: chunk cắt sai</text>
+  </g>
+
+  <text x="480" y="410" text-anchor="middle" font-size="17" fill="#605d5d">Ba nấc này là nền; RAG bắt đầu khi ghép chúng thành một vòng lặp.</text>
+</svg>
