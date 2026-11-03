@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-labelledby="fig1-title fig1-desc">
+  <title id="fig1-title">Two revenue zones for cash-register e-invoices in Vietnam</title>
+  <desc id="fig1-desc">A decision path for a household business selling directly to consumers. From 1,000,000,000 VND of annual revenue upward, cash-register e-invoices connected to the tax authority are required. Below 1,000,000,000 VND, coded e-invoices are not mandatory, though voluntary registration is allowed. Source: Decree 254/2026/ND-CP, effective 1 July 2026.</desc>
+
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="60" y="62" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="22" font-weight="700" fill="#201e1d">Two zones, one threshold</text>
+  <text x="60" y="90" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">Decree 254/2026/ND-CP, effective 1 July 2026</text>
+
+  <rect x="250" y="104" width="460" height="52" rx="10" fill="#eae9e9"/>
+  <text x="480" y="137" text-anchor="middle" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="18" fill="#201e1d">Annual revenue of the shop</text>
+
+  <path d="M300 156 L300 186 L260 186 L260 189" fill="none" stroke="#605d5d" stroke-width="2"/>
+  <path d="M660 156 L660 186 L700 186 L700 189" fill="none" stroke="#605d5d" stroke-width="2"/>
+  <polygon points="260,198 253,188 267,188" fill="#605d5d"/>
+  <polygon points="700,198 693,188 707,188" fill="#605d5d"/>
+
+  <rect x="60" y="200" width="400" height="184" rx="12" fill="#eae9e9"/>
+  <text x="88" y="236" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">BELOW THE THRESHOLD</text>
+  <text x="88" y="270" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="21" font-weight="700" fill="#201e1d">Under 1,000,000,000</text>
+  <text x="88" y="306" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="18" fill="#201e1d">Coded e-invoices not required</text>
+  <text x="88" y="336" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">Shop keeps trading unchanged;</text>
+  <text x="88" y="360" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">registration stays voluntary</text>
+
+  <rect x="500" y="200" width="400" height="184" rx="12" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="528" y="236" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#ec3013">AT THE THRESHOLD OR ABOVE</text>
+  <text x="528" y="270" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="21" font-weight="700" fill="#201e1d">1,000,000,000 or more</text>
+  <text x="528" y="306" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="18" fill="#201e1d">Cash-register e-invoice required</text>
+  <text x="528" y="336" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">Register linked to the tax authority,</text>
+  <text x="528" y="360" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">data sent as each sale happens</text>
+
+  <text x="60" y="416" font-family="Archivo, Segoe UI, system-ui, sans-serif" font-size="16" fill="#605d5d">Source: Decree 254/2026/ND-CP. Measured on annual revenue, not profit.</text>
+</svg>

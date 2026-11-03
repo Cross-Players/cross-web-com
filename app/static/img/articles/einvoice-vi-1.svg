@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="einvoice-vi-1-title einvoice-vi-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="einvoice-vi-1-title">Hai vùng doanh thu và nghĩa vụ hoá đơn điện tử từ máy tính tiền</title>
+  <desc id="einvoice-vi-1-desc">Doanh thu năm từ 1 tỷ đồng trở lên thì bắt buộc dùng hoá đơn điện tử khởi tạo từ máy tính tiền kết nối cơ quan thuế; dưới 1 tỷ đồng thì không bắt buộc dùng hoá đơn điện tử có mã.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="62" font-size="22" font-weight="bold" fill="#201e1d">Hai vùng doanh thu và việc phải làm</text>
+  <text x="40" y="92" font-size="18" fill="#605d5d">Nghị định 254/2026/NĐ-CP, hiệu lực từ 01/07/2026</text>
+
+  <line x1="110" y1="152" x2="110" y2="328" stroke="#605d5d" stroke-width="2"/>
+  <line x1="110" y1="177" x2="150" y2="177" stroke="#ec3013" stroke-width="2"/>
+  <line x1="110" y1="302" x2="150" y2="302" stroke="#605d5d" stroke-width="2"/>
+  <circle cx="110" cy="177" r="10" fill="#ec3013"/>
+  <circle cx="110" cy="302" r="9" fill="#605d5d"/>
+
+  <rect x="150" y="130" width="770" height="95" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="170" y="166" font-size="20" font-weight="bold" fill="#ec3013">Từ 1 tỷ đồng trở lên</text>
+  <text x="170" y="196" font-size="17" fill="#201e1d">Bắt buộc: hoá đơn điện tử khởi tạo từ máy tính tiền</text>
+
+  <rect x="150" y="255" width="770" height="95" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="170" y="291" font-size="20" font-weight="bold" fill="#201e1d">Dưới 1 tỷ đồng</text>
+  <text x="170" y="321" font-size="17" fill="#201e1d">Không bắt buộc dùng hoá đơn điện tử có mã</text>
+
+  <text x="40" y="414" font-size="16" fill="#605d5d">Nguồn: Nghị định 254/2026/NĐ-CP. Ngưỡng tính trên doanh thu năm.</text>
+</svg>
