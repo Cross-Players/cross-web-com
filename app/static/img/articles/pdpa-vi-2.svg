@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="pdpa-vi-2-title pdpa-vi-2-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="pdpa-vi-2-title">Năm ô của hồ sơ consent tối thiểu</title>
+  <desc id="pdpa-vi-2-desc">Năm trường để chứng minh một sự đồng ý: ai đồng ý, kênh đồng ý, nội dung đã đồng ý, thời điểm, và chỗ nhận yêu cầu rút lại.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="52" font-size="22" font-weight="bold" fill="#201e1d">Hồ sơ consent tối thiểu</text>
+  <text x="40" y="82" font-size="17" fill="#605d5d">Năm trường để chứng minh một sự đồng ý</text>
+
+  <rect x="40" y="104" width="880" height="252" rx="10" fill="#eae9e9"/>
+
+  <rect x="72" y="126" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 137 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="145" font-size="18" font-weight="bold" fill="#201e1d">Ai đồng ý</text>
+  <text x="430" y="145" font-size="16" fill="#605d5d">tên khách hoặc mã khách</text>
+
+  <rect x="72" y="174" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 185 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="193" font-size="18" font-weight="bold" fill="#201e1d">Kênh đồng ý</text>
+  <text x="430" y="193" font-size="16" fill="#605d5d">phiếu giấy, Zalo OA, form web</text>
+
+  <rect x="72" y="222" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 233 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="241" font-size="18" font-weight="bold" fill="#201e1d">Nội dung đã đồng ý</text>
+  <text x="430" y="241" font-size="16" fill="#605d5d">nguyên văn câu khách đã đọc</text>
+
+  <rect x="72" y="270" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 281 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="289" font-size="18" font-weight="bold" fill="#201e1d">Thời điểm</text>
+  <text x="430" y="289" font-size="16" fill="#605d5d">ngày giờ, ghi xong không sửa</text>
+
+  <rect x="72" y="318" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 329 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="337" font-size="18" font-weight="bold" fill="#201e1d">Chỗ nhận yêu cầu rút lại</text>
+  <text x="430" y="337" font-size="16" fill="#605d5d">kênh nhận và người phụ trách</text>
+
+  <text x="40" y="424" font-size="16" fill="#605d5d">Nguồn: Nghị định 356/2025/NĐ-CP, Điều 6 khoản 2 buộc lưu trữ và chứng minh.</text>
+</svg>

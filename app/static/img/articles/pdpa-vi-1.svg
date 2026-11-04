@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="pdpa-vi-1-title pdpa-vi-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="pdpa-vi-1-title">Bốn nơi dữ liệu khách đi vào</title>
+  <desc id="pdpa-vi-1-desc">Phiếu đăng ký giấy và Zalo OA cần consent cho từng mục đích; camera nơi công cộng không cần consent theo Điều 32 nhưng phải thông báo; file Excel khách cần consent khi dùng cho mục đích khác.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="52" font-size="22" font-weight="bold" fill="#201e1d">Bốn nơi dữ liệu khách đi vào</text>
+  <text x="40" y="82" font-size="17" fill="#605d5d">Mỗi kênh một nghĩa vụ · Luật 91/2025/QH15</text>
+
+  <rect x="40" y="104" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="60" y="136" font-size="19" font-weight="bold" fill="#201e1d">Phiếu đăng ký giấy</text>
+  <text x="60" y="166" font-size="16" fill="#ec3013">Cần consent cho từng mục đích</text>
+  <text x="60" y="194" font-size="16" fill="#605d5d">Ô tích để trống, giữ bản gốc có ngày</text>
+
+  <rect x="500" y="104" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="520" y="136" font-size="19" font-weight="bold" fill="#201e1d">Zalo OA</text>
+  <text x="520" y="166" font-size="16" fill="#ec3013">Consent riêng, tách khỏi bước quan tâm</text>
+  <text x="520" y="194" font-size="16" fill="#605d5d">Hai mục đích, hai lần đồng ý</text>
+
+  <rect x="40" y="252" width="420" height="132" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="60" y="284" font-size="19" font-weight="bold" fill="#201e1d">Camera nơi công cộng</text>
+  <text x="60" y="314" font-size="16" fill="#201e1d">Không cần consent theo Điều 32</text>
+  <text x="60" y="342" font-size="16" fill="#605d5d">Nhưng phải thông báo, đặt thời hạn lưu</text>
+
+  <rect x="500" y="252" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="520" y="284" font-size="19" font-weight="bold" fill="#201e1d">File Excel khách</text>
+  <text x="520" y="314" font-size="16" fill="#ec3013">Consent khi dùng cho mục đích khác</text>
+  <text x="520" y="342" font-size="16" fill="#605d5d">Không dùng lại danh sách cho quảng cáo</text>
+
+  <text x="40" y="424" font-size="16" fill="#605d5d">Nguồn: Luật 91/2025/QH15, Điều 9 và Điều 32.</text>
+</svg>

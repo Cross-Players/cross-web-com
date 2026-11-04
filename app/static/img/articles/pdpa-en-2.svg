@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="pdpa-en-2-title pdpa-en-2-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="pdpa-en-2-title">Five fields of a minimum consent record</title>
+  <desc id="pdpa-en-2-desc">Five fields that make a consent provable: who agreed, the channel, the wording agreed to, the timestamp, and where withdrawal requests are received.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="52" font-size="22" font-weight="bold" fill="#201e1d">Minimum consent record</text>
+  <text x="40" y="82" font-size="17" fill="#605d5d">Five fields that make a consent provable</text>
+
+  <rect x="40" y="104" width="880" height="252" rx="10" fill="#eae9e9"/>
+
+  <rect x="72" y="126" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 137 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="145" font-size="18" font-weight="bold" fill="#201e1d">Who agreed</text>
+  <text x="430" y="145" font-size="16" fill="#605d5d">customer name or customer ID</text>
+
+  <rect x="72" y="174" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 185 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="193" font-size="18" font-weight="bold" fill="#201e1d">Channel</text>
+  <text x="430" y="193" font-size="16" fill="#605d5d">paper slip, Zalo OA, web form</text>
+
+  <rect x="72" y="222" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 233 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="241" font-size="18" font-weight="bold" fill="#201e1d">Wording agreed to</text>
+  <text x="430" y="241" font-size="16" fill="#605d5d">the exact sentence the customer saw</text>
+
+  <rect x="72" y="270" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 281 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="289" font-size="18" font-weight="bold" fill="#201e1d">Timestamp</text>
+  <text x="430" y="289" font-size="16" fill="#605d5d">date and time, never edited afterwards</text>
+
+  <rect x="72" y="318" width="22" height="22" rx="4" fill="#f3f2f2" stroke="#ec3013" stroke-width="3"/>
+  <path d="M77 329 l5 6 10-12" fill="none" stroke="#ec3013" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="337" font-size="18" font-weight="bold" fill="#201e1d">Withdrawal intake</text>
+  <text x="430" y="337" font-size="16" fill="#605d5d">the channel and the person responsible</text>
+
+  <text x="40" y="424" font-size="16" fill="#605d5d">Source: Decree 356/2025/ND-CP, Article 6 clause 2 requires stored proof.</text>
+</svg>

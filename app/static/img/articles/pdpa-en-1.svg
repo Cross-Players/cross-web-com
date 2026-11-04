@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="pdpa-en-1-title pdpa-en-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="pdpa-en-1-title">Four places customer data enters</title>
+  <desc id="pdpa-en-1-desc">Paper slips and Zalo OA need consent per purpose; public-area cameras need no consent under Article 32 but need notice; customer Excel files need consent when used for another purpose.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+
+  <text x="40" y="52" font-size="22" font-weight="bold" fill="#201e1d">Four places customer data enters</text>
+  <text x="40" y="82" font-size="17" fill="#605d5d">A different duty per channel · Law 91/2025/QH15</text>
+
+  <rect x="40" y="104" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="60" y="136" font-size="19" font-weight="bold" fill="#201e1d">Paper sign-up slips</text>
+  <text x="60" y="166" font-size="16" fill="#ec3013">Consent per purpose</text>
+  <text x="60" y="194" font-size="16" fill="#605d5d">Empty check box, dated original</text>
+
+  <rect x="500" y="104" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="520" y="136" font-size="19" font-weight="bold" fill="#201e1d">Zalo OA</text>
+  <text x="520" y="166" font-size="16" fill="#ec3013">Separate from the follow step</text>
+  <text x="520" y="194" font-size="16" fill="#605d5d">Two purposes, two consents</text>
+
+  <rect x="40" y="252" width="420" height="132" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="60" y="284" font-size="19" font-weight="bold" fill="#201e1d">Public-area cameras</text>
+  <text x="60" y="314" font-size="16" fill="#201e1d">No consent needed under Article 32</text>
+  <text x="60" y="342" font-size="16" fill="#605d5d">But post notice, set a retention limit</text>
+
+  <rect x="500" y="252" width="420" height="132" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="2"/>
+  <text x="520" y="284" font-size="19" font-weight="bold" fill="#201e1d">Customer Excel files</text>
+  <text x="520" y="314" font-size="16" fill="#ec3013">Consent to use for other purposes</text>
+  <text x="520" y="342" font-size="16" fill="#605d5d">Do not reuse the list for ads</text>
+
+  <text x="40" y="424" font-size="16" fill="#605d5d">Source: Law 91/2025/QH15, Articles 9 and 32.</text>
+</svg>
