@@ -178,6 +178,13 @@ def test_robots(client):
     assert f"Sitemap: {BASE}/sitemap.xml" in body
 
 
+def test_app_ads_txt(client):
+    r = client.get("/app-ads.txt")
+    assert r.status_code == 200
+    assert r.mimetype == "text/plain"
+    assert "google.com, pub-5980752937442315, DIRECT, f08c47fec0942fa0" in r.get_data(as_text=True)
+
+
 def test_404(client):
     r = client.get("/khong-ton-tai/")
     assert r.status_code == 404
