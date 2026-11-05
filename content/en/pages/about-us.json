@@ -1,0 +1,97 @@
+{
+  "slug": "about-us",
+  "translation_key": "about-us",
+  "meta": {
+    "title": "About Cross Tech Edu — E-E-A-T, Team, Clients in Hanoi",
+    "description": "Cross Tech Edu is a Hanoi-based software outsourcing company: web, mobile, backend, cloud and AI. E-E-A-T: real experience, specialist team, real clients.",
+    "updated": "2026-11-05",
+    "og_image": "img/og-image-en.png"
+  },
+  "body": "# About Cross Tech Edu — your engineering team in Vietnam\n\nCross Tech Edu is a software outsourcing company based in Hanoi, Vietnam, delivering web, mobile app, backend, cloud and AI development for clients in Japan, Korea and Europe. Your engineering team, based in Vietnam — two-week sprints, 12-month code warranty.\n\n## E-E-A-T: experience, expertise, authoritativeness, trustworthiness\n- **Experience:** Built products for Vingroup (VinWonders), GMO ReTech (GMO賃貸DX), Zuellig Pharma (EZ Rx) and many small businesses across Vietnam and Japan.\n- **Expertise:** Next.js, React, Laravel, Flutter, React Native, Node, Go, .NET, PostgreSQL, AWS, GCP, Docker, Kubernetes, LLM integration and RAG.\n- **Authoritativeness:** Long-term technology partners Twendee Soft, JVB Corp, ITED, VFast Soft and Bfast VN work with our engineering team.\n- **Trustworthiness:** 12-month code warranty after handover, 4-hour response SLA, contracts with no minimum term, cancel with 15 days' notice.\n\n## Pricing at a glance\nDedicated developers from 300 USD per developer per month. Fixed-price projects from 39 USD. Detailed quote within 48 hours.\n\n## CTA\nBook a free 30-minute consultation or request a detailed quote within 48 hours.\n\n## Internal links\n[See pricing](/en/pricing-sme/) · [Web & mobile outsourcing](/en/outsourcing-web-mobile-small-business-hanoi/) · [Book a 30-minute call](#contact) · [Blog](/en/blog/)\n",
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Company introduction · Hanoi, Vietnam",
+        "title": "About Cross Tech Edu — your engineering team in Vietnam",
+        "lead": "Cross Tech Edu is a software outsourcing company based in Hanoi, Vietnam, delivering web, mobile app, backend, cloud and AI development for clients in Japan, Korea and Europe. Your engineering team, based in Vietnam — two-week sprints, 12-month code warranty.",
+        "sub": "About Cross Tech Edu — E-E-A-T: real experience, specialist team, real clients and partners, and a 12-month code warranty.",
+        "sub_lang": "en",
+        "ctas": [
+          {"label": "See pricing", "href": "/en/pricing-sme/", "style": "primary"},
+          {"label": "Book a 30-minute call", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Developer rate",
+          "amount": "300",
+          "unit": "USD / dev / month",
+          "note": "Starting rate. PM and QA included free from 3 developers."
+        },
+        "stats": [
+          {"value": "2 weeks", "label": "Until your first MVP is in your hands"},
+          {"value": "12 months", "label": "Code warranty after handover"},
+          {"value": "Flutter, React", "label": "Specialist team based in Vietnam"},
+          {"value": "No lock-in", "label": "Cancel with 15 days' notice"}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "advantages",
+        "kicker": "Why choose us",
+        "title": "E-E-A-T: experience, expertise, authoritativeness, trustworthiness",
+        "intro": "Cross Tech Edu builds credibility through real clients and technology partners across Vietnam, Japan and Korea.",
+        "items": [
+          {"title": "Real experience", "body": "Built products for Vingroup, GMO ReTech, Zuellig Pharma and many SMEs across Vietnam and Japan."},
+          {"title": "Fixed specialist team", "body": "Team based in Vietnam, working on JST / KST / CET hours, managed directly by you."},
+          {"title": "12-month warranty", "body": "Free bug fixes for 12 months after handover, 4-hour response SLA."},
+          {"title": "No minimum term", "body": "Contracts with no minimum term, cancel with 15 days' notice."},
+          {"title": "Quote within 48 hours", "body": "Send your requirements, get a concrete scope of work and price within 48 hours."},
+          {"title": "Technology partners", "body": "Twendee Soft, JVB Corp, ITED, VFast Soft and Bfast VN work with our team."}
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Khách hàng / Clients",
+        "title": "Our clients.",
+        "intro": "Businesses working with the Cross Tech Edu engineering team. Click a logo to open the client's website.",
+        "link_label": "Open {name} website (new tab)"
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Quy trình / Process",
+        "title": "From first email to live release: five steps.",
+        "steps": [
+          {"title": "Consultation & quote", "body": "You send your requirements, we ask exactly what is needed to fix the scope.", "duration": "48 hours"},
+          {"title": "Scope & contract", "body": "Feature list, delivery milestones and payment terms agreed in writing before work starts.", "duration": "3 days"},
+          {"title": "Two-week sprints", "body": "Each sprint ends with a build running on your staging environment.", "duration": "2 weeks / sprint"},
+          {"title": "QA & handover", "body": "Regression tests, API docs, source code and infrastructure access handed over to you.", "duration": "1 week"},
+          {"title": "Warranty & operations", "body": "Free bug fixes for 12 months; a separate operations plan if you need 24/7 on-call.", "duration": "12 months"}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Send your request, get a quote within 48 hours.",
+        "body": "Describe your product, target timeline and expected budget — we answer with a concrete scope of work and price, not a sales email.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "zalo_label": "Company Zalo",
+        "zalo_cta": "Message on Zalo",
+        "zalo_hint": "Scan the QR code with the Zalo app or tap to open the chat.",
+        "zalo_qr_alt": "Cross Tech Edu Zalo QR code",
+        "office_label": "Office",
+        "office_text": "Hanoi, Vietnam · working on JST / KST / CET time"
+      }
+    }
+  ]
+}

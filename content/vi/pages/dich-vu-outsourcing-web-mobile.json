@@ -1,0 +1,162 @@
+{
+  "slug": "dich-vu-outsourcing-web-mobile",
+  "translation_key": "outsourcing-web-mobile",
+  "meta": {
+    "title": "Outsourcing web & mobile cho doanh nghiệp nhỏ Hà Nội",
+    "description": "Cross Tech Edu nhận outsourcing thiết kế web, app mobile cho doanh nghiệp nhỏ tại Hà Nội. Gói từ 6 triệu đ/dev/tháng, bảo hành 12 tháng, báo giá trong 48 giờ.",
+    "updated": "2026-11-05"
+  },
+  "body": "# Phát triển web & mobile cho doanh nghiệp nhỏ Hà Nội\n\nCross Tech Edu là đội kỹ thuật đặt tại Việt Nam, nhận outsourcing thiết kế web, phát triển app mobile và backend cho doanh nghiệp nhỏ tại Hà Nội. Bàn giao theo sprint 2 tuần, bảo hành 12 tháng, báo giá trong 48 giờ.\n\n## Dịch vụ chính\n- Web development: Next.js, React, Laravel — từ trang giới thiệu đến hệ thống nội bộ nhiều vai trò.\n- Mobile app: Flutter và React Native — một codebase cho iOS và Android, publish store hộ bạn.\n- Backend & API: Node, Go, .NET, PostgreSQL — REST và GraphQL, tài liệu API bàn giao kèm.\n- UI/UX design, QA / Testing, DevOps & Cloud, AI / Data, Dedicated team, Bảo trì & hỗ trợ.\n\n## Bảng giá tham chiếu\nThuê dev từ 6 triệu đ/dev/tháng (Junior) đến 36 triệu đ (Senior). Gói trọn dự án: website giới thiệu từ 999.000 đ, web app từ 6 triệu đ, mobile app từ 30 triệu đ. Báo giá chi tiết trong 48 giờ.\n\n## Tóm gọn case study\nWeb quản lý đơn hàng cho SME thực phẩm Hà Nội: bàn giao trong 4 tuần, chạy trên staging của bạn từ sprint thứ hai.\n\n## CTA\nHẹn tư vấn 30 phút miễn phí hoặc gửi yêu cầu nhận báo giá trong 48 giờ.\n\n## Liên kết nội bộ\n[Xem bảng giá](/bang-gia/) · [Đặt lịch tư vấn 30 phút](#contact) · [Blog](/blog/)\n",
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Dịch vụ outsourcing · Hà Nội, Việt Nam",
+        "title": "Phát triển web & mobile cho doanh nghiệp nhỏ Hà Nội",
+        "lead": "Đội kỹ thuật đặt tại Việt Nam nhận outsourcing web, mobile và backend cho doanh nghiệp nhỏ tại Hà Nội. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn, báo giá trong 48 giờ.",
+        "sub": "Phát triển web & mobile cho doanh nghiệp nhỏ Hà Nội — thiết kế, phát triển, thử nghiệm và bàn giao sạch, bảo hành 12 tháng.",
+        "sub_lang": "vi",
+        "ctas": [
+          {"label": "Xem bảng giá", "href": "/bang-gia/", "style": "primary"},
+          {"label": "Đặt lịch tư vấn 30 phút", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Thuê dev",
+          "amount": "6 triệu",
+          "unit": "đ / dev / tháng",
+          "note": "Mức khởi điểm. Full-time 160 giờ/tháng, PM và QA đi kèm miễn phí từ 3 dev."
+        },
+        "stats": [
+          {"value": "2 tuần", "label": "MVP đầu tiên lên tay bạn"},
+          {"value": "12 tháng", "label": "Bảo hành code sau bàn giao"},
+          {"value": "Flutter, React", "label": "Một codebase, hai nền tảng iOS và Android"},
+          {"value": "Không ràng buộc", "label": "Hủy hợp đồng báo trước 15 ngày"}
+        ]
+      }
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Dịch vụ / Services",
+        "title": "Chín mảng chúng tôi nhận, không hơn.",
+        "intro": "Mỗi mảng có một đội cố định và quy trình review riêng. Bạn thuê theo người hoặc theo trọn gói dự án — cùng một đội làm mọi thứ.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. Trang giới thiệu tới hệ thống nội bộ nhiều vai trò."},
+          {"title": "Mobile app", "body": "Flutter và React Native. Một codebase cho iOS và Android, publish store hộ bạn."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST và GraphQL, tài liệu API bàn giao kèm."},
+          {"title": "UI/UX design", "body": "Figma, design system, prototype bấm được trước khi viết dòng code đầu tiên."},
+          {"title": "QA / Testing", "body": "Test thủ công và tự động, chặn merge khi chưa đạt. Báo cáo mỗi sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring và tối ưu chi phí hạ tầng."},
+          {"title": "AI / Data", "body": "Tích hợp LLM, RAG trên dữ liệu nội bộ, data pipeline và dashboard báo cáo."},
+          {"title": "Dedicated team", "body": "Thuê nhân sự theo tháng, bạn quản lý trực tiếp, làm theo giờ của bạn."},
+          {"title": "Bảo trì & hỗ trợ", "body": "SLA phản hồi 4 giờ, hotfix trong ngày, trực 24/7 cho hệ thống đang chạy."}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Bảng giá / Pricing",
+        "title": "3 gói outsourcing web mobile cho SMEs tại Hà Nội",
+        "intro": "Không bậc giá ẩn, không phí khởi tạo, không phí quản lý. Báo giá chi tiết gửi trong 48 giờ kể từ khi nhận mô tả yêu cầu.",
+        "groups": [
+          {
+            "title": "Thuê dev theo tháng — VNĐ / dev / tháng",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 năm", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thực thi task đã bóc tách sẵn, làm việc dưới review của middle trở lên.", "schema": {"min_price": 6000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 năm · phổ biến nhất", "price": "16", "plus": true, "magnitude": "triệu", "currency_label": "đ", "featured": true, "note": "Chủ động nhận module, tự bóc tách, review code cho junior trong team.", "schema": {"min_price": 16000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Senior · 5+ năm", "price": "36", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thiết kế kiến trúc, dẫn dắt đội, làm việc trực tiếp với CTO phía bạn.", "schema": {"min_price": 36000000, "currency": "VND", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Gói trọn dự án — VNĐ",
+            "kind": "package",
+            "items": [
+              {"label": "Website giới thiệu", "price": "999.000", "currency_label": "đ", "note": "5 trang, responsive, tên miền và hosting năm đầu. Bàn giao trong 5 ngày.", "schema": {"price": 999000, "currency": "VND"}},
+              {"label": "Web app", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Đăng nhập, phân quyền, dashboard, API và tài liệu. Thường 3–6 tuần.", "schema": {"min_price": 6000000, "currency": "VND"}},
+              {"label": "Mobile app", "price": "30", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "iOS và Android bằng Flutter, backend kèm theo, publish lên hai store. 6–10 tuần.", "schema": {"min_price": 30000000, "currency": "VND"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Gửi yêu cầu báo giá",
+          "href": "#contact",
+          "note": "Bao gồm những gì, không bao gồm những gì, và điều khoản thanh toán."
+        }
+      }
+    },
+    {
+      "type": "cases",
+      "data": {
+        "id": "work",
+        "kicker": "Case studies",
+        "title": "Các dự án gần đây cho doanh nghiệp nhỏ",
+        "intro": "Tóm gọn phạm vi, kỹ thuật và kết quả sau bàn giao cho từng chủ doanh nghiệp vừa và nhỏ.",
+        "items": [
+          {
+            "name": "Web quản lý đơn hàng — thực phẩm Hà Nội",
+            "body": "Trang quản lý đơn hàng, kho và giao hàng cho hệ thống cửa hàng nhỏ. Next.js, Node.js, PostgreSQL, bàn giao trong 4 tuần.",
+            "tags": ["Hà Nội", "Thực phẩm · B2C"],
+            "placeholder": "WEB"
+          },
+          {
+            "name": "App đặt tour du lịch — đối tác Nhật Bản",
+            "body": "Ứng dụng đặt tour và vé du lịch, iOS và Android trên một codebase Flutter, publish lên hai store. 6 tuần.",
+            "tags": ["Nhật Bản", "Du lịch"],
+            "placeholder": "APP"
+          },
+          {
+            "name": "Dashboard báo cáo doanh số — đội bán hàng",
+            "body": "Dashboard tổng hợp doanh số từ nhiều kênh, báo cáo tự động hàng tuần cho đội bán hàng SME.",
+            "tags": ["SaaS", "B2B"],
+            "placeholder": "DATA"
+          }
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Quy trình / Process",
+        "title": "Từ email đầu tiên đến bản chạy thật: năm bước.",
+        "steps": [
+          {"title": "Tư vấn & báo giá", "body": "Bạn gửi mô tả yêu cầu, chúng tôi hỏi lại đúng những gì cần để chốt phạm vi.", "duration": "48 giờ"},
+          {"title": "Chốt scope & hợp đồng", "body": "Danh sách tính năng, mốc bàn giao và điều kiện thanh toán viết ra trước khi bắt đầu.", "duration": "3 ngày"},
+          {"title": "Sprint hai tuần", "body": "Mỗi sprint kết thúc bằng một bản chạy được trên môi trường staging của bạn.", "duration": "2 tuần / lần"},
+          {"title": "QA & bàn giao", "body": "Test hồi quy, tài liệu API, source code và quyền truy cập hạ tầng chuyển về bạn.", "duration": "1 tuần"},
+          {"title": "Bảo hành & vận hành", "body": "Sửa lỗi miễn phí trong 12 tháng, gói vận hành tính riêng nếu bạn cần trực 24/7.", "duration": "12 tháng"}
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Khách hàng / Clients",
+        "title": "Khách hàng của chúng tôi.",
+        "intro": "Những doanh nghiệp đang làm việc cùng đội ngũ Cross Tech Edu. Bấm vào logo để xem trang web của khách hàng.",
+        "link_label": "Mở trang web của {name} (tab mới)"
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Gửi yêu cầu, nhận báo giá trong 48 giờ.",
+        "body": "Kèm mô tả sản phẩm, mốc thời gian mong muốn và ngân sách dự kiến — chúng tôi trả lời bằng phạm vi công việc và giá cụ thể, không phải một email chào hàng.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}

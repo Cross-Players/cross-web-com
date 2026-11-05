@@ -1,0 +1,154 @@
+{
+  "slug": "pricing-sme",
+  "translation_key": "pricing-sme",
+  "meta": {
+    "title": "Web & Mobile Outsourcing Pricing — 3 SME Packages in Hanoi",
+    "description": "Public pricing: web, mobile app and backend outsourcing for SMEs in Hanoi. Developers from 300 USD per month, websites from 39 USD, quotes within 48 hours.",
+    "updated": "2026-11-05",
+    "og_image": "img/og-image-en.png"
+  },
+  "body": "# Web & Mobile Outsourcing Pricing — 3 SME Packages in Hanoi\n\nPublic pricing from Cross Tech Edu for small businesses in Hanoi: outsourced web design, mobile app and backend development. No hidden tiers, no setup fee, no management fee.\n\n## Dedicated developers — USD per developer per month\n- Junior (1–2 years): from 300 USD — executes pre-scoped tasks under review from a middle developer or above.\n- Middle (3–5 years, most popular): from 600 USD — owns modules end-to-end, reviews code for juniors.\n- Senior (5+ years): from 1,200 USD — designs architecture, leads the team, works directly with your CTO.\n\n## Fixed-price projects — USD\n- Company website: 39 USD — 5 pages, responsive, domain and first-year hosting, delivered in 5 days.\n- Web app: from 230 USD — login, roles, dashboard, API and documentation, usually 3–6 weeks.\n- Mobile app: from 1,150 USD — iOS and Android with Flutter, backend included, published to both stores, 6–10 weeks.\n\n## Case study summary\nOrder management web app for a Hanoi food SME: handed over in 4 weeks, running on your staging from the second sprint.\n\n## CTA\nBook a free 30-minute consultation or request a detailed quote within 48 hours.\n\n## Internal links\n[Web & mobile outsourcing](/en/outsourcing-web-mobile-small-business-hanoi/) · [Book a 30-minute call](#contact) · [Blog](/en/blog/)\n",
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Pricing · Published on this page",
+        "title": "Web & mobile outsourcing pricing — 3 SME packages",
+        "lead": "Public pricing for web, mobile app and backend outsourcing for small businesses in Hanoi, published on this page. No hidden tiers, no setup fee, no management fee. Detailed quote within 48 hours.",
+        "sub": "Web & mobile outsourcing pricing — 3 SME packages: monthly developers and fixed-price projects, with a 12-month code warranty.",
+        "sub_lang": "en",
+        "ctas": [
+          {"label": "See all packages", "href": "#pricing", "style": "primary"},
+          {"label": "Book a 30-minute call", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Starting rate",
+          "amount": "300",
+          "unit": "USD / dev / month",
+          "note": "Junior developer, full-time 160 hours per month, PM and QA included free from 3 developers."
+        },
+        "stats": [
+          {"value": "2 weeks", "label": "Until your first MVP is in your hands"},
+          {"value": "12 months", "label": "Code warranty after handover"},
+          {"value": "No lock-in", "label": "Cancel with 15 days' notice"},
+          {"value": "48 hours", "label": "Detailed quote after we receive your requirements"}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Pricing / Bảng giá",
+        "title": "3 web & mobile outsourcing packages for SMEs in Hanoi",
+        "intro": "No hidden tiers, no setup fee, no management fee. A detailed quote within 48 hours of receiving your requirements.",
+        "groups": [
+          {
+            "title": "Monthly developers — USD / dev / month",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 years", "price": "300", "plus": true, "currency_label": "USD", "note": "Executes pre-scoped tasks, working under review from a middle developer or above.", "schema": {"min_price": 300, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 years · most popular", "price": "600", "plus": true, "currency_label": "USD", "featured": true, "note": "Owns modules end-to-end, breaks down work and reviews code for juniors on the team.", "schema": {"min_price": 600, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Senior · 5+ years", "price": "1200", "plus": true, "currency_label": "USD", "note": "Designs architecture, leads the team and works directly with your CTO.", "schema": {"min_price": 1200, "currency": "USD", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Fixed-price projects — USD",
+            "kind": "package",
+            "items": [
+              {"label": "Company website", "price": "39", "currency_label": "USD", "note": "5 pages, responsive, domain and first-year hosting. Delivered in 5 days.", "schema": {"price": 39, "currency": "USD"}},
+              {"label": "Web app", "price": "230", "plus": true, "currency_label": "USD", "note": "Login, roles, dashboard, API and documentation. Usually 3–6 weeks.", "schema": {"min_price": 230, "currency": "USD"}},
+              {"label": "Mobile app", "price": "1,150", "plus": true, "currency_label": "USD", "note": "iOS and Android with Flutter, backend included, published to both stores. 6–10 weeks.", "schema": {"min_price": 1150, "currency": "USD"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Request a detailed quote",
+          "href": "#contact",
+          "note": "What is included, what is not, and payment terms."
+        }
+      }
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Services / Dịch vụ",
+        "title": "Six areas included in every package",
+        "intro": "Every pricing package uses the same fixed team and its own review process.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. From company websites to internal multi-role systems."},
+          {"title": "Mobile app", "body": "Flutter and React Native. One codebase for iOS and Android, and we publish to the stores for you."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST and GraphQL, with API documentation delivered."},
+          {"title": "UI/UX design", "body": "Figma, design systems, clickable prototypes before the first line of code."},
+          {"title": "QA / Testing", "body": "Manual and automated tests that block merges until they pass. A report every sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring and infrastructure cost optimisation."}
+        ]
+      }
+    },
+    {
+      "type": "cases",
+      "data": {
+        "id": "work",
+        "kicker": "Case studies",
+        "title": "Recent results from SME packages",
+        "intro": "Two typical examples for fixed-price projects and monthly staffing.",
+        "items": [
+          {
+            "name": "Order management web — Hanoi food SME",
+            "body": "Fixed-price project in 4 weeks: order, inventory and delivery management for a small store chain. Next.js, Node.js, PostgreSQL.",
+            "tags": ["Hanoi", "Food · B2C"],
+            "placeholder": "WEB"
+          },
+          {
+            "name": "Sales dashboard — SME sales team",
+            "body": "Monthly staffing: dashboard consolidating revenue from many channels, with automatic weekly reports.",
+            "tags": ["SaaS", "B2B"],
+            "placeholder": "DATA"
+          }
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Quy trình / Process",
+        "title": "From requirements to handover: five steps.",
+        "steps": [
+          {"title": "Consultation & quote", "body": "You send your requirements, we ask exactly what is needed to fix the scope.", "duration": "48 hours"},
+          {"title": "Scope & contract", "body": "Feature list, delivery milestones and payment terms agreed in writing before work starts.", "duration": "3 days"},
+          {"title": "Two-week sprints", "body": "Each sprint ends with a build running on your staging environment.", "duration": "2 weeks / sprint"},
+          {"title": "QA & handover", "body": "Regression tests, API docs, source code and infrastructure access handed over to you.", "duration": "1 week"},
+          {"title": "Warranty & operations", "body": "Free bug fixes for 12 months; a separate operations plan if you need 24/7 on-call.", "duration": "12 months"}
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Khách hàng / Clients",
+        "title": "Our clients.",
+        "intro": "Businesses working with the Cross Tech Edu engineering team.",
+        "link_label": "Open {name} website (new tab)"
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Send your request, get a quote within 48 hours.",
+        "body": "Describe your product, target timeline and expected budget — we answer with a concrete scope of work and price, not a sales email.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "zalo_label": "Company Zalo",
+        "zalo_cta": "Message on Zalo",
+        "zalo_hint": "Scan the QR code with the Zalo app or tap to open the chat.",
+        "zalo_qr_alt": "Cross Tech Edu Zalo QR code",
+        "office_label": "Office",
+        "office_text": "Hanoi, Vietnam · working on JST / KST / CET time"
+      }
+    }
+  ]
+}

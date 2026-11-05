@@ -99,7 +99,13 @@ def test_sitemap(client):
     assert BASE + PRIVACY_PATH in locs
     assert BASE + GPLX_PATH in locs
     assert BASE + GPLX_POLICY_PATH in locs
-    assert len(locs) == 2 + len(BLOG_PATHS) + 4
+    repo = client.application.extensions["content"]
+    extra_pages = sum(
+        1 for loc in ("vi", "en")
+        for p in repo.list_pages(loc)
+        if p.slug
+    )
+    assert len(locs) == 2 + len(BLOG_PATHS) + extra_pages
 
 
 def test_product_landing_page(client):

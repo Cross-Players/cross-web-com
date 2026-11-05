@@ -1,0 +1,96 @@
+{
+  "slug": "ve-chung-toi",
+  "translation_key": "about-us",
+  "meta": {
+    "title": "Về Cross Tech Edu — E-E-A-T, đội ngũ, khách hàng",
+    "description": "Cross Tech Edu: công ty phần mềm tại Hà Nội, web, mobile, backend, cloud và AI. E-E-A-T: kinh nghiệm, đội kỹ thuật, khách hàng, bảo hành 12 tháng.",
+    "updated": "2026-11-05"
+  },
+  "body": "# Về Cross Tech Edu — đội kỹ thuật tại Việt Nam\n\nCross Tech Edu là công ty phần mềm đặt tại Hà Nội, nhận outsourcing web, mobile, backend, cloud và AI cho khách hàng Nhật, Hàn và châu Âu. Đội kỹ thuật của bạn, đặt tại Việt Nam — bàn giao theo sprint 2 tuần, bảo hành 12 tháng.\n\n## E-E-A-T: kinh nghiệm, chuyên môn, uy tín, đáng tin cậy\n- **Experience:** Tham gia sản phẩm cho Vingroup (VinWonders), GMO ReTech (GMO賃貸DX), Zuellig Pharma (EZ Rx) và nhiều doanh nghiệp vừa và nhỏ tại Việt Nam, Nhật Bản.\n- **Expertise:** Next.js, React, Laravel, Flutter, React Native, Node, Go, .NET, PostgreSQL, AWS, GCP, Docker, Kubernetes, LLM và RAG.\n- **Authoritativeness:** Đối tác công nghệ Twendee Soft, JVB Corp, ITED, VFast Soft, Bfast VN làm việc lâu dài với đội ngũ chúng tôi.\n- **Trustworthiness:** Bảo hành code 12 tháng sau bàn giao, SLA phản hồi 4 giờ, hợp đồng không ràng buộc thời hạn, hủy báo trước 15 ngày.\n\n## Bảng giá tham khảo\nThuê dev từ 6 triệu đ/dev/tháng. Gói trọn dự án từ 999.000 đ. Báo giá chi tiết trong 48 giờ.\n\n## CTA\nHẹn tư vấn 30 phút miễn phí hoặc gửi yêu cầu nhận báo giá trong 48 giờ.\n\n## Liên kết nội bộ\n[Xem bảng giá](/bang-gia/) · [Dịch vụ outsourcing](/dich-vu-outsourcing-web-mobile/) · [Đặt lịch tư vấn](#contact) · [Blog](/blog/)\n",
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Giới thiệu công ty · Hà Nội",
+        "title": "Về Cross Tech Edu — đội kỹ thuật tại Việt Nam",
+        "lead": "Cross Tech Edu là công ty phần mềm tại Hà Nội, nhận outsourcing web, mobile, backend, cloud và AI cho khách hàng Nhật, Hàn và châu Âu. Đội kỹ thuật đặt tại Việt Nam, bàn giao theo sprint 2 tuần, bảo hành 12 tháng.",
+        "sub": "Về Cross Tech Edu — E-E-A-T: kinh nghiệm, chuyên môn, uy tín và sự đáng tin cậy của đội kỹ thuật tại Việt Nam.",
+        "sub_lang": "vi",
+        "ctas": [
+          {"label": "Xem bảng giá", "href": "/bang-gia/", "style": "primary"},
+          {"label": "Đặt lịch tư vấn", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Thuê dev",
+          "amount": "6 triệu",
+          "unit": "đ / dev / tháng",
+          "note": "Mức khởi điểm, PM và QA đi kèm miễn phí từ 3 dev."
+        },
+        "stats": [
+          {"value": "2 tuần", "label": "MVP đầu tiên lên tay bạn"},
+          {"value": "12 tháng", "label": "Bảo hành code sau bàn giao"},
+          {"value": "Flutter, React", "label": "Đội kỹ thuật chuyên sâu, Việt Nam"},
+          {"value": "Không ràng buộc", "label": "Hủy hợp đồng báo trước 15 ngày"}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "advantages",
+        "kicker": "Tại sao chọn chúng tôi",
+        "title": "E-E-A-T: kinh nghiệm, chuyên môn, uy tín, đáng tin cậy",
+        "intro": "Cross Tech Edu xây dựng uy tín qua khách hàng thực tế và đối tác công nghệ tại Việt Nam, Nhật Bản và Hàn Quốc.",
+        "items": [
+          {"title": "Kinh nghiệm thực tế", "body": "Tham gia sản phẩm cho Vingroup, GMO ReTech, Zuellig Pharma và nhiều SME tại Việt Nam, Nhật Bản."},
+          {"title": "Đội kỹ thuật cố định", "body": "Đội đặt tại Việt Nam, làm việc theo giờ JST / KST / CET, bạn quản lý trực tiếp."},
+          {"title": "Bảo hành 12 tháng", "body": "Sửa lỗi miễn phí trong 12 tháng sau bàn giao, SLA phản hồi 4 giờ."},
+          {"title": "Không ràng buộc thời hạn", "body": "Hợp đồng không ràng buộc, hủy báo trước 15 ngày."},
+          {"title": "Báo giá trong 48 giờ", "body": "Nhận mô tả yêu cầu, gửi lại phạm vi công việc và giá cụ thể trong 48 giờ."},
+          {"title": "Đối tác công nghệ", "body": "Twendee Soft, JVB Corp, ITED, VFast Soft, Bfast VN làm việc cùng đội ngũ chúng tôi."}
+        ]
+      }
+    },
+    {
+      "type": "client_logos",
+      "data": {
+        "id": "clients",
+        "kicker": "Khách hàng / Clients",
+        "title": "Khách hàng của chúng tôi.",
+        "intro": "Những doanh nghiệp đang làm việc cùng đội ngũ Cross Tech Edu. Bấm vào logo để xem trang web của khách hàng.",
+        "link_label": "Mở trang web của {name} (tab mới)"
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "process",
+        "kicker": "Quy trình / Process",
+        "title": "Từ email đầu tiên đến bản chạy thật: năm bước.",
+        "steps": [
+          {"title": "Tư vấn & báo giá", "body": "Bạn gửi mô tả yêu cầu, chúng tôi hỏi lại đúng những gì cần để chốt phạm vi.", "duration": "48 giờ"},
+          {"title": "Chốt scope & hợp đồng", "body": "Danh sách tính năng, mốc bàn giao và điều kiện thanh toán viết ra trước khi bắt đầu.", "duration": "3 ngày"},
+          {"title": "Sprint hai tuần", "body": "Mỗi sprint kết thúc bằng một bản chạy được trên môi trường staging của bạn.", "duration": "2 tuần / lần"},
+          {"title": "QA & bàn giao", "body": "Test hồi quy, tài liệu API, source code và quyền truy cập hạ tầng chuyển về bạn.", "duration": "1 tuần"},
+          {"title": "Bảo hành & vận hành", "body": "Sửa lỗi miễn phí trong 12 tháng, gói vận hành tính riêng nếu bạn cần trực 24/7.", "duration": "12 tháng"}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Gửi yêu cầu, nhận báo giá trong 48 giờ.",
+        "body": "Kèm mô tả sản phẩm, mốc thời gian mong muốn và ngân sách dự kiến — chúng tôi trả lời bằng phạm vi công việc và giá cụ thể, không phải một email chào hàng.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}
