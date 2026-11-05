@@ -2,7 +2,7 @@
   "slug": "cross-encoder-vs-bi-encoder",
   "translation_key": "cross-encoder-rerank",
   "title": "Cross-encoder vs bi-encoder: why RAG needs reranking",
-  "description": "What a cross-encoder is, how it differs from a bi-encoder, why RAG reranks, what it costs in latency, and how to measure it with nDCG@10.",
+  "description": "What a cross-encoder is, how it differs from a bi-encoder, why RAG reranks, what it costs in latency, and how to measure it with nDCG@10. on customer documents.",
   "published": "2026-10-23",
   "updated": "2026-10-23",
   "author": "Cross Tech Edu",

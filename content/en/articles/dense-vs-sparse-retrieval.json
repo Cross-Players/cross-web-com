@@ -1,7 +1,7 @@
 {
   "slug": "dense-vs-sparse-retrieval",
   "translation_key": "dense-vs-sparse-retrieval",
-  "title": "Dense vs sparse retrieval: how they differ in RAG",
+  "title": "Dense vs sparse retrieval: how they differ in RAG for shops",
   "description": "How dense and sparse retrieval differ in RAG: BM25 versus vector search, hybrid fusion with RRF, the metrics to track, and notes for Vietnamese content.",
   "published": "2026-10-22",
   "updated": "2026-10-22",

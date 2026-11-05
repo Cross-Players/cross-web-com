@@ -1,7 +1,7 @@
 {
   "slug": "what-is-hyde",
   "translation_key": "hyde-rag",
-  "title": "What is HyDE? Hypothetical documents for better RAG retrieval",
+  "title": "What is HyDE? Hypothetical documents for better retrieval",
   "description": "What is HyDE? How an LLM-written hypothetical document improves retrieval in RAG: the mechanism, the pipeline, parameters, and how to measure the gain.",
   "published": "2026-10-21",
   "updated": "2026-10-21",

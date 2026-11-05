@@ -1,8 +1,8 @@
 {
   "slug": "chunking-la-gi",
   "translation_key": "chunking-rag",
-  "title": "Chunking là gì? Cắt tài liệu cho RAG đúng cách",
-  "description": "Chunking là gì, chọn kích thước và overlap ra sao, cắt theo cấu trúc, parent-child và cách đo bằng recall@k.",
+  "title": "Chunking là gì? Cắt tài liệu cho RAG đúng cách cho shop",
+  "description": "Chunking là gì, chọn kích thước và overlap ra sao, cắt theo cấu trúc, parent-child và cách đo bằng recall@k. ví dụ trên hợp đồng và sách hướng dẫn của cửa hàng.",
   "published": "2026-10-23",
   "updated": "2026-10-23",
   "author": "Cross Tech Edu",

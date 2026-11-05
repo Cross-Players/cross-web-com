@@ -2,7 +2,7 @@
   "slug": "tu-hoc-may-co-ban-len-rag",
   "translation_key": "ml-to-rag-ladder",
   "title": "Từ học máy cơ bản lên RAG: thang nâng cấp RAG ngày nay",
-  "description": "Học máy, embedding, retrieval, reranker, graph RAG, agentic RAG: giải thích từng nấc bằng ví dụ cửa hàng nhỏ, kèm khi nào nên dừng.",
+  "description": "Học máy, embedding, retrieval, reranker, graph RAG, agentic RAG: giải thích từng nấc bằng ví dụ cửa hàng nhỏ, kèm khi nào nên dừng và công cụ nên dùng đầu tiên.",
   "published": "2026-11-02",
   "updated": "2026-11-02",
   "author": "Cross Tech Edu",

@@ -2,7 +2,7 @@
   "slug": "cross-encoder-la-gi",
   "translation_key": "cross-encoder-rerank",
   "title": "Cross-encoder là gì? Rerank trong RAG và bi-encoder",
-  "description": "Cross-encoder là gì, khác gì bi-encoder, vì sao RAG cần rerank, chi phí độ trễ và cách đo bằng nDCG@10.",
+  "description": "Cross-encoder là gì, khác gì bi-encoder, vì sao RAG cần rerank, chi phí độ trễ và cách đo bằng nDCG@10. áp dụng khi tìm lại đoạn hợp đồng và mẫu đơn bán hàng.",
   "published": "2026-10-23",
   "updated": "2026-10-23",
   "author": "Cross Tech Edu",

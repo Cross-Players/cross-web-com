@@ -1,8 +1,8 @@
 {
   "slug": "hyde-la-gi",
   "translation_key": "hyde-rag",
-  "title": "HyDE là gì? Tìm tài liệu thật bằng tài liệu giả định trong RAG",
-  "description": "HyDE là gì? Cách LLM viết tài liệu giả định để tìm tài liệu thật: cơ chế, pipeline, tham số, cách đo hiệu quả và lúc nào nên bật.",
+  "title": "HyDE là gì? Tìm tài liệu thật bằng tài liệu giả định",
+  "description": "HyDE là gì? Cách LLM viết tài liệu giả định để tìm tài liệu thật: cơ chế, pipeline, tham số, cách đo hiệu quả và lúc nào nên bật cho cửa hàng bán lẻ ngay.",
   "published": "2026-10-21",
   "updated": "2026-10-21",
   "author": "Cross Tech Edu",

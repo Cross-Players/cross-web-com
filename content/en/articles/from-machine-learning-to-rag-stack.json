@@ -1,8 +1,8 @@
 {
   "slug": "from-machine-learning-to-rag-stack",
   "translation_key": "ml-to-rag-ladder",
-  "title": "From machine learning basics to today's RAG stack",
-  "description": "Machine learning, embeddings, retrieval, rerankers, graph RAG, agentic RAG: each rung explained with a small-shop example, plus where to stop.",
+  "title": "From machine learning basics to today's RAG stack for shops",
+  "description": "Machine learning, embeddings, retrieval, rerankers, graph RAG, agentic RAG: each rung explained with a small-shop example, plus where to stop. which tool first.",
   "published": "2026-11-02",
   "updated": "2026-11-02",
   "author": "Cross Tech Edu",
