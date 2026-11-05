@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="ai-law-en-1-title ai-law-en-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ai-law-en-1-title">Three AI risk levels</title>
+  <desc id="ai-law-en-1-desc">Three AI risk levels: Prohibited, High risk, Low risk, each with examples and duties.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+  <text x="40" y="56" font-size="22" font-weight="bold" fill="#201e1d">Three AI risk levels</text>
+  <text x="40" y="86" font-size="17" fill="#605d5d">The risk level decides your shop's duties</text>
+  <rect x="40" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <text x="60" y="150" font-size="19" font-weight="bold" fill="#ec3013">Prohibited</text>
+  <text x="60" y="182" font-size="16" fill="#201e1d">Example: social scoring, behavior</text>
+  <text x="60" y="210" font-size="16" fill="#605d5d">manipulation, real-time facial recognition</text>
+  <text x="60" y="238" font-size="16" fill="#ec3013">Duty: banned completely</text>
+  <text x="60" y="266" font-size="16" fill="#605d5d">do not use</text>
+  <rect x="340" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="360" y="150" font-size="19" font-weight="bold" fill="#201e1d">High risk</text>
+  <text x="360" y="182" font-size="16" fill="#201e1d">Example: education, health care, finance</text>
+  <text x="360" y="210" font-size="16" fill="#605d5d">public security, recruitment</text>
+  <text x="360" y="238" font-size="16" fill="#201e1d">Duty: human oversight,</text>
+  <text x="360" y="266" font-size="16" fill="#605d5d">continuous monitoring</text>
+  <rect x="640" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="660" y="150" font-size="19" font-weight="bold" fill="#201e1d">Low risk</text>
+  <text x="660" y="182" font-size="16" fill="#201e1d">Example: customer-care chatbot, virtual</text>
+  <text x="660" y="210" font-size="16" fill="#605d5d">assistant, product recommendation</text>
+  <text x="660" y="238" font-size="16" fill="#201e1d">Duty: label AI content</text>
+  <text x="660" y="266" font-size="16" fill="#605d5d">if AI-created</text>
+  <text x="40" y="430" font-size="16" fill="#605d5d">Source: Law 134/2025/QH15 and Decree 142/2026/NĐ-CP.</text>
+</svg>

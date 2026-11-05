@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="ai-law-en-2-title ai-law-en-2-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ai-law-en-2-title">30-day compliance checklist</title>
+  <desc id="ai-law-en-2-desc">30-day compliance checklist: five steps from listing AI tools to keeping an internal record.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+  <text x="40" y="56" font-size="22" font-weight="bold" fill="#201e1d">30-day compliance checklist</text>
+  <text x="40" y="86" font-size="17" fill="#605d5d">Five steps from listing AI tools to an internal record</text>
+  <rect x="40" y="108" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="118" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="140" font-size="16" font-weight="bold" fill="#ec3013">1</text>
+  <text x="110" y="138" font-size="17" fill="#201e1d">List every AI tool your shop uses</text>
+  <rect x="40" y="166" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="176" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="198" font-size="16" font-weight="bold" fill="#ec3013">2</text>
+  <text x="110" y="196" font-size="17" fill="#201e1d">Classify each system by risk level</text>
+  <rect x="40" y="224" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="234" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="256" font-size="16" font-weight="bold" fill="#ec3013">3</text>
+  <text x="110" y="254" font-size="17" fill="#201e1d">Label all AI-created content clearly</text>
+  <rect x="40" y="282" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="292" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="314" font-size="16" font-weight="bold" fill="#ec3013">4</text>
+  <text x="110" y="312" font-size="17" fill="#201e1d">Ask your provider about Ministry notification</text>
+  <rect x="40" y="340" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="350" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="372" font-size="16" font-weight="bold" fill="#ec3013">5</text>
+  <text x="110" y="370" font-size="17" fill="#201e1d">Keep an internal record: name, level, date</text>
+  <text x="40" y="428" font-size="16" fill="#605d5d">Source: Law 134/2025/QH15 and Decree 142/2026/NĐ-CP.</text>
+</svg>

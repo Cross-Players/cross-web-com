@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="ai-law-vi-1-title ai-law-vi-1-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ai-law-vi-1-title">Ba mức rủi ro AI</title>
+  <desc id="ai-law-vi-1-desc">Ba mức rủi ro AI: CẤM (cấm), CAO RỦI RO (giám sát), ÍT RỦI RO (dán nhãn), mỗi mức có ví dụ và nghĩa vụ.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+  <text x="40" y="56" font-size="22" font-weight="bold" fill="#201e1d">Ba mức rủi ro AI</text>
+  <text x="40" y="86" font-size="17" fill="#605d5d">Mức nào quyết định nghĩa vụ của cửa hàng bạn</text>
+  <rect x="40" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#ec3013" stroke-width="3"/>
+  <text x="60" y="150" font-size="19" font-weight="bold" fill="#ec3013">Mức CẤM</text>
+  <text x="60" y="182" font-size="16" fill="#201e1d">Ví dụ: đánh giá xã hội, thao tác</text>
+  <text x="60" y="210" font-size="16" fill="#605d5d">hành vi, nhận dạng khuôn mặt công cộng</text>
+  <text x="60" y="238" font-size="16" fill="#ec3013">Nghĩa vụ: cấm hoàn toàn</text>
+  <text x="60" y="266" font-size="16" fill="#605d5d">không được sử dụng</text>
+  <rect x="340" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="360" y="150" font-size="19" font-weight="bold" fill="#201e1d">Mức CAO RỦI RO</text>
+  <text x="360" y="182" font-size="16" fill="#201e1d">Ví dụ: giáo dục, y tế, tài chính</text>
+  <text x="360" y="210" font-size="16" fill="#605d5d">công an, tuyển dụng lao động</text>
+  <text x="360" y="238" font-size="16" fill="#201e1d">Nghĩa vụ: can thiệp con người,</text>
+  <text x="360" y="266" font-size="16" fill="#605d5d">giám sát liên tục</text>
+  <rect x="640" y="116" width="280" height="252" rx="10" fill="#eae9e9" stroke="#605d5d" stroke-width="2"/>
+  <text x="660" y="150" font-size="19" font-weight="bold" fill="#201e1d">Mức ÍT RỦI RO</text>
+  <text x="660" y="182" font-size="16" fill="#201e1d">Ví dụ: chatbot chăm sóc khách,</text>
+  <text x="660" y="210" font-size="16" fill="#605d5d">trợ lý ảo, gợi ý sản phẩm</text>
+  <text x="660" y="238" font-size="16" fill="#201e1d">Nghĩa vụ: dán nhãn nội dung AI</text>
+  <text x="660" y="266" font-size="16" fill="#605d5d">nếu tạo nội dung bằng AI</text>
+  <text x="40" y="430" font-size="16" fill="#605d5d">Nguồn: Luật 134/2025/QH15, Nghị định 142/2026/NĐ-CP.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-labelledby="ai-law-vi-2-title ai-law-vi-2-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="ai-law-vi-2-title">Lộ trình tuân thủ 30 ngày</title>
+  <desc id="ai-law-vi-2-desc">Lộ trình tuân thủ 30 ngày: năm bước từ liệt kê công cụ AI đến ghi hồ sơ nội bộ.</desc>
+  <rect width="960" height="470" fill="#f3f2f2"/>
+  <text x="40" y="56" font-size="22" font-weight="bold" fill="#201e1d">Lộ trình tuân thủ 30 ngày</text>
+  <text x="40" y="86" font-size="17" fill="#605d5d">Năm bước từ liệt kê công cụ AI đến ghi hồ sơ nội bộ</text>
+  <rect x="40" y="108" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="118" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="140" font-size="16" font-weight="bold" fill="#ec3013">1</text>
+  <text x="110" y="138" font-size="17" fill="#201e1d">Liệt kê mọi công cụ AI cửa hàng đang dùng</text>
+  <rect x="40" y="166" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="176" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="198" font-size="16" font-weight="bold" fill="#ec3013">2</text>
+  <text x="110" y="196" font-size="17" fill="#201e1d">Phân loại từng hệ thống theo mức rủi ro</text>
+  <rect x="40" y="224" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="234" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="256" font-size="16" font-weight="bold" fill="#ec3013">3</text>
+  <text x="110" y="254" font-size="17" fill="#201e1d">Dán nhãn rõ ràng nội dung tạo ra bởi AI</text>
+  <rect x="40" y="282" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="292" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="314" font-size="16" font-weight="bold" fill="#ec3013">4</text>
+  <text x="110" y="312" font-size="17" fill="#201e1d">Hỏi nhà cung cấp về thông báo Bộ Khoa học</text>
+  <rect x="40" y="340" width="880" height="44" rx="8" fill="#eae9e9" stroke="#605d5d"/>
+  <rect x="60" y="350" width="28" height="28" rx="4" fill="#fff" stroke="#ec3013" stroke-width="2"/>
+  <text x="74" y="372" font-size="16" font-weight="bold" fill="#ec3013">5</text>
+  <text x="110" y="370" font-size="17" fill="#201e1d">Ghi hồ sơ nội bộ: tên, mức, ngày, người làm</text>
+  <text x="40" y="428" font-size="16" fill="#605d5d">Nguồn: Luật 134/2025/QH15, Nghị định 142/2026/NĐ-CP.</text>
+</svg>
