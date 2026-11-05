@@ -4,6 +4,7 @@ in ``content/`` (or later in a CMS) are served without new routes."""
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 
 from flask import Blueprint, Response, abort, current_app, render_template, request, url_for
 
@@ -198,6 +199,13 @@ def sitemap():
 @bp.route("/robots.txt")
 def robots():
     body = f"User-agent: *\nAllow: /\n\nSitemap: {current_app.config['SITE_URL']}/sitemap.xml\n"
+    return Response(body, mimetype="text/plain")
+
+
+@bp.route("/app-ads.txt")
+def app_ads():
+    """AdMob seller authorization, kept in the repo-root app-ads.txt."""
+    body = (Path(current_app.root_path).parent / "app-ads.txt").read_text()
     return Response(body, mimetype="text/plain")
 
 
