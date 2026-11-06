@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="rag-cover-title rag-cover-desc" font-family="Archivo, Segoe UI, system-ui, sans-serif">
+  <title id="rag-cover-title">RAG là gì? Hướng dẫn cơ bản cho doanh nghiệp nhỏ</title>
+  <desc id="rag-cover-desc">Nhân viên doanh nghiệp nhỏ dùng máy tính và điện thoại để tra cứu tài liệu, trả lời khách hàng qua trợ lý ảo RAG</desc>
+  <defs>
+    <linearGradient id="ragAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ec3013"/>
+      <stop offset="100%" stop-color="#dd2b0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f3f2f2"/>
+  <!-- tài liệu được trích xuất (Retrieval) -->
+  <g>
+    <rect x="150" y="150" width="360" height="360" rx="10" fill="#ffffff" stroke="#d7d3d3" stroke-width="2"/>
+    <rect x="150" y="150" width="40" height="14" fill="url(#ragAccent)"/>
+    <rect x="190" y="240" width="220" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="262" width="160" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="284" width="200" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="320" width="220" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="342" width="150" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="364" width="240" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="400" width="200" height="10" rx="2" fill="#eae7e7"/>
+    <rect x="190" y="422" width="180" height="10" rx="2" fill="#eae7e7"/>
+  </g>
+  <!-- trợ lý ảo / đầu robot (Generation) -->
+  <g>
+    <circle cx="820" cy="300" r="70" fill="#ffffff" stroke="#d7d3d3" stroke-width="2"/>
+    <rect x="760" y="350" width="120" height="80" rx="10" fill="#ffffff" stroke="#d7d3d3" stroke-width="2"/>
+    <circle cx="795" cy="292" r="8" fill="#eae7e7"/>
+    <circle cx="845" cy="292" r="8" fill="#eae7e7"/>
+    <path d="M795 318 Q820 335 845 318" fill="none" stroke="#eae7e7" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- mũi tên tra cứu -->
+  <g stroke="url(#ragAccent)" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="520" y1="330" x2="740" y2="330"/>
+    <path d="M730 320 L740 330 L730 340"/>
+  </g>
+  <!-- tiêu đề -->
+  <text x="600" y="540" text-anchor="middle" font-size="22" font-weight="800" fill="#201e1d" letter-spacing="0.04em">RAG — truy xuất tài liệu rồi trả lời chính xác</text>
+  <text x="600" y="576" text-anchor="middle" font-size="15" font-weight="400" fill="#605d5d">Trợ lý ảo cho doanh nghiệp nhỏ · Cross Tech Edu</text>
+</svg>
