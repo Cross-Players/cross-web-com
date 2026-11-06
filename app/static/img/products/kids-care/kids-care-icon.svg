@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><linearGradient id="ge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB020"/><stop offset="1" stop-color="#FF7A00"/></linearGradient></defs><rect width="1024" height="1024" rx="228" fill="#FFF3E0"/>
+<path d="M300 410L262 156L486 260Z" fill="#F07C00" stroke="#F07C00" stroke-width="64" stroke-linejoin="round"/><path d="M724 410L762 156L538 260Z" fill="#F07C00" stroke="#F07C00" stroke-width="64" stroke-linejoin="round"/>
+<path d="M326 330L304 204L436 272Z" fill="#FFD9B0" stroke="#FFD9B0" stroke-width="36" stroke-linejoin="round"/><path d="M698 330L720 204L588 272Z" fill="#FFD9B0" stroke="#FFD9B0" stroke-width="36" stroke-linejoin="round"/>
+<path d="M272 440C272 290 380 210 512 210C644 210 752 290 752 440V640C752 784 640 866 512 866C384 866 272 784 272 640Z" fill="url(#ge)"/>
+<path d="M372 690Q512 650 652 690C668 760 624 848 512 866C400 848 356 760 372 690Z" fill="#FFF8F0"/>
+<path d="M512 236C494 290 484 360 474 440H550C540 360 530 290 512 236Z" fill="#FFF8F0"/>
+<path d="M512 420C600 420 666 466 666 520C666 584 596 610 512 610C428 610 358 584 358 520C358 466 424 420 512 420Z" fill="#FFF8F0"/>
+<circle cx="416" cy="400" r="38" fill="#2D2013"/><circle cx="608" cy="400" r="38" fill="#2D2013"/><circle cx="430" cy="386" r="12" fill="#fff"/><circle cx="622" cy="386" r="12" fill="#fff"/>
+<ellipse cx="512" cy="576" rx="24" ry="30" fill="#FF7A8A"/><path d="M512 530V556M512 556Q482 586 456 562M512 556Q542 586 568 562" stroke="#2D2013" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M466 478Q512 460 558 478Q554 518 512 532Q470 518 466 478Z" fill="#2D2013"/>
+<path d="M310 630Q512 706 714 630" stroke="#5A3A1E" stroke-width="30" stroke-linecap="round" fill="none"/>
+<g transform="translate(512 768) scale(.34) translate(-512 -505)"><path d="M512 860C430 760 262 604 262 440A250 250 0 0 1 762 440C762 604 594 760 512 860Z" fill="#FF8C00"/><path d="M512 572C378 488 372 372 446 356C482 349 504 370 512 392C520 370 542 349 578 356C652 372 646 488 512 572Z" fill="#FFF8F0"/></g></svg>

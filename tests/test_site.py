@@ -244,7 +244,7 @@ def test_product_flip_cards(client, path, title):
     section = html[html.index('id="work"'):]
     section = section[: section.index("</section>")]
     assert title in section
-    assert section.count('class="product__toggle" type="checkbox"') == 4
+    assert section.count('class="product__toggle" type="checkbox"') == (5 if path == "/" else 4)
     # each card: front face -> App Store, back face -> Google Play
     fronts = re.findall(r'product__face--front">\s*<a class="product__link" href="([^"]+)"', section)
     backs = re.findall(r'product__face--back">\s*<a class="product__link" href="([^"]+)"', section)

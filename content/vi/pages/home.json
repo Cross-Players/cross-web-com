@@ -203,6 +203,18 @@
                 "url": "https://play.google.com/store/apps/details?id=com.zuelligpharma.ezrxplus"
               }
             ]
+          },
+          {
+            "name": "Kids Care",
+            "icon": "img/products/kids-care/kids-care-icon.png",
+            "cover": "img/products/kids-care/kids-care-icon.png",
+            "publisher": "Cross Tech Edu",
+            "body": "Ứng dụng hỗ trợ phụ huynh theo dõi, gán việc và vùng an toàn cho con. Sản phẩm nội bộ của Cross Tech Edu — sắp công bố trên App Store và Google Play.",
+            "tags": [
+              "Việt Nam",
+              "Gia đình · An toàn"
+            ],
+            "stores": []
           }
         ]
       }

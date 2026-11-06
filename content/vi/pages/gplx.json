@@ -113,6 +113,14 @@
             "host": "apps.apple.com/vn/app/driver-license-e-learning",
             "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
             "cta": "Mở trang ứng dụng trên App Store"
+          },
+          {
+            "kicker": "Google Play",
+            "title": "Dành cho Android",
+            "body": "Ứng dụng đang được phát triển cho Android. Khi có phiên bản chính thức trên Google Play, chúng tôi sẽ cập nhật link tại đây.",
+            "host": "play.google.com",
+            "url": "https://play.google.com/store/apps/details?id=com.crosstechedu.gplx",
+            "cta": "Xem trên Google Play"
           }
         ],
         "note": {
