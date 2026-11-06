@@ -1,0 +1,71 @@
+{
+  "slug": "gplx/support",
+  "translation_key": "gplx-support",
+  "meta": {
+    "title": "Hỗ trợ ứng dụng ôn thi GPLX | Cross Tech Edu",
+    "description": "Trung tâm hỗ trợ ứng dụng ôn thi GPLX: liên hệ qua email crosstechedu@gmail.com, giải đáp lỗi thường gặp và hướng dẫn xử lý sự cố nhanh chóng.",
+    "breadcrumb": "Hỗ trợ ứng dụng GPLX",
+    "updated": "2026-11-06",
+    "og_image": "img/products/gplx/og.jpg"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Hỗ trợ · Ứng dụng ôn thi GPLX Vạn Xuân",
+        "title": "Hỗ trợ ôn thi GPLX: gặp lỗi, cần giúp đỡ?",
+        "lead": "Trang hỗ trợ chính thức của ứng dụng Ôn thi GPLX (Driver License E-learning). Gửi email mô tả lỗi bạn gặp, chúng tôi trả lời trong thời gian sớm nhất có thể.",
+        "sub": "Ứng dụng giúp học và ôn thi lý thuyết giấy phép lái xe tại Việt Nam: 600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, tra biển báo và mẹo ghi nhớ.",
+        "ctas": [
+          {"label": "Gửi email hỗ trợ", "href": "mailto:crosstechedu@gmail.com", "style": "primary"},
+          {"label": "Đọc chính sách quyền riêng tư", "href": "/gplx/policy/", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Liên hệ",
+          "amount": "Email",
+          "unit": "crosstechedu@gmail.com",
+          "note": "Ghi rõ thiết bị, phiên bản ứng dụng và bước tái hiện lỗi để chúng tôi xử lý nhanh hơn."
+        },
+        "stats": [
+          {"value": "600 câu", "label": "Bộ câu hỏi sát hạch lý thuyết"},
+          {"value": "15 hạng", "label": "Từ A1, A, B đến C, D và các hạng E"},
+          {"value": "iOS 12+", "label": "iPhone, iPad · App Store"},
+          {"value": "48 giờ", "label": "Thời gian trả lời tham chiếu"}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "faq",
+        "kicker": "Câu hỏi thường gặp / FAQ",
+        "title": "Các vấn đề thường gặp và cách xử lý.",
+        "intro": "Không tìm thấy câu trả lời? Gửi email đến crosstechedu@gmail.com kèm ảnh chụp màn hình lỗi, chúng tôi sẽ hỗ trợ bạn.",
+        "items": [
+          {"title": "Ứng dụng có cần tạo tài khoản không?", "body": "Không. Ứng dụng không yêu cầu đăng ký hay đăng nhập. Kết quả thi thử và câu bạn hay làm sai chỉ lưu trên máy của bạn, không đồng bộ lên máy chủ."},
+          {"title": "Ứng dụng có quảng cáo không?", "body": "Không. Bản hiện tại trên App Store không hiển thị quảng cáo, không có gói trả phí; mọi tính năng đều mở ngay khi cài đặt."},
+          {"title": "Tôi không thấy hạng bằng của mình?", "body": "Ứng dụng có 15 hạng: A1, A, B1, B, C1, C, D1, D2, D cùng các hạng BE, C1E, CE, D1E, D2E, DE. Mở màn hình chính, chọn hạng bạn đăng ký thi, toàn bộ đề và câu hỏi sẽ đổi theo hạng đó."},
+          {"title": "Câu điểm liệt là gì?", "body": "Là những câu hỏi mà nếu trả lời sai, bạn trượt lý thuyết dù tổng điểm đạt. Ứng dụng có mục ôn riêng câu điểm liệt; hãy học kỹ mục này trước ngày sát hạch."},
+          {"title": "Ứng dụng bị treo hoặc lỗi hiển thị thì làm sao?", "body": "Thử lần lượt: đóng ứng dụng và mở lại; cập nhật ứng dụng lên phiên bản mới nhất trên App Store; khởi động lại máy. Nếu vẫn lỗi, gửi email mô tả thiết bị, phiên bản iOS, phiên bản ứng dụng và bước bạn đã thao tác cho crosstechedu@gmail.com."},
+          {"title": "Ứng dụng có trên Android không?", "body": "Bản cho iPhone và iPad đã phát hành trên App Store. Phiên bản Android đang được phát triển; khi có thông tin chính thức, chúng tôi sẽ cập nhật trên trang này và trang giới thiệu /gplx/apps/gplx/."}
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Vẫn cần hỗ trợ? Liên hệ Cross Tech Edu.",
+        "body": "Đội ngũ phát triển ứng dụng Ôn thi GPLX trả lời qua email. Vui lòng đính kèm ảnh chụp màn hình, tên thiết bị, phiên bản iOS, phiên bản ứng dụng và mô tả ngắn gọn lỗi để chúng tôi xử lý nhanh.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}
