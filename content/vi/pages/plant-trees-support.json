@@ -1,0 +1,74 @@
+{
+  "slug": "projects/plant-trees/support",
+  "translation_key": "trong-cay-support",
+  "meta": {
+    "title": "Hỗ trợ ứng dụng Trồng Cây | Cross Tech Edu",
+    "description": "Trang hỗ trợ ứng dụng Trồng Cây: liên hệ qua email crosstechedu@gmail.com, giải đáp các câu hỏi thường gặp về chăm cây, quảng cáo mẫu và dữ liệu của bạn.",
+    "breadcrumb": "Hỗ trợ ứng dụng Trồng Cây",
+    "updated": "2026-11-07"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Hỗ trợ · Ứng dụng Trồng Cây",
+        "title": "Hỗ trợ Trồng Cây: gặp lỗi, cần giúp đỡ?",
+        "lead": "Trang hỗ trợ chính thức của ứng dụng Trồng Cây. Gửi email mô tả vấn đề bạn gặp, chúng tôi sẽ trả lời sớm nhất có thể.",
+        "sub": "Trồng Cây là ứng dụng chăm cây ảo để thư giãn vài phút mỗi ngày. Đây là bản thử nghiệm: quảng cáo, thanh toán và cây trồng trong rừng đều là mô phỏng.",
+        "ctas": [
+          {
+            "label": "Gửi email hỗ trợ",
+            "href": "mailto:crosstechedu@gmail.com",
+            "style": "primary"
+          },
+          {
+            "label": "Đọc chính sách quyền riêng tư",
+            "href": "/projects/plant-trees/privacy/",
+            "style": "secondary"
+          }
+        ],
+        "rate": {
+          "label": "Liên hệ",
+          "amount": "Email",
+          "unit": "crosstechedu@gmail.com",
+          "note": "Ghi rõ thiết bị, phiên bản ứng dụng và các bước gây ra lỗi để chúng tôi xử lý nhanh hơn."
+        }
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "faq",
+        "kicker": "Câu hỏi thường gặp / FAQ",
+        "title": "Các câu hỏi thường gặp.",
+        "intro": "Không tìm thấy câu trả lời? Gửi email đến crosstechedu@gmail.com kèm ảnh chụp màn hình, chúng tôi sẽ hỗ trợ bạn.",
+        "items": [
+          {
+            "title": "Có cần tạo tài khoản không?",
+            "body": "Không. Ứng dụng không yêu cầu đăng ký hay đăng nhập. Tiến độ của cây chỉ lưu trên thiết bị của bạn."
+          },
+          {
+            "title": "Cây có chết nếu tôi quên chăm không?",
+            "body": "Không. Cây chỉ khát nước và lá rũ xuống, không bao giờ chết. Bạn quay lại tưới bất cứ lúc nào."
+          },
+          {
+            "title": "Làm sao để có thêm nước và phân bón?",
+            "body": "Nước tự cộng 1 mỗi giờ, phân bón tự cộng 1 mỗi 3 giờ, kể cả khi đóng ứng dụng. Bạn cũng có thể nhận thêm bằng cách xem quảng cáo mẫu."
+          },
+          {
+            "title": "Cây thật có được trồng không?",
+            "body": "Chưa. Đây là bản thử nghiệm nên việc đưa cây ra rừng, đối tác và sự kiện đều là mô phỏng. Chưa có cây thật nào được trồng."
+          },
+          {
+            "title": "Tôi có bị trừ tiền khi mua trong cửa hàng không?",
+            "body": "Không. Cửa hàng trong bản thử nghiệm là mô phỏng, không có giao dịch tiền thật."
+          },
+          {
+            "title": "Dữ liệu của tôi có bị mất khi đổi máy không?",
+            "body": "Có. Dữ liệu chỉ nằm trên thiết bị và chưa có đồng bộ, nên gỡ ứng dụng hoặc đổi máy sẽ bắt đầu lại từ đầu."
+          }
+        ]
+      }
+    }
+  ]
+}

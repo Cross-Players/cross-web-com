@@ -17,6 +17,8 @@ GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id67511853
 FAMHUB_PATH = "/projects/fam-hub/"
 KIGO_PATH = "/projects/kigo/"
 KIGO_POLICY_PATH = "/projects/kigo/privacy/"
+TRONG_CAY_POLICY_PATH = "/projects/plant-trees/privacy/"
+TRONG_CAY_SUPPORT_PATH = "/projects/plant-trees/support/"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
 VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
@@ -163,6 +165,18 @@ def test_famhub_policy_page(client):
     assert "Cross Tech &amp; Edu" in html
     assert 'href="mailto:crosstechedu@gmail.com"' in html
     assert "not end-to-end encrypted" in html
+
+
+def test_trong_cay_store_pages(client):
+    """App Store Connect and Google Play link to these URLs."""
+    policy = client.get(TRONG_CAY_POLICY_PATH).get_data(as_text=True)
+    assert policy.count("<h1") == 1 and '<html lang="vi">' in policy
+    assert "không thu thập dữ liệu cá nhân" in policy and "OpenTopoMap" in policy
+    assert 'href="mailto:crosstechedu@gmail.com"' in policy
+    support = client.get(TRONG_CAY_SUPPORT_PATH).get_data(as_text=True)
+    assert support.count("<h1") == 1
+    assert 'href="mailto:crosstechedu@gmail.com"' in support
+    assert f'href="{TRONG_CAY_POLICY_PATH}"' in support
 
 
 def test_kigo_policy_page(client):
@@ -371,7 +385,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, TRONG_CAY_POLICY_PATH, TRONG_CAY_SUPPORT_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)
