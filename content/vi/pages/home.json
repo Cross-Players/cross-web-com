@@ -38,7 +38,7 @@
       "data": {
         "id": "services",
         "kicker": "Dịch vụ / Services",
-        "title": "Chín mảng chúng tôi nhận, không hơn.",
+        "title": "Chín mảng chúng tôi nhận",
         "intro": "Mỗi mảng có một đội cố định và một quy trình review riêng. Bạn thuê theo người hoặc theo trọn gói dự án — cách nào cũng dùng cùng một đội.",
         "items": [
           {"title": "Web development", "body": "Next.js, React, Laravel. Trang giới thiệu tới hệ thống nội bộ nhiều vai trò."},
