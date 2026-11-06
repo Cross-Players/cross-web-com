@@ -98,6 +98,7 @@
           "flip_to_google_play": "Lật thẻ · Google Play",
           "flip_to_app_store": "Lật thẻ · App Store",
           "open_in": "Mở trên {store}",
+          "open_page": "Xem ứng dụng",
           "new_tab": "(mở tab mới)",
           "flip_label": "Lật thẻ {name} sang mặt Google Play",
           "icon_alt": "Biểu tượng ứng dụng {name}",
@@ -205,11 +206,13 @@
             ]
           },
           {
-            "name": "Kids Care",
-            "icon": "img/products/kids-care/kids-care-icon.png",
-            "cover": "img/products/kids-care/kids-care-icon.png",
+            "name": "Kigo",
+            "page": "/projects/kigo/",
+            "tagline": "Báo khi con đến nơi an toàn",
+            "icon": "img/products/famhub/icon.png",
+            "cover": "img/products/famhub/cover-kigo.webp",
             "publisher": "Cross Tech Edu",
-            "body": "Ứng dụng hỗ trợ phụ huynh theo dõi, gán việc và vùng an toàn cho con. Sản phẩm nội bộ của Cross Tech Edu — sắp công bố trên App Store và Google Play.",
+            "body": "Ứng dụng báo cho bố mẹ khi con đến trường hoặc rời nhà, kèm vùng an toàn, vị trí trực tiếp và việc cần làm. Sản phẩm của Cross Tech Edu, sắp ra mắt trên App Store và Google Play.",
             "tags": [
               "Việt Nam",
               "Gia đình · An toàn"

@@ -9,11 +9,11 @@ web
 ## Users
 
 - Doanh nghiệp SME tại Nhật Bản, Hàn Quốc, châu Âu cần outsourcing web, mobile, backend, cloud (trang chủ hiện tại).
-- Phụ huynh sử dụng ứng dụng Kids Care (giám sát con, gán việc, vùng an toàn) — hiện diện dưới dạng case study trên trang chủ.
+- Phụ huynh sử dụng ứng dụng FamHub (tên tại Việt Nam: Kigo; vùng an toàn, vị trí, việc cần làm) — hiện diện dưới dạng case study trên trang chủ.
 
 ## Product Purpose
 
-Cross Tech Edu là đội kỹ thuật đặt tại Việt Nam, nhận outsourcing web/mobile/backend/cloud với bàn giao theo sprint 2 tuần và hợp đồng không ràng buộc thời hạn; đồng thời phát triển các sản phẩm app nội bộ (GPLX, Kids Care). Trang chủ crosstechedu.com là landing page thu hút khách hàng outsourcing, đồng thời minh họa năng lực qua case studies.
+Cross Tech Edu là đội kỹ thuật đặt tại Việt Nam, nhận outsourcing web/mobile/backend/cloud với bàn giao theo sprint 2 tuần và hợp đồng không ràng buộc thời hạn; đồng thời phát triển các sản phẩm app nội bộ (GPLX, FamHub/Kigo). Trang chủ crosstechedu.com là landing page thu hút khách hàng outsourcing, đồng thời minh họa năng lực qua case studies.
 
 ## Positioning
 
@@ -28,7 +28,7 @@ Website Flask + Jinja2, nội dung JSON under `content/`, xuất tĩnh bằng Fr
 - Trang chủ được cấu trúc bằng content blocks JSON (`hero`, `services`, `pricing`, `products`, `client_logos`, `process`, `contact`).
 - Block `products` hỗ trợ thẻ lật (App Store ↔ Google Play) với icon, cover, tên cửa hàng, URL.
 - Không thêm framework JS mới; không sửa logic trang hiện có.
-- Ảnh marketing Kids Care có sẵn tại `D:/projects/kids_care/docs/store/screenshots/marketing/` (6 ảnh, 1080×1920).
+- Ảnh màn hình và creative FamHub nằm trong repo app: `kids_care/ios/fastlane/screenshots` và `app_store_creative` (chỉ có en-US).
 
 ## Brand Commitments
 
@@ -37,7 +37,7 @@ Website Flask + Jinja2, nội dung JSON under `content/`, xuất tĩnh bằng Fr
 
 ## Evidence on Hand
 
-- 6 ảnh marketing Kids Care (play-01 → play-06, nền cam, mockup điện thoại) đã copy vào `app/static/img/products/kids-care/`.
+- Ảnh FamHub/Kigo dùng trên web nằm ở `app/static/img/products/famhub/`.
 - Repo mobile GPLX (`D:/projects/gplx`) xác nhận package `com.crosstechedu.gplx`.
 
 ## Product Principles

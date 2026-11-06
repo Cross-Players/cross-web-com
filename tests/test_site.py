@@ -14,6 +14,9 @@ GPLX_PATH = "/gplx/"
 GPLX_POLICY_PATH = "/gplx/policy/"
 FAMHUB_POLICY_PATH = "/projects/fam-hub/privacy/"
 GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396"
+FAMHUB_PATH = "/projects/fam-hub/"
+KIGO_PATH = "/projects/kigo/"
+KIGO_POLICY_PATH = "/projects/kigo/privacy/"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
 VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
@@ -162,6 +165,69 @@ def test_famhub_policy_page(client):
     assert "not end-to-end encrypted" in html
 
 
+def test_kigo_policy_page(client):
+    """Vietnamese version of the FamHub policy, under the app's Vietnamese name."""
+    html = client.get(KIGO_POLICY_PATH).get_data(as_text=True)
+    assert html.count("<h1") == 1
+    assert '<html lang="vi">' in html and '<div lang="en">' not in html
+    assert "Chính sách quyền riêng tư ứng dụng Kigo" in html and "Kids Care" not in html
+    assert "<table>" in html and "Vị trí chính xác của trẻ" in html
+    assert "không được mã hoá đầu cuối" in html
+    assert "Singapore (asia-southeast1)" in html and "60 phút" in html
+    assert f'href="{FAMHUB_POLICY_PATH}"' in html
+    assert 'href="mailto:crosstechedu@gmail.com"' in html
+    assert client.get("/projects/fam-hub/privacy/vi/").status_code == 404
+
+
+@pytest.mark.parametrize(
+    "path,lang,other,name,other_name,policy",
+    [
+        (FAMHUB_PATH, "en", KIGO_PATH, "FamHub", "Kigo", FAMHUB_POLICY_PATH),
+        (KIGO_PATH, "vi", FAMHUB_PATH, "Kigo", "FamHub", KIGO_POLICY_PATH),
+    ],
+)
+def test_app_marketing_pages(client, path, lang, other, name, other_name, policy):
+    """One app, two market names: each page is the other's language version."""
+    html = client.get(path).get_data(as_text=True)
+    assert f'<html lang="{lang}">' in html
+    assert html.count("<h1") == 1 and name in html
+    assert html.count('class="shot"') == 6
+    assert "img/products/famhub/01_parent-home.webp" in html
+    assert f'href="{policy}"' in html
+    assert f'hreflang="{"vi" if lang == "en" else "en"}" href="{BASE}{other}"' in html
+    # not on the stores yet: no download link, no price claim, no old name
+    assert "apps.apple.com" not in html and "play.google.com" not in html
+    assert "Kids Care" not in html
+    graph = {n["@type"]: n for n in _jsonld(html)["@graph"]}
+    assert graph["MobileApplication"]["name"] == name
+    assert graph["MobileApplication"]["alternateName"] == other_name
+    assert "offers" not in graph["MobileApplication"]
+
+
+def test_famhub_pages_use_english_chrome(client):
+    """They live at root URLs but must not show the Vietnamese menu and footer."""
+    for path in (FAMHUB_PATH, FAMHUB_POLICY_PATH):
+        html = client.get(path).get_data(as_text=True)
+        assert '<html lang="en">' in html and 'property="og:locale" content="en_US"' in html
+        assert "Bảo lưu mọi quyền" not in html
+        assert 'href="/en/#contact"' in html
+    assert f'href="{KIGO_POLICY_PATH}"' in client.get(FAMHUB_POLICY_PATH).get_data(as_text=True)
+
+
+def test_old_kids_care_pages_are_gone(client):
+    for path in ("/kids-care/", "/kids-care/policy/"):
+        assert client.get(path).status_code == 404
+    redirects = json.loads((Path(__file__).resolve().parent.parent / "vercel.json").read_text())["redirects"]
+    assert {"source": "/kids-care/", "destination": KIGO_PATH, "permanent": True} in redirects
+
+
+def test_kigo_is_linked_from_the_vi_home_page(client):
+    html = client.get("/").get_data(as_text=True)
+    assert "Kids Care" not in html
+    assert html.count(f'href="{KIGO_PATH}"') == 2  # product card + footer
+    assert f'href="{FAMHUB_PATH}"' in client.get("/en/").get_data(as_text=True)
+
+
 def test_gplx_landing_page(client):
     html = client.get(GPLX_PATH).get_data(as_text=True)
     assert html.count("<h1") == 1 and "Ôn thi GPLX" in html
@@ -257,9 +323,11 @@ def test_product_flip_cards(client, path, title):
     section = html[html.index('id="work"'):]
     section = section[: section.index("</section>")]
     assert title in section
-    assert section.count('class="product__toggle" type="checkbox"') == (5 if path == "/" else 4)
-    # each card: front face -> App Store, back face -> Google Play
+    assert section.count('class="product__toggle" type="checkbox"') == 4
+    # each card on the stores: front face -> App Store, back face -> Google Play
     fronts = re.findall(r'product__face--front">\s*<a class="product__link" href="([^"]+)"', section)
+    if path == "/":  # Kigo is not on the stores yet: a single face, linking to its page
+        assert fronts.pop() == KIGO_PATH
     backs = re.findall(r'product__face--back">\s*<a class="product__link" href="([^"]+)"', section)
     assert len(fronts) == len(backs) == 4
     assert all(u.startswith("https://apps.apple.com/") for u in fronts)
@@ -303,11 +371,12 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_POLICY_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)
-    assert audit(page, BASE + path, "en" if path.startswith("/en/") else "vi") == []
+    lang = re.search(r'<html lang="(\w+)"', page).group(1)
+    assert audit(page, BASE + path, lang) == []
 
     # social profiles + share buttons
     for url in ("facebook.com/profile.php?id=61578180279419", "x.com/CrossTechEdu", "linkedin.com/company/cross-tech-edu"):

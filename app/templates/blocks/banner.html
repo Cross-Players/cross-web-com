@@ -1,0 +1,5 @@
+{# Full-width product image under the hero. #}
+{% set d = block.data %}
+<figure class="banner">
+  <img src="{{ asset(d.image) }}" alt="{{ d.alt }}" width="{{ d.width }}" height="{{ d.height }}" decoding="async">
+</figure>

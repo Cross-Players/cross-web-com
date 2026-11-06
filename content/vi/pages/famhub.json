@@ -1,0 +1,143 @@
+{
+  "slug": "projects/fam-hub",
+  "translation_key": "famhub",
+  "meta": {
+    "lang": "en",
+    "title": "FamHub: Kids Arrival Alerts & Safe Zones | Cross Tech Edu",
+    "description": "FamHub tells parents when their child reaches school or leaves home: safe zone alerts, live location your child chooses to share, one-tap check-ins and daily to-dos.",
+    "breadcrumb": "FamHub",
+    "updated": "2026-11-07",
+    "og_image": "img/products/famhub/og-famhub.jpg",
+    "app": {
+      "type": "MobileApplication",
+      "name": "FamHub",
+      "alternate_name": "Kigo",
+      "description": "Family app with safe zone arrival alerts, child-shared live location, one-tap check-ins and daily to-dos.",
+      "url": "https://www.crosstechedu.com/projects/fam-hub/",
+      "category": "LifestyleApplication",
+      "operating_system": "iOS, Android"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "App · FamHub",
+        "title": "FamHub: know your kids got there safely.",
+        "lead": "Know your child got there safely. Get an alert when they reach school or leave home, see their live location when they share it, and keep daily to-dos on track together.",
+        "sub": "No ads and no third-party analytics. Accounts link only when both sides agree.",
+        "ctas": [
+          {"label": "See the app", "href": "#screenshots", "style": "primary"},
+          {"label": "Read the privacy policy", "href": "/projects/fam-hub/privacy/", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Status",
+          "amount": "Coming soon",
+          "unit": "App Store & Google Play",
+          "note": "FamHub is not on the stores yet. Download links will appear on this page when it launches."
+        },
+        "stats": [
+          {"value": "3 safe zones", "label": "Mark home, school or the park on the map"},
+          {"value": "60 minutes", "label": "Live sharing stops automatically"},
+          {"value": "3 guardians", "label": "Parents or guardians linked to each child"},
+          {"value": "6 languages", "label": "Including English and Vietnamese"}
+        ]
+      }
+    },
+    {
+      "type": "banner",
+      "data": {
+        "image": "img/products/famhub/banner-en.webp",
+        "alt": "A FamHub notification saying Lily arrived at School, over a map with pins for home, school and the park",
+        "width": 1600,
+        "height": 686
+      }
+    },
+    {
+      "type": "screenshots",
+      "data": {
+        "id": "screenshots",
+        "kicker": "Screenshots",
+        "title": "Two simple modes, one for parents and one for kids.",
+        "intro": "Parents get updates, safe zones and a to-do list. A companion mode on your child's phone has big, friendly buttons to check in, share their location and see their tasks.",
+        "list_label": "FamHub app screenshots, scroll sideways to see more",
+        "width": 600,
+        "height": 1304,
+        "items": [
+          {"image": "img/products/famhub/01_parent-home.webp", "alt": "Parent home screen with a child's live location on a map and a list of recent updates", "title": "Parent home", "body": "Live location, last-seen times and every update as it happens."},
+          {"image": "img/products/famhub/02_parent-map.webp", "alt": "Map with three safe zones marked: home, school and park", "title": "Safe zones", "body": "Long-press the map or search by name to add up to 3 places."},
+          {"image": "img/products/famhub/03_parent-todo.webp", "alt": "Parent's list of a child's tasks, showing which are pending and which are done", "title": "Assign tasks", "body": "Give each task a fun icon, a description and a due date."},
+          {"image": "img/products/famhub/04_child-home.webp", "alt": "Child home screen with buttons for going to school, going to play, I've arrived and I'm home", "title": "Kid mode", "body": "One tap to check in, and one more to share live location."},
+          {"image": "img/products/famhub/05_child-todo.webp", "alt": "Child's to-do list with a progress bar and completed tasks", "title": "My to-dos", "body": "Kids tap a task when it's done, and can add their own."},
+          {"image": "img/products/famhub/06_child-notes.webp", "alt": "Child's notes to parents, such as please buy colored pencils", "title": "Notes for parents", "body": "Little requests like \"Pick me up at 4:30\"."}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "features",
+        "kicker": "Features",
+        "title": "Peace of mind without the constant calls.",
+        "intro": "FamHub is built around the moments parents actually wonder about: did they arrive, where are they now, and is the homework done?",
+        "items": [
+          {"title": "Safe zone alerts", "body": "Get a notification when your child arrives at or leaves a safe zone, even when the app on their phone is closed."},
+          {"title": "Live location, shared by your child", "body": "Your child taps to share for the next 60 minutes. Ask with one tap and they get a friendly prompt. When sharing ends, the shared location is deleted."},
+          {"title": "One-tap check-ins", "body": "\"Going to school\", \"Going to play\", \"I've arrived\", \"I'm home\": their current location is sent along with each tap."},
+          {"title": "Daily to-dos", "body": "Assign tasks with a due date. Kids see a cheer when they finish one, and you get notified right away."},
+          {"title": "Notes for parents", "body": "Kids can send small requests. Mark a note as done so everyone stays in the loop."},
+          {"title": "Built for the whole family", "body": "Follow several children from one parent account, and link up to 3 parents or guardians with each child."}
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "how-it-works",
+        "kicker": "How it works",
+        "title": "Set up in four steps.",
+        "intro": "You can try FamHub right away without signing up, then link an email later to keep your data.",
+        "steps": [
+          {"title": "Install on both phones", "body": "Choose the parent mode on your phone and the companion mode on your child's.", "duration": "Install"},
+          {"title": "Link your accounts", "body": "Enter the other person's 6-character code. They have to accept, so no one is linked without agreeing.", "duration": "Link"},
+          {"title": "Mark your safe zones", "body": "Alerts need location set to \"Always\" on your child's phone. Using location in the background can reduce battery life.", "duration": "Set up"},
+          {"title": "Get the updates", "body": "Arrivals, departures, check-ins and finished tasks appear on your home screen as they happen.", "duration": "Relax"}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "download",
+        "kicker": "Download",
+        "title": "Coming soon to iPhone and Android.",
+        "intro": "FamHub is called Kigo in Vietnam. It is the same app, available in English, Vietnamese, Japanese, Chinese, Indonesian and Portuguese.",
+        "items": [
+          {"kicker": "App Store", "title": "For iPhone and iPad", "body": "Not available yet. The download link will appear here when FamHub launches."},
+          {"kicker": "Google Play", "title": "For Android", "body": "Not available yet. The download link will appear here when FamHub launches."}
+        ],
+        "note": {
+          "text": "Your child's location is shared only with the parents and guardians linked to their account.",
+          "label": "How FamHub handles your data",
+          "href": "/projects/fam-hub/privacy/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Questions about FamHub?",
+        "body": "FamHub is made by Cross Tech & Edu in Hanoi, Vietnam. Email us for help with the app or with your data.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "zalo_label": "Company Zalo",
+        "zalo_cta": "Message us on Zalo",
+        "zalo_hint": "Scan the QR code with the Zalo app, or tap to open the chat.",
+        "zalo_qr_alt": "Cross Tech Edu Zalo QR code",
+        "office_label": "Office",
+        "office_text": "Hanoi, Vietnam"
+      }
+    }
+  ]
+}

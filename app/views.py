@@ -24,7 +24,9 @@ def _render_page(locale: str, slug: str) -> str:
     page = repo.get_page(locale, slug)
     if page is None:
         abort(404)
-    site = repo.get_site(locale)
+    # meta.lang: a page served at a root URL but written in another language.
+    lang = page.meta.get("lang", locale)
+    site = repo.get_site(lang)
     site_url = cfg["SITE_URL"]
     path = seo.page_path(locale, page.slug, cfg["DEFAULT_LOCALE"])
     alts = seo.alternates(repo, page, cfg["LOCALES"], cfg["DEFAULT_LOCALE"])
@@ -33,15 +35,15 @@ def _render_page(locale: str, slug: str) -> str:
         page=page,
         meta=page.meta,
         site=site,
-        locale=locale,
+        locale=lang,
         site_url=site_url,
         canonical=site_url + path,
         alternates=alts,
         default_locale=cfg["DEFAULT_LOCALE"],
-        og_locale=seo.OG_LOCALES[locale],
-        og_locale_alternates=[seo.OG_LOCALES[loc] for loc in alts if loc != locale],
+        og_locale=seo.OG_LOCALES[lang],
+        og_locale_alternates=[seo.OG_LOCALES[loc] for loc in alts if loc != lang],
         jsonld=seo.jsonld(
-            site, page, site_url, site_url + path, locale,
+            site, page, site_url, site_url + path, lang,
             seo.breadcrumbs(repo, page, site, cfg["DEFAULT_LOCALE"]),
         ),
     )

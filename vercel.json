@@ -12,6 +12,11 @@
       "permanent": true
     },
     {
+      "source": "/kids-care/",
+      "destination": "/projects/kigo/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {

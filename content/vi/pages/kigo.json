@@ -1,0 +1,142 @@
+{
+  "slug": "projects/kigo",
+  "translation_key": "famhub",
+  "meta": {
+    "title": "Kigo: Báo khi con đến nơi an toàn | Cross Tech Edu",
+    "description": "Kigo báo cho bố mẹ khi con đến trường hay rời nhà: cảnh báo vùng an toàn, vị trí trực tiếp do con chia sẻ, check-in một chạm và việc cần làm mỗi ngày.",
+    "breadcrumb": "Kigo",
+    "updated": "2026-11-07",
+    "og_image": "img/products/famhub/og-kigo.jpg",
+    "app": {
+      "type": "MobileApplication",
+      "name": "Kigo",
+      "alternate_name": "FamHub",
+      "description": "Ứng dụng gia đình với cảnh báo vùng an toàn, vị trí trực tiếp do con chia sẻ, check-in một chạm và việc cần làm mỗi ngày.",
+      "url": "https://www.crosstechedu.com/projects/kigo/",
+      "category": "LifestyleApplication",
+      "operating_system": "iOS, Android"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Ứng dụng · Kigo",
+        "title": "Kigo: biết con đã đến nơi an toàn.",
+        "lead": "Nhận thông báo khi con đến trường hoặc rời nhà, xem vị trí trực tiếp khi con chia sẻ, và cùng con theo dõi việc cần làm mỗi ngày.",
+        "sub": "Không quảng cáo, không dùng công cụ phân tích của bên thứ ba. Tài khoản chỉ liên kết khi cả hai bên đồng ý.",
+        "ctas": [
+          {"label": "Xem ứng dụng", "href": "#anh-man-hinh", "style": "primary"},
+          {"label": "Đọc chính sách quyền riêng tư", "href": "/projects/kigo/privacy/", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Trạng thái",
+          "amount": "Sắp ra mắt",
+          "unit": "App Store & Google Play",
+          "note": "Kigo chưa có trên các cửa hàng ứng dụng. Link tải sẽ được cập nhật trên trang này khi ứng dụng ra mắt."
+        },
+        "stats": [
+          {"value": "3 vùng an toàn", "label": "Đánh dấu nhà, trường học hay sân chơi trên bản đồ"},
+          {"value": "60 phút", "label": "Chia sẻ trực tiếp tự dừng sau 60 phút"},
+          {"value": "3 người giám hộ", "label": "Bố mẹ hoặc người giám hộ liên kết với mỗi con"},
+          {"value": "6 ngôn ngữ", "label": "Có tiếng Việt và tiếng Anh"}
+        ]
+      }
+    },
+    {
+      "type": "banner",
+      "data": {
+        "image": "img/products/famhub/banner-vi.webp",
+        "alt": "Thông báo từ Kigo: Lily đã đến trường, trên nền bản đồ có các điểm ghim nhà và trường học",
+        "width": 1600,
+        "height": 390
+      }
+    },
+    {
+      "type": "screenshots",
+      "data": {
+        "id": "anh-man-hinh",
+        "kicker": "Ảnh màn hình / Screenshots",
+        "title": "Hai chế độ đơn giản: một cho bố mẹ, một cho con.",
+        "intro": "Bố mẹ nhận cập nhật, thiết lập vùng an toàn và giao việc. Trên điện thoại của con là các nút to, dễ bấm để báo tình hình, chia sẻ vị trí và xem việc cần làm. Ảnh chụp giao diện tiếng Anh; ứng dụng có tiếng Việt.",
+        "list_label": "Ảnh màn hình ứng dụng Kigo, vuốt ngang để xem thêm",
+        "width": 600,
+        "height": 1304,
+        "items": [
+          {"image": "img/products/famhub/01_parent-home.webp", "alt": "Màn hình chính của bố mẹ với vị trí trực tiếp của con trên bản đồ và danh sách cập nhật gần đây", "title": "Màn hình của bố mẹ", "body": "Vị trí trực tiếp, lần cuối thấy con và mọi cập nhật ngay khi có."},
+          {"image": "img/products/famhub/02_parent-map.webp", "alt": "Bản đồ với ba vùng an toàn: nhà, trường học và công viên", "title": "Vùng an toàn", "body": "Nhấn giữ trên bản đồ hoặc tìm theo tên để thêm tối đa 3 địa điểm."},
+          {"image": "img/products/famhub/03_parent-todo.webp", "alt": "Danh sách việc của con trên máy bố mẹ, hiển thị việc đang chờ và việc đã xong", "title": "Giao việc", "body": "Mỗi việc có biểu tượng vui nhộn, mô tả và hạn hoàn thành."},
+          {"image": "img/products/famhub/04_child-home.webp", "alt": "Màn hình của con với các nút đi học, đi chơi, con đã đến và con về nhà", "title": "Màn hình của con", "body": "Một chạm để báo tình hình, thêm một chạm để chia sẻ vị trí."},
+          {"image": "img/products/famhub/05_child-todo.webp", "alt": "Danh sách việc cần làm của con với thanh tiến độ và các việc đã xong", "title": "Việc cần làm", "body": "Con chạm vào việc khi làm xong và có thể tự thêm việc."},
+          {"image": "img/products/famhub/06_child-notes.webp", "alt": "Lời nhắn của con gửi bố mẹ, ví dụ nhờ mua bút chì màu", "title": "Lời nhắn gửi bố mẹ", "body": "Những lời nhờ nhỏ như \"Đón con lúc 4 giờ 30 nhé\"."}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "tinh-nang",
+        "kicker": "Tính năng / Features",
+        "title": "An tâm hơn mà không cần gọi điện liên tục.",
+        "intro": "Kigo tập trung vào những điều bố mẹ thật sự muốn biết: con đã đến chưa, con đang ở đâu, và bài tập đã làm xong chưa?",
+        "items": [
+          {"title": "Cảnh báo vùng an toàn", "body": "Nhận thông báo khi con đến hoặc rời một vùng an toàn, kể cả khi ứng dụng trên máy con đã đóng."},
+          {"title": "Vị trí trực tiếp do con chia sẻ", "body": "Con chạm để chia sẻ trong 60 phút tiếp theo. Bố mẹ có thể gửi yêu cầu chỉ với một chạm. Khi dừng chia sẻ, vị trí đã chia sẻ sẽ bị xoá."},
+          {"title": "Check-in một chạm", "body": "Đi học, đi chơi, đã đến nơi hay đã về nhà: con chỉ cần một chạm, và vị trí hiện tại được gửi kèm."},
+          {"title": "Việc cần làm mỗi ngày", "body": "Giao việc kèm hạn hoàn thành. Con được chúc mừng khi làm xong, và bố mẹ nhận thông báo ngay."},
+          {"title": "Lời nhắn gửi bố mẹ", "body": "Con có thể nhờ bố mẹ những việc nhỏ. Đánh dấu đã làm để cả nhà cùng nắm được."},
+          {"title": "Dành cho cả gia đình", "body": "Theo dõi nhiều con từ một tài khoản, và liên kết tối đa 3 bố mẹ hoặc người giám hộ với mỗi con."}
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "cach-dung",
+        "kicker": "Cách dùng / How it works",
+        "title": "Bốn bước để bắt đầu.",
+        "intro": "Bạn có thể dùng thử Kigo ngay mà không cần đăng ký, rồi gắn email sau để giữ dữ liệu.",
+        "steps": [
+          {"title": "Cài trên cả hai điện thoại", "body": "Chọn chế độ bố mẹ trên máy của bạn và chế độ dành cho con trên máy của con.", "duration": "Cài đặt"},
+          {"title": "Liên kết tài khoản", "body": "Nhập mã 6 ký tự của người kia. Người kia phải chấp nhận, nên không ai bị liên kết khi chưa đồng ý.", "duration": "Liên kết"},
+          {"title": "Thiết lập vùng an toàn", "body": "Cảnh báo cần quyền vị trí \"Luôn luôn\" trên máy của con. Dùng vị trí ở chế độ nền có thể làm giảm thời lượng pin.", "duration": "Thiết lập"},
+          {"title": "Nhận cập nhật", "body": "Việc đến nơi, rời đi, check-in và việc đã xong hiện trên màn hình chính ngay khi xảy ra.", "duration": "An tâm"}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "tai-ung-dung",
+        "kicker": "Tải về / Download",
+        "title": "Sắp có trên iPhone và Android.",
+        "intro": "Ở thị trường quốc tế, Kigo có tên là FamHub. Đây là cùng một ứng dụng, có các ngôn ngữ tiếng Việt, Anh, Nhật, Trung, Indonesia và Bồ Đào Nha.",
+        "items": [
+          {"kicker": "App Store", "title": "Cho iPhone và iPad", "body": "Chưa có trên cửa hàng. Link tải sẽ được cập nhật tại đây khi Kigo ra mắt."},
+          {"kicker": "Google Play", "title": "Cho Android", "body": "Chưa có trên cửa hàng. Link tải sẽ được cập nhật tại đây khi Kigo ra mắt."}
+        ],
+        "note": {
+          "text": "Vị trí của con chỉ được chia sẻ với bố mẹ và người giám hộ đã liên kết với tài khoản của con.",
+          "label": "Xem cách Kigo xử lý dữ liệu",
+          "href": "/projects/kigo/privacy/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Có thắc mắc về Kigo?",
+        "body": "Kigo do CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS (Cross Tech Edu) phát triển tại Hà Nội, Việt Nam. Hãy gửi email nếu bạn cần hỗ trợ về ứng dụng hoặc dữ liệu của mình.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam"
+      }
+    }
+  ]
+}

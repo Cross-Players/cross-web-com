@@ -43,16 +43,14 @@ def article_alternates(
 def alternates(
     repo: ContentRepository, page: Page, locales: tuple[str, ...], default_locale: str
 ) -> dict[str, str]:
-    """{locale: path} for every locale that has a page with the same translation_key."""
-    out: dict[str, str] = {}
+    """{language: path} for every page with the same translation_key. A page's
+    language is its locale, unless ``meta.lang`` says otherwise."""
+    found: dict[str, str] = {}
     for loc in locales:
-        match = next(
-            (p for p in repo.list_pages(loc) if p.translation_key == page.translation_key),
-            None,
-        )
-        if match is not None:
-            out[loc] = page_path(loc, match.slug, default_locale)
-    return out
+        for p in repo.list_pages(loc):
+            if p.translation_key == page.translation_key:
+                found[p.meta.get("lang", loc)] = page_path(loc, p.slug, default_locale)
+    return {loc: found[loc] for loc in locales if loc in found}
 
 
 def _offers(page: Page, site_url: str, page_url: str) -> list[dict[str, Any]]:
@@ -147,7 +145,7 @@ def breadcrumbs(
     if not page.slug:
         return []
     by_slug = {p.slug: p for p in repo.list_pages(page.locale)}
-    crumbs = [(site["brand"]["name"], page_path(page.locale, "", default_locale))]
+    crumbs = [(site["brand"]["name"], page_path(page.meta.get("lang", page.locale), "", default_locale))]
     parts = page.slug.strip("/").split("/")
     for i in range(1, len(parts) + 1):
         match = by_slug.get("/".join(parts[:i]))
