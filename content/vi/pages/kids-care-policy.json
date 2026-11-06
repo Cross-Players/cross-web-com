@@ -1,0 +1,19 @@
+{
+  "slug": "kids-care/policy",
+  "translation_key": "kids-care-policy",
+  "meta": {
+    "title": "Chính sách quyền riêng tư ứng dụng Kids Care | Cross Tech Edu",
+    "description": "Chính sách quyền riêng tư của ứng dụng Kids Care của Cross Tech Edu: hỗ trợ phụ huynh theo dõi con, gán việc và vùng an toàn; dữ liệu chỉ lưu trên thiết bị của gia đình.",
+    "breadcrumb": "Chính sách quyền riêng tư ứng dụng Kids Care",
+    "updated": "2026-11-06"
+  },
+  "blocks": [
+    {
+      "type": "legal",
+      "data": {
+        "title": "Chính sách quyền riêng tư ứng dụng Kids Care",
+        "body": "*Cập nhật lần cuối: ngày 06 tháng 11 năm 2026*\n\nChính sách này áp dụng cho ứng dụng **Kids Care**, ứng dụng do CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS (Cross Tech Edu, sau đây gọi là \"Cross\") phát triển. Ứng dụng giúp phụ huynh theo dõi tiến độ, gán việc và thiết lập vùng an toàn cho con.\n\n**Tóm tắt:** Ứng dụng không thu thập dữ liệu cá nhân của bạn hay của con trên máy chủ của Cross. Dữ liệu chỉ lưu trên thiết bị của gia đình và không được chia sẻ với bên thứ ba.\n\n## 1. Dữ liệu Ứng dụng không thu thập\n\nCross không thu thập, không lưu trên máy chủ và không chia sẻ bất kỳ dữ liệu cá nhân nào của bạn hoặc của con thông qua Ứng dụng, bao gồm: họ tên, email, số điện thoại, vị trí, hình ảnh, âm thanh, lịch sử hoạt động.\n\n## 2. Dữ liệu lưu trên thiết bị\n\nThông tin về việc gán việc, tiến độ hoàn thành và vùng an toàn được lưu cục bộ trên thiết bị của gia đình. Cross không truy cập, không sao chép và không gửi dữ liệu này lên máy chủ nào.\n\n## 3. Không chia sẻ dữ liệu\n\nCross không chia sẻ, không bán và không cho bất kỳ bên thứ ba truy cập dữ liệu của Ứng dụng.\n\n## 4. Liên hệ\n\nNếu bạn có thắc mắc về chính sách này, vui lòng liên hệ:\n- Email: crosstechedu@gmail.com\n- Văn phòng: Hà Nội, Việt Nam"
+      }
+    }
+  ]
+}
