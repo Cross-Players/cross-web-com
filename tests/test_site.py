@@ -12,7 +12,7 @@ PRODUCT_PATH = "/san-pham/tro-ly-bds-43/"
 PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
 GPLX_PATH = "/gplx/"
 GPLX_POLICY_PATH = "/gplx/policy/"
-KIDS_CARE_POLICY_PATH = "/projects/fam-hub/privacy/"
+FAMHUB_POLICY_PATH = "/projects/fam-hub/privacy/"
 GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396"
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
@@ -100,7 +100,7 @@ def test_sitemap(client):
     assert BASE + PRIVACY_PATH in locs
     assert BASE + GPLX_PATH in locs
     assert BASE + GPLX_POLICY_PATH in locs
-    assert BASE + KIDS_CARE_POLICY_PATH in locs
+    assert BASE + FAMHUB_POLICY_PATH in locs
     repo = client.application.extensions["content"]
     extra_pages = sum(
         1 for loc in ("vi", "en")
@@ -151,11 +151,12 @@ def test_gplx_policy_page(client):
     assert "crosstechedu@gmail.com" in html
 
 
-def test_kids_care_policy_page(client):
+def test_famhub_policy_page(client):
     """The App Store listing and the app's Settings screen link to this URL."""
-    html = client.get(KIDS_CARE_POLICY_PATH).get_data(as_text=True)
+    html = client.get(FAMHUB_POLICY_PATH).get_data(as_text=True)
     assert html.count("<h1") == 1
     assert '<div lang="en">' in html and "<table>" in html
+    assert "FamHub Privacy Policy" in html and "Kids Care" not in html
     assert "Cross Tech &amp; Edu" in html
     assert 'href="mailto:crosstechedu@gmail.com"' in html
     assert "not end-to-end encrypted" in html
@@ -302,7 +303,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, KIDS_CARE_POLICY_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_POLICY_PATH, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)
