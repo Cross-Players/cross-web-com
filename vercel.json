@@ -7,6 +7,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/gplx/apps/gplx/",
+      "destination": "/gplx/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
