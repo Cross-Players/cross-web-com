@@ -3,7 +3,7 @@
   "translation_key": "trong-cay-support",
   "meta": {
     "title": "Hỗ trợ ứng dụng Trồng Cây | Cross Tech Edu",
-    "description": "Trang hỗ trợ ứng dụng Trồng Cây: liên hệ qua email crosstechedu@gmail.com, giải đáp các câu hỏi thường gặp về chăm cây, quảng cáo mẫu và dữ liệu của bạn.",
+    "description": "Trang hỗ trợ ứng dụng Trồng Cây: liên hệ qua email crosstechedu@gmail.com, giải đáp các câu hỏi thường gặp về chăm cây, quảng cáo, mua trong ứng dụng và dữ liệu.",
     "breadcrumb": "Hỗ trợ ứng dụng Trồng Cây",
     "updated": "2026-11-07"
   },
@@ -14,7 +14,7 @@
         "kicker": "Hỗ trợ · Ứng dụng Trồng Cây",
         "title": "Hỗ trợ Trồng Cây: gặp lỗi, cần giúp đỡ?",
         "lead": "Trang hỗ trợ chính thức của ứng dụng Trồng Cây. Gửi email mô tả vấn đề bạn gặp, chúng tôi sẽ trả lời sớm nhất có thể.",
-        "sub": "Trồng Cây là ứng dụng chăm cây ảo để thư giãn vài phút mỗi ngày. Đây là bản thử nghiệm: quảng cáo, thanh toán và cây trồng trong rừng đều là mô phỏng.",
+        "sub": "Trồng Cây là ứng dụng chăm cây ảo để thư giãn vài phút mỗi ngày. Việc đưa cây ra rừng hiện là mô phỏng: chưa có cây thật nào được trồng.",
         "ctas": [
           {
             "label": "Gửi email hỗ trợ",
@@ -53,15 +53,15 @@
           },
           {
             "title": "Làm sao để có thêm nước và phân bón?",
-            "body": "Nước tự cộng 1 mỗi giờ, phân bón tự cộng 1 mỗi 3 giờ, kể cả khi đóng ứng dụng. Bạn cũng có thể nhận thêm bằng cách xem quảng cáo mẫu."
+            "body": "Nước tự cộng 1 mỗi giờ, phân bón tự cộng 1 mỗi 3 giờ, kể cả khi đóng ứng dụng. Bạn cũng có thể nhận thêm bằng cách xem quảng cáo hoặc mua trong cửa hàng."
           },
           {
             "title": "Cây thật có được trồng không?",
-            "body": "Chưa. Đây là bản thử nghiệm nên việc đưa cây ra rừng, đối tác và sự kiện đều là mô phỏng. Chưa có cây thật nào được trồng."
+            "body": "Chưa. Việc đưa cây ra rừng, đối tác và sự kiện hiện là mô phỏng. Chưa có cây thật nào được trồng."
           },
           {
-            "title": "Tôi có bị trừ tiền khi mua trong cửa hàng không?",
-            "body": "Không. Cửa hàng trong bản thử nghiệm là mô phỏng, không có giao dịch tiền thật."
+            "title": "Tôi muốn hoàn tiền khoản mua trong ứng dụng thì làm sao?",
+            "body": "Thanh toán do App Store hoặc Google Play xử lý, nên bạn gửi yêu cầu hoàn tiền trực tiếp cho store. Nếu đã trả tiền mà chưa nhận được vật phẩm, hãy mở lại ứng dụng hoặc gửi email cho chúng tôi."
           },
           {
             "title": "Dữ liệu của tôi có bị mất khi đổi máy không?",

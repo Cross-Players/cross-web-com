@@ -171,7 +171,7 @@ def test_trong_cay_store_pages(client):
     """App Store Connect and Google Play link to these URLs."""
     policy = client.get(TRONG_CAY_POLICY_PATH).get_data(as_text=True)
     assert policy.count("<h1") == 1 and '<html lang="vi">' in policy
-    assert "không thu thập dữ liệu cá nhân" in policy and "OpenTopoMap" in policy
+    assert "Google AdMob" in policy and "OpenTopoMap" in policy
     assert 'href="mailto:crosstechedu@gmail.com"' in policy
     support = client.get(TRONG_CAY_SUPPORT_PATH).get_data(as_text=True)
     assert support.count("<h1") == 1
