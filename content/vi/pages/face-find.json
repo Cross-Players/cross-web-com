@@ -1,0 +1,121 @@
+{
+  "slug": "projects/face-find",
+  "translation_key": "face-find",
+  "meta": {
+    "title": "FaceFind: Tìm ảnh sự kiện bằng selfie | Cross Tech Edu",
+    "description": "FaceFind giúp khách sự kiện tìm ảnh của mình bằng một tấm selfie: dán link Google Drive, đưa mã QR, khách tự xem và tải ảnh mà không cần cài ứng dụng.",
+    "breadcrumb": "FaceFind",
+    "updated": "2026-11-08",
+    "og_image": "img/articles/facefind.jpg",
+    "app": {
+      "type": "WebApplication",
+      "name": "FaceFind",
+      "description": "Ứng dụng web giúp khách sự kiện tìm ảnh có mình trong folder Google Drive bằng một tấm selfie.",
+      "url": "https://www.crosstechedu.com/projects/face-find/",
+      "category": "MultimediaApplication",
+      "operating_system": "Web"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Sản phẩm · FaceFind",
+        "title": "FaceFind: chụp một tấm selfie, thấy ngay ảnh có bạn.",
+        "lead": "Ban tổ chức dán link folder Google Drive và đưa mã QR cho khách. Khách chụp selfie trên điện thoại rồi xem, tải và chia sẻ đúng những ảnh có mình.",
+        "sub": "Không cần cài ứng dụng, không cần tạo tài khoản. Khách phải đồng ý trước khi tìm ảnh.",
+        "ctas": [
+          {"label": "Đăng ký dùng thử", "href": "#contact", "style": "primary"},
+          {"label": "Xem cách hoạt động", "href": "#how-it-works", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Trạng thái",
+          "amount": "Bản thử nghiệm",
+          "unit": "Chạy trên trình duyệt",
+          "note": "FaceFind đang được triển khai cùng các đơn vị tổ chức sự kiện đầu tiên. Liên hệ với chúng tôi để dùng thử."
+        },
+        "stats": [
+          {"value": "1 selfie", "label": "Là đủ để khách tìm ảnh của mình"},
+          {"value": "5 phút", "label": "Chu kỳ mặc định để nhận ảnh mới từ Drive"},
+          {"value": "30 ngày", "label": "Thời gian lưu mặc định, chỉnh từ 1 đến 365 ngày"},
+          {"value": "0 app", "label": "Khách chỉ cần quét QR và mở trình duyệt"}
+        ]
+      }
+    },
+    {
+      "type": "banner",
+      "data": {
+        "image": "img/articles/facefind.jpg",
+        "alt": "Minh họa điện thoại đang chụp selfie, nối với bức tường ảnh sự kiện trong đó ba ảnh có người đó được đánh dấu màu đỏ",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "how-it-works",
+        "kicker": "Cách hoạt động",
+        "title": "Từ folder ảnh đến tay khách trong bốn bước.",
+        "intro": "Nhiếp ảnh gia vẫn tải ảnh lên Google Drive như thường lệ. FaceFind đọc ảnh từ đó, ảnh gốc không phải chuyển đi đâu cả.",
+        "steps": [
+          {"title": "Dán link Google Drive", "body": "Tạo sự kiện và dán link folder ảnh ở chế độ ai có link đều xem được. Hệ thống đọc cả các folder con.", "duration": "Tạo"},
+          {"title": "Hệ thống quét khuôn mặt", "body": "FaceFind xử lý ảnh ở chế độ nền và hiện tiến độ trên trang quản trị. Lần quét sau chỉ xử lý ảnh mới.", "duration": "Quét"},
+          {"title": "Đưa mã QR cho khách", "body": "In mã QR lên standee, chiếu lên màn hình hoặc gửi qua nhóm chat của sự kiện.", "duration": "Chia sẻ"},
+          {"title": "Khách selfie và nhận ảnh", "body": "Khách tick đồng ý, chụp selfie rồi xem kết quả. Mỗi ảnh đều có nút tải về và chia sẻ.", "duration": "Nhận ảnh"}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "features",
+        "kicker": "Tính năng",
+        "title": "Ban tổ chức nắm quyền, khách chỉ cần một thao tác.",
+        "intro": "FaceFind được làm cho những sự kiện có hàng nghìn ảnh, nơi khách không có thời gian lướt hết cả album.",
+        "items": [
+          {"title": "Ảnh mới tự cập nhật", "body": "Trong lúc sự kiện diễn ra, hệ thống tự kiểm tra folder Drive và thêm ảnh vừa tải lên, khách quay lại sau ít phút là thấy."},
+          {"title": "Mã sự kiện riêng", "body": "Với sự kiện nội bộ, đặt thêm một mã để chỉ người được cung cấp mã mới tìm được ảnh."},
+          {"title": "Mang thương hiệu của bạn", "body": "Trang tìm ảnh hiển thị tên sự kiện, logo và màu thương hiệu của đơn vị tổ chức."},
+          {"title": "Tự xóa khi hết hạn", "body": "Chọn thời gian lưu từ 1 đến 365 ngày. Hết hạn, dữ liệu khuôn mặt của sự kiện tự bị xóa, hoặc bạn xóa ngay bất cứ lúc nào."},
+          {"title": "Số liệu sau sự kiện", "body": "Xem số khuôn mặt đã nhận diện, số lượt tìm và số lượt tìm có kết quả ngay trên trang quản trị."},
+          {"title": "Chạy tốt trên điện thoại", "body": "Trang khách mở bằng camera trình duyệt, có nút chọn ảnh dự phòng khi mở trong Zalo hoặc Facebook."}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "privacy",
+        "kicker": "Dữ liệu",
+        "title": "Rõ ràng về những gì được lưu và không được lưu.",
+        "intro": "Khuôn mặt là dữ liệu nhạy cảm, nên chúng tôi nói thẳng từng loại dữ liệu đi đâu.",
+        "items": [
+          {"kicker": "Không lưu", "title": "Ảnh gốc và selfie", "body": "Ảnh từ Drive và selfie của khách chỉ được đọc vào bộ nhớ để xử lý, không ghi xuống đĩa. Ảnh gốc vẫn nằm trong Google Drive của bạn."},
+          {"kicker": "Có lưu", "title": "Vector đặc trưng khuôn mặt", "body": "Mỗi khuôn mặt trong ảnh sự kiện được chuyển thành một dãy số để so khớp. Dữ liệu này được lưu đến khi sự kiện hết hạn hoặc bị xóa."}
+        ],
+        "note": {
+          "text": "Ban tổ chức nên báo trước cho người tham dự rằng ảnh sự kiện sẽ được dùng để tìm kiếm bằng khuôn mặt.",
+          "label": "Đọc hướng dẫn xin đồng ý theo luật bảo vệ dữ liệu cá nhân",
+          "href": "/blog/lay-consent-khach-hang-theo-luat-bao-ve-du-lieu-ca-nhan/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Muốn dùng FaceFind cho sự kiện sắp tới?",
+        "body": "Cho chúng tôi biết loại sự kiện, ngày diễn ra và số lượng ảnh dự kiến. Cross Tech Edu sẽ cùng bạn thiết lập bản dùng thử.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo, hoặc bấm để mở cuộc trò chuyện.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam"
+      }
+    }
+  ]
+}
