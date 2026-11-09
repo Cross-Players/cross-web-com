@@ -15,7 +15,8 @@
       "description": "Family app with safe zone arrival alerts, child-shared live location, one-tap check-ins and daily to-dos.",
       "url": "https://www.crosstechedu.com/projects/fam-hub/",
       "category": "LifestyleApplication",
-      "operating_system": "iOS, Android"
+      "operating_system": "iOS, Android",
+      "_todo": "Khi app lên Store, thêm download_url = https://play.google.com/store/apps/details?id=com.crosstechedu.kidscare (package com.crosstechedu.kidscare, chưa có trên store lúc này)"
     }
   },
   "blocks": [
