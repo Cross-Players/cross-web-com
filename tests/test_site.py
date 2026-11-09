@@ -19,6 +19,13 @@ KIGO_PATH = "/projects/kigo/"
 KIGO_POLICY_PATH = "/projects/kigo/privacy/"
 TRONG_CAY_POLICY_PATH = "/projects/plant-trees/privacy/"
 TRONG_CAY_SUPPORT_PATH = "/projects/plant-trees/support/"
+FAST_NOTES_PATH = "/projects/fast-notes/"
+FAST_NOTES_SUPPORT_PATH = "/projects/fast-notes/support/"
+FAST_NOTES_PRIVACY_PATH = "/projects/fast-notes/privacy/"
+FAST_NOTES_PRIVACY_VI_PATH = "/projects/fast-notes/chinh-sach-bao-mat/"
+FAST_NOTES_TERMS_PATH = "/projects/fast-notes/terms/"
+FAST_NOTES_TERMS_VI_PATH = "/projects/fast-notes/dieu-khoan/"
+FAST_NOTES_PATHS = (FAST_NOTES_PATH, FAST_NOTES_SUPPORT_PATH, FAST_NOTES_PRIVACY_PATH, FAST_NOTES_PRIVACY_VI_PATH, FAST_NOTES_TERMS_PATH, FAST_NOTES_TERMS_VI_PATH)
 
 VI_TOOLS = "/blog/cong-cu-ai-mien-phi-cho-doanh-nghiep-nho/"
 VI_GUIDE = "/blog/huong-dan-dung-chatgpt-cho-chu-doanh-nghiep/"
@@ -177,6 +184,23 @@ def test_trong_cay_store_pages(client):
     assert support.count("<h1") == 1
     assert 'href="mailto:crosstechedu@gmail.com"' in support
     assert f'href="{TRONG_CAY_POLICY_PATH}"' in support
+
+
+def test_fast_notes_store_pages(client):
+    """App Store Connect and Google Play link to these URLs."""
+    for path in FAST_NOTES_PATHS:
+        html = client.get(path).get_data(as_text=True)
+        assert html.count("<h1") == 1, path
+        assert 'href="mailto:crosstechedu@gmail.com"' in html, path
+    en = client.get(FAST_NOTES_PRIVACY_PATH).get_data(as_text=True)
+    assert "Apple Intelligence" in en and "Gemini Nano" in en and "<table>" in en
+    assert f'href="{FAST_NOTES_PRIVACY_VI_PATH}"' in en
+    vi = client.get(FAST_NOTES_PRIVACY_VI_PATH).get_data(as_text=True)
+    assert '<html lang="vi">' in vi and f'href="{FAST_NOTES_PRIVACY_PATH}"' in vi
+    terms = client.get(FAST_NOTES_TERMS_PATH).get_data(as_text=True)
+    assert "stdeula" in terms and "3 months" in terms
+    assert f'href="{FAST_NOTES_PRIVACY_VI_PATH}"' in client.get(FAST_NOTES_PATH).get_data(as_text=True)
+    assert f'href="{FAST_NOTES_PRIVACY_PATH}"' in client.get(FAST_NOTES_SUPPORT_PATH).get_data(as_text=True)
 
 
 def test_kigo_policy_page(client):
@@ -385,7 +409,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, TRONG_CAY_POLICY_PATH, TRONG_CAY_SUPPORT_PATH, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, TRONG_CAY_POLICY_PATH, TRONG_CAY_SUPPORT_PATH, *FAST_NOTES_PATHS, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)

@@ -1,0 +1,74 @@
+{
+  "slug": "projects/fast-notes",
+  "translation_key": "fast-notes",
+  "meta": {
+    "title": "Fast Notes: dán tin nhắn, ra lịch hẹn | Cross Tech Edu",
+    "description": "Dán tin nhắn Zalo, Messenger, chụp tờ thông báo hoặc nói một câu. Fast Notes tách ra lịch hẹn, lời nhắc, ghi chú, số điện thoại và thêm vào Lịch, Danh bạ.",
+    "breadcrumb": "Fast Notes",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Fast Notes · Ghi chú nhanh bằng AI",
+        "title": "Fast Notes: dán tin nhắn, ra lịch hẹn",
+        "lead": "Dán tin nhắn Zalo, Messenger, chụp tờ thông báo hoặc nói một câu. Fast Notes tách ra lịch hẹn, lời nhắc, ghi chú, số điện thoại và thêm vào Lịch, Danh bạ.",
+        "sub": "Hiểu \"9 tối\", \"thứ 6 tuần sau\" và âm lịch. AI chạy ngay trên máy, không cần mạng. Dùng thử 3 tháng miễn phí.",
+        "ctas": [
+          {
+            "label": "Gửi email hỗ trợ",
+            "href": "mailto:crosstechedu@gmail.com",
+            "style": "primary"
+          },
+          {
+            "label": "Chính sách bảo mật",
+            "href": "/projects/fast-notes/chinh-sach-bao-mat/",
+            "style": "secondary"
+          }
+        ],
+        "rate": {
+          "label": "Liên hệ",
+          "amount": "Email",
+          "unit": "crosstechedu@gmail.com",
+          "note": "Ghi rõ thiết bị, phiên bản ứng dụng và nội dung bạn đã dán để chúng tôi xử lý nhanh hơn."
+        }
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "faq",
+        "kicker": "FAQ",
+        "title": "Câu hỏi thường gặp.",
+        "intro": "Cần hỗ trợ? Gửi email đến crosstechedu@gmail.com, kèm tên máy, phiên bản ứng dụng và ảnh chụp màn hình.",
+        "items": [
+          {
+            "title": "Fast Notes có gửi tin nhắn của tôi lên mạng không?",
+            "body": "Không. AI và bộ tách chạy ngay trên điện thoại. Không có tài khoản, không có máy chủ nhận nội dung của bạn."
+          },
+          {
+            "title": "Máy nào dùng được AI trên máy?",
+            "body": "iPhone hỗ trợ Apple Intelligence (iOS 26 trở lên) và máy Android hỗ trợ Gemini Nano. Máy khác vẫn dùng được nhờ bộ tách offline, hiểu ngày giờ và âm lịch."
+          },
+          {
+            "title": "Ứng dụng hiểu những ngôn ngữ nào?",
+            "body": "Tiếng Việt, Anh, Bồ Đào Nha, Tây Ban Nha, Trung, Hàn, Indonesia và Ả Rập."
+          },
+          {
+            "title": "Lịch âm được đổi thế nào?",
+            "body": "Khi bạn ghi \"rằm tháng 8\", \"mùng 2 Tết\" hoặc \"10/3 âm lịch\", ứng dụng đổi sang ngày dương và ghi ngày âm vào phần ghi chú của sự kiện."
+          },
+          {
+            "title": "Dùng thử bao lâu, giá bao nhiêu?",
+            "body": "Dùng thử miễn phí 3 tháng, không cần nhập thẻ. Sau đó gói Premium 99.000 ₫ mỗi tháng tại Việt Nam (9,99 USD ở nhiều nước khác), huỷ bất kỳ lúc nào trong App Store hoặc Google Play."
+          },
+          {
+            "title": "Ghi chú không được lưu vào Danh bạ iPhone?",
+            "body": "Apple chỉ cho phép ghi phần ghi chú của liên hệ khi ứng dụng được cấp quyền riêng. Nếu chưa có, Fast Notes vẫn lưu tên và số điện thoại."
+          }
+        ]
+      }
+    }
+  ]
+}

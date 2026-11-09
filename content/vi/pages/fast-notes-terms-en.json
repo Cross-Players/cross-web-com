@@ -1,0 +1,20 @@
+{
+  "slug": "projects/fast-notes/terms",
+  "translation_key": "fast-notes-terms-en",
+  "meta": {
+    "lang": "en",
+    "title": "Fast Notes Terms of Use | Cross Tech Edu",
+    "description": "Terms of use for Fast Notes: 3-month free trial without payment, monthly auto-renewing Premium subscription, cancellation, refunds and AI result disclaimer.",
+    "breadcrumb": "Fast Notes Terms of Use",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "legal",
+      "data": {
+        "title": "Fast Notes Terms of Use",
+        "body": "*Effective November 9, 2026*\n\nThese terms apply when you use the Fast Notes app provided by Cross Tech & Edu (\"we\").\n\n[Đọc điều khoản bằng tiếng Việt](/projects/fast-notes/dieu-khoan/)\n\n<div lang=\"en\" markdown=\"1\">\n\n## Free trial and subscription\n\n- You get every feature free for **3 months** from the first time you open the app, with no sign-up and no payment details.\n- After the trial, a monthly **Fast Notes Premium** subscription is required to keep extracting events, reminders and contacts. The price shown in the app depends on your country (for example USD 9.99 or VND 99,000 per month).\n- The subscription renews automatically every month unless you cancel at least 24 hours before the current period ends. Payment is charged to your App Store or Google Play account at confirmation of purchase and at each renewal.\n- You manage and cancel the subscription in your App Store or Google Play account settings. Refunds are handled by Apple or Google under their policies.\n\n## AI-generated results\n\nFast Notes uses AI and an automatic parser to read dates, names and phone numbers. Results can be wrong. Always review them before adding them to Calendar, Reminders or Contacts; you are responsible for the items you add. Lunar-to-solar date conversion uses Vietnam time (UTC+7).\n\n## Acceptable use\n\nDo not use the app to process content you have no right to use, and do not copy, reverse-engineer or redistribute the app.\n\n## Limitation of liability\n\nThe app is provided \"as is\". To the extent permitted by law, we are not liable for indirect damages arising from missed appointments or incorrectly extracted information.\n\n## Governing law\n\nThese terms are governed by the laws of Vietnam. On iPhone, [Apple's Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) also applies.\n\n## Privacy\n\nSee the [Privacy Policy](/projects/fast-notes/privacy/).\n\n## Contact\n\nCross Tech & Edu · [crosstechedu@gmail.com](mailto:crosstechedu@gmail.com)\n\n</div>"
+      }
+    }
+  ]
+}

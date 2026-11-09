@@ -1,0 +1,19 @@
+{
+  "slug": "projects/fast-notes/dieu-khoan",
+  "translation_key": "fast-notes-terms-vi",
+  "meta": {
+    "title": "Điều khoản sử dụng ứng dụng Fast Notes | Cross Tech Edu",
+    "description": "Điều khoản sử dụng Fast Notes: dùng thử 3 tháng không cần thanh toán, gói Premium tự gia hạn hằng tháng, cách huỷ, hoàn tiền và lưu ý về kết quả AI.",
+    "breadcrumb": "Điều khoản sử dụng Fast Notes",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "legal",
+      "data": {
+        "title": "Điều khoản sử dụng ứng dụng Fast Notes",
+        "body": "*Có hiệu lực từ ngày 09 tháng 11 năm 2026*\n\nĐiều khoản này áp dụng khi bạn dùng ứng dụng Fast Notes do CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS (Cross Tech & Edu, sau đây gọi là \"chúng tôi\") cung cấp.\n\n[Read these terms in English](/projects/fast-notes/terms/)\n\n## Dùng thử và gói đăng ký\n\n- Bạn được dùng thử đầy đủ tính năng trong **3 tháng** kể từ lần mở ứng dụng đầu tiên, không cần đăng ký hay nhập thông tin thanh toán.\n- Sau thời gian dùng thử, để tiếp tục tách lịch hẹn, lời nhắc và danh bạ, bạn cần mua gói **Fast Notes Premium** hằng tháng. Giá hiển thị trong ứng dụng theo quốc gia của bạn (ví dụ 9,99 USD hoặc 99.000 ₫ mỗi tháng).\n- Gói tự động gia hạn mỗi tháng, trừ khi bạn huỷ ít nhất 24 giờ trước khi kỳ hiện tại kết thúc. Tiền được trừ vào tài khoản App Store hoặc Google Play khi xác nhận mua và khi gia hạn.\n- Bạn quản lý và huỷ gói trong cài đặt tài khoản App Store hoặc Google Play. Hoàn tiền do Apple hoặc Google xử lý theo chính sách của họ.\n\n## Kết quả do AI tạo ra\n\nFast Notes dùng AI và bộ tách tự động để đọc ngày giờ, tên và số điện thoại. Kết quả có thể sai. Bạn luôn xem lại trước khi thêm vào Lịch, Lời nhắc hoặc Danh bạ và tự chịu trách nhiệm về các mục đã thêm. Việc đổi âm lịch sang dương lịch tính theo múi giờ Việt Nam (UTC+7).\n\n## Sử dụng hợp lệ\n\nBạn không dùng ứng dụng để xử lý nội dung mà bạn không có quyền sử dụng, và không tìm cách sao chép, dịch ngược hay phân phối lại ứng dụng.\n\n## Giới hạn trách nhiệm\n\nỨng dụng được cung cấp \"nguyên trạng\". Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm cho thiệt hại gián tiếp phát sinh từ việc bỏ lỡ lịch hẹn hoặc thông tin bị tách sai.\n\n## Luật áp dụng\n\nĐiều khoản này tuân theo pháp luật Việt Nam. Người dùng iPhone cũng chịu [Điều khoản tiêu chuẩn của Apple (EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).\n\n## Quyền riêng tư\n\nXem [Chính sách bảo mật](/projects/fast-notes/chinh-sach-bao-mat/).\n\n## Liên hệ\n\nCross Tech & Edu · [crosstechedu@gmail.com](mailto:crosstechedu@gmail.com)"
+      }
+    }
+  ]
+}

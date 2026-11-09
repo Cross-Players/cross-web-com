@@ -1,0 +1,71 @@
+{
+  "slug": "projects/fast-notes/support",
+  "translation_key": "fast-notes-support-en",
+  "meta": {
+    "lang": "en",
+    "title": "Fast Notes support | Cross Tech Edu",
+    "description": "Paste a chat message, snap a notice or just speak. Fast Notes pulls out events, reminders, notes and phone numbers and adds them to your Calendar and Conta",
+    "breadcrumb": "Fast Notes",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Fast Notes · Support",
+        "title": "Fast Notes support",
+        "lead": "Paste a chat message, snap a notice or just speak. Fast Notes pulls out events, reminders, notes and phone numbers and adds them to your Calendar and Contacts.",
+        "sub": "On-device AI, works offline, understands the lunar calendar. Free for 3 months.",
+        "ctas": [
+          {
+            "label": "Email support",
+            "href": "mailto:crosstechedu@gmail.com",
+            "style": "primary"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/projects/fast-notes/privacy/",
+            "style": "secondary"
+          }
+        ],
+        "rate": {
+          "label": "Email",
+          "amount": "Email",
+          "unit": "crosstechedu@gmail.com",
+          "note": "Include your device, app version and the text you pasted so we can help faster."
+        }
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "faq",
+        "kicker": "FAQ",
+        "title": "Frequently asked questions.",
+        "intro": "Need help? Email crosstechedu@gmail.com with your device, app version and a screenshot.",
+        "items": [
+          {
+            "title": "Does Fast Notes upload my messages?",
+            "body": "No. The AI and the parser run on your phone. There is no account and no server that receives your content."
+          },
+          {
+            "title": "Which devices get on-device AI?",
+            "body": "iPhones with Apple Intelligence (iOS 26 or later) and Android phones with Gemini Nano. Other devices use the offline parser, which still understands dates and the lunar calendar."
+          },
+          {
+            "title": "Which languages are supported?",
+            "body": "Vietnamese, English, Portuguese, Spanish, Chinese, Korean, Indonesian and Arabic."
+          },
+          {
+            "title": "How long is the free trial?",
+            "body": "3 months, with no payment details. After that Premium costs USD 9.99 per month (local prices vary). Cancel anytime in the App Store or Google Play."
+          },
+          {
+            "title": "How do I get a refund?",
+            "body": "Payments are handled by Apple or Google, so request refunds from the store. If something is wrong with Premium, email us."
+          }
+        ]
+      }
+    }
+  ]
+}
