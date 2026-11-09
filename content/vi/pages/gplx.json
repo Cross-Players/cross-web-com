@@ -1,15 +1,15 @@
 {
-  "slug": "gplx",
+  "slug": "projects/gplx",
   "translation_key": "gplx",
   "meta": {
     "title": "Ôn thi GPLX miễn phí: 600 câu, 15 hạng bằng | Cross Tech Edu",
     "description": "Ứng dụng ôn thi lý thuyết GPLX trên iPhone và iPad: 600 câu hỏi, 15 hạng bằng từ A1 đến DE, thi thử bấm giờ, biển báo, mẹo ghi nhớ. Miễn phí, không quảng cáo.",
     "breadcrumb": "Ứng dụng ôn thi GPLX",
-    "updated": "2026-10-29",
+    "updated": "2026-11-09",
     "og_image": "img/products/gplx/og.jpg",
     "app": {
       "type": "MobileApplication",
-      "name": "Ôn thi GPLX Vạn Xuân",
+      "name": "600 câu ôn thi GPLX mới nhất",
       "alternate_name": "Driver License E-learning",
       "description": "Ứng dụng ôn thi lý thuyết giấy phép lái xe: 600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, biển báo giao thông và mẹo ghi nhớ.",
       "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
@@ -24,7 +24,7 @@
     {
       "type": "hero",
       "data": {
-        "kicker": "Ứng dụng · Ôn thi GPLX Vạn Xuân",
+        "kicker": "Ứng dụng · 600 câu ôn thi GPLX mới nhất",
         "title": "Ôn thi GPLX trên iPhone: 600 câu, 15 hạng bằng, miễn phí.",
         "lead": "Học lý thuyết giấy phép lái xe mỗi ngày trên iPhone hoặc iPad. Ôn câu hỏi theo chương, thi thử có bấm giờ như thi thật, tra biển báo và học mẹo ghi nhớ, tất cả trong một ứng dụng.",
         "sub": "Không quảng cáo, không cần tạo tài khoản. Tiến độ học lưu ngay trên máy của bạn.",
@@ -104,12 +104,12 @@
         "id": "tai-ung-dung",
         "kicker": "Tải về / Download",
         "title": "Cài ứng dụng ôn thi GPLX trên iPhone và iPad.",
-        "intro": "Trên App Store, ứng dụng có tên tiếng Anh là Driver License E-learning. Cần iOS 12 trở lên.",
+        "intro": "Trên App Store, ứng dụng có tên 600 câu ôn thi GPLX mới nhất. Cần iOS 12 trở lên.",
         "items": [
           {
             "kicker": "App Store",
             "title": "Miễn phí cho iPhone và iPad",
-            "body": "Bấm nút dưới đây trên iPhone hoặc iPad để mở thẳng trang ứng dụng, rồi chọn Nhận để cài. Trên máy tính, bạn có thể tìm “Driver License E-learning” trong App Store.",
+            "body": "Bấm nút dưới đây trên iPhone hoặc iPad để mở thẳng trang ứng dụng, rồi chọn Nhận để cài. Trên máy tính, bạn có thể tìm “600 câu ôn thi GPLX mới nhất” trong App Store.",
             "host": "apps.apple.com/vn/app/driver-license-e-learning",
             "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
             "cta": "Mở trang ứng dụng trên App Store"
@@ -126,7 +126,7 @@
         "note": {
           "text": "Ứng dụng không thu thập dữ liệu cá nhân, không yêu cầu tài khoản và không chứa công cụ theo dõi.",
           "label": "Đọc chính sách quyền riêng tư",
-          "href": "/gplx/policy/"
+          "href": "/projects/gplx/policy/"
         }
       }
     },

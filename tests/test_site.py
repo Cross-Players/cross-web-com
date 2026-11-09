@@ -10,13 +10,17 @@ from app.seo_audit import audit
 BASE = "https://example.test"
 PRODUCT_PATH = "/san-pham/tro-ly-bds-43/"
 PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
-GPLX_PATH = "/gplx/"
-GPLX_POLICY_PATH = "/gplx/policy/"
+GPLX_PATH = "/projects/gplx/"
+GPLX_POLICY_PATH = "/projects/gplx/policy/"
+GPLX_SUPPORT_PATH = "/projects/gplx/support/"
+PROJECTS_PATH = "/projects/"
+EN_PROJECTS_PATH = "/en/projects/"
 FAMHUB_POLICY_PATH = "/projects/fam-hub/privacy/"
 GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396"
 FAMHUB_PATH = "/projects/fam-hub/"
 KIGO_PATH = "/projects/kigo/"
 KIGO_POLICY_PATH = "/projects/kigo/privacy/"
+TRONG_CAY_PATH = "/projects/plant-trees/"
 TRONG_CAY_POLICY_PATH = "/projects/plant-trees/privacy/"
 TRONG_CAY_SUPPORT_PATH = "/projects/plant-trees/support/"
 FAST_NOTES_PATH = "/projects/fast-notes/"
@@ -80,7 +84,7 @@ def test_home_pages(client, path, lang, h1):
 
 
 def test_titles_and_descriptions_are_seo_sized(client):
-    for path in ("/", "/en/", PRODUCT_PATH, GPLX_PATH):
+    for path in ("/", "/en/", PRODUCT_PATH, GPLX_PATH, TRONG_CAY_PATH, PROJECTS_PATH, EN_PROJECTS_PATH):
         html = client.get(path).get_data(as_text=True)
         title = re.search(r"<title>(.*?)</title>", html).group(1)
         desc = re.search(r'<meta name="description" content="(.*?)">', html).group(1)
@@ -203,6 +207,21 @@ def test_fast_notes_store_pages(client):
     assert f'href="{FAST_NOTES_PRIVACY_PATH}"' in client.get(FAST_NOTES_SUPPORT_PATH).get_data(as_text=True)
 
 
+def test_trong_cay_landing_page(client):
+    html = client.get(TRONG_CAY_PATH).get_data(as_text=True)
+    assert html.count("<h1") == 1 and '<html lang="vi">' in html
+    assert html.count('class="shot"') == 5
+    assert f'href="{TRONG_CAY_POLICY_PATH}"' in html and f'href="{TRONG_CAY_SUPPORT_PATH}"' in html
+    # no real trees yet, and not on the stores yet
+    assert "chưa có cây thật nào được trồng" in html
+    assert "apps.apple.com" not in html and "play.google.com" not in html
+    graph = {n["@type"]: n for n in _jsonld(html)["@graph"]}
+    assert graph["MobileApplication"]["alternateName"] == "Plant Trees"
+    assert "offers" not in graph["MobileApplication"]
+    crumbs = [i["item"] for i in graph["BreadcrumbList"]["itemListElement"]]
+    assert crumbs == [f"{BASE}/", BASE + PROJECTS_PATH, BASE + TRONG_CAY_PATH]
+
+
 def test_kigo_policy_page(client):
     """Vietnamese version of the FamHub policy, under the app's Vietnamese name."""
     html = client.get(KIGO_POLICY_PATH).get_data(as_text=True)
@@ -259,6 +278,60 @@ def test_old_kids_care_pages_are_gone(client):
     assert {"source": "/kids-care/", "destination": KIGO_PATH, "permanent": True} in redirects
 
 
+@pytest.mark.parametrize(
+    "old,new",
+    [
+        ("/gplx/", GPLX_PATH),
+        ("/gplx/policy/", GPLX_POLICY_PATH),
+        ("/gplx/support/", GPLX_SUPPORT_PATH),
+        ("/gplx/apps/gplx/", GPLX_PATH),
+    ],
+)
+def test_old_gplx_urls_redirect(client, old, new):
+    """The App Store listing still points at the old policy and support URLs."""
+    assert client.get(old).status_code == 404
+    assert client.get(new).status_code == 200
+    redirects = json.loads((Path(__file__).resolve().parent.parent / "vercel.json").read_text())["redirects"]
+    assert {"source": old, "destination": new, "permanent": True} in redirects
+
+
+@pytest.mark.parametrize(
+    "path,lang,other,app_path,app_name,hidden_name,hidden_path",
+    [
+        (PROJECTS_PATH, "vi", EN_PROJECTS_PATH, KIGO_PATH, "Kigo", "FamHub", FAMHUB_PATH),
+        (EN_PROJECTS_PATH, "en", PROJECTS_PATH, FAMHUB_PATH, "FamHub", "Kigo", KIGO_PATH),
+    ],
+)
+def test_projects_hub(client, path, lang, other, app_path, app_name, hidden_name, hidden_path):
+    """One hub per language: the family app appears under that market's name."""
+    html = client.get(path).get_data(as_text=True)
+    assert f'<html lang="{lang}">' in html and html.count("<h1") == 1
+    assert f'hreflang="{"en" if lang == "vi" else "vi"}" href="{BASE}{other}"' in html
+    for product in (GPLX_PATH, app_path, "/projects/face-find/", TRONG_CAY_PATH):
+        assert f'<a class="product__link" href="{product}">' in html, product
+    assert html.count('class="product__link"') == 4
+    assert f'<h3 class="product__title">{app_name}</h3>' in html
+    assert hidden_name not in html and f'class="product__link" href="{hidden_path}"' not in html
+
+
+def test_projects_hub_is_linked_from_the_footer(client):
+    assert f'href="{PROJECTS_PATH}"' in client.get("/").get_data(as_text=True)
+    assert f'href="{EN_PROJECTS_PATH}"' in client.get("/en/").get_data(as_text=True)
+
+
+@pytest.mark.parametrize(
+    "path,hub_name,hub_path",
+    [
+        (FAMHUB_PATH, "Products", EN_PROJECTS_PATH),
+        (KIGO_PATH, "Sản phẩm", PROJECTS_PATH),
+    ],
+)
+def test_app_breadcrumb_uses_the_hub_in_its_language(client, path, hub_name, hub_path):
+    graph = _jsonld(client.get(path).get_data(as_text=True))["@graph"]
+    crumbs = next(n for n in graph if n["@type"] == "BreadcrumbList")["itemListElement"]
+    assert (crumbs[1]["name"], crumbs[1]["item"]) == (hub_name, BASE + hub_path)
+
+
 def test_kigo_is_linked_from_the_vi_home_page(client):
     html = client.get("/").get_data(as_text=True)
     assert "Kids Care" not in html
@@ -282,7 +355,7 @@ def test_gplx_landing_page(client):
     # the policy page now sits under the landing page
     policy = _jsonld(client.get(GPLX_POLICY_PATH).get_data(as_text=True))["@graph"]
     crumbs = next(n for n in policy if n["@type"] == "BreadcrumbList")["itemListElement"]
-    assert [i["item"] for i in crumbs] == [f"{BASE}/", BASE + GPLX_PATH, BASE + GPLX_POLICY_PATH]
+    assert [i["item"] for i in crumbs] == [f"{BASE}/", BASE + PROJECTS_PATH, BASE + GPLX_PATH, BASE + GPLX_POLICY_PATH]
     for path in ("/", "/blog/", GPLX_POLICY_PATH):
         assert f'href="{GPLX_PATH}"' in client.get(path).get_data(as_text=True), path
 
@@ -409,7 +482,7 @@ def test_prices_are_localized(client):
     assert {"@type": "UnitPriceSpecification", "priceCurrency": "VND", "price": 999000} in specs(vi)
 
 
-@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, GPLX_PATH, GPLX_POLICY_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, TRONG_CAY_POLICY_PATH, TRONG_CAY_SUPPORT_PATH, *FAST_NOTES_PATHS, *BLOG_PATHS])
+@pytest.mark.parametrize("path", ["/", "/en/", PRODUCT_PATH, PRIVACY_PATH, PROJECTS_PATH, EN_PROJECTS_PATH, GPLX_PATH, GPLX_POLICY_PATH, GPLX_SUPPORT_PATH, FAMHUB_PATH, FAMHUB_POLICY_PATH, KIGO_PATH, KIGO_POLICY_PATH, TRONG_CAY_PATH, TRONG_CAY_POLICY_PATH, TRONG_CAY_SUPPORT_PATH, *FAST_NOTES_PATHS, *BLOG_PATHS])
 def test_on_page_seo_audit(client, path):
     """Mirrors the checks of the external SEO audit (rules live in app/seo_audit.py)."""
     page = client.get(path).get_data(as_text=True)

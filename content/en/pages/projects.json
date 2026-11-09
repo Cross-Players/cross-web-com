@@ -1,0 +1,104 @@
+{
+  "slug": "projects",
+  "translation_key": "projects",
+  "meta": {
+    "title": "Our own products | Cross Tech Edu",
+    "description": "Products built by Cross Tech Edu: GPLX driving theory prep, FamHub safe-arrival alerts, FaceFind event photo search and Plant Trees virtual tree care.",
+    "breadcrumb": "Products",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Products by Cross Tech Edu",
+        "title": "Four products built by the Cross Tech Edu team.",
+        "lead": "From driving theory prep to finding event photos with a selfie and caring for a virtual tree, our own team designed and built each of these.",
+        "sub": "Open a product for the details. If you need something similar, tell us about it.",
+        "ctas": [
+          {"label": "See the four products", "href": "#products", "style": "primary"},
+          {"label": "Discuss your project", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Status",
+          "amount": "4 products",
+          "unit": "3 mobile apps · 1 web app",
+          "note": "GPLX is on the App Store, FamHub and Plant Trees are coming soon, and FaceFind is in a pilot with its first event organizers."
+        },
+        "stats": [
+          {"value": "600", "label": "Theory questions in GPLX"},
+          {"value": "Free", "label": "GPLX price, with no ads"},
+          {"value": "1 tap", "label": "For a child to check in on FamHub"},
+          {"value": "1 selfie", "label": "Is all a guest needs on FaceFind"}
+        ]
+      }
+    },
+    {
+      "type": "products",
+      "data": {
+        "id": "products",
+        "kicker": "Product list",
+        "title": "GPLX, FamHub, FaceFind and Plant Trees",
+        "intro": "Each card opens the product's own page. FamHub's page is in English; the other three are in Vietnamese for now.",
+        "ui": {
+          "open_page": "View details",
+          "cover_alt": "{name} promotional image"
+        },
+        "items": [
+          {
+            "name": "GPLX",
+            "page": "/projects/gplx/",
+            "tagline": "Vietnam driving theory test prep",
+            "cover": "img/products/gplx/og.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "600 questions across 15 license classes from A1 to DE, timed mock tests, road signs and memory tips. Free, with no ads.",
+            "tags": ["On the App Store", "iPhone · iPad", "Page in Vietnamese"]
+          },
+          {
+            "name": "FamHub",
+            "page": "/projects/fam-hub/",
+            "tagline": "Know your kids got there safely",
+            "cover": "img/products/famhub/og-famhub.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "Parents get an alert when a child reaches school or leaves home, see live location when the child shares it, and keep daily to-dos on track together.",
+            "tags": ["Coming soon", "App Store · Google Play"]
+          },
+          {
+            "name": "FaceFind",
+            "page": "/projects/face-find/",
+            "tagline": "Find event photos with a selfie",
+            "cover": "img/articles/facefind.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "Organizers paste a Google Drive folder link and share a QR code. Guests take a selfie, then view and download the photos they appear in, with no app to install.",
+            "tags": ["Pilot", "Runs in the browser", "Page in Vietnamese"]
+          },
+          {
+            "name": "Plant Trees",
+            "page": "/projects/plant-trees/",
+            "tagline": "Care for a virtual tree, unwind for a few minutes",
+            "cover": "img/products/plant-trees/cover.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "Water it, feed it, pick off the bugs and watch a virtual tree grow through 6 stages, with nature sounds in the background. No sign-in needed.",
+            "tags": ["Coming soon", "App Store · Google Play", "Page in Vietnamese"]
+          }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Need an app like one of these?",
+        "body": "Send us your idea, target timeline and expected budget. Cross Tech Edu will reply with a concrete scope and price within 48 hours.",
+        "email_label": "Email",
+        "phone_label": "Phone",
+        "zalo_label": "Company Zalo",
+        "zalo_cta": "Message us on Zalo",
+        "zalo_hint": "Scan the QR code with the Zalo app, or tap to open the chat.",
+        "zalo_qr_alt": "Cross Tech Edu Zalo QR code",
+        "office_label": "Office",
+        "office_text": "Hanoi, Vietnam"
+      }
+    }
+  ]
+}

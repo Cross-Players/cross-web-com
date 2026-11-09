@@ -8,7 +8,22 @@
   "redirects": [
     {
       "source": "/gplx/apps/gplx/",
-      "destination": "/gplx/",
+      "destination": "/projects/gplx/",
+      "permanent": true
+    },
+    {
+      "source": "/gplx/",
+      "destination": "/projects/gplx/",
+      "permanent": true
+    },
+    {
+      "source": "/gplx/policy/",
+      "destination": "/projects/gplx/policy/",
+      "permanent": true
+    },
+    {
+      "source": "/gplx/support/",
+      "destination": "/projects/gplx/support/",
       "permanent": true
     },
     {

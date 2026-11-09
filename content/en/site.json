@@ -49,6 +49,7 @@
         "title": "Company",
         "links": [
           {"label": "Products we built", "href": "#work"},
+          {"label": "Our own products", "href": "/en/projects/"},
           {"label": "FamHub app", "href": "/projects/fam-hub/"},
           {"label": "Our clients", "href": "#clients"},
           {"label": "About Cross Tech Edu", "href": "https://www.crosstechedu.site/about"},

@@ -1,0 +1,104 @@
+{
+  "slug": "projects",
+  "translation_key": "projects",
+  "meta": {
+    "title": "Sản phẩm tự phát triển | Cross Tech Edu",
+    "description": "Các sản phẩm do Cross Tech Edu tự phát triển: GPLX ôn thi bằng lái, Kigo báo con đến nơi an toàn, FaceFind tìm ảnh sự kiện và Trồng Cây chăm cây ảo.",
+    "breadcrumb": "Sản phẩm",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Sản phẩm của Cross Tech Edu",
+        "title": "Bốn sản phẩm do chính đội Cross Tech Edu làm ra.",
+        "lead": "Từ ứng dụng ôn thi bằng lái đến công cụ tìm ảnh sự kiện và trò chăm cây thư giãn, mỗi sản phẩm đều do đội ngũ của chúng tôi thiết kế và lập trình.",
+        "sub": "Bấm vào từng sản phẩm để xem chi tiết. Nếu bạn cần một ứng dụng tương tự, hãy trao đổi với chúng tôi.",
+        "ctas": [
+          {"label": "Xem bốn sản phẩm", "href": "#products", "style": "primary"},
+          {"label": "Trao đổi về dự án của bạn", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Trạng thái",
+          "amount": "4 sản phẩm",
+          "unit": "3 ứng dụng di động · 1 ứng dụng web",
+          "note": "GPLX đã có trên App Store, Kigo và Trồng Cây sắp ra mắt, FaceFind đang thử nghiệm cùng các đơn vị tổ chức sự kiện đầu tiên."
+        },
+        "stats": [
+          {"value": "600 câu", "label": "Câu hỏi lý thuyết trong GPLX"},
+          {"value": "0 đ", "label": "Giá ứng dụng GPLX, không quảng cáo"},
+          {"value": "1 chạm", "label": "Để con check-in với bố mẹ trên Kigo"},
+          {"value": "1 selfie", "label": "Là đủ để khách tìm ảnh trên FaceFind"}
+        ]
+      }
+    },
+    {
+      "type": "products",
+      "data": {
+        "id": "products",
+        "kicker": "Danh sách sản phẩm",
+        "title": "GPLX, Kigo, FaceFind và Trồng Cây",
+        "intro": "Mỗi thẻ mở trang riêng của sản phẩm, nơi bạn xem thêm thông tin và cách bắt đầu.",
+        "ui": {
+          "open_page": "Xem chi tiết",
+          "cover_alt": "Hình giới thiệu {name}"
+        },
+        "items": [
+          {
+            "name": "GPLX",
+            "page": "/projects/gplx/",
+            "tagline": "Ôn thi lý thuyết bằng lái xe",
+            "cover": "img/products/gplx/og.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "600 câu hỏi, 15 hạng bằng từ A1 đến DE, thi thử bấm giờ, biển báo và mẹo ghi nhớ. Miễn phí, không quảng cáo.",
+            "tags": ["Đã có trên App Store", "iPhone · iPad"]
+          },
+          {
+            "name": "Kigo",
+            "page": "/projects/kigo/",
+            "tagline": "Báo khi con đến nơi an toàn",
+            "cover": "img/products/famhub/cover-kigo.webp",
+            "publisher": "Cross Tech Edu",
+            "body": "Bố mẹ nhận thông báo khi con đến trường hoặc rời nhà, xem vị trí khi con chia sẻ và cùng con theo dõi việc cần làm mỗi ngày.",
+            "tags": ["Sắp ra mắt", "App Store · Google Play"]
+          },
+          {
+            "name": "FaceFind",
+            "page": "/projects/face-find/",
+            "tagline": "Tìm ảnh sự kiện bằng selfie",
+            "cover": "img/articles/facefind.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "Ban tổ chức dán link folder Google Drive và đưa mã QR. Khách chụp selfie rồi xem và tải đúng những ảnh có mình, không cần cài ứng dụng.",
+            "tags": ["Bản thử nghiệm", "Chạy trên trình duyệt"]
+          },
+          {
+            "name": "Trồng Cây",
+            "page": "/projects/plant-trees/",
+            "tagline": "Chăm cây ảo, thư giãn vài phút",
+            "cover": "img/products/plant-trees/cover.jpg",
+            "publisher": "Cross Tech Edu",
+            "body": "Tưới nước, bón phân, bắt sâu và nhìn cây ảo lớn dần qua 6 giai đoạn, kèm âm thanh thiên nhiên. Không cần đăng nhập, mở ra là chăm cây được ngay.",
+            "tags": ["Sắp ra mắt", "App Store · Google Play"]
+          }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Bạn cần một ứng dụng như thế này?",
+        "body": "Cho chúng tôi biết ý tưởng, mốc thời gian mong muốn và ngân sách dự kiến. Cross Tech Edu sẽ trả lời bằng phạm vi công việc và giá cụ thể trong 48 giờ.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo, hoặc bấm để mở cuộc trò chuyện.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam"
+      }
+    }
+  ]
+}

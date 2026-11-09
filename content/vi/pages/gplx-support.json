@@ -1,24 +1,24 @@
 {
-  "slug": "gplx/support",
+  "slug": "projects/gplx/support",
   "translation_key": "gplx-support",
   "meta": {
     "title": "Hỗ trợ ứng dụng ôn thi GPLX | Cross Tech Edu",
     "description": "Trung tâm hỗ trợ ứng dụng ôn thi GPLX: liên hệ qua email crosstechedu@gmail.com, giải đáp lỗi thường gặp và hướng dẫn xử lý sự cố nhanh chóng.",
     "breadcrumb": "Hỗ trợ ứng dụng GPLX",
-    "updated": "2026-11-06",
+    "updated": "2026-11-09",
     "og_image": "img/products/gplx/og.jpg"
   },
   "blocks": [
     {
       "type": "hero",
       "data": {
-        "kicker": "Hỗ trợ · Ứng dụng ôn thi GPLX Vạn Xuân",
+        "kicker": "Hỗ trợ · Ứng dụng 600 câu ôn thi GPLX mới nhất",
         "title": "Hỗ trợ ôn thi GPLX: gặp lỗi, cần giúp đỡ?",
-        "lead": "Trang hỗ trợ chính thức của ứng dụng Ôn thi GPLX (Driver License E-learning). Gửi email mô tả lỗi bạn gặp, chúng tôi trả lời trong thời gian sớm nhất có thể.",
+        "lead": "Trang hỗ trợ chính thức của ứng dụng 600 câu ôn thi GPLX mới nhất. Gửi email mô tả lỗi bạn gặp, chúng tôi trả lời trong thời gian sớm nhất có thể.",
         "sub": "Ứng dụng giúp học và ôn thi lý thuyết giấy phép lái xe tại Việt Nam: 600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, tra biển báo và mẹo ghi nhớ.",
         "ctas": [
           {"label": "Gửi email hỗ trợ", "href": "mailto:crosstechedu@gmail.com", "style": "primary"},
-          {"label": "Đọc chính sách quyền riêng tư", "href": "/gplx/policy/", "style": "secondary"}
+          {"label": "Đọc chính sách quyền riêng tư", "href": "/projects/gplx/policy/", "style": "secondary"}
         ],
         "rate": {
           "label": "Liên hệ",

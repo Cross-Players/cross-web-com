@@ -49,8 +49,9 @@
         "title": "Công ty",
         "links": [
           {"label": "Sản phẩm đã tham gia", "href": "#work"},
+          {"label": "Sản phẩm tự phát triển", "href": "/projects/"},
           {"label": "Trợ lý AI bất động sản", "href": "/san-pham/tro-ly-bds-43/"},
-          {"label": "Ứng dụng ôn thi GPLX", "href": "/gplx/"},
+          {"label": "Ứng dụng ôn thi GPLX", "href": "/projects/gplx/"},
           {"label": "Ứng dụng Kigo", "href": "/projects/kigo/"},
           {"label": "Khách hàng của chúng tôi", "href": "#clients"},
           {"label": "Giới thiệu Cross Tech Edu", "href": "https://www.crosstechedu.site/about"},

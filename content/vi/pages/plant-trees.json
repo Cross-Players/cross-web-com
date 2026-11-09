@@ -1,0 +1,198 @@
+{
+  "slug": "projects/plant-trees",
+  "translation_key": "trong-cay",
+  "meta": {
+    "title": "Trồng Cây: chăm cây ảo, thư giãn vài phút | Cross Tech Edu",
+    "description": "Trồng Cây là ứng dụng chăm cây ảo để thư giãn vài phút mỗi ngày: tưới nước, bón phân, bắt sâu, nghe âm thanh thiên nhiên. Không cần tài khoản.",
+    "breadcrumb": "Trồng Cây",
+    "updated": "2026-11-09",
+    "og_image": "img/products/plant-trees/cover.jpg",
+    "app": {
+      "type": "MobileApplication",
+      "name": "Trồng Cây",
+      "alternate_name": "Plant Trees",
+      "description": "Ứng dụng chăm cây ảo để thư giãn vài phút mỗi ngày, với âm thanh thiên nhiên và không cần tài khoản.",
+      "url": "https://www.crosstechedu.com/projects/plant-trees/",
+      "category": "LifestyleApplication",
+      "operating_system": "iOS, Android"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Ứng dụng · Trồng Cây",
+        "title": "Trồng Cây: vài phút chăm cây thay vì lướt mạng xã hội.",
+        "lead": "Thay vì lướt mạng xã hội, hãy dành vài phút tưới nước, bón phân, bắt sâu và nhìn cây ảo lớn dần qua 6 giai đoạn. Mở ứng dụng là chăm cây được ngay.",
+        "sub": "Cây trong ứng dụng là cây ảo. Việc đưa cây ra rừng, đối tác và sự kiện hiện là mô phỏng: chưa có cây thật nào được trồng.",
+        "ctas": [
+          {"label": "Xem ảnh màn hình", "href": "#anh-man-hinh", "style": "primary"},
+          {"label": "Trang hỗ trợ", "href": "/projects/plant-trees/support/", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Trạng thái",
+          "amount": "Sắp ra mắt",
+          "unit": "App Store & Google Play",
+          "note": "Trồng Cây chưa có trên các cửa hàng ứng dụng. Link tải sẽ được cập nhật trên trang này khi ứng dụng ra mắt."
+        },
+        "stats": [
+          {"value": "6 giai đoạn", "label": "Từ hạt giống đến lúc cây ra hoa"},
+          {"value": "4 âm thanh", "label": "Nước chảy, sóng biển, gió và rừng cây"},
+          {"value": "0 tài khoản", "label": "Không đăng ký, không đăng nhập"},
+          {"value": "Vài phút", "label": "Là đủ cho một lần chăm cây"}
+        ]
+      }
+    },
+    {
+      "type": "screenshots",
+      "data": {
+        "id": "anh-man-hinh",
+        "kicker": "Ảnh màn hình",
+        "title": "Một cái cây nhỏ, một màn hình yên tĩnh.",
+        "intro": "Mọi thứ nằm trên một màn hình: cây ở giữa, các nút chăm cây ở dưới, âm thanh và khu rừng mở lên khi bạn cần.",
+        "list_label": "Ảnh màn hình ứng dụng Trồng Cây, vuốt ngang để xem thêm",
+        "width": 600,
+        "height": 1304,
+        "items": [
+          {
+            "image": "img/products/plant-trees/01_sprout.webp",
+            "alt": "Cây non có sâu trên lá, phía dưới là các nút tưới nước, xem quảng cáo và bón phân",
+            "title": "Bắt sâu cho cây",
+            "body": "Khi có sâu, chạm để rung cây và sâu sẽ rơi xuống."
+          },
+          {
+            "image": "img/products/plant-trees/02_grown.webp",
+            "alt": "Cây trưởng thành ở giai đoạn 5 trên 6 với đồng hồ đếm ngược đến lần khát tiếp theo",
+            "title": "Cây lớn dần",
+            "body": "Đồng hồ cho biết còn bao lâu nữa cây khát nước."
+          },
+          {
+            "image": "img/products/plant-trees/03_bloom.webp",
+            "alt": "Cây ra hoa ở giai đoạn 6 trên 6, có hoa hồng và quả cam trên tán lá",
+            "title": "Cây ra hoa",
+            "body": "Giai đoạn cuối, sau khi đi qua đủ 6 chặng."
+          },
+          {
+            "image": "img/products/plant-trees/04_sounds.webp",
+            "alt": "Bảng chọn âm thanh thiên nhiên gồm nước chảy, sóng biển, gió và rừng cây",
+            "title": "Âm thanh thiên nhiên",
+            "body": "Bật một hoặc nhiều âm thanh và chỉnh âm lượng từng loại."
+          },
+          {
+            "image": "img/products/plant-trees/05_forest.webp",
+            "alt": "Màn hình Rừng thật có ghi chú bản thử nghiệm, dữ liệu mô phỏng, liệt kê các sự kiện cộng đồng mẫu",
+            "title": "Khu rừng (mô phỏng)",
+            "body": "Sự kiện và khu rừng ở đây là dữ liệu mẫu, chưa có cây thật nào được trồng."
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "tinh-nang",
+        "kicker": "Tính năng",
+        "title": "Nhẹ nhàng, không áp lực.",
+        "intro": "Trồng Cây được làm cho những khoảng nghỉ ngắn trong ngày, không phải để giữ bạn ở lại lâu hơn.",
+        "items": [
+          {
+            "title": "Chăm cây bằng vài thao tác",
+            "body": "Tưới nước, bón phân và chạm để rung cây khi có sâu. Không có menu dài, không có việc phải làm theo lịch."
+          },
+          {
+            "title": "Cây không bao giờ chết",
+            "body": "Nếu bạn bận, cây chỉ khát nước và lá rũ xuống. Quay lại tưới lúc nào cũng được."
+          },
+          {
+            "title": "Nước và phân bón tự hồi",
+            "body": "Nước tự cộng 1 mỗi giờ, phân bón tự cộng 1 mỗi 3 giờ, kể cả khi bạn đã đóng ứng dụng."
+          },
+          {
+            "title": "Bốn âm thanh để thư giãn",
+            "body": "Nước chảy, sóng biển, gió và rừng cây. Bật riêng từng loại hoặc trộn nhiều loại với nhau."
+          },
+          {
+            "title": "Quảng cáo do bạn chọn",
+            "body": "Bạn có thể xem quảng cáo để nhận thêm nước và phân bón, hoặc mua thêm trong cửa hàng của ứng dụng."
+          },
+          {
+            "title": "Không cần tài khoản",
+            "body": "Tiến độ của cây chỉ lưu trên thiết bị. Gỡ ứng dụng hoặc đổi máy thì sẽ bắt đầu lại từ đầu."
+          }
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "cach-dung",
+        "kicker": "Cách dùng",
+        "title": "Một lần mở ứng dụng diễn ra thế nào.",
+        "intro": "Lúc chờ xe, giờ nghỉ giữa buổi hay trước khi ngủ: vài phút là đủ, rồi bạn quay lại việc của mình.",
+        "steps": [
+          {
+            "title": "Mở ứng dụng",
+            "body": "Không cần đăng nhập, cây của bạn hiện ra ngay trên màn hình.",
+            "duration": "Mở"
+          },
+          {
+            "title": "Chăm cây",
+            "body": "Tưới nước, bón phân và rung cây nếu có sâu.",
+            "duration": "Chăm"
+          },
+          {
+            "title": "Nghe một chút",
+            "body": "Bật tiếng nước chảy hoặc tiếng rừng nếu bạn muốn ở lại thêm một lát.",
+            "duration": "Nghe"
+          },
+          {
+            "title": "Đóng lại khi đủ",
+            "body": "Nước và phân bón tự hồi trong lúc bạn làm việc khác, cây vẫn ở đó khi bạn quay lại.",
+            "duration": "Nghỉ"
+          }
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "id": "tai-ve",
+        "kicker": "Tải về",
+        "title": "Trồng Cây sắp có trên iPhone, iPad và Android.",
+        "items": [
+          {
+            "kicker": "App Store",
+            "title": "Dành cho iPhone và iPad",
+            "body": "Ứng dụng chưa có trên App Store. Link tải sẽ được cập nhật tại đây khi ra mắt."
+          },
+          {
+            "kicker": "Google Play",
+            "title": "Dành cho Android",
+            "body": "Ứng dụng chưa có trên Google Play. Link tải sẽ được cập nhật tại đây khi ra mắt."
+          }
+        ],
+        "note": {
+          "text": "Muốn biết ứng dụng xử lý dữ liệu của bạn thế nào?",
+          "label": "Đọc chính sách quyền riêng tư",
+          "href": "/projects/plant-trees/privacy/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Có góp ý, hoặc cần một ứng dụng tương tự?",
+        "body": "Gửi cho Cross Tech Edu góp ý về Trồng Cây, hoặc ý tưởng ứng dụng của bạn. Chúng tôi sẽ phản hồi sớm nhất có thể.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo, hoặc bấm để mở cuộc trò chuyện.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam"
+      }
+    }
+  ]
+}

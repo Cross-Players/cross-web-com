@@ -145,13 +145,18 @@ def breadcrumbs(
     if not page.slug:
         return []
     by_slug = {p.slug: p for p in repo.list_pages(page.locale)}
-    crumbs = [(site["brand"]["name"], page_path(page.meta.get("lang", page.locale), "", default_locale))]
+    lang = page.meta.get("lang", page.locale)
+    crumbs = [(site["brand"]["name"], page_path(lang, "", default_locale))]
     parts = page.slug.strip("/").split("/")
     for i in range(1, len(parts) + 1):
-        match = by_slug.get("/".join(parts[:i]))
+        slug = "/".join(parts[:i])
+        match, locale = by_slug.get(slug), page.locale
+        if match is not None and match.meta.get("lang", page.locale) != lang:
+            # A meta.lang page shows the parent written in its own language.
+            match, locale = repo.get_page(lang, slug), lang
         if match is not None:
             name = match.meta.get("breadcrumb") or match.meta.get("title", "")
-            crumbs.append((name, page_path(page.locale, match.slug, default_locale)))
+            crumbs.append((name, page_path(locale, match.slug, default_locale)))
     return crumbs
 
 
