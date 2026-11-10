@@ -5,6 +5,16 @@
   "buildCommand": ".venv/bin/python freeze.py",
   "outputDirectory": "build",
   "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/dnqat",
+      "destination": "https://crm.14-225-81-171.sslip.io/dnqat/"
+    },
+    {
+      "source": "/dnqat/(.*)",
+      "destination": "https://crm.14-225-81-171.sslip.io/dnqat/$1"
+    }
+  ],
   "redirects": [
     {
       "source": "/gplx/apps/gplx/",
