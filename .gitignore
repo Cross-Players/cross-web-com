@@ -7,3 +7,5 @@ build/
 cms/db.sqlite3
 .omp/
 .ua/
+.omp/work/
+.omp/memory/
