@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title60 desc60">
+  <title id="title60">60 phút đầu tiên nếu con bị mất tích — danh sách kiểm tra</title>
+  <desc id="desc60">Infographic trừu tượng: biểu tượng chiếc khiên an toàn, đồng hồ cát và danh sách bốn bước trong 60 phút đầu tiên. Không dùng ảnh thật của trẻ em bị ảnh hưởng.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f3f2f2; }
+      .panel { fill: #ffffff; stroke: #d7d3d3; stroke-width: 2; rx: 16; }
+      .accent { fill: #ec3013; }
+      .text { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; }
+      .text-muted { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 600; }
+      .small { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 18px; }
+      .step-num { fill: #ffffff; font-family: Archivo, sans-serif; font-weight: 800; font-size: 30px; }
+      .step-title { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px; }
+      .step-body { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 17px; }
+      .badge { fill: #ec3013; rx: 10; }
+      .shield { fill: #eae7e7; }
+      .shield-mark { fill: #ec3013; stroke: #201e1d; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .pin-icon { fill: #ec3013; stroke: #201e1d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .pin-head { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="630"/>
+
+  <!-- Left panel -->
+  <rect x="56" y="56" width="520" height="518" class="panel"/>
+  <rect class="accent" x="56" y="56" width="520" height="70" rx="16 16 0 0"/>
+  <text x="96" y="116" class="text" font-size="40">60 phút đầu tiên</text>
+  <text x="96" y="156" class="small" font-size="22">Nếu con bạn không về đúng giờ</text>
+
+  <g transform="translate(96, 200)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="65" height="65" class="badge"/>
+    <text x="33" y="40" class="step-num" text-anchor="middle">1</text>
+    <text x="90" y="28" class="step-title">Gọi 113</text>
+    <text x="90" y="58" class="step-body" font-size="17">Cảnh sát phản ứng nhanh, miễn phí.</text>
+    <!-- Step 2 -->
+    <rect x="0" y="90" width="65" height="65" class="badge"/>
+    <text x="33" y="130" class="step-num" text-anchor="middle">2</text>
+    <text x="90" y="118" class="step-title">Gọi 111</text>
+    <text x="90" y="148" class="step-body" font-size="17">Tổng đài bảo vệ trẻ em 24/7.</text>
+    <!-- Step 3 -->
+    <rect x="0" y="180" width="65" height="65" class="badge"/>
+    <text x="33" y="220" class="step-num" text-anchor="middle">3</text>
+    <text x="90" y="208" class="step-title">Gửi mô tả</text>
+    <text x="90" y="238" class="step-body" font-size="17">Tuổi, áo quần, nơi cuối cùng thấy.</text>
+    <!-- Step 4 -->
+    <rect x="0" y="270" width="65" height="65" class="badge"/>
+    <text x="33" y="310" class="step-num" text-anchor="middle">4</text>
+    <text x="90" y="298" class="step-title">Liên hệ trường</text>
+    <text x="90" y="328" class="step-body" font-size="17">Kiểm tra con có đến lớp hay không.</text>
+  </g>
+
+  <!-- Right panel -->
+  <rect x="624" y="56" width="520" height="518" class="panel"/>
+  <rect class="accent" x="624" y="56" width="520" height="70" rx="16 16 0 0"/>
+  <text x="664" y="116" class="text" font-size="40">Không để trôi qua</text>
+  <text x="664" y="156" class="small" font-size="22">Thời gian quyết định kết quả tìm kiếm</text>
+
+  <!-- Icon reserved area: grey circle r=55 centred at (1040, 215); shield polygon inside x 1000-1080, y 175-300 -->
+  <circle cx="1040" cy="215" r="55" class="shield"/>
+  <polygon class="shield-mark" points="1014,236 1014,294 1040,296 1066,294 1066,236"/>
+
+  <text x="664" y="400" class="text-muted" font-size="22">Dấu hiệu cần hành động ngay:</text>
+  <text x="664" y="445" class="small" font-size="18">• Con không đến đúng giờ hẹn</text>
+  <text x="664" y="485" class="small" font-size="18">• Không liên lạc được trong 30 phút</text>
+  <text x="664" y="525" class="small" font-size="18">• Con không nghe máy, không trả lời tin nhắn</text>
+
+  <!-- Footer strip -->
+  <rect y="558" width="1200" height="72" fill="#ec3013"/>
+  <text x="96" y="602" class="text" font-size="20" fill="#ffffff">CROSS TECH EDU · crosstechedu.com</text>
+</svg>
