@@ -19,7 +19,7 @@
         "ctas": [
           {
             "label": "Email support",
-            "href": "mailto:crosstechedu@gmail.com",
+            "href": "mailto:support@crosstechedu.com",
             "style": "primary"
           },
           {
@@ -31,7 +31,7 @@
         "rate": {
           "label": "Email",
           "amount": "Email",
-          "unit": "crosstechedu@gmail.com",
+          "unit": "support@crosstechedu.com",
           "note": "Include your device, app version and the text you pasted so we can help faster."
         }
       }
@@ -42,7 +42,7 @@
         "id": "faq",
         "kicker": "FAQ",
         "title": "Frequently asked questions.",
-        "intro": "Need help? Email crosstechedu@gmail.com with your device, app version and a screenshot.",
+        "intro": "Need help? Email support@crosstechedu.com with your device, app version and a screenshot.",
         "items": [
           {
             "title": "Does Fast Notes upload my messages?",

@@ -163,7 +163,6 @@ def sitemap():
                     "loc": cfg["SITE_URL"] + seo.page_path(locale, page.slug, cfg["DEFAULT_LOCALE"]),
                     "lastmod": page.meta.get("updated", date.today().isoformat()),
                     "alternates": seo.alternates(repo, page, cfg["LOCALES"], cfg["DEFAULT_LOCALE"]),
-                    "priority": "1.0" if page.slug == "" else "0.7",
                 }
             )
         articles = repo.list_articles(locale)
@@ -177,7 +176,6 @@ def sitemap():
                         for loc in cfg["LOCALES"]
                         if repo.list_articles(loc)
                     },
-                    "priority": "0.6",
                 }
             )
         for article in articles:
@@ -186,7 +184,6 @@ def sitemap():
                     "loc": cfg["SITE_URL"] + seo.blog_path(locale, default, article.slug),
                     "lastmod": article.updated,
                     "alternates": seo.article_alternates(repo, article, cfg["LOCALES"], default),
-                    "priority": "0.6",
                 }
             )
     xml = render_template(

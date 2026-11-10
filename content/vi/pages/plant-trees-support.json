@@ -3,7 +3,7 @@
   "translation_key": "trong-cay-support",
   "meta": {
     "title": "Hỗ trợ ứng dụng Trồng Cây | Cross Tech Edu",
-    "description": "Trang hỗ trợ ứng dụng Trồng Cây: liên hệ qua email crosstechedu@gmail.com, giải đáp các câu hỏi thường gặp về chăm cây, quảng cáo, mua trong ứng dụng và dữ liệu.",
+    "description": "Trang hỗ trợ ứng dụng Trồng Cây: liên hệ qua email support@crosstechedu.com, giải đáp các câu hỏi thường gặp về chăm cây, quảng cáo, mua trong ứng dụng và dữ liệu.",
     "breadcrumb": "Hỗ trợ ứng dụng Trồng Cây",
     "updated": "2026-11-07"
   },
@@ -18,7 +18,7 @@
         "ctas": [
           {
             "label": "Gửi email hỗ trợ",
-            "href": "mailto:crosstechedu@gmail.com",
+            "href": "mailto:support@crosstechedu.com",
             "style": "primary"
           },
           {
@@ -30,7 +30,7 @@
         "rate": {
           "label": "Liên hệ",
           "amount": "Email",
-          "unit": "crosstechedu@gmail.com",
+          "unit": "support@crosstechedu.com",
           "note": "Ghi rõ thiết bị, phiên bản ứng dụng và các bước gây ra lỗi để chúng tôi xử lý nhanh hơn."
         }
       }
@@ -41,7 +41,7 @@
         "id": "faq",
         "kicker": "Câu hỏi thường gặp / FAQ",
         "title": "Các câu hỏi thường gặp.",
-        "intro": "Không tìm thấy câu trả lời? Gửi email đến crosstechedu@gmail.com kèm ảnh chụp màn hình, chúng tôi sẽ hỗ trợ bạn.",
+        "intro": "Không tìm thấy câu trả lời? Gửi email đến support@crosstechedu.com kèm ảnh chụp màn hình, chúng tôi sẽ hỗ trợ bạn.",
         "items": [
           {
             "title": "Có cần tạo tài khoản không?",

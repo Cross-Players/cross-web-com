@@ -18,7 +18,7 @@
         "ctas": [
           {
             "label": "Gửi email hỗ trợ",
-            "href": "mailto:crosstechedu@gmail.com",
+            "href": "mailto:support@crosstechedu.com",
             "style": "primary"
           },
           {
@@ -30,7 +30,7 @@
         "rate": {
           "label": "Liên hệ",
           "amount": "Email",
-          "unit": "crosstechedu@gmail.com",
+          "unit": "support@crosstechedu.com",
           "note": "Ghi rõ thiết bị, phiên bản ứng dụng và nội dung bạn đã dán để chúng tôi xử lý nhanh hơn."
         }
       }
@@ -41,7 +41,7 @@
         "id": "faq",
         "kicker": "FAQ",
         "title": "Câu hỏi thường gặp.",
-        "intro": "Cần hỗ trợ? Gửi email đến crosstechedu@gmail.com, kèm tên máy, phiên bản ứng dụng và ảnh chụp màn hình.",
+        "intro": "Cần hỗ trợ? Gửi email đến support@crosstechedu.com, kèm tên máy, phiên bản ứng dụng và ảnh chụp màn hình.",
         "items": [
           {
             "title": "Fast Notes có gửi tin nhắn của tôi lên mạng không?",

@@ -33,7 +33,7 @@ Website Flask + Jinja2, nội dung JSON under `content/`, xuất tĩnh bằng Fr
 ## Brand Commitments
 
 - Tên: Cross Tech Edu (CROSS TECH EDU). Màu nhấn `#ec3013` (đỏ cam), nền `#f3f2f2`, chữ `#201e1d`. Font Archivo (tự host woff2).
-- Email liên hệ thực: `crosstechedu@gmail.com`. Điện thoại: `+84 338 305 895`. Văn phòng Hà Nội.
+- Email liên hệ thực: `support@crosstechedu.com`. Điện thoại: `+84 338 305 895`. Văn phòng Hà Nội.
 
 ## Evidence on Hand
 

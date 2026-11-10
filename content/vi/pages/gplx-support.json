@@ -3,7 +3,7 @@
   "translation_key": "gplx-support",
   "meta": {
     "title": "Hỗ trợ ứng dụng ôn thi GPLX | Cross Tech Edu",
-    "description": "Trung tâm hỗ trợ ứng dụng ôn thi GPLX: liên hệ qua email crosstechedu@gmail.com, giải đáp lỗi thường gặp và hướng dẫn xử lý sự cố nhanh chóng.",
+    "description": "Trung tâm hỗ trợ ứng dụng ôn thi GPLX: liên hệ qua email support@crosstechedu.com, giải đáp lỗi thường gặp và hướng dẫn xử lý sự cố nhanh chóng.",
     "breadcrumb": "Hỗ trợ ứng dụng GPLX",
     "updated": "2026-11-09",
     "og_image": "img/products/gplx/og.jpg"
@@ -17,13 +17,13 @@
         "lead": "Trang hỗ trợ chính thức của ứng dụng 600 câu ôn thi GPLX mới nhất. Gửi email mô tả lỗi bạn gặp, chúng tôi trả lời trong thời gian sớm nhất có thể.",
         "sub": "Ứng dụng giúp học và ôn thi lý thuyết giấy phép lái xe tại Việt Nam: 600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, tra biển báo và mẹo ghi nhớ.",
         "ctas": [
-          {"label": "Gửi email hỗ trợ", "href": "mailto:crosstechedu@gmail.com", "style": "primary"},
+          {"label": "Gửi email hỗ trợ", "href": "mailto:support@crosstechedu.com", "style": "primary"},
           {"label": "Đọc chính sách quyền riêng tư", "href": "/projects/gplx/policy/", "style": "secondary"}
         ],
         "rate": {
           "label": "Liên hệ",
           "amount": "Email",
-          "unit": "crosstechedu@gmail.com",
+          "unit": "support@crosstechedu.com",
           "note": "Ghi rõ thiết bị, phiên bản ứng dụng và bước tái hiện lỗi để chúng tôi xử lý nhanh hơn."
         },
         "stats": [
@@ -40,13 +40,13 @@
         "id": "faq",
         "kicker": "Câu hỏi thường gặp / FAQ",
         "title": "Các vấn đề thường gặp và cách xử lý.",
-        "intro": "Không tìm thấy câu trả lời? Gửi email đến crosstechedu@gmail.com kèm ảnh chụp màn hình lỗi, chúng tôi sẽ hỗ trợ bạn.",
+        "intro": "Không tìm thấy câu trả lời? Gửi email đến support@crosstechedu.com kèm ảnh chụp màn hình lỗi, chúng tôi sẽ hỗ trợ bạn.",
         "items": [
           {"title": "Ứng dụng có cần tạo tài khoản không?", "body": "Không. Ứng dụng không yêu cầu đăng ký hay đăng nhập. Kết quả thi thử và câu bạn hay làm sai chỉ lưu trên máy của bạn, không đồng bộ lên máy chủ."},
           {"title": "Ứng dụng có quảng cáo không?", "body": "Không. Bản hiện tại trên App Store không hiển thị quảng cáo, không có gói trả phí; mọi tính năng đều mở ngay khi cài đặt."},
           {"title": "Tôi không thấy hạng bằng của mình?", "body": "Ứng dụng có 15 hạng: A1, A, B1, B, C1, C, D1, D2, D cùng các hạng BE, C1E, CE, D1E, D2E, DE. Mở màn hình chính, chọn hạng bạn đăng ký thi, toàn bộ đề và câu hỏi sẽ đổi theo hạng đó."},
           {"title": "Câu điểm liệt là gì?", "body": "Là những câu hỏi mà nếu trả lời sai, bạn trượt lý thuyết dù tổng điểm đạt. Ứng dụng có mục ôn riêng câu điểm liệt; hãy học kỹ mục này trước ngày sát hạch."},
-          {"title": "Ứng dụng bị treo hoặc lỗi hiển thị thì làm sao?", "body": "Thử lần lượt: đóng ứng dụng và mở lại; cập nhật ứng dụng lên phiên bản mới nhất trên App Store; khởi động lại máy. Nếu vẫn lỗi, gửi email mô tả thiết bị, phiên bản iOS, phiên bản ứng dụng và bước bạn đã thao tác cho crosstechedu@gmail.com."},
+          {"title": "Ứng dụng bị treo hoặc lỗi hiển thị thì làm sao?", "body": "Thử lần lượt: đóng ứng dụng và mở lại; cập nhật ứng dụng lên phiên bản mới nhất trên App Store; khởi động lại máy. Nếu vẫn lỗi, gửi email mô tả thiết bị, phiên bản iOS, phiên bản ứng dụng và bước bạn đã thao tác cho support@crosstechedu.com."},
           {"title": "Ứng dụng có trên Android không?", "body": "Bản cho iPhone và iPad đã phát hành trên App Store. Phiên bản Android đang được phát triển; khi có thông tin chính thức, chúng tôi sẽ cập nhật trên trang này và trang giới thiệu /gplx/."}
         ]
       }

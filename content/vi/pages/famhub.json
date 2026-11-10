@@ -115,7 +115,7 @@
         "intro": "FamHub is called Kigo in Vietnam. It is the same app, available in English, Vietnamese, Japanese, Chinese, Indonesian and Portuguese.",
         "items": [
           {"kicker": "App Store", "title": "For iPhone and iPad", "body": "Download FamHub (Vietnamese name: Kigo) from the App Store. Requires iOS 15 or later.", "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767", "host": "apps.apple.com", "cta": "View on App Store"},
-          {"kicker": "Google Play", "title": "For Android", "body": "Not available yet. The download link will appear here when FamHub launches."}
+          {"kicker": "Google Play", "title": "For Android", "body": "Not available yet on Google Play. The download link will be added when the Android build is approved."}
         ],
         "note": {
           "text": "Your child's location is shared only with the parents and guardians linked to their account.",

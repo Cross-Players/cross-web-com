@@ -165,7 +165,7 @@ def test_gplx_policy_page(client):
     # Vietnamese first, then the English version marked as such
     assert "không thu thập dữ liệu cá nhân" in html
     assert '<div lang="en">' in html and "does not collect personal data" in html
-    assert "crosstechedu@gmail.com" in html
+    assert "support@crosstechedu.com" in html
 
 
 def test_famhub_policy_page(client):
@@ -175,7 +175,7 @@ def test_famhub_policy_page(client):
     assert '<div lang="en">' in html and "<table>" in html
     assert "FamHub Privacy Policy" in html and "Kids Care" not in html
     assert "Cross Tech &amp; Edu" in html
-    assert 'href="mailto:crosstechedu@gmail.com"' in html
+    assert 'href="mailto:support@crosstechedu.com"' in html
     assert "not end-to-end encrypted" in html
 
 
@@ -184,10 +184,10 @@ def test_trong_cay_store_pages(client):
     policy = client.get(TRONG_CAY_POLICY_PATH).get_data(as_text=True)
     assert policy.count("<h1") == 1 and '<html lang="vi">' in policy
     assert "Google AdMob" in policy and "OpenTopoMap" in policy
-    assert 'href="mailto:crosstechedu@gmail.com"' in policy
+    assert 'href="mailto:support@crosstechedu.com"' in policy
     support = client.get(TRONG_CAY_SUPPORT_PATH).get_data(as_text=True)
     assert support.count("<h1") == 1
-    assert 'href="mailto:crosstechedu@gmail.com"' in support
+    assert 'href="mailto:support@crosstechedu.com"' in support
     assert f'href="{TRONG_CAY_POLICY_PATH}"' in support
 
 
@@ -196,7 +196,7 @@ def test_fast_notes_store_pages(client):
     for path in FAST_NOTES_PATHS:
         html = client.get(path).get_data(as_text=True)
         assert html.count("<h1") == 1, path
-        assert 'href="mailto:crosstechedu@gmail.com"' in html, path
+        assert 'href="mailto:support@crosstechedu.com"' in html, path
     en = client.get(FAST_NOTES_PRIVACY_PATH).get_data(as_text=True)
     assert "Apple Intelligence" in en and "Gemini Nano" in en and "<table>" in en
     assert f'href="{FAST_NOTES_PRIVACY_VI_PATH}"' in en
@@ -233,7 +233,7 @@ def test_kigo_policy_page(client):
     assert "không được mã hoá đầu cuối" in html
     assert "Singapore (asia-southeast1)" in html and "60 phút" in html
     assert f'href="{FAMHUB_POLICY_PATH}"' in html
-    assert 'href="mailto:crosstechedu@gmail.com"' in html
+    assert 'href="mailto:support@crosstechedu.com"' in html
     assert client.get("/farm-hub/").status_code == 404
     assert client.get("/fam-hub/").status_code == 404
     assert client.get("/farm-hub/privacy/vi/").status_code == 404
@@ -454,7 +454,7 @@ def test_contact_details(client, path):
     html = client.get(path).get_data(as_text=True)
     contact = html[html.index('id="contact"'):]
     contact = contact[: contact.index("</section>")]
-    assert 'href="mailto:crosstechedu@gmail.com"' in contact
+    assert 'href="mailto:support@crosstechedu.com"' in contact
     assert 'href="tel:+84338305895"' in contact
     assert contact.count('href="https://zalo.me/3402955950888745400" target="_blank" rel="noopener"') == 1
     assert "zalo-qr.png" in contact

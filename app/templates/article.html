@@ -28,7 +28,7 @@
 
   {% if article.cover %}
   <figure class="article__cover">
-    <img src="{{ asset(article.cover) }}" alt="{{ article.cover_alt or article.title }}">
+    <img src="{{ asset(article.cover) }}" alt="{{ article.cover_alt or article.title }}" width="1200" height="630" fetchpriority="high">
   </figure>
   {% endif %}
 
