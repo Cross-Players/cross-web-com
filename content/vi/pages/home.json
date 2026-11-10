@@ -236,9 +236,9 @@
           },
           {
             "name": "Farm Hub (FamHub)",
-            "icon": "img/products/farm-hub/icon.webp",
-            "cover": "img/products/farm-hub/cover.webp",
-            "page": "/farm-hub/",
+            "icon": "img/products/famhub/icon.png",
+            "cover": "img/products/famhub/cover-kigo.webp",
+            "page": "/projects/fam-hub/",
             "tagline": "Vùng an toàn, báo tin 1 chạm và giao việc cho con",
             "publisher": "Cross Tech Edu",
             "body": "Ứng dụng kết nối gia đình: cảnh báo 3 vùng an toàn, chia sẻ vị trí 60 phút, check-in 1 chạm và giao việc hàng ngày cho con.",

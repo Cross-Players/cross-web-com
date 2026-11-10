@@ -234,7 +234,9 @@ def test_kigo_policy_page(client):
     assert "Singapore (asia-southeast1)" in html and "60 phút" in html
     assert f'href="{FAMHUB_POLICY_PATH}"' in html
     assert 'href="mailto:crosstechedu@gmail.com"' in html
-    assert client.get("/fam-hub/privacy/vi/").status_code == 404
+    assert client.get("/farm-hub/").status_code == 404
+    assert client.get("/fam-hub/").status_code == 404
+    assert client.get("/farm-hub/privacy/vi/").status_code == 404
 
 
 @pytest.mark.parametrize(
