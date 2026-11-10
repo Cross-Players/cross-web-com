@@ -8,10 +8,10 @@
       .accent { fill: #ec3013; }
       .text { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; }
       .text-muted { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 600; }
-      .small { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 18px; }
+      .small { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; }
       .step-num { fill: #ffffff; font-family: Archivo, sans-serif; font-weight: 800; font-size: 30px; }
-      .step-title { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px; }
-      .step-body { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 17px; }
+      .step-title { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 28px; }
+      .step-body { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 22px; }
       .badge { fill: #ec3013; rx: 10; }
       .shield { fill: #eae7e7; }
       .shield-mark { fill: #ec3013; stroke: #201e1d; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
@@ -23,48 +23,51 @@
   <rect class="bg" width="1200" height="630"/>
 
   <!-- Left panel -->
-  <rect x="56" y="56" width="520" height="518" class="panel"/>
+  <rect x="56" y="56" width="520" height="484" class="panel"/>
   <rect class="accent" x="56" y="56" width="520" height="70" rx="16 16 0 0"/>
   <text x="96" y="116" class="text" font-size="40">60 phút đầu tiên</text>
-  <text x="96" y="156" class="small" font-size="22">Nếu con bạn không về đúng giờ</text>
+  <text x="96" y="156" class="small" font-size="26">Nếu con bạn không về đúng giờ</text>
 
-  <g transform="translate(96, 200)">
+  <g transform="translate(96, 190)">
     <!-- Step 1 -->
     <rect x="0" y="0" width="65" height="65" class="badge"/>
     <text x="33" y="40" class="step-num" text-anchor="middle">1</text>
     <text x="90" y="28" class="step-title">Gọi 113</text>
-    <text x="90" y="58" class="step-body" font-size="17">Cảnh sát phản ứng nhanh, miễn phí.</text>
+    <text x="90" y="56" class="step-body" font-size="22">Cảnh sát phản ứng nhanh,</text>
+    <text x="90" y="82" class="step-body" font-size="22">miễn phí.</text>
     <!-- Step 2 -->
-    <rect x="0" y="90" width="65" height="65" class="badge"/>
-    <text x="33" y="130" class="step-num" text-anchor="middle">2</text>
-    <text x="90" y="118" class="step-title">Gọi 111</text>
-    <text x="90" y="148" class="step-body" font-size="17">Tổng đài bảo vệ trẻ em 24/7.</text>
+    <rect x="0" y="80" width="65" height="65" class="badge"/>
+    <text x="33" y="120" class="step-num" text-anchor="middle">2</text>
+    <text x="90" y="108" class="step-title">Gọi 111</text>
+    <text x="90" y="136" class="step-body" font-size="22">Tổng đài bảo vệ trẻ em 24/7.</text>
     <!-- Step 3 -->
-    <rect x="0" y="180" width="65" height="65" class="badge"/>
-    <text x="33" y="220" class="step-num" text-anchor="middle">3</text>
-    <text x="90" y="208" class="step-title">Gửi mô tả</text>
-    <text x="90" y="238" class="step-body" font-size="17">Tuổi, áo quần, nơi cuối cùng thấy.</text>
+    <rect x="0" y="160" width="65" height="65" class="badge"/>
+    <text x="33" y="200" class="step-num" text-anchor="middle">3</text>
+    <text x="90" y="188" class="step-title">Gửi mô tả</text>
+    <text x="90" y="216" class="step-body" font-size="22">Tuổi, áo quần, nơi cuối cùng thấy.</text>
     <!-- Step 4 -->
-    <rect x="0" y="270" width="65" height="65" class="badge"/>
-    <text x="33" y="310" class="step-num" text-anchor="middle">4</text>
-    <text x="90" y="298" class="step-title">Liên hệ trường</text>
-    <text x="90" y="328" class="step-body" font-size="17">Kiểm tra con có đến lớp hay không.</text>
+    <rect x="0" y="240" width="65" height="65" class="badge"/>
+    <text x="33" y="280" class="step-num" text-anchor="middle">4</text>
+    <text x="90" y="268" class="step-title">Liên hệ trường</text>
+    <text x="90" y="296" class="step-body" font-size="22">Kiểm tra con có đến lớp</text>
+    <text x="90" y="322" class="step-body" font-size="22">hay không.</text>
   </g>
 
   <!-- Right panel -->
-  <rect x="624" y="56" width="520" height="518" class="panel"/>
+  <rect x="624" y="56" width="520" height="484" class="panel"/>
   <rect class="accent" x="624" y="56" width="520" height="70" rx="16 16 0 0"/>
   <text x="664" y="116" class="text" font-size="40">Không để trôi qua</text>
-  <text x="664" y="156" class="small" font-size="22">Thời gian quyết định kết quả tìm kiếm</text>
+  <text x="664" y="156" class="small" font-size="26">Thời gian quyết định kết quả tìm kiếm</text>
 
-  <!-- Icon reserved area: grey circle r=55 centred at (1040, 215); shield polygon inside x 1000-1080, y 175-300 -->
-  <circle cx="1040" cy="215" r="55" class="shield"/>
-  <polygon class="shield-mark" points="1014,236 1014,294 1040,296 1066,294 1066,236"/>
+  <!-- Icon area: grey circle r=55 centred at (1040, 240); shield mark (about 90 x 96) centred on it -->
+  <circle cx="1040" cy="240" r="55" class="shield"/>
+  <path class="shield-mark" d="M0,-44 L38,-30 L38,2 C38,30 18,46 0,52 C-18,46 -38,30 -38,2 L-38,-30 Z" transform="translate(1040, 236)"/>
 
-  <text x="664" y="400" class="text-muted" font-size="22">Dấu hiệu cần hành động ngay:</text>
-  <text x="664" y="445" class="small" font-size="18">• Con không đến đúng giờ hẹn</text>
-  <text x="664" y="485" class="small" font-size="18">• Không liên lạc được trong 30 phút</text>
-  <text x="664" y="525" class="small" font-size="18">• Con không nghe máy, không trả lời tin nhắn</text>
+  <text x="664" y="355" class="text-muted" font-size="26">Dấu hiệu cần hành động ngay:</text>
+  <text x="664" y="402" class="small" font-size="24">• Con không đến đúng giờ hẹn</text>
+  <text x="664" y="442" class="small" font-size="24">• Không liên lạc được trong 30 phút</text>
+  <text x="664" y="482" class="small" font-size="24">• Con không nghe máy, không trả lời</text>
+  <text x="679" y="514" class="small" font-size="24">tin nhắn</text>
 
   <!-- Footer strip -->
   <rect y="558" width="1200" height="72" fill="#ec3013"/>
