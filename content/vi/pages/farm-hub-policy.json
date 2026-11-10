@@ -1,0 +1,19 @@
+{
+  "slug": "farm-hub/policy",
+  "translation_key": "farm-hub-policy",
+  "meta": {
+    "title": "Chính sách quyền riêng tư ứng dụng Farm Hub | Cross Tech Edu",
+    "description": "Chính sách quyền riêng tư của ứng dụng Farm Hub (FamHub): không thu thập dữ liệu cá nhân, không quảng cáo theo dõi trẻ em, chia sẻ vị trí 60 phút.",
+    "breadcrumb": "Chính sách quyền riêng tư Farm Hub",
+    "updated": "2026-11-09"
+  },
+  "blocks": [
+    {
+      "type": "legal",
+      "data": {
+        "title": "Chính sách quyền riêng tư ứng dụng Farm Hub (FamHub)",
+        "body": "*Cập nhật lần cuối: ngày 9 tháng 11 năm 2026*\n\nChính sách này áp dụng cho ứng dụng **Farm Hub** (tên quốc tế trên cửa hàng ứng dụng: *FamHub - Family Check-ins*, sau đây gọi là \"Ứng dụng\"), phát triển bởi **CÔNG TY TNHH CÔNG NGHỆ VÀ GIÁO DỤC CROSS** (Cross Technology and Education, sau đây gọi là \"Cross Tech Edu\").\n\n**Tóm tắt:** Ứng dụng không thu thập dữ liệu cá nhân, không yêu cầu tạo tài khoản, không hiển thị quảng cáo theo dõi và không bán dữ liệu của bạn.\n\n## 1. Dữ liệu Ứng dụng không thu thập\n\nCross Tech Edu không thu thập, không lưu trên máy chủ và không chia sẻ bất kỳ dữ liệu cá nhân nào của bạn thông qua Ứng dụng, bao gồm: họ tên, email, số điện thoại, danh bạ, hình ảnh, tin nhắn.\n\n## 2. Dữ liệu vị trí\n\nVị trí trực tiếp chỉ được chia sẻ khi con bấm nút bật trên màn hình của chính con. Toạ độ chỉ truyền giữa các thiết bị đã ghép đôi trong gia đình và tự động bị xoá khỏi máy chủ sau **60 phút**. Vị trí không được dùng cho quảng cáo.\n\n## 3. Mã ghép đôi\n\nCon ghép nối thiết bị với máy bố mẹ bằng mã 6 ký tự. Không cần email hay mật khẩu.\n\n## 4. Quyền của bạn\n\nBạn có thể xoá vĩnh viễn tài khoản ngay trong Cài đặt của Ứng dụng. Khi xoá, toàn bộ dữ liệu liên kết bị xóa khỏi máy chủ của Cross Tech Edu.\n\n## 5. Liên hệ\n\nEmail: crosstechedu@gmail.com\nĐiện thoại: +84 33 830 5895\nVăn phòng: Hà Nội, Việt Nam\n\n[Trở về trang Farm Hub](/farm-hub/)\n\n<hr>\n\n<div lang=\"en\" markdown=\"1\">\n\n## Farm Hub (FamHub) Privacy Policy\n\n*Last updated: November 9, 2026*\n\nThis policy applies to the **Farm Hub** application (international store name: *FamHub - Family Check-ins*, hereafter \"the App\"), developed by **Cross Technology and Education (Cross Tech Edu)**.\n\n**Summary:** The App does not collect personal data, does not require an account, does not display tracking ads, and does not sell your data.\n\n## 1. Data the App does not collect\n\nCross Tech Edu does not collect, store on servers, or share any personal data through the App, including: name, email, phone number, contacts, photos, messages.\n\n## 2. Location data\n\nLive location is only shared when the child taps the on-button on their own screen. Coordinates are transmitted only between paired devices in the family and are automatically deleted from our server after **60 minutes**. Location is never used for advertising.\n\n## 3. Pairing code\n\nThe child pairs their device with the parent's phone using a 6-character code. No email or password required.\n\n## 4. Your rights\n\nYou can permanently delete your account in the App's Settings. Upon deletion, all linked data is removed from Cross Tech Edu's servers.\n\n## 5. Contact\n\nEmail: crosstechedu@gmail.com\nPhone: +84 33 830 5895\nOffice: Hanoi, Vietnam\n\n[Back to Farm Hub page](/farm-hub/)\n</div>"
+      }
+    }
+  ]
+}

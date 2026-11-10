@@ -1,0 +1,49 @@
+{# Product video reel + scannable story beats and B2B engineering proof strip (no JS). #}
+{% set d = block.data %}
+{% include "blocks/_section_head.html" %}
+<section id="{{ d.id }}" class="section reel" aria-labelledby="{{ d.id }}-title">
+  <div class="reel__stage">
+    <div class="reel__player">
+      <figure class="reel__frame">
+        <video class="reel__video" width="{{ d.width|default(1280) }}" height="{{ d.height|default(720) }}" poster="{{ asset(d.poster) }}" autoplay loop muted playsinline preload="metadata" aria-label="{{ d.video_label }}">
+          {% if d.webm %}<source src="{{ asset(d.webm) }}" type="video/webm">{% endif %}
+          <source src="{{ asset(d.mp4) }}" type="video/mp4">
+          <img src="{{ asset(d.poster) }}" alt="{{ d.video_label }}" width="{{ d.width|default(1280) }}" height="{{ d.height|default(720) }}" loading="lazy" decoding="async">
+        </video>
+        {% if d.caption %}
+        <figcaption class="reel__caption">
+          <strong>{{ d.caption.title }}</strong> <span class="text-muted">{{ d.caption.body }}</span>
+        </figcaption>
+        {% endif %}
+      </figure>
+    </div>
+    <ol class="reel__beats">
+      {% for b in d.beats %}
+      <li class="reel__beat">
+        <div class="reel__beat-top">
+          <span class="svc__num" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>
+          {% if b.badge %}<span class="tag tag-accent">{{ b.badge }}</span>{% endif %}
+        </div>
+        <h3>{{ b.title }}</h3>
+        <p class="text-muted">{{ b.body }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% if d.proof %}
+  <div class="reel__proof">
+    <div class="reel__proof-copy">
+      <p class="eyebrow">{{ d.proof.kicker }}</p>
+      <p class="reel__proof-text"><strong>{{ d.proof.title }}</strong> <span class="text-muted">{{ d.proof.body }}</span></p>
+    </div>
+    <ul class="tags reel__stack" aria-label="{{ d.proof.stack_label }}">
+      {% for tech in d.proof.stack %}
+      <li class="tag tag-neutral">{{ tech }}</li>
+      {% endfor %}
+    </ul>
+    {% if d.proof.cta %}
+    <a class="btn btn-primary" href="{{ d.proof.cta.href }}">{{ d.proof.cta.label }}</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</section>

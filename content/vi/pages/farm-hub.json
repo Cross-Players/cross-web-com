@@ -1,0 +1,179 @@
+{
+  "slug": "farm-hub",
+  "translation_key": "farm-hub",
+  "meta": {
+    "title": "Farm Hub (FamHub): vùng an toàn & định vị gia đình | Cross",
+    "description": "Ứng dụng gia đình Farm Hub (FamHub) do Cross Tech Edu phát triển: vùng an toàn, check-in 1 chạm, chia sẻ vị trí 60 phút và giao việc hàng ngày cho con.",
+    "breadcrumb": "Ứng dụng Farm Hub",
+    "updated": "2026-11-09",
+    "og_image": "img/products/farm-hub/og.jpg",
+    "app": {
+      "type": "MobileApplication",
+      "name": "Farm Hub — FamHub",
+      "alternate_name": "FamHub",
+      "description": "Ứng dụng kết nối gia đình: cảnh báo vùng an toàn (nhà, trường, công viên), chia sẻ vị trí trực tiếp tự tắt sau 60 phút, check-in một chạm và giao việc hàng ngày cho con.",
+      "url": "https://www.crosstechedu.com/farm-hub/",
+      "category": "LifestyleApplication",
+      "operating_system": "iOS",
+      "download_url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767",
+      "price": 0,
+      "currency": "VND"
+    }
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "data": {
+        "kicker": "Dự án tiêu biểu · Cross Tech Edu tự nghiên cứu & phát triển",
+        "title": "Farm Hub: vùng an toàn, báo tin 1 chạm và giao việc cho con.",
+        "lead": "Biết con đã đến trường an toàn mà không cần gọi điện giục giã. Farm Hub (tên quốc tế trên cửa hàng: FamHub) kết nối bố mẹ và con qua bản đồ vùng an toàn, nút báo tin 1 chạm và bảng việc làm mỗi ngày.",
+        "sub": "Thiết kế tối giản 2 chế độ riêng biệt cho Phụ huynh và Trẻ em. Vị trí trực tiếp chỉ bật khi con đồng ý và tự động đóng sau 60 phút.",
+        "ctas": [
+          {"label": "Xem video hành trình 12 giây", "href": "#video-demo", "style": "primary"},
+          {"label": "Tư vấn làm app tương tự", "href": "#contact", "style": "secondary"}
+        ],
+        "rate": {
+          "label": "Chi phí & Nền tảng",
+          "amount": "Đã có trên iOS",
+          "unit": "Android đang chờ duyệt",
+          "note": "Tải FamHub: Safe Zone Alerts trên App Store. Bản Android sẽ được cập nhật khi được duyệt."
+        },
+        "stats": [
+          {"value": "3 vùng", "label": "Nhà, trường học, công viên — báo tin ngay khi con đến hoặc rời đi"},
+          {"value": "60 phút", "label": "Chia sẻ vị trí trực tiếp có thời hạn, hết giờ tự xoá trên bản đồ"},
+          {"value": "1 chạm", "label": "4 nút lớn cho con: Đi học, Đi chơi, Đã đến nơi, Đã về nhà"},
+          {"value": "2 chế độ", "label": "Giao diện Bố mẹ quản lý & giao diện Con thân thiện, tách biệt"}
+        ]
+      }
+    },
+    {
+      "type": "video_showcase",
+      "data": {
+        "id": "video-demo",
+        "kicker": "Video thực tế / Product Reel",
+        "title": "Xem cách một gia đình dùng Farm Hub trong 12 giây.",
+        "intro": "Ít chữ, trực quan: từ lúc bố mẹ khoanh vùng an toàn trên bản đồ đến khi con chạm nút báo tin và hoàn thành việc nhà trong ngày.",
+        "mp4": "img/products/farm-hub/showcase-reel.mp4",
+        "webm": "img/products/farm-hub/showcase-reel.webm",
+        "poster": "img/products/farm-hub/poster.webp",
+        "width": 1280,
+        "height": 720,
+        "video_label": "Video trình diễn ứng dụng Farm Hub (FamHub): cảnh báo vùng an toàn, check-in 1 chạm và giao việc cho con trên iPhone và iPad",
+        "caption": {
+          "title": "Trải nghiệm thực tế trên iOS & Android.",
+          "body": "Quay trực tiếp từ bản build phát hành của Cross Tech Edu."
+        },
+        "beats": [
+          {"badge": "01 · Vùng an toàn", "title": "Khoanh 3 điểm thân thuộc trên bản đồ", "body": "Chạm giữ trên bản đồ hoặc tìm tên Trường học, Nhà, Công viên. Khi con vào hoặc rời vùng, máy bố mẹ nhận thông báo đẩy tức thì."},
+          {"badge": "02 · Báo tin 1 chạm", "title": "Con tự giác báo tin không cần gõ chữ", "body": "4 nút lớn nhiều màu sắc (Đi học, Đi chơi, Đã đến nơi, Đã về nhà) gửi kèm toạ độ lúc bấm về màn hình chính của bố mẹ."},
+          {"badge": "03 · Quyền riêng tư", "title": "Định vị trực tiếp 60 phút, tự xoá khi hết giờ", "body": "Con chủ động bấm chia sẻ khi đang di chuyển. Hết 60 phút, phiên bản đồ tự đóng và toạ độ tạm thời bị xoá khỏi máy chủ."},
+          {"badge": "04 · Thói quen & Lời nhắn", "title": "Giao việc trong ngày và hộp thư gia đình", "body": "Bố mẹ giao việc học đàn, làm toán, tưới cây; con chạm hoàn thành để tăng thanh tiến độ và gửi lời nhắn hẹn giờ đón."}
+        ],
+        "proof": {
+          "kicker": "Năng lực kỹ thuật · B2B Case Study của Cross Tech Edu",
+          "title": "Doanh nghiệp của bạn cần xây dựng ứng dụng bản đồ, định vị thời gian thực hoặc EdTech tương tự?",
+          "body": "Farm Hub là minh chứng sống cho quy trình kỹ thuật của Cross Tech Edu: từ thiết kế UI/UX, xử lý Geofencing chạy ngầm tiết kiệm pin, thông báo đẩy FCM đa ngôn ngữ (Việt, Anh, Nhật, Hàn, Trung, Indo, Bồ Đào Nha) đến tự động hoá phát hành Fastlane lên App Store & Google Play.",
+          "stack_label": "Công nghệ sử dụng trong dự án Farm Hub",
+          "stack": ["Flutter 3.11 (iOS · iPadOS · Android)", "Riverpod + Freezed", "Mapbox Streets v12 (512px Retina Tiles)", "Native Background Geofencing", "Firebase Auth · Firestore · Cloud Functions", "FCM Push Alerts", "Fastlane Store Automation"],
+          "cta": {"label": "Yêu cầu báo giá dự án Mobile", "href": "#contact"}
+        }
+      }
+    },
+    {
+      "type": "screenshots",
+      "data": {
+        "id": "anh-man-hinh",
+        "kicker": "Ảnh màn hình / App Screens",
+        "title": "Hai chế độ trong một ứng dụng: Bố mẹ an tâm, con hào hứng.",
+        "intro": "Ba màn hình đầu dành cho Phụ huynh quản lý; ba màn hình sau là giao diện Companion của Con với nút bấm lớn, màu cam ấm áp.",
+        "list_label": "Ảnh màn hình thực tế ứng dụng Farm Hub (FamHub), vuốt ngang để xem đủ 6 màn hình",
+        "width": 600,
+        "height": 1304,
+        "items": [
+          {"image": "img/products/farm-hub/01_parent_home.webp", "title": "01 · Trang chính Phụ huynh", "body": "Xem trạng thái của từng con (Lily đang ở Trường, Max đã đến nơi) và dòng thời gian check-in.", "alt": "Màn hình chính chế độ Phụ huynh trong ứng dụng Farm Hub: danh sách con, trạng thái vùng an toàn và lịch sử check-in"},
+          {"image": "img/products/farm-hub/02_parent_map.webp", "title": "02 · Bản đồ & 3 vùng an toàn", "body": "Hiển thị vòng bán kính Nhà, Trường, Công viên trên bản đồ Mapbox và mã ghép đôi 6 ký tự KDS-482.", "alt": "Màn hình bản đồ và thiết lập 3 vùng an toàn Nhà, Trường học, Công viên kèm mã ghép đôi gia đình"},
+          {"image": "img/products/farm-hub/03_parent_todo.webp", "title": "03 · Giao việc & tiến độ", "body": "Vòng tròn hoàn thành 43% (3/7 việc) giúp bố mẹ theo dõi bài tập và việc nhà của con trong ngày.", "alt": "Màn hình giao việc của Phụ huynh: theo dõi tỷ lệ hoàn thành 43 phần trăm và danh sách bài tập của con"},
+          {"image": "img/products/farm-hub/04_child_home.webp", "title": "04 · Màn hình chính của Con", "body": "Nút bật chia sẻ vị trí 60 phút và 4 ô check-in một chạm: Đi học, Đi chơi, Đã đến nơi, Đã về nhà.", "alt": "Màn hình chính chế độ của Con: nút chia sẻ vị trí 60 phút và 4 nút báo tin một chạm thân thiện"},
+          {"image": "img/products/farm-hub/05_child_todo.webp", "title": "05 · Việc cần làm của Con", "body": "Thanh tiến độ trực quan để con tự tích hoàn thành từng nhiệm vụ và rèn tính tự lập.", "alt": "Màn hình danh sách việc cần làm của Con với thanh tiến độ hoàn thành trong ngày"},
+          {"image": "img/products/farm-hub/06_child_notes.webp", "title": "06 · Lời nhắn gửi Bố mẹ", "body": "Con gửi ghi chú ngắn như nhờ mua bút màu hoặc dặn đón lúc 4:30 chiều mà không cần mạng xã hội.", "alt": "Màn hình lời nhắn của Con gửi Bố mẹ: hẹn giờ đón và danh sách lời nhắn đã xử lý"}
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "id": "tinh-nang",
+        "kicker": "Giá trị cốt lõi & Kiến trúc / Highlights",
+        "title": "Giải quyết đúng nỗi lo của phụ huynh bằng kỹ thuật chuẩn mực.",
+        "intro": "Không biến điện thoại của con thành thiết bị giám sát 24/7 gây áp lực. Farm Hub được thiết kế dựa trên sự đồng thuận trong gia đình và tiêu chuẩn kiểm duyệt khắt khe nhất của Apple & Google.",
+        "items": [
+          {"title": "Cảnh báo vùng an toàn tự động", "body": "Thiết lập tối đa 3 địa điểm quan trọng (Nhà, Trường, Công viên). Ứng dụng dùng Geofencing cấp hệ điều hành để báo khi con đến hoặc rời đi, kể cả khi đã đóng màn hình."},
+          {"title": "Định vị 60 phút tôn trọng con", "body": "Vị trí trực tiếp chỉ phát khi con bấm nút bật và tự động dừng, xoá toạ độ sau 60 phút. Bố mẹ có thể gửi lời nhắc nhẹ nhàng bằng 1 chạm."},
+          {"title": "Ghép đôi gia đình bằng mã 6 ký tự", "body": "Con không cần email hay mật khẩu phức tạp. Chỉ cần nhập mã 6 ký tự (ví dụ KDS-482) từ máy bố mẹ để liên kết thiết bị trong 30 giây."},
+          {"title": "Tối ưu chi phí bản đồ Mapbox", "body": "Sử dụng tile vector/raster 512px độ phân giải cao (@2x) giúp giảm 75% số lượng request bản đồ so với tile 256px truyền thống mà vẫn sắc nét."},
+          {"title": "Đa ngôn ngữ & Hoạt động đa thiết bị", "body": "Hỗ trợ sẵn 7 ngôn ngữ (Tiếng Việt, Anh, Nhật, Trung, Indonesia, Bồ Đào Nha) và tương thích hoàn hảo trên cả iPhone, iPad Pro 13 inch lẫn điện thoại, máy tính bảng Android."},
+          {"title": "Tuân thủ chuẩn quyền riêng tư trẻ em", "body": "Không chứa SDK quảng cáo, không bán dữ liệu, minh bạch màn hình giải thích quyền vị trí cho trẻ và hỗ trợ xoá vĩnh viễn tài khoản ngay trong Cài đặt."}
+        ]
+      }
+    },
+    {
+      "type": "process",
+      "data": {
+        "id": "cach-hoat-dong",
+        "kicker": "Quy trình sử dụng / How it works",
+        "title": "Bốn bước kết nối gia đình trong chưa đầy 2 phút.",
+        "intro": "Cài cùng một ứng dụng trên máy bố mẹ và máy của con, chọn đúng vai trò khi mở lần đầu là sẵn sàng sử dụng.",
+        "steps": [
+          {"title": "Chọn vai trò & liên kết mã", "body": "Bố mẹ tạo tài khoản và lấy mã 6 ký tự; con chọn chế độ Con và nhập mã để ghép đôi hai máy.", "duration": "30 giây"},
+          {"title": "Chạm giữ để đặt 3 vùng an toàn", "body": "Đánh dấu Nhà, Trường học và Công viên trên bản đồ để nhận thông báo tự động mỗi ngày.", "duration": "1 lần"},
+          {"title": "Con chạm nút báo tin khi di chuyển", "body": "Con bấm “Đi học”, “Đã đến nơi” hoặc bật chia sẻ vị trí 60 phút khi cần bố mẹ đón.", "duration": "1 chạm"},
+          {"title": "Giao việc & phản hồi lời nhắn", "body": "Bố mẹ giao việc trong ngày, con tích hoàn thành và gửi lời nhắn hẹn giờ đón chiều.", "duration": "Mỗi ngày"}
+        ]
+      }
+    },
+    {
+      "type": "channels",
+      "data": {
+        "kicker": "Tải ứng dụng / Store Listing",
+        "title": "Trải nghiệm FamHub trên iPhone; bản Android đang chờ duyệt.",
+        "intro": "Ứng dụng phát hành quốc tế dưới tên FamHub: Safe Zone Alerts (package ID: com.crosstechedu.kidscare). Hoàn toàn miễn phí cho gia đình.",
+        "items": [
+          {
+            "kicker": "App Store · iOS & iPadOS",
+            "title": "Bản cho iPhone và iPad",
+            "body": "Tải FamHub: Safe Zone Alerts trên App Store. Yêu cầu iOS 15 trở lên.",
+            "host": "apps.apple.com · com.crosstechedu.kidscare",
+            "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767",
+            "cta": "Xem trên App Store"
+          },
+          {
+            "kicker": "Google Play · Android",
+            "title": "Bản cho điện thoại và Tablet Android",
+            "body": "Chưa có trên Google Play. Link tải sẽ được cập nhật khi bản Android được duyệt."
+          }
+        ],
+        "note": {
+          "text": "Dữ liệu vị trí và nhiệm vụ chỉ hiển thị giữa các thiết bị đã ghép đôi trong gia đình, không bao giờ dùng cho quảng cáo.",
+          "label": "Đọc chính sách quyền riêng tư",
+          "href": "/farm-hub/policy/"
+        }
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "id": "contact",
+        "title": "Muốn xây dựng ứng dụng chất lượng như Farm Hub cho doanh nghiệp của bạn?",
+        "body": "Cross Tech Edu đã tự tay thiết kế, lập trình và vận hành toàn bộ sản phẩm này bằng Flutter, Mapbox và Firebase. Nếu bạn cần đội ngũ làm ứng dụng di động, hệ thống bản đồ định vị, EdTech hoặc thuê dev từ 6 triệu đ/tháng, hãy gửi yêu cầu — chúng tôi phản hồi bằng phạm vi công việc và báo giá chi tiết trong 48 giờ.",
+        "email_label": "Email",
+        "phone_label": "Điện thoại",
+        "zalo_label": "Zalo công ty",
+        "zalo_cta": "Nhắn tin qua Zalo",
+        "zalo_hint": "Quét mã QR bằng ứng dụng Zalo hoặc bấm để mở chat.",
+        "zalo_qr_alt": "Mã QR Zalo của Cross Tech Edu",
+        "office_label": "Văn phòng",
+        "office_text": "Hà Nội, Việt Nam · làm việc theo giờ JST / KST / CET"
+      }
+    }
+  ]
+}

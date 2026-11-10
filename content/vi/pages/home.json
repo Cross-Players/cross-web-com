@@ -34,6 +34,35 @@
       }
     },
     {
+      "type": "product-showcase",
+      "data": {
+        "id": "san-pham",
+        "kicker": "Sản phẩm của Cross Tech Edu",
+        "title": "Hai ứng dụng gia đình chúng tôi đã xây dựng",
+        "intro": "Ứng dụng ôn thi lý thuyết GPLX và ứng dụng kết nối gia đình FamHub (Kigo) — cùng xây dựng bởi Cross Tech Edu tại Hà Nội.",
+        "items": [
+          {
+            "kicker": "Ứng dụng ôn thi GPLX",
+            "image": "img/products/gplx/01_home.webp",
+            "title": "Ôn thi GPLX miễn phí",
+            "body": "600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, biển báo và mẹo ghi nhớ. Không quảng cáo, không cần tài khoản.",
+            "host": "apps.apple.com",
+            "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
+            "cta": "Xem trên App Store"
+          },
+          {
+            "kicker": "Ứng dụng gia đình Kigo",
+            "image": "img/products/famhub/01_parent-home.webp",
+            "title": "Kigo",
+            "body": "Cảnh báo vùng an toàn, vị trí trực tiếp 60 phút, check-in một chạm và việc cần làm mỗi ngày cho bố mẹ và con.",
+            "host": "crosstechedu.com",
+            "url": "/projects/kigo/",
+            "cta": "Xem ứng dụng"
+          }
+        ]
+      }
+    },
+    {
       "type": "services",
       "data": {
         "id": "services",
@@ -93,7 +122,7 @@
         "id": "work",
         "kicker": "Case studies",
         "title": "Sản phẩm chúng tôi đã tham gia",
-        "intro": "Mỗi thẻ có hai mặt: App Store và Google Play. Bấm vào thẻ để mở ứng dụng trên cửa hàng, bấm “Lật thẻ” để đổi sang nền tảng còn lại.",
+        "intro": "Mỗi thẻ mở ứng dụng trên cửa hàng tương ứng. Thẻ có cả App Store và Google Play sẽ lật được.",
         "ui": {
           "flip_to_google_play": "Lật thẻ · Google Play",
           "flip_to_app_store": "Lật thẻ · App Store",
@@ -206,18 +235,25 @@
             ]
           },
           {
-            "name": "Kigo",
-            "page": "/projects/kigo/",
-            "tagline": "Báo khi con đến nơi an toàn",
-            "icon": "img/products/famhub/icon.png",
-            "cover": "img/products/famhub/cover-kigo.webp",
+            "name": "Farm Hub (FamHub)",
+            "icon": "img/products/farm-hub/icon.webp",
+            "cover": "img/products/farm-hub/cover.webp",
+            "page": "/farm-hub/",
+            "tagline": "Vùng an toàn, báo tin 1 chạm và giao việc cho con",
             "publisher": "Cross Tech Edu",
-            "body": "Ứng dụng báo cho bố mẹ khi con đến trường hoặc rời nhà, kèm vùng an toàn, vị trí trực tiếp và việc cần làm. Sản phẩm của Cross Tech Edu, sắp ra mắt trên App Store và Google Play.",
+            "body": "Ứng dụng kết nối gia đình: cảnh báo 3 vùng an toàn, chia sẻ vị trí 60 phút, check-in 1 chạm và giao việc hàng ngày cho con.",
             "tags": [
-              "Việt Nam",
-              "Gia đình · An toàn"
+              "Việt Nam · Quốc tế",
+              "Gia đình · Định vị"
             ],
-            "stores": []
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "FamHub: Safe Zone Alerts",
+                "lang": "en",
+                "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
+              }
+            ]
           }
         ]
       }

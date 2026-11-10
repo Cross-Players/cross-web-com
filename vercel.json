@@ -32,6 +32,16 @@
       "permanent": true
     },
     {
+      "source": "/fam-hub/",
+      "destination": "/farm-hub/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/farm-hub/privacy/",
+      "destination": "/farm-hub/policy/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {

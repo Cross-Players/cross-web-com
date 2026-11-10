@@ -14,7 +14,8 @@
       "description": "Ứng dụng gia đình với cảnh báo vùng an toàn, vị trí trực tiếp do con chia sẻ, check-in một chạm và việc cần làm mỗi ngày.",
       "url": "https://www.crosstechedu.com/projects/kigo/",
       "category": "LifestyleApplication",
-      "operating_system": "iOS, Android"
+      "operating_system": "iOS",
+      "download_url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
     }
   },
   "blocks": [
@@ -31,9 +32,9 @@
         ],
         "rate": {
           "label": "Trạng thái",
-          "amount": "Sắp ra mắt",
-          "unit": "App Store & Google Play",
-          "note": "Kigo chưa có trên các cửa hàng ứng dụng. Link tải sẽ được cập nhật trên trang này khi ứng dụng ra mắt."
+          "amount": "Đã có trên iOS",
+          "unit": "Android đang chờ duyệt",
+          "note": "Tải Kigo (tên quốc tế: FamHub) trên App Store. Bản Android sẽ được cập nhật khi được duyệt."
         },
         "stats": [
           {"value": "3 vùng an toàn", "label": "Đánh dấu nhà, trường học hay sân chơi trên bản đồ"},
@@ -109,10 +110,10 @@
       "data": {
         "id": "tai-ung-dung",
         "kicker": "Tải về / Download",
-        "title": "Sắp có trên iPhone và Android.",
+        "title": "Đã có trên iPhone. Android đang chờ duyệt.",
         "intro": "Ở thị trường quốc tế, Kigo có tên là FamHub. Đây là cùng một ứng dụng, có các ngôn ngữ tiếng Việt, Anh, Nhật, Trung, Indonesia và Bồ Đào Nha.",
         "items": [
-          {"kicker": "App Store", "title": "Cho iPhone và iPad", "body": "Chưa có trên cửa hàng. Link tải sẽ được cập nhật tại đây khi Kigo ra mắt."},
+          {"kicker": "App Store", "title": "Cho iPhone và iPad", "body": "Tải Kigo (tên quốc tế: FamHub) trên App Store. Yêu cầu iOS 15 trở lên.", "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767", "host": "apps.apple.com", "cta": "Xem trên App Store"},
           {"kicker": "Google Play", "title": "Cho Android", "body": "Chưa có trên cửa hàng. Link tải sẽ được cập nhật tại đây khi Kigo ra mắt."}
         ],
         "note": {

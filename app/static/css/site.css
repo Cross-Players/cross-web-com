@@ -295,13 +295,21 @@ span.logo-card { cursor: pointer; }
 .article__cta .text-muted { margin: 0 0 20px; }
 
 /* ─── product channels (web app, Messenger...) ─── */
-.channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); list-style: none; margin: 0; padding: 0; }
-.channel { display: flex; flex-direction: column; align-items: flex-start; padding: max(28px, 3vw) var(--gutter); border-bottom: var(--rule); }
-.channel:nth-child(odd) { border-right: var(--rule); }
+.channels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; list-style: none; margin: 0; padding: 0; }
+.channel { display: flex; flex-direction: column; align-items: flex-start; padding: 28px var(--gutter); border: var(--rule); border-radius: 12px; background: var(--color-surface); }
+.channel:nth-child(odd) { border-right: 0; }
 .channel h3 { font-size: clamp(24px, 2.4vw, 32px); margin: 0 0 10px; }
 .channel p.text-muted { margin: 0 0 16px; font-size: 15px; max-width: 34em; }
 .channel__host { margin: auto 0 20px; font-family: ui-monospace, monospace; font-size: 13px; word-break: break-all; }
+.channel__img { width: 100%; height: auto; display: block; border-radius: 10px; object-fit: cover; margin-bottom: 14px; box-shadow: 0 2px 8px color-mix(in srgb, var(--color-text) 12%, transparent); }
+.channel:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); border-color: var(--color-accent); }
+.channel__title { font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 2.4vw, 26px); margin: 0 0 6px; color: var(--color-text); }
 .channels__note { margin: 0; padding: 20px var(--gutter); font-size: 14px; }
+
+@media (max-width: 760px) {
+  .channels { grid-template-columns: 1fr; }
+  .channel { padding: 24px var(--gutter); }
+}
 
 /* ─── app screenshots: horizontal scroll-snap row ─── */
 .banner { margin: 0; border-bottom: var(--rule); }
@@ -360,4 +368,31 @@ span.logo-card { cursor: pointer; }
 @media (max-width: 640px) {
   .prose .diagram { overflow-x: auto; }
   .prose .diagram img { min-width: 640px; max-width: none; width: 640px; }
+}
+
+
+/* ─── video showcase reel ─── */
+.reel__stage { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr); border-bottom: var(--rule); }
+.reel__player { padding: max(24px, 3vw) var(--gutter); background: var(--color-surface); border-right: var(--rule); display: flex; align-items: center; }
+.reel__frame { width: 100%; margin: 0; }
+.reel__video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: var(--rule); background: #fff8f0; box-shadow: var(--shadow-lg); }
+.reel__caption { margin-top: 14px; font-size: 14px; }
+.reel__caption strong { color: var(--color-text); font-family: var(--font-heading); font-weight: 800; }
+.reel__beats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-rows: repeat(4, 1fr); }
+.reel__beat { padding: 22px var(--gutter); border-bottom: var(--rule); display: flex; flex-direction: column; justify-content: center; }
+.reel__beat:last-child { border-bottom: 0; }
+.reel__beat:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); }
+.reel__beat-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.reel__beat-top .svc__num { margin-bottom: 0; }
+.reel__beat h3 { font-size: 20px; margin: 0 0 4px; }
+.reel__beat p { margin: 0; font-size: 14px; }
+.reel__proof { padding: 24px var(--gutter); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; background: var(--color-bg); }
+.reel__proof-copy { max-width: 42em; }
+.reel__proof-copy .eyebrow { margin: 0 0 6px; }
+.reel__proof-text { margin: 0; font-size: 15px; }
+.reel__stack { margin-right: auto; }
+
+@media (max-width: 960px) {
+  .reel__stage { grid-template-columns: 1fr; }
+  .reel__player { border-right: 0; border-bottom: var(--rule); }
 }

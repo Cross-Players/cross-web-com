@@ -17,6 +17,7 @@ PROJECTS_PATH = "/projects/"
 EN_PROJECTS_PATH = "/en/projects/"
 FAMHUB_POLICY_PATH = "/projects/fam-hub/privacy/"
 GPLX_STORE = "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396"
+FARM_HUB_STORE = "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
 FAMHUB_PATH = "/projects/fam-hub/"
 KIGO_PATH = "/projects/kigo/"
 KIGO_POLICY_PATH = "/projects/kigo/privacy/"
@@ -233,7 +234,7 @@ def test_kigo_policy_page(client):
     assert "Singapore (asia-southeast1)" in html and "60 phút" in html
     assert f'href="{FAMHUB_POLICY_PATH}"' in html
     assert 'href="mailto:crosstechedu@gmail.com"' in html
-    assert client.get("/projects/fam-hub/privacy/vi/").status_code == 404
+    assert client.get("/fam-hub/privacy/vi/").status_code == 404
 
 
 @pytest.mark.parametrize(
@@ -252,12 +253,14 @@ def test_app_marketing_pages(client, path, lang, other, name, other_name, policy
     assert "img/products/famhub/01_parent-home.webp" in html
     assert f'href="{policy}"' in html
     assert f'hreflang="{"vi" if lang == "en" else "en"}" href="{BASE}{other}"' in html
-    # not on the stores yet: no download link, no price claim, no old name
-    assert "apps.apple.com" not in html and "play.google.com" not in html
+    # Live on the App Store: exactly one download link, no Play Store link (Android pending review)
+    assert html.count(f'href="{FARM_HUB_STORE}"') == 1
+    assert "play.google.com" not in html
     assert "Kids Care" not in html
     graph = {n["@type"]: n for n in _jsonld(html)["@graph"]}
     assert graph["MobileApplication"]["name"] == name
     assert graph["MobileApplication"]["alternateName"] == other_name
+    assert graph["MobileApplication"]["downloadUrl"] == FARM_HUB_STORE
     assert "offers" not in graph["MobileApplication"]
 
 
@@ -434,13 +437,11 @@ def test_product_flip_cards(client, path, title):
     section = html[html.index('id="work"'):]
     section = section[: section.index("</section>")]
     assert title in section
-    assert section.count('class="product__toggle" type="checkbox"') == 4
-    # each card on the stores: front face -> App Store, back face -> Google Play
+    # data-driven: fronts = one per card; backs = toggles = one per multi-store card
     fronts = re.findall(r'product__face--front">\s*<a class="product__link" href="([^"]+)"', section)
-    if path == "/":  # Kigo is not on the stores yet: a single face, linking to its page
-        assert fronts.pop() == KIGO_PATH
     backs = re.findall(r'product__face--back">\s*<a class="product__link" href="([^"]+)"', section)
-    assert len(fronts) == len(backs) == 4
+    assert section.count('class="product__toggle" type="checkbox"') == len(backs)
+    assert len(backs) == 4  # items with 2 stores
     assert all(u.startswith("https://apps.apple.com/") for u in fronts)
     assert all(u.startswith("https://play.google.com/store/apps/details?id=") for u in backs)
     assert "com.vinwonders.app" in backs[0] and "id1590471592" in fronts[0]
