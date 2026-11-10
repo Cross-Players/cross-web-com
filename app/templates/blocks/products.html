@@ -10,7 +10,7 @@
     {% for p in d['items'] %}
     {% set flip_id = 'flip-' ~ loop.index %}
     <li class="product">
-      {% if p.stores %}<input class="product__toggle" type="checkbox" id="{{ flip_id }}" aria-label="{{ d.ui.flip_label|replace('{name}', p.name) }}">{% endif %}
+      {% if p.stores|length > 1 %}<input class="product__toggle" type="checkbox" id="{{ flip_id }}" aria-label="{{ d.ui.flip_label|replace('{name}', p.name) }}">{% endif %}
       <div class="product__card">
         {% for s in p.stores or [{'url': p.page, 'app_name': p.tagline}] %}
         {% set store = store_names.get(s.store) %}
@@ -44,7 +44,7 @@
               {% else %}<span class="product__cta">{{ d.ui.open_page }}</span>{% endif %}
             </span>
           </a>
-          {% if store %}<label class="product__flip" for="{{ flip_id }}" aria-hidden="true">
+          {% if store and p.stores|length > 1 %}<label class="product__flip" for="{{ flip_id }}" aria-hidden="true">
             <span aria-hidden="true">⟲</span> {{ d.ui.flip_to_google_play if loop.first else d.ui.flip_to_app_store }}
           </label>{% endif %}
         </div>

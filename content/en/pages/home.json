@@ -35,6 +35,35 @@
       }
     },
     {
+      "type": "product-showcase",
+      "data": {
+        "id": "products",
+        "kicker": "Cross Tech Edu products",
+        "title": "Two family apps we have built",
+        "intro": "GPLX driver theory test and FamHub (Kigo) family app — both built by Cross Tech Edu in Hanoi.",
+        "items": [
+          {
+            "kicker": "Driver License Theory Test",
+            "image": "img/products/gplx/01_home.webp",
+            "title": "GPLX Theory Test — Free",
+            "body": "600 questions, 15 licence classes, timed mock tests, traffic signs and memory tips. No ads, no account needed.",
+            "host": "apps.apple.com",
+            "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
+            "cta": "View on App Store"
+          },
+          {
+            "kicker": "Family App FamHub",
+            "image": "img/products/famhub/01_parent-home.webp",
+            "title": "FamHub (Kigo)",
+            "body": "Safe zone alerts, live location shared for 60 minutes, one-tap check-ins and daily tasks for parents and children.",
+            "host": "crosstechedu.com",
+            "url": "/projects/fam-hub/",
+            "cta": "View app"
+          }
+        ]
+      }
+    },
+    {
       "type": "services",
       "data": {
         "id": "services",

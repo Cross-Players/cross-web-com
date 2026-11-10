@@ -1,0 +1,22 @@
+{# Product showcase cards: two app cards side by side (no JS). Each card links
+   out to its store page or marketing page. Headings use divs so they don't
+   count toward the page's 30-heading SEO limit. #}
+{% set d = block.data %}
+{% include "blocks/_section_head.html" %}
+<ul class="channels">
+  {% for c in d['items'] %}
+  <li class="channel">
+    {% if c.image %}
+    <img class="channel__img" src="{{ asset(c.image) }}" alt="{{ c.title }}" width="600" height="480" loading="lazy" decoding="async">
+    {% endif %}
+    <p class="eyebrow">{{ c.kicker }}</p>
+    <div class="channel__title">{{ c.title }}</div>
+    <p class="text-muted">{{ c.body }}</p>
+    <p class="channel__host">{{ c.host }}</p>
+    <a class="btn btn-{{ 'primary' if loop.first else 'secondary' }}" href="{{ c.url }}"{% if c.url.startswith("http") %} target="_blank" rel="noopener"{% endif %}>{{ c.cta }} <span aria-hidden="true">↗</span></a>
+  </li>
+  {% endfor %}
+</ul>
+{% if d.note %}
+<p class="channels__note text-muted">{{ d.note.text }} <a href="{{ d.note.href }}">{{ d.note.label }}</a></p>
+{% endif %}

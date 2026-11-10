@@ -295,13 +295,21 @@ span.logo-card { cursor: pointer; }
 .article__cta .text-muted { margin: 0 0 20px; }
 
 /* ─── product channels (web app, Messenger...) ─── */
-.channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); list-style: none; margin: 0; padding: 0; }
-.channel { display: flex; flex-direction: column; align-items: flex-start; padding: max(28px, 3vw) var(--gutter); border-bottom: var(--rule); }
-.channel:nth-child(odd) { border-right: var(--rule); }
+.channels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; list-style: none; margin: 0; padding: 0; }
+.channel { display: flex; flex-direction: column; align-items: flex-start; padding: 28px var(--gutter); border: var(--rule); border-radius: 12px; background: var(--color-surface); }
+.channel:nth-child(odd) { border-right: 0; }
 .channel h3 { font-size: clamp(24px, 2.4vw, 32px); margin: 0 0 10px; }
 .channel p.text-muted { margin: 0 0 16px; font-size: 15px; max-width: 34em; }
 .channel__host { margin: auto 0 20px; font-family: ui-monospace, monospace; font-size: 13px; word-break: break-all; }
+.channel__img { width: 100%; height: auto; display: block; border-radius: 10px; object-fit: cover; margin-bottom: 14px; box-shadow: 0 2px 8px color-mix(in srgb, var(--color-text) 12%, transparent); }
+.channel:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); border-color: var(--color-accent); }
+.channel__title { font-family: var(--font-heading); font-weight: 800; font-size: clamp(20px, 2.4vw, 26px); margin: 0 0 6px; color: var(--color-text); }
 .channels__note { margin: 0; padding: 20px var(--gutter); font-size: 14px; }
+
+@media (max-width: 760px) {
+  .channels { grid-template-columns: 1fr; }
+  .channel { padding: 24px var(--gutter); }
+}
 
 /* ─── app screenshots: horizontal scroll-snap row ─── */
 .banner { margin: 0; border-bottom: var(--rule); }
