@@ -8,58 +8,58 @@
       .accent { fill: #ec3013; }
       .text { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; }
       .text-muted { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 600; }
-      .small { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 18px; }
+      .small { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; }
       .zone { fill: #ec3013; fill-opacity: 0.12; stroke: #ec3013; stroke-width: 3; rx: 14; }
-      .zone-label { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 20px; }
+      .zone-label { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px; }
       .pin { fill: #ec3013; stroke: #201e1d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
       .pin-head { fill: #ffffff; }
-      .list-head { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 22px; }
-      .list-item { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 18px; }
+      .list-head { fill: #201e1d; font-family: Archivo, sans-serif; font-weight: 700; font-size: 28px; }
+      .list-item { fill: #7d7979; font-family: Archivo, sans-serif; font-weight: 500; font-size: 22px; }
     </style>
   </defs>
 
   <rect class="bg" width="1200" height="630"/>
 
   <!-- Left panel -->
-  <rect x="56" y="56" width="520" height="518" class="panel"/>
+  <rect x="56" y="56" width="520" height="484" class="panel"/>
   <rect class="accent" x="56" y="56" width="520" height="70" rx="16 16 0 0"/>
   <text x="96" y="116" class="text" font-size="40">Vùng an toàn</text>
   <text x="96" y="156" class="small" font-size="22">Kigo cảnh báo khi con đến hoặc rời đi</text>
 
-  <!-- Three zone cards in one row at y=200-330 -->
+  <!-- Three zone cards in one row: 136 wide, 16 gap, x 96-536 (abs). Pins sit inside each card below the label. -->
   <g transform="translate(96, 200)">
     <!-- Card 1: Nhà -->
-    <rect x="0" y="0" width="140" height="110" class="zone"/>
-    <text x="70" y="60" class="zone-label" text-anchor="middle">Nhà</text>
-    <g transform="translate(70, 100)">
+    <rect x="0" y="0" width="136" height="130" class="zone"/>
+    <text x="68" y="56" class="zone-label" text-anchor="middle">Nhà</text>
+    <g transform="translate(68, 96)">
       <path class="pin" d="M0,-22 Q0,-8 11,4 L0,22 L-11,4 Q0,-8 0,-22 Z"/>
       <circle cx="0" cy="4" r="7" class="pin-head"/>
     </g>
     <!-- Card 2: Trường học -->
-    <rect x="170" y="0" width="140" height="110" class="zone"/>
-    <text x="240" y="60" class="zone-label" text-anchor="middle">Trường học</text>
-    <g transform="translate(240, 100)">
+    <rect x="152" y="0" width="136" height="130" class="zone"/>
+    <text x="220" y="56" class="zone-label" text-anchor="middle">Trường học</text>
+    <g transform="translate(220, 96)">
       <path class="pin" d="M0,-22 Q0,-8 11,4 L0,22 L-11,4 Q0,-8 0,-22 Z"/>
       <circle cx="0" cy="4" r="7" class="pin-head"/>
     </g>
     <!-- Card 3: Công viên -->
-    <rect x="340" y="0" width="140" height="110" class="zone"/>
-    <text x="410" y="60" class="zone-label" text-anchor="middle">Công viên</text>
-    <g transform="translate(410, 100)">
+    <rect x="304" y="0" width="136" height="130" class="zone"/>
+    <text x="372" y="56" class="zone-label" text-anchor="middle">Công viên</text>
+    <g transform="translate(372, 96)">
       <path class="pin" d="M0,-22 Q0,-8 11,4 L0,22 L-11,4 Q0,-8 0,-22 Z"/>
       <circle cx="0" cy="4" r="7" class="pin-head"/>
     </g>
   </g>
 
-  <text x="96" y="360" class="list-head" font-size="22">Cách thiết lập:</text>
-  <text x="96" y="392" class="list-item" font-size="18">1. Nhấn giữ trên bản đồ hoặc tìm theo tên</text>
-  <text x="96" y="424" class="list-item" font-size="18">2. Tối đa 3 địa điểm cho mỗi con</text>
-  <text x="96" y="456" class="list-item" font-size="18">3. Nhận thông báo ngay khi có sự thay đổi</text>
+  <text x="96" y="380" class="list-head" font-size="28">Cách thiết lập:</text>
+  <text x="96" y="420" class="list-item" font-size="22">1. Nhấn giữ trên bản đồ hoặc tìm theo tên</text>
+  <text x="96" y="452" class="list-item" font-size="22">2. Tối đa 3 địa điểm cho mỗi con</text>
+  <text x="96" y="484" class="list-item" font-size="22">3. Nhận thông báo ngay khi có sự thay đổi</text>
 
   <!-- Right panel -->
-  <rect x="624" y="56" width="520" height="518" class="panel"/>
+  <rect x="624" y="56" width="520" height="484" class="panel"/>
   <rect class="accent" x="624" y="56" width="520" height="70" rx="16 16 0 0"/>
-  <text x="664" y="118" class="text" font-size="26">Vị trí do con chọn chia sẻ</text>
+  <text x="664" y="118" class="text" font-size="28">Vị trí do con chọn chia sẻ</text>
   <text x="664" y="156" class="small" font-size="22">Tự dừng sau 60 phút, bảo vệ quyền riêng tư</text>
 
   <!-- Location pin icon in reserved area (y=200-360) -->
@@ -68,9 +68,11 @@
     <circle cx="0" cy="6" r="10" class="pin-head"/>
   </g>
 
-  <text x="664" y="395" class="list-head" font-size="22">Kigo chỉ báo cho người đã liên kết:</text>
-  <text x="664" y="428" class="list-item" font-size="18">• Bố mẹ hoặc tối đa 3 người giám hộ</text>
-  <text x="664" y="460" class="list-item" font-size="18">• Không quảng cáo, không theo dõi bên thứ ba</text>
+  <text x="664" y="392" class="list-head" font-size="28">Kigo chỉ báo cho người</text>
+  <text x="664" y="424" class="list-head" font-size="28">đã liên kết:</text>
+  <text x="664" y="470" class="list-item" font-size="22">• Bố mẹ hoặc tối đa 3 người giám hộ</text>
+  <text x="664" y="502" class="list-item" font-size="22">• Không quảng cáo, không theo dõi</text>
+  <text x="679" y="530" class="list-item" font-size="22">bên thứ ba</text>
 
   <!-- Footer strip -->
   <rect y="558" width="1200" height="72" fill="#ec3013"/>
