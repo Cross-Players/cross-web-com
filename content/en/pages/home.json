@@ -35,105 +35,45 @@
       }
     },
     {
-      "type": "product-showcase",
-      "data": {
-        "id": "products",
-        "kicker": "Cross Tech Edu products",
-        "title": "Two family apps we have built",
-        "intro": "GPLX driver theory test and FamHub (Kigo) family app — both built by Cross Tech Edu in Hanoi.",
-        "items": [
-          {
-            "kicker": "Driver License Theory Test",
-            "image": "img/products/gplx/01_home.webp",
-            "title": "GPLX Theory Test — Free",
-            "body": "600 questions, 15 licence classes, timed mock tests, traffic signs and memory tips. No ads, no account needed.",
-            "host": "apps.apple.com",
-            "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
-            "cta": "View on App Store"
-          },
-          {
-            "kicker": "Family App FamHub",
-            "image": "img/products/famhub/01_parent-home.webp",
-            "title": "FamHub (Kigo)",
-            "body": "Safe zone alerts, live location shared for 60 minutes, one-tap check-ins and daily tasks for parents and children.",
-            "host": "crosstechedu.com",
-            "url": "/projects/fam-hub/",
-            "cta": "View app"
-          }
-        ]
-      }
-    },
-    {
-      "type": "services",
-      "data": {
-        "id": "services",
-        "kicker": "Services / Dịch vụ",
-        "title": "Nine things we do, and nothing more.",
-        "intro": "Each area has a fixed team and its own review process. Hire by the person or by the whole project — either way you work with the same team.",
-        "items": [
-          {"title": "Web development", "body": "Next.js, React, Laravel. From company websites to internal systems with many roles."},
-          {"title": "Mobile app", "body": "Flutter and React Native. One codebase for iOS and Android, and we publish to the stores for you."},
-          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST and GraphQL, with API documentation delivered."},
-          {"title": "UI/UX design", "body": "Figma, design systems, clickable prototypes before the first line of code."},
-          {"title": "QA / Testing", "body": "Manual and automated tests that block merges until they pass. A report every sprint."},
-          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring and infrastructure cost optimisation."},
-          {"title": "AI / Data", "body": "LLM integration, RAG over your internal data, data pipelines and reporting dashboards."},
-          {"title": "Dedicated team", "body": "Monthly staffing that you manage directly, working in your time zone."},
-          {"title": "Maintenance & support", "body": "4-hour response SLA, same-day hotfixes, 24/7 on-call for production systems."}
-        ]
-      }
-    },
-    {
-      "type": "pricing",
-      "data": {
-        "id": "pricing",
-        "kicker": "Pricing / Bảng giá",
-        "title": "The most optimized prices for SMEs, published on this page.",
-        "intro": "No hidden tiers, no setup fee, no management fee. A detailed quote within 48 hours of receiving your requirements.",
-        "groups": [
-          {
-            "title": "Monthly developers — USD / dev / month",
-            "kind": "tier",
-            "items": [
-              {"label": "Junior · 1–2 years", "price": "300", "plus": true, "currency_label": "USD", "note": "Executes pre-scoped tasks, working under review from a middle developer or above.", "schema": {"min_price": 300, "currency": "USD", "unit": "developer / month"}},
-              {"label": "Middle · 3–5 years · most popular", "price": "600", "plus": true, "currency_label": "USD", "featured": true, "note": "Owns modules end-to-end, breaks down work and reviews code for juniors on the team.", "schema": {"min_price": 600, "currency": "USD", "unit": "developer / month"}},
-              {"label": "Senior · 5+ years", "price": "1200", "plus": true, "currency_label": "USD", "note": "Designs architecture, leads the team and works directly with your CTO.", "schema": {"min_price": 1200, "currency": "USD", "unit": "developer / month"}}
-            ]
-          },
-          {
-            "title": "Fixed-price projects — USD",
-            "kind": "package",
-            "items": [
-              {"label": "Company website", "price": "39", "currency_label": "USD", "note": "5 pages, responsive, domain and first-year hosting. Delivered in 5 days.", "schema": {"price": 39, "currency": "USD"}},
-              {"label": "Web app", "price": "230", "plus": true, "currency_label": "USD", "note": "Login, roles, dashboard, API and documentation. Usually 3–6 weeks.", "schema": {"min_price": 230, "currency": "USD"}},
-              {"label": "Mobile app", "price": "1,150", "plus": true, "currency_label": "USD", "note": "iOS and Android native, cross-platform with Flutter, React backend, published to both stores. 6–10 weeks.", "schema": {"min_price": 1150, "currency": "USD"}}
-            ]
-          }
-        ],
-        "cta": {
-          "label": "Get detailed pricing",
-          "href": "#contact",
-          "note": "What is included, what is not, and payment terms."
-        }
-      }
-    },
-    {
       "type": "products",
       "data": {
         "id": "work",
         "kicker": "Case studies",
-        "title": "Products we have worked on",
-        "intro": "Each card has two sides: App Store and Google Play. Click a card to open the app in its store, or “Flip card” to switch platform.",
+        "title": "Products we helped build",
+        "intro": "Each card opens the app in its store or on the web. Cards with both App Store and Google Play can be flipped to switch platform.",
         "ui": {
           "flip_to_google_play": "Flip card · Google Play",
           "flip_to_app_store": "Flip card · App Store",
           "open_in": "Open on {store}",
+          "open_web": "Open web app",
           "new_tab": "(opens in a new tab)",
           "flip_label": "Flip the {name} card to Google Play",
           "icon_alt": "{name} app icon",
           "cover_alt": "{name} app screenshots"
         },
+        "more": {"label": "See more products", "href": "/en/projects/"},
         "items": [
+          {
+            "name": "FamHub",
+            "icon": "img/products/famhub/icon.png",
+            "cover": "img/products/famhub/cover-famhub.webp",
+            "page": "/projects/fam-hub/",
+            "tagline": "Safe zones, one-tap check-ins and daily tasks for kids",
+            "publisher": "Cross Tech Edu",
+            "body": "Family app: alerts for 3 safe zones, live location shared for 60 minutes, one-tap check-ins and daily tasks for children.",
+            "tags": [
+              "Vietnam · Global",
+              "Family · Location"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "FamHub: Safe Zone Alerts",
+                "lang": "en",
+                "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
+              }
+            ]
+          },
           {
             "name": "VinWonders",
               "icon": "img/products/vinwonders-icon.webp",
@@ -233,8 +173,73 @@
                 "url": "https://play.google.com/store/apps/details?id=com.zuelligpharma.ezrxplus"
               }
             ]
+          },
+          {
+            "name": "Prudential Customer Portal",
+            "icon": "img/products/prudential-icon.webp",
+            "cover": "img/products/prudential-cover.webp",
+            "publisher": "Prudential Vietnam",
+            "body": "Web app for Prudential Vietnam customers: manage insurance policies, sign in with email or phone number, and create an account online.",
+            "tags": ["Vietnam", "Insurance · Web app"],
+            "stores": [
+              {"store": "web", "app_name": "Prudential Vietnam", "lang": "vi", "url": "https://prukhachhang.prudential.com.vn/app/onboarding/welcome"}
+            ]
           }
         ]
+      }
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Services / Dịch vụ",
+        "title": "Nine things we do, and nothing more.",
+        "intro": "Each area has a fixed team and its own review process. Hire by the person or by the whole project — either way you work with the same team.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. From company websites to internal systems with many roles."},
+          {"title": "Mobile app", "body": "Flutter and React Native. One codebase for iOS and Android, and we publish to the stores for you."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST and GraphQL, with API documentation delivered."},
+          {"title": "UI/UX design", "body": "Figma, design systems, clickable prototypes before the first line of code."},
+          {"title": "QA / Testing", "body": "Manual and automated tests that block merges until they pass. A report every sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring and infrastructure cost optimisation."},
+          {"title": "AI / Data", "body": "LLM integration, RAG over your internal data, data pipelines and reporting dashboards."},
+          {"title": "Dedicated team", "body": "Monthly staffing that you manage directly, working in your time zone."},
+          {"title": "Maintenance & support", "body": "4-hour response SLA, same-day hotfixes, 24/7 on-call for production systems."}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Pricing / Bảng giá",
+        "title": "The most optimized prices for SMEs, published on this page.",
+        "intro": "No hidden tiers, no setup fee, no management fee. A detailed quote within 48 hours of receiving your requirements.",
+        "groups": [
+          {
+            "title": "Monthly developers — USD / dev / month",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 years", "price": "300", "plus": true, "currency_label": "USD", "note": "Executes pre-scoped tasks, working under review from a middle developer or above.", "schema": {"min_price": 300, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 years · most popular", "price": "600", "plus": true, "currency_label": "USD", "featured": true, "note": "Owns modules end-to-end, breaks down work and reviews code for juniors on the team.", "schema": {"min_price": 600, "currency": "USD", "unit": "developer / month"}},
+              {"label": "Senior · 5+ years", "price": "1200", "plus": true, "currency_label": "USD", "note": "Designs architecture, leads the team and works directly with your CTO.", "schema": {"min_price": 1200, "currency": "USD", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Fixed-price projects — USD",
+            "kind": "package",
+            "items": [
+              {"label": "Company website", "price": "39", "currency_label": "USD", "note": "5 pages, responsive, domain and first-year hosting. Delivered in 5 days.", "schema": {"price": 39, "currency": "USD"}},
+              {"label": "Web app", "price": "230", "plus": true, "currency_label": "USD", "note": "Login, roles, dashboard, API and documentation. Usually 3–6 weeks.", "schema": {"min_price": 230, "currency": "USD"}},
+              {"label": "Mobile app", "price": "1,150", "plus": true, "currency_label": "USD", "note": "iOS and Android native, cross-platform with Flutter, React backend, published to both stores. 6–10 weeks.", "schema": {"min_price": 1150, "currency": "USD"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Get detailed pricing",
+          "href": "#contact",
+          "note": "What is included, what is not, and payment terms."
+        }
       }
     },
     {

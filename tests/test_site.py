@@ -9,6 +9,7 @@ from app.seo_audit import audit
 
 BASE = "https://example.test"
 PRODUCT_PATH = "/san-pham/tro-ly-bds-43/"
+PRUDENTIAL_WEB = "https://prukhachhang.prudential.com.vn/app/onboarding/welcome"
 PRIVACY_PATH = "/san-pham/tro-ly-bds-43/privacy-policy/"
 GPLX_PATH = "/projects/gplx/"
 GPLX_POLICY_PATH = "/projects/gplx/policy/"
@@ -340,7 +341,7 @@ def test_app_breadcrumb_uses_the_hub_in_its_language(client, path, hub_name, hub
 def test_kigo_is_linked_from_the_vi_home_page(client):
     html = client.get("/").get_data(as_text=True)
     assert "Kids Care" not in html
-    assert html.count(f'href="{KIGO_PATH}"') == 2  # product card + footer
+    assert html.count(f'href="{KIGO_PATH}"') == 1  # footer (the two-app showcase was removed)
     assert f'href="{FAMHUB_PATH}"' in client.get("/en/").get_data(as_text=True)
 
 
@@ -432,21 +433,32 @@ def test_client_logos_link_out(client, path):
 
 
 @pytest.mark.parametrize(
-    "path,title", [("/", "Sản phẩm chúng tôi đã tham gia"), ("/en/", "Products we have worked on")]
+    "path,title,more",
+    [("/", "Sản phẩm chúng tôi đã tham gia phát triển", "/projects/"), ("/en/", "Products we helped build", "/en/projects/")],
 )
-def test_product_flip_cards(client, path, title):
+def test_product_flip_cards(client, path, title, more):
     html = client.get(path).get_data(as_text=True)
     section = html[html.index('id="work"'):]
     section = section[: section.index("</section>")]
     assert title in section
+    assert ("Kigo" if path == "/" else "FamHub") in section
     # data-driven: fronts = one per card; backs = toggles = one per multi-store card
     fronts = re.findall(r'product__face--front">\s*<a class="product__link" href="([^"]+)"', section)
     backs = re.findall(r'product__face--back">\s*<a class="product__link" href="([^"]+)"', section)
     assert section.count('class="product__toggle" type="checkbox"') == len(backs)
     assert len(backs) == 4  # items with 2 stores
-    assert all(u.startswith("https://apps.apple.com/") for u in fronts)
+    assert all(u.startswith("https://apps.apple.com/") for u in fronts if u != PRUDENTIAL_WEB)
+    # the Prudential web app has one face, opening the site in a new tab
+    assert fronts.count(PRUDENTIAL_WEB) == 1
+    assert f'href="{PRUDENTIAL_WEB}" target="_blank" rel="noopener"' in section
+    assert f'class="btn btn-secondary" href="{more}"' in section
     assert all(u.startswith("https://play.google.com/store/apps/details?id=") for u in backs)
-    assert "com.vinwonders.app" in backs[0] and "id1590471592" in fronts[0]
+    # own app first (Kigo in vi, FamHub in en), then VinWonders
+    assert fronts[0] == FARM_HUB_STORE
+    assert "com.vinwonders.app" in backs[0] and "id1590471592" in fronts[1]
+    # case studies sit right under the hero; the old two-app showcase is gone
+    assert html.index('id="work"') < html.index('id="services"')
+    assert 'id="san-pham"' not in html and 'id="products"' not in html
 
 
 @pytest.mark.parametrize("path", ["/", "/en/"])

@@ -34,106 +34,46 @@
       }
     },
     {
-      "type": "product-showcase",
-      "data": {
-        "id": "san-pham",
-        "kicker": "Sản phẩm của Cross Tech Edu",
-        "title": "Hai ứng dụng gia đình chúng tôi đã xây dựng",
-        "intro": "Ứng dụng ôn thi lý thuyết GPLX và ứng dụng kết nối gia đình FamHub (Kigo) — cùng xây dựng bởi Cross Tech Edu tại Hà Nội.",
-        "items": [
-          {
-            "kicker": "Ứng dụng ôn thi GPLX",
-            "image": "img/products/gplx/01_home.webp",
-            "title": "Ôn thi GPLX miễn phí",
-            "body": "600 câu hỏi, 15 hạng bằng, thi thử bấm giờ, biển báo và mẹo ghi nhớ. Không quảng cáo, không cần tài khoản.",
-            "host": "apps.apple.com",
-            "url": "https://apps.apple.com/vn/app/driver-license-e-learning/id6751185396",
-            "cta": "Xem trên App Store"
-          },
-          {
-            "kicker": "Ứng dụng gia đình Kigo",
-            "image": "img/products/famhub/01_parent-home.webp",
-            "title": "Kigo",
-            "body": "Cảnh báo vùng an toàn, vị trí trực tiếp 60 phút, check-in một chạm và việc cần làm mỗi ngày cho bố mẹ và con.",
-            "host": "crosstechedu.com",
-            "url": "/projects/kigo/",
-            "cta": "Xem ứng dụng"
-          }
-        ]
-      }
-    },
-    {
-      "type": "services",
-      "data": {
-        "id": "services",
-        "kicker": "Dịch vụ / Services",
-        "title": "Chín mảng chúng tôi nhận",
-        "intro": "Mỗi mảng có một đội cố định và một quy trình review riêng. Bạn thuê theo người hoặc theo trọn gói dự án — cách nào cũng dùng cùng một đội.",
-        "items": [
-          {"title": "Web development", "body": "Next.js, React, Laravel. Trang giới thiệu tới hệ thống nội bộ nhiều vai trò."},
-          {"title": "Mobile app", "body": "Flutter và React Native. Một codebase cho iOS và Android, publish store hộ bạn."},
-          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST và GraphQL, tài liệu API bàn giao kèm."},
-          {"title": "UI/UX design", "body": "Figma, design system, prototype bấm được trước khi viết dòng code đầu tiên."},
-          {"title": "QA / Testing", "body": "Test thủ công và tự động, chặn merge khi chưa đạt. Báo cáo mỗi sprint."},
-          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring và tối ưu chi phí hạ tầng."},
-          {"title": "AI / Data", "body": "Tích hợp LLM, RAG trên dữ liệu nội bộ, data pipeline và dashboard báo cáo."},
-          {"title": "Dedicated team", "body": "Thuê nhân sự theo tháng, bạn quản lý trực tiếp, làm theo giờ của bạn."},
-          {"title": "Bảo trì & hỗ trợ", "body": "SLA phản hồi 4 giờ, hotfix trong ngày, trực 24/7 cho hệ thống đang chạy."}
-        ]
-      }
-    },
-    {
-      "type": "pricing",
-      "data": {
-        "id": "pricing",
-        "kicker": "Bảng giá / Pricing",
-        "title": "Giá tối ưu nhất cho SMEs, công khai trên trang này.",
-        "intro": "Không có bậc giá ẩn, không phí khởi tạo, không phí quản lý. Báo giá chi tiết gửi trong 48 giờ kể từ khi nhận mô tả yêu cầu.",
-        "groups": [
-          {
-            "title": "Thuê dev theo tháng — VNĐ / dev / tháng",
-            "kind": "tier",
-            "items": [
-              {"label": "Junior · 1–2 năm", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thực thi task đã bóc tách sẵn, làm việc dưới review của middle trở lên.", "schema": {"min_price": 6000000, "currency": "VND", "unit": "developer / month"}},
-              {"label": "Middle · 3–5 năm · phổ biến nhất", "price": "16", "plus": true, "magnitude": "triệu", "currency_label": "đ", "featured": true, "note": "Chủ động nhận module, tự bóc tách, review code cho junior trong team.", "schema": {"min_price": 16000000, "currency": "VND", "unit": "developer / month"}},
-              {"label": "Senior · 5+ năm", "price": "36", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thiết kế kiến trúc, dẫn dắt đội, làm việc trực tiếp với CTO phía bạn.", "schema": {"min_price": 36000000, "currency": "VND", "unit": "developer / month"}}
-            ]
-          },
-          {
-            "title": "Gói trọn dự án — VNĐ",
-            "kind": "package",
-            "items": [
-              {"label": "Website giới thiệu", "price": "999.000", "currency_label": "đ", "note": "5 trang, responsive, tên miền và hosting năm đầu. Bàn giao trong 5 ngày.", "schema": {"price": 999000, "currency": "VND"}},
-              {"label": "Web app", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Đăng nhập, phân quyền, dashboard, API và tài liệu. Thường 3–6 tuần.", "schema": {"min_price": 6000000, "currency": "VND"}},
-              {"label": "Mobile app", "price": "30", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "iOS và Android bằng Flutter, backend kèm theo, publish lên hai store. 6–10 tuần.", "schema": {"min_price": 30000000, "currency": "VND"}}
-            ]
-          }
-        ],
-        "cta": {
-          "label": "Xem bảng giá chi tiết",
-          "href": "#contact",
-          "note": "Bao gồm những gì, không bao gồm những gì, và điều kiện thanh toán."
-        }
-      }
-    },
-    {
       "type": "products",
       "data": {
         "id": "work",
         "kicker": "Case studies",
-        "title": "Sản phẩm chúng tôi đã tham gia",
-        "intro": "Mỗi thẻ mở ứng dụng trên cửa hàng tương ứng. Thẻ có cả App Store và Google Play sẽ lật được.",
+        "title": "Sản phẩm chúng tôi đã tham gia phát triển",
+        "intro": "Mỗi thẻ mở ứng dụng trên cửa hàng hoặc trên web. Thẻ có cả App Store và Google Play sẽ lật được.",
         "ui": {
           "flip_to_google_play": "Lật thẻ · Google Play",
           "flip_to_app_store": "Lật thẻ · App Store",
           "open_in": "Mở trên {store}",
+          "open_web": "Mở web app",
           "open_page": "Xem ứng dụng",
           "new_tab": "(mở tab mới)",
           "flip_label": "Lật thẻ {name} sang mặt Google Play",
           "icon_alt": "Biểu tượng ứng dụng {name}",
           "cover_alt": "Ảnh màn hình ứng dụng {name}"
         },
+        "more": {"label": "Xem thêm sản phẩm", "href": "/projects/"},
         "items": [
+          {
+            "name": "Kigo",
+            "icon": "img/products/famhub/icon.png",
+            "cover": "img/products/famhub/cover-kigo.webp",
+            "page": "/projects/kigo/",
+            "tagline": "Vùng an toàn, báo tin 1 chạm và giao việc cho con",
+            "publisher": "Cross Tech Edu",
+            "body": "Ứng dụng kết nối gia đình (tên quốc tế: FamHub): cảnh báo 3 vùng an toàn, chia sẻ vị trí 60 phút, check-in 1 chạm và giao việc hàng ngày cho con.",
+            "tags": [
+              "Việt Nam · Quốc tế",
+              "Gia đình · Định vị"
+            ],
+            "stores": [
+              {
+                "store": "app_store",
+                "app_name": "FamHub: Safe Zone Alerts",
+                "lang": "en",
+                "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
+              }
+            ]
+          },
           {
             "name": "VinWonders",
               "icon": "img/products/vinwonders-icon.webp",
@@ -235,27 +175,71 @@
             ]
           },
           {
-            "name": "Farm Hub (FamHub)",
-            "icon": "img/products/famhub/icon.png",
-            "cover": "img/products/famhub/cover-kigo.webp",
-            "page": "/projects/fam-hub/",
-            "tagline": "Vùng an toàn, báo tin 1 chạm và giao việc cho con",
-            "publisher": "Cross Tech Edu",
-            "body": "Ứng dụng kết nối gia đình: cảnh báo 3 vùng an toàn, chia sẻ vị trí 60 phút, check-in 1 chạm và giao việc hàng ngày cho con.",
-            "tags": [
-              "Việt Nam · Quốc tế",
-              "Gia đình · Định vị"
-            ],
+            "name": "Prudential Khách hàng",
+            "icon": "img/products/prudential-icon.webp",
+            "cover": "img/products/prudential-cover.webp",
+            "publisher": "Prudential Vietnam",
+            "body": "Web app dành cho khách hàng Prudential Việt Nam: quản lý hợp đồng bảo hiểm, đăng nhập bằng email hoặc số điện thoại, tạo tài khoản trực tuyến.",
+            "tags": ["Việt Nam", "Bảo hiểm · Web app"],
             "stores": [
-              {
-                "store": "app_store",
-                "app_name": "FamHub: Safe Zone Alerts",
-                "lang": "en",
-                "url": "https://apps.apple.com/vn/app/famhub-safe-zone-alerts/id6828317767"
-              }
+              {"store": "web", "app_name": "Prudential Vietnam", "lang": "vi", "url": "https://prukhachhang.prudential.com.vn/app/onboarding/welcome"}
             ]
           }
         ]
+      }
+    },
+    {
+      "type": "services",
+      "data": {
+        "id": "services",
+        "kicker": "Dịch vụ / Services",
+        "title": "Chín mảng chúng tôi nhận",
+        "intro": "Mỗi mảng có một đội cố định và một quy trình review riêng. Bạn thuê theo người hoặc theo trọn gói dự án — cách nào cũng dùng cùng một đội.",
+        "items": [
+          {"title": "Web development", "body": "Next.js, React, Laravel. Trang giới thiệu tới hệ thống nội bộ nhiều vai trò."},
+          {"title": "Mobile app", "body": "Flutter và React Native. Một codebase cho iOS và Android, publish store hộ bạn."},
+          {"title": "Backend & API", "body": "Node, Go, .NET, PostgreSQL. REST và GraphQL, tài liệu API bàn giao kèm."},
+          {"title": "UI/UX design", "body": "Figma, design system, prototype bấm được trước khi viết dòng code đầu tiên."},
+          {"title": "QA / Testing", "body": "Test thủ công và tự động, chặn merge khi chưa đạt. Báo cáo mỗi sprint."},
+          {"title": "DevOps & Cloud", "body": "AWS, GCP, Docker, Kubernetes. CI/CD, monitoring và tối ưu chi phí hạ tầng."},
+          {"title": "AI / Data", "body": "Tích hợp LLM, RAG trên dữ liệu nội bộ, data pipeline và dashboard báo cáo."},
+          {"title": "Dedicated team", "body": "Thuê nhân sự theo tháng, bạn quản lý trực tiếp, làm theo giờ của bạn."},
+          {"title": "Bảo trì & hỗ trợ", "body": "SLA phản hồi 4 giờ, hotfix trong ngày, trực 24/7 cho hệ thống đang chạy."}
+        ]
+      }
+    },
+    {
+      "type": "pricing",
+      "data": {
+        "id": "pricing",
+        "kicker": "Bảng giá / Pricing",
+        "title": "Giá tối ưu nhất cho SMEs, công khai trên trang này.",
+        "intro": "Không có bậc giá ẩn, không phí khởi tạo, không phí quản lý. Báo giá chi tiết gửi trong 48 giờ kể từ khi nhận mô tả yêu cầu.",
+        "groups": [
+          {
+            "title": "Thuê dev theo tháng — VNĐ / dev / tháng",
+            "kind": "tier",
+            "items": [
+              {"label": "Junior · 1–2 năm", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thực thi task đã bóc tách sẵn, làm việc dưới review của middle trở lên.", "schema": {"min_price": 6000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Middle · 3–5 năm · phổ biến nhất", "price": "16", "plus": true, "magnitude": "triệu", "currency_label": "đ", "featured": true, "note": "Chủ động nhận module, tự bóc tách, review code cho junior trong team.", "schema": {"min_price": 16000000, "currency": "VND", "unit": "developer / month"}},
+              {"label": "Senior · 5+ năm", "price": "36", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Thiết kế kiến trúc, dẫn dắt đội, làm việc trực tiếp với CTO phía bạn.", "schema": {"min_price": 36000000, "currency": "VND", "unit": "developer / month"}}
+            ]
+          },
+          {
+            "title": "Gói trọn dự án — VNĐ",
+            "kind": "package",
+            "items": [
+              {"label": "Website giới thiệu", "price": "999.000", "currency_label": "đ", "note": "5 trang, responsive, tên miền và hosting năm đầu. Bàn giao trong 5 ngày.", "schema": {"price": 999000, "currency": "VND"}},
+              {"label": "Web app", "price": "6", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "Đăng nhập, phân quyền, dashboard, API và tài liệu. Thường 3–6 tuần.", "schema": {"min_price": 6000000, "currency": "VND"}},
+              {"label": "Mobile app", "price": "30", "plus": true, "magnitude": "triệu", "currency_label": "đ", "note": "iOS và Android bằng Flutter, backend kèm theo, publish lên hai store. 6–10 tuần.", "schema": {"min_price": 30000000, "currency": "VND"}}
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Xem bảng giá chi tiết",
+          "href": "#contact",
+          "note": "Bao gồm những gì, không bao gồm những gì, và điều kiện thanh toán."
+        }
       }
     },
     {
