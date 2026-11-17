@@ -63,7 +63,7 @@ def _jsonld(html: str) -> dict:
 @pytest.mark.parametrize(
     "path,lang,h1",
     [
-        ("/", "vi", "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam."),
+        ("/", "vi", "Sản phẩm mobile &amp; web app cho chuyển đổi số."),
         ("/en/", "en", "Your engineering team, based in Vietnam."),
     ],
 )

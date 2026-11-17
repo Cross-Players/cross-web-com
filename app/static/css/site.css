@@ -65,6 +65,13 @@ body { margin: 0; }
 .rate__amount { font-family: var(--font-heading); font-weight: 800; font-size: clamp(44px, 6vw, 84px); line-height: .9; letter-spacing: -0.03em; color: var(--color-accent); }
 .rate__unit { font-family: var(--font-heading); font-weight: 800; font-size: 20px; }
 .rate__note { margin: 14px 0 0; font-size: 15px; max-width: 30em; }
+.rate__options { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; }
+.rate__option { border-top: var(--rule); padding-top: 12px; }
+.rate__option-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 0; }
+.rate__option-label { font-family: var(--font-heading); font-weight: 800; font-size: 17px; }
+.rate__option-price { font-family: var(--font-heading); font-weight: 800; font-size: 22px; color: var(--color-accent); white-space: nowrap; }
+.rate__option-unit { font-size: 14px; color: var(--color-text, inherit); }
+.rate__option-note { margin: 4px 0 0; font-size: 13px; }
 .stats { display: grid; grid-template-columns: 1fr 1fr; margin: 0; }
 .stat { padding: 24px var(--gutter); }
 .stat:nth-child(odd) { border-right: var(--rule); }

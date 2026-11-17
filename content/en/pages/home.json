@@ -237,7 +237,7 @@
         ],
         "cta": {
           "label": "Get detailed pricing",
-          "href": "#contact",
+          "href": "/en/pricing-sme/",
           "note": "What is included, what is not, and payment terms."
         }
       }

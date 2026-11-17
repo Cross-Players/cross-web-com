@@ -2,18 +2,18 @@
   "slug": "",
   "translation_key": "home",
   "meta": {
-    "title": "Outsourcing mobile & web apps, thuê dev từ 6 triệu VNĐ",
-    "description": "Cross Tech Edu nhận outsourcing web, mobile, backend, cloud và AI tại Hà Nội. Thuê dev từ 6 triệu đ/tháng, bảo hành 12 tháng. Báo giá trong 48 giờ.",
-    "updated": "2026-09-27"
+    "title": "Cross Tech Edu: app mobile & web app cho chuyển đổi số",
+    "description": "Cross Tech Edu phát triển app mobile, web app tích hợp AI cho chuyển đổi số và nhận outsourcing tại Hà Nội. Thuê dev từ 6 triệu đ/tháng, bảo hành 12 tháng.",
+    "updated": "2026-11-17"
   },
   "blocks": [
     {
       "type": "hero",
       "data": {
-        "kicker": "Công ty phần mềm · Hà Nội, Việt Nam",
-        "title": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam.",
-        "lead": "Cross Tech Edu là đội ngũ kỹ thuật đặt tại Việt Nam, nhận outsourcing web, mobile, backend và cloud cho khách hàng Nhật, Hàn và châu Âu. Bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
-        "sub": "Đội ngũ kỹ thuật của bạn, đặt tại Việt Nam — web, mobile, backend và cloud, bàn giao theo sprint 2 tuần.",
+        "kicker": "Công ty product · Hà Nội, Việt Nam",
+        "title": "Sản phẩm mobile & web app cho chuyển đổi số.",
+        "lead": "Cross Tech Edu là công ty product first tại Hà Nội, chuyên phát triển sản phẩm ứng dụng mobile và web app phục vụ chuyển đổi số. Cũng chính đội ngũ đó nhận outsourcing web, mobile, backend và cloud cho khách hàng Việt Nam, Nhật, Hàn và châu Âu, bàn giao theo sprint 2 tuần, hợp đồng không ràng buộc thời hạn.",
+        "sub": "Sản phẩm mobile & web app cho chuyển đổi số, kèm outsourcing web, mobile, backend và cloud theo sprint 2 tuần.",
         "sub_lang": "vi",
         "ctas": [
           {"label": "Xem bảng giá", "href": "#pricing", "style": "primary"},
@@ -23,12 +23,16 @@
           "label": "Giá thuê dev",
           "amount": "6 triệu",
           "unit": "đ / dev / tháng",
-          "note": "Mức khởi điểm thấp nhất thị trường Việt Nam. Full-time 160 giờ, PM và QA đi kèm miễn phí từ 3 dev."
+          "note": "Mức khởi điểm cạnh tranh, level middle. Full-time 160 giờ, PM và QA đi kèm miễn phí từ 3 dev.",
+          "options": [
+            {"label": "Product mobile", "amount": "từ 20 triệu", "unit": "đ", "note": "Ứng dụng di động, game và tích hợp AI."},
+            {"label": "Product web", "amount": "từ 5 triệu", "unit": "đ", "note": "ERP, hệ thống chuyển đổi số và tool nội bộ."}
+          ]
         },
         "stats": [
           {"value": "2 tuần", "label": "MVP đầu tiên lên tay bạn"},
           {"value": "12 tháng", "label": "Bảo hành code sau bàn giao"},
-          {"value": "Flutter, React", "label": "Đội ngũ chuyên sâu, 1 codebase 2+ nền tảng"},
+          {"value": "AI + Flutter, React Native", "label": "Đội ngũ chuyên sâu, tích hợp AI, 1 codebase đa nền tảng"},
           {"value": "Không\nràng buộc", "label": "Huỷ hợp đồng báo trước 15 ngày"}
         ]
       }
@@ -237,7 +241,7 @@
         ],
         "cta": {
           "label": "Xem bảng giá chi tiết",
-          "href": "#contact",
+          "href": "/bang-gia/",
           "note": "Bao gồm những gì, không bao gồm những gì, và điều kiện thanh toán."
         }
       }

@@ -16,6 +16,16 @@
       <p class="eyebrow eyebrow--muted">{{ d.rate.label }}</p>
       <p class="rate__figure"><span class="rate__amount">{{ d.rate.amount }}</span><span class="rate__unit">{{ d.rate.unit }}</span></p>
       <p class="rate__note">{{ d.rate.note }}</p>
+      {% if d.rate.options %}
+      <ul class="rate__options">
+        {% for o in d.rate.options %}
+        <li class="rate__option">
+          <p class="rate__option-head"><span class="rate__option-label">{{ o.label }}</span> <span class="rate__option-price">{{ o.amount }} <span class="rate__option-unit">{{ o.unit }}</span></span></p>
+          <p class="rate__option-note text-muted">{{ o.note }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
     <dl class="stats">
       {% for s in d.stats %}
